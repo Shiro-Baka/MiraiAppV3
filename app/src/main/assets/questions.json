@@ -1,0 +1,391 @@
+{
+  "questions": [
+    {
+      "question": "omoshiroi",
+      "answer1":"funny",
+      "answer2":"interesting",
+      "answer3": "delicious",
+      "answer4":"new",
+      "correct": "interesting",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "tanoshii",
+      "answer1":"fun",
+      "answer2":"enjoyable",
+      "answer3": "pretty",
+      "answer4":"strange",
+      "correct": "enjoyable",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "oishii",
+      "answer1":"funny",
+      "answer2":"interesting",
+      "answer3": "delicious",
+      "answer4":"new",
+      "correct": "delicious",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "atarashii",
+      "answer1":"good",
+      "answer2":"old",
+      "answer3": "beautiful",
+      "answer4":"difficult",
+      "correct": "new",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "yoi",
+      "answer1":"good",
+      "answer2":"boring",
+      "answer3": "pretty",
+      "answer4":"strange",
+      "correct": "good",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "tsumaranai",
+      "answer1":"funny",
+      "answer2":"interesting",
+      "answer3": "boring",
+      "answer4":"pretty",
+      "correct": "boring",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "kirei",
+      "answer1":"funny",
+      "answer2":"interesting",
+      "answer3": "pretty",
+      "answer4":"difficult",
+      "correct": "pretty",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "hen",
+      "answer1":"good",
+      "answer2":"old",
+      "answer3": "strange",
+      "answer4":"difficult",
+      "correct": "strange",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "muzukashii",
+      "answer1":"funny",
+      "answer2":"interesting",
+      "answer3": "difficult",
+      "answer4":"old",
+      "correct": "difficult",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "furui",
+      "answer1":"new",
+      "answer2":"old",
+      "answer3": "beautiful",
+      "answer4":"bad",
+      "correct": "old",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "utsukushii",
+      "answer1":"good",
+      "answer2":"old",
+      "answer3": "beautiful",
+      "answer4":"difficult",
+      "correct": "beautiful",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "warui",
+      "answer1":"funny",
+      "answer2":"bad",
+      "answer3": "pretty",
+      "answer4":"strange",
+      "correct": "bad",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "subarashii",
+      "answer1":"Wonderful",
+      "answer2":"Scary",
+      "answer3": "Tall",
+      "answer4":"Cute",
+      "correct": "Wonderful",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "sugoi",
+      "answer1":"Cute",
+      "answer2":"Fast",
+      "answer3": "Hot",
+      "answer4":"Convenient",
+      "correct": "Amazing",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "suteki",
+      "answer1":"Small",
+      "answer2":"Kind",
+      "answer3": "Splendid",
+      "answer4":"Large",
+      "correct": "Wonderful",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "takai",
+      "answer1":"Tall",
+      "answer2":"Short",
+      "answer3": "Fast",
+      "answer4":"Convenient",
+      "correct": "Tall; High; Expensive",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "hayai",
+      "answer1":"Young",
+      "answer2":"Slow",
+      "answer3": "Strict",
+      "answer4":"Thin; Slender",
+      "correct": "Fast; Quick",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "kibishii",
+      "answer1":"Strict",
+      "answer2":"Kind",
+      "answer3": "Wonderful",
+      "answer4":"Convenient",
+      "correct": "Strict",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "nagai",
+      "answer1":"Small",
+      "answer2":"Large",
+      "answer3": "Long",
+      "answer4":"Cute",
+      "correct": "Long",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "kakkoii",
+      "answer1":"Young",
+      "answer2":"Trendy; Cool",
+      "answer3": "Thin; Slender",
+      "answer4":"Fast",
+      "correct": "Trendy; Cool",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "yasashii",
+      "answer1":"Warm",
+      "answer2":"Strict",
+      "answer3": "Kind; Gentle",
+      "answer4":"Cheap; Inexpensive",
+      "correct": "Kind; Gentle",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "atatakai",
+      "answer1":"Cute",
+      "answer2":"Short",
+      "answer3": "Warm",
+      "answer4":"Large",
+      "correct": "Warm",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "mijikai",
+      "answer1":"Tall",
+      "answer2":"Long",
+      "answer3": "Short",
+      "answer4":"Small",
+      "correct": "Short",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "hosoi",
+      "answer1":"Short",
+      "answer2":"Large",
+      "answer3": "Thin; Slender",
+      "answer4":"Cold",
+      "correct": "Thin; Slender",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "osoi",
+      "answer1": "fast",
+      "answer2": "slow",
+      "answer3": "new",
+      "answer4": "old",
+      "correct": "slow",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "yuumei",
+      "answer1": "famous",
+      "answer2": "unknown",
+      "answer3": "shy",
+      "answer4": "loud",
+      "correct": "famous",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "tsumetai",
+      "answer1": "hot",
+      "answer2": "cool",
+      "answer3": "warm",
+      "answer4": "cold",
+      "correct": "cool",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "yasui",
+      "answer1": "expensive",
+      "answer2": "cheap",
+      "answer3": "large",
+      "answer4": "small",
+      "correct": "cheap",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "wakai",
+      "answer1": "old",
+      "answer2": "young",
+      "answer3": "mature",
+      "answer4": "childish",
+      "correct": "young",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "benri",
+      "answer1": "inconvenient",
+      "answer2": "comfortable",
+      "answer3": "annoying",
+      "answer4": "unimportant",
+      "correct": "convenient",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "ookii",
+      "answer1": "big",
+      "answer2": "small",
+      "answer3": "tall",
+      "answer4": "short",
+      "correct": "big",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "chiisai",
+      "answer1": "big",
+      "answer2": "small",
+      "answer3": "short",
+      "answer4": "tall",
+      "correct": "small",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "atsui",
+      "answer1": "cold",
+      "answer2": "hot",
+      "answer3": "wet",
+      "answer4": "dry",
+      "correct": "hot",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "samui",
+      "answer1": "hot",
+      "answer2": "cold",
+      "answer3": "wet",
+      "answer4": "dry",
+      "correct": "cold",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "kawaii",
+      "answer1": "ugly",
+      "answer2": "beautiful",
+      "answer3": "disgusting",
+      "answer4": "cute",
+      "correct": "cute",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "kowai",
+      "answer1": "brave",
+      "answer2": "fearful",
+      "answer3": "happy",
+      "answer4": "sad",
+      "correct": "fearful",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "kowai",
+      "answer1": "brave",
+      "answer2": "fearful",
+      "answer3": "happy",
+      "answer4": "sad",
+      "correct": "fearful",
+      "topic": "Adjectives"
+    },
+    {
+      "question": "kowai",
+      "answer1": "brave",
+      "answer2": "fearful",
+      "answer3": "happy",
+      "answer4": "sad",
+      "correct": "fearful",
+      "topic": "Animals"
+    },
+    {
+      "question": "kowai",
+      "answer1": "brave",
+      "answer2": "fearful",
+      "answer3": "happy",
+      "answer4": "sad",
+      "correct": "fearful",
+      "topic": "Numbers"
+    },
+    {
+      "question": "kowai",
+      "answer1": "brave",
+      "answer2": "fearful",
+      "answer3": "happy",
+      "answer4": "sad",
+      "correct": "fearful",
+      "topic": "Greetings"
+    },
+    {
+      "question": "kowai",
+      "answer1": "brave",
+      "answer2": "fearful",
+      "answer3": "happy",
+      "answer4": "sad",
+      "correct": "fearful",
+      "topic": "Verbs"
+    },
+    {
+      "question": "kowai",
+      "answer1": "brave",
+      "answer2": "fearful",
+      "answer3": "happy",
+      "answer4": "sad",
+      "correct": "fearful",
+      "topic": "School"
+    },
+    {
+      "question": "kowai",
+      "answer1": "brave",
+      "answer2": "fearful",
+      "answer3": "happy",
+      "answer4": "sad",
+      "correct": "fearful",
+      "topic": "General"
+    }
+  ]
+}

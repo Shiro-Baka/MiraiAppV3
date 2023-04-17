@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bubble_match_selection_phone"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context=".BubbleMatchSelectionPage">
+
+
+        <ImageButton
+            android:id="@+id/bubble_back"
+            android:background="@drawable/button_return_button"
+            android:contentDescription="bubblebackbutton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintBottom_toTopOf="@+id/bubbleGuidelineTop1"
+            app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelineLeft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/button_bubble_match_selection_romaji"
+            android:background="@drawable/button_selection_romaji"
+            android:contentDescription="button_bubble_match_selection_romaji"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1:0.4"
+            app:layout_constraintBottom_toTopOf="@+id/button_bubble_match_selection_kana"
+            app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelineRight"
+            app:layout_constraintStart_toStartOf="@+id/bubbleGuidelineLeft"
+            app:layout_constraintTop_toTopOf="@+id/bubbleGuidelineTop2"/>
+
+        <ImageButton
+            android:id="@+id/button_bubble_match_selection_kana"
+            android:background="@drawable/button_selection_kana"
+            android:contentDescription="bubbleromajibutton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1:0.4"
+            app:layout_constraintBottom_toTopOf="@+id/bubbleGuidelineBottom"
+            app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelineRight"
+            app:layout_constraintStart_toStartOf="@+id/bubbleGuidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/button_bubble_match_selection_romaji" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bubbleGuidelineTop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.07"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bubbleGuidelineTop2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bubbleGuidelineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bubbleGuidelineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bubbleGuidelineBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.90"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
