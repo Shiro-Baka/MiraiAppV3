@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_magic_trouble_topic_tablet"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context=".MagicTroubleTopicPage">
+
+
+    <ImageButton
+        android:id="@+id/button_return_bm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_return_menu"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/bubbleTopicGuidelineTop"
+        app:layout_constraintDimensionRatio="1:0.4"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleTopicGuidelineLeft"
+        app:layout_constraintTop_toTopOf="@+id/bubbleTopicGuidelineTop2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <GridLayout
+        android:id="@+id/grid_layout_magic_trouble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="7"
+        app:layout_constraintBottom_toTopOf="@+id/bubbleTopicGuidelineBottom"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleTopicGuidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/bubbleTopicGuidelineLeft"
+        app:layout_constraintTop_toTopOf="@+id/bubbleTopicGuidelineTop">
+
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_essential"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/button_topic_essential"
+            android:contentDescription="button_topic_essential"
+            android:text="Essential"
+            android:textOff="Essential"
+            android:textOn="Essential"
+            android:textSize="0dp" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_colours"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_topic_colours"
+            android:contentDescription="button_topic_colours"
+            android:text="Colours"
+            android:textOff="Colours"
+            android:textOn="Colours"
+            android:textSize="0dp" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_numbers"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_margin="5dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="@drawable/button_topic_numbers"
+            android:contentDescription="button_topic_numbers"
+            android:text="Numbers"
+            android:textOff="Numbers"
+            android:textOn="Numbers"
+            android:textSize="0dp" />
+
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_adjectives"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_margin="5dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:background="@drawable/button_topic_adjectives"
+            android:contentDescription="button_topic_adjectives"
+            android:text="Adjectives"
+            android:textOff="Adjectives"
+            android:textOn="Adjectives"
+            android:textSize="0dp" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_animals"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_topic_animals"
+            android:contentDescription="button_topic_animals"
+            android:text="Animals"
+            android:textOff="Animals"
+            android:textOn="Animals"
+            android:textSize="0dp" />
+
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_dwmy"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_topic_dwmy"
+            android:contentDescription="button_topic_dwmy"
+            android:text="Days, Weeks, Months, Years"
+            android:textOff="Days, Weeks, Months, Years"
+            android:textOn="Days, Weeks, Months, Years"
+            android:textSize="0dp" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_food_drink"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_topic_food_drink"
+            android:contentDescription="bubbleTopicColours"
+            android:text="Food &amp; Drink"
+            android:textOff="Food &amp; Drink"
+            android:textOn="Food &amp; Drink"
+            android:textSize="0dp" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_greetings"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_topic_greetings"
+            android:contentDescription="button_topic_greetings"
+            android:text="Greetings"
+            android:textOff="Greetings"
+            android:textOn="Greetings"
+            android:textSize="0dp" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_general"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_topic_general"
+            android:contentDescription="button_topic_general"
+            android:text="General"
+            android:textOff="General"
+            android:textOn="General"
+            android:textSize="0dp" />
+
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_school"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_topic_school"
+            android:contentDescription="button_topic_school"
+            android:text="School"
+            android:textOff="School"
+            android:textOn="School"
+            android:textSize="0dp" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_verbs"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_topic_verbs"
+            android:contentDescription="button_topic_verbs"
+            android:text="Verbs"
+            android:textOff="Verbs"
+            android:textOn="Verbs"
+            android:textSize="0dp" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_body_parts"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_topic_body_parts"
+            android:contentDescription="button_topic_verbs"
+            android:text="Body Parts"
+            android:textOff="Body Parts"
+            android:textOn="Body Parts"
+            android:textSize="0dp" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_family_counting"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_topic_family_counting"
+            android:contentDescription="button_topic_family_counting"
+            android:text="Family &amp; Counting"
+            android:textOff="Family &amp; Counting"
+            android:textOn="Family &amp; Counting"
+            android:textSize="0dp" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_magic_trouble_topic_seasons_weather"
+            android:layout_width="230dp"
+            android:layout_height="85dp"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_topic_seasons_weather"
+            android:contentDescription="button_topic_seasons_weather"
+            android:text="Seasons &amp; Weather"
+            android:textOff="Seasons &amp; Weather"
+            android:textOn="Seasons &amp; Weather"
+            android:textSize="0dp" />
+
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/button_begin_game"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_begin_game"
+        android:contentDescription="TODO"
+        android:onClick="startQuiz"
+        android:scaleType="centerCrop"
+        android:text="Start Quiz"
+        app:layout_constraintBottom_toTopOf="@+id/bubbleTopicGuidelineTop"
+        app:layout_constraintDimensionRatio="1:0.4"
+        app:layout_constraintStart_toStartOf="@+id/bubbleTopicGuidelineRight"
+        app:layout_constraintTop_toTopOf="@+id/bubbleTopicGuidelineTop2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleTopicGuidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleTopicGuidelineTop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleTopicGuidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleTopicGuidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleTopicGuidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

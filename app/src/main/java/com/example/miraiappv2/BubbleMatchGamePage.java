@@ -1,9 +1,13 @@
 package com.example.miraiappv2;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -11,150 +15,99 @@ import android.widget.GridLayout;
 import android.os.Handler;
 import android.widget.TextView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Random;
 
-public class BubbleMatchGamePage extends AppCompatActivity implements View.OnClickListener {
+public class BubbleMatchGamePage extends AppCompatActivity {
 
-    private int numberOfElements;
-    private BubbleMatchButton[] buttons;
-    private int[] buttonGraphicLocations;
-    private int[] buttonGraphics;
-    private BubbleMatchButton selectedButton1;
-    private BubbleMatchButton selectedButton2;
-    private boolean isBusy = false;
-    private int score = 0;
-    private TextView scoreTextView;
-
-
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         //Removes the Title bar from the top of the application for all screens.
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
         setContentView(R.layout.activity_bubble_match_game_page);
 
-        GridLayout gridLayout = (GridLayout)findViewById(R.id.grid_layout_bubble_match);
 
-        int numCols = gridLayout.getColumnCount();
-        int numRows = gridLayout.getRowCount();
-
-        numberOfElements = numCols * numRows;
-
-        buttons = new BubbleMatchButton[numberOfElements];
-
-        buttonGraphics = new int[numberOfElements / 2];
-
-        buttonGraphics[0] = R.drawable.button_1;
-        buttonGraphics[1] = R.drawable.button_2;
-        buttonGraphics[2] = R.drawable.button_3;
-        buttonGraphics[3] = R.drawable.button_4;
-        buttonGraphics[4] = R.drawable.button_5;
-        buttonGraphics[5] = R.drawable.button_6;
-        buttonGraphics[6] = R.drawable.button_7;
-        buttonGraphics[7] = R.drawable.button_8;
-
-        buttonGraphicLocations = new int[numberOfElements];
-
-        shuffleButtonGraphics();
-
-        for(int r = 0; r < numRows; r++)
-        {
-            for(int c = 0; c < numCols; c++)
-            {
-                BubbleMatchButton tempButton = new BubbleMatchButton(this, r, c, buttonGraphics[buttonGraphicLocations[r * numCols + c] ]);
-                tempButton.setId(View.generateViewId());
-                tempButton.setOnClickListener(this);
-                buttons[r * numCols + c] = tempButton;
-                gridLayout.addView(tempButton);
-            }
-        }
     }
-    protected void shuffleButtonGraphics(){
-        Random rand = new Random();
+    //make list with all the questions
+    private void loadBubbleTopic(ArrayList<String> selectedTopics, String selectedType) {
+        bubbleMatchQuestionItems = new ArrayList<>();
 
-        for(int i = 0; i < numberOfElements; i++)
-        {
-            buttonGraphicLocations[i] = i % (numberOfElements / 2);
-        }
-        for(int i = 0; i < numberOfElements; i++)
-        {
-            int temp = buttonGraphicLocations[i];
+        //load questions into json string
+        String jsonStr = loadJSONFromAsset("bubble.json");
 
-            int swapIndex = rand.nextInt(16);
-            buttonGraphicLocations[i] = buttonGraphicLocations[swapIndex];
+        //load all data into the list
+        try {
+            JSONObject jsonObj = new JSONObject(jsonStr);
+            JSONArray questions = jsonObj.getJSONArray("questions");
 
-            buttonGraphicLocations[swapIndex] = temp;
-        }
-    }
+            for (int i = 0; i < questions.length(); i++) {
+                JSONObject question = questions.getJSONObject(i);
 
-    @Override
-    public void onClick(View view) {
+                String idString = question.getString("id");
+                String ewordString = question.getString("eword");
+                String jwordString = question.getString("jword");
+                String topicString = question.getString("topic");
+                String typeString = question.getString("type");
+                String soundString = question.getString("sound");
 
-        if(isBusy)
-            return;
-
-        BubbleMatchButton button = (BubbleMatchButton) view;
-
-        if(button.isMatched) {
-            return;
-        }
-        if(selectedButton1 == null){
-            selectedButton1 = button;
-            //selectedButton1.flip();
-            return;
-        }
-
-        if(selectedButton1.getId() == button.getId()){
-            return;
-        }
-
-        if(selectedButton1.getFrontDrawableId() == button.getFrontDrawableId())
-        {
-            selectedButton1.setMatched(true);
-            button.setMatched(true);
-
-            GridLayout gridLayout = (GridLayout) findViewById(R.id.grid_layout_bubble_match);
-            gridLayout.removeView(selectedButton1);
-            gridLayout.removeView(button);
-
-            //selectedButton1.setVisibility(View.GONE);
-            //button.setVisibility(View.GONE);
-
-            selectedButton1 = null;
-
-            score +=100;
-            TextView scoreTextView = findViewById(R.id.bubble_match_score_textview);
-            scoreTextView.setText("" + score);
-
-            return;
-        }
-        else
-        {
-            selectedButton2 = button;
-            //selectedButton2.flip();
-            isBusy = true;
-
-            final Handler handler = new Handler();
-
-            handler.postDelayed(new Runnable(){
-                @Override
-                public void run()
-                {
-                    //selectedButton2.flip();
-                    //selectedButton1.flip();
-                    selectedButton1 = null;
-                    selectedButton2 = null;
-                    isBusy = false;
+                // Check if the question topic is one of the selected topics
+                if (selectedTopics.contains(topicString)&& selectedType.equals(typeString)) {
+                    bubbleMatchQuestionItems.add(new bubbleMatchQuestionItem(
+                            idString,
+                            ewordString,
+                            jwordString,
+                            topicString,
+                            typeString,
+                            soundString
+                    ));
                 }
-            }, 500);
-
-
+            }
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
         }
     }
 
+
+
+
+
+    //
+    private MediaPlayer loadAudio(String soundName) {
+        int resID = getResources().getIdentifier(soundName, "raw", getPackageName());
+
+        if (resID != 0) {
+            return MediaPlayer.create(this, resID);
+        } else {
+            // Handle error getting resource ID
+            Log.e(TAG, "Error getting resource ID");
+            return null;
+        }
+    }
+
+    //Load json file from folder
+    private String loadJSONFromAsset(String file){
+        String json = "";
+        try{
+            InputStream is = getAssets().open(file);
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        return json;
+    }
 }

@@ -1,0 +1,52 @@
+{
+"bubble": [
+  {
+    "id": "1",
+    "english": "eword1",
+    "japanese": "jword1",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "2",
+    "english": "eword2",
+    "japanese": "jword2",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "3",
+    "english": "eword3",
+    "japanese": "jword3",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "4",
+    "english": "eword4",
+    "japanese": "jword4",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "5",
+    "english": "eword5",
+    "japanese": "jword5",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "6",
+    "english": "eword6",
+    "japanese": "jword7",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "word"
+  }
+]
+}

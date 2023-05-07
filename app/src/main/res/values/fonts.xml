@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="font_family_comic_sans3">fonts/comici.ttf</string>
-    <string name="font_family_comic_sans4">fonts/comicz.ttf</string>
+    <string name="comicsans">font/comicsans.ttf</string>
+    <string name="UDD" translatable="false">font/kyo.ttc</string>
 </resources>

@@ -12,5 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="font">@font/comicsans</item>
+        <item name="android:fontFamily">@font/comicsans</item>
+        <item name="fontFamily">@font/comicsans</item>
     </style>
 </resources>
