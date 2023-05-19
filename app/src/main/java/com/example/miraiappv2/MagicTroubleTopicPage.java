@@ -31,10 +31,12 @@ public class MagicTroubleTopicPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         //Removes the Title bar from the top of the application for all screens
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
+
         //Set content view to show the xml file
         setContentView(R.layout.activity_magic_trouble_topic_page);
 
@@ -78,6 +80,7 @@ public class MagicTroubleTopicPage extends AppCompatActivity {
 
         //Use button name to match id in xml file
         buttonBack = findViewById(R.id.button_return_bm);
+
         //Onclick listener
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,8 +109,6 @@ public class MagicTroubleTopicPage extends AppCompatActivity {
             if (toggleButton != null && toggleButton.isChecked()) {
                 String selectedTopic = toggleButton.getText().toString();
                 selectedTopics.add(selectedTopic);
-                // Log comment
-                Log.d("SelectedTopics", "Selected topic: " + selectedTopic);
             }
         }
         //If no topics are selected, message is displayed to prompt the user to select at least one topic. The game will not start until a topic is selected.
@@ -122,18 +123,23 @@ public class MagicTroubleTopicPage extends AppCompatActivity {
 
             //Create and show the toast
             Toast toast = new Toast(getApplicationContext());
+
             //Toast Duration
             toast.setDuration(Toast.LENGTH_SHORT);
+
             //Set toast as the layout started above
             toast.setView(toastLayout);
+
             //Show toast
             toast.show();
 
         } else {
             //If one or more topics are selected, the selected topics ArrayList is added to the intent (which pushes the selected topics to the game page), and the quiz game page activity is launched
             intent.putStringArrayListExtra("selected_topics", selectedTopics);
+
             //Push selected_type in the intent
             intent.putExtra("selected_type", selectedType);
+
             //Start intent
             startActivity(intent);
         }
@@ -142,6 +148,7 @@ public class MagicTroubleTopicPage extends AppCompatActivity {
     public void ReturnToMain(){
         //Start new intent to go to main menu
         Intent intent = new Intent(this, MainActivity.class);
+
         //Start intent
         startActivity(intent);
     }

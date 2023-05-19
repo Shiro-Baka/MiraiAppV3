@@ -37,13 +37,12 @@
         android:id="@+id/text_view_magic_trouble_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="2dp"
         android:text="0"
         android:textColor="@android:color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guidelinemagicguidelinebottom"
-        app:layout_constraintEnd_toStartOf="@+id/guideline20"
-        app:layout_constraintStart_toStartOf="@+id/guideline23"
+        app:layout_constraintEnd_toStartOf="@+id/guideline14"
+        app:layout_constraintStart_toStartOf="@+id/guideline15"
         app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -53,76 +52,197 @@
         android:layout_height="wrap_content"
         android:text="Question"
         android:textColor="@android:color/black"
-        android:textSize="25dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom5"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="0.674"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom6"
         app:layout_constraintVertical_bias="0.479" />
 
-    <Button
-        android:id="@+id/answer1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
+    <ImageButton
+        android:id="@+id/answer1s"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="Answer 1"
-        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/button_magic_trouble_answer1"
         app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom3"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom4" />
 
-    <Button
-        android:id="@+id/answer2"
+    <ImageButton
+        android:id="@+id/answer1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Answer 1"
+        android:textSize="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom4" />
+
+
+
+    <TextView
+        android:id="@+id/answer1_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Answer 1"
+        android:textColor="@android:color/black"
         android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom4" />
+
+    <ImageButton
+        android:id="@+id/answer2s"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="Answer 2"
         android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_magic_trouble_answer2"
         app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom2"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom3" />
 
-    <Button
-        android:id="@+id/answer3"
+    <ImageButton
+        android:id="@+id/answer2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Answer 2"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom3" />
+
+
+    <TextView
+        android:id="@+id/answer2_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Answer 2"
+        android:textColor="@android:color/black"
         android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom3" />
+
+    <ImageButton
+        android:id="@+id/answer3s"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="Answer 3"
         android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_magic_trouble_answer3"
         app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom2" />
 
+    <ImageButton
+        android:id="@+id/answer3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Answer 3"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom2" />
 
-    <Button
-        android:id="@+id/answer4"
+    <TextView
+        android:id="@+id/answer3_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Answer 3"
+        android:textColor="@android:color/black"
         android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom"
+        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom2" />
+
+    <ImageButton
+        android:id="@+id/answer4s"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="Answer 4"
         android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/button_magic_trouble_answer4"
+        android:background="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom1"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom"/>
+        app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom" />
+
+    <ImageButton
+        android:id="@+id/answer4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Answer 4"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom" />
+
+    <TextView
+        android:id="@+id/answer4_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Answer 4"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelinemagicguidelinebottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.09" />
+        app:layout_constraintGuide_percent="0.09"
+        tools:ignore="MissingClass" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/magicguidelinebottom1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.54" />
+        app:layout_constraintGuide_percent="0.55" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/magicguidelinebottom5"
@@ -143,7 +263,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.43" />
+        app:layout_constraintGuide_percent="0.44" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/magicguidelinebottom2"
@@ -157,14 +277,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.23" />
+        app:layout_constraintGuide_percent="0.22" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/magicguidelinebottom4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.13" />
+        app:layout_constraintGuide_percent="0.11" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -178,28 +298,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.41" />
+        app:layout_constraintGuide_percent="0.4" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.59" />
+        app:layout_constraintGuide_percent="0.6" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline20"
+        android:id="@+id/guideline14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.7" />
+        app:layout_constraintGuide_percent="0.71" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline23"
+        android:id="@+id/guideline15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.49" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"

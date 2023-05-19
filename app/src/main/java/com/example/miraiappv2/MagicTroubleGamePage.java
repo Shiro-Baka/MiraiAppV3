@@ -13,6 +13,7 @@ import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -39,14 +40,16 @@ import java.util.Collections;
 import java.util.List;
 
 public class MagicTroubleGamePage extends AppCompatActivity {
+    //private static final String TAG = "MagicTroubleGamePage";
+
     //Create media player for sounds
     MediaPlayer MagicTroubleMediaPlayer;
 
     //Set textview names
-    TextView magictroubleQuestion;
+    TextView magictroubleQuestion, answer1_text, answer2_text, answer3_text, answer4_text;
 
     //Set button names
-    Button b_answer1, b_answer2, b_answer3, b_answer4;
+    ImageButton b_answer1, b_answer2, b_answer3, b_answer4, b_answer1s, b_answer2s, b_answer3s, b_answer4s;
 
     //Set image button names
     ImageButton magic_troubleendbtn, magic_troubleinfobtn;
@@ -84,14 +87,16 @@ public class MagicTroubleGamePage extends AppCompatActivity {
         b_answer2 = findViewById(R.id.answer2);
         b_answer3 = findViewById(R.id.answer3);
         b_answer4 = findViewById(R.id.answer4);
+        b_answer1s = findViewById(R.id.answer1s);
+        b_answer2s = findViewById(R.id.answer2s);
+        b_answer3s = findViewById(R.id.answer3s);
+        b_answer4s = findViewById(R.id.answer4s);
+        answer1_text = findViewById(R.id.answer1_text);
+        answer2_text = findViewById(R.id.answer2_text);
+        answer3_text = findViewById(R.id.answer3_text);
+        answer4_text = findViewById(R.id.answer4_text);
         magic_troubleendbtn = findViewById(R.id.magic_trouble_endbtn);
         magic_troubleinfobtn = findViewById(R.id.magic_trouble_infobtn);
-
-        //Reset colour on buttons to white
-        b_answer1.setBackgroundColor(getResources().getColor(R.color.white));
-        b_answer2.setBackgroundColor(getResources().getColor(R.color.white));
-        b_answer3.setBackgroundColor(getResources().getColor(R.color.white));
-        b_answer4.setBackgroundColor(getResources().getColor(R.color.white));
 
         //Check if the intent is not null before retrieving extras
         Intent intent = getIntent();
@@ -127,12 +132,13 @@ public class MagicTroubleGamePage extends AppCompatActivity {
         Context context = this;
         Context context1 = this;
 
+
         //Onclick listener
         magic_troubleendbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (selectedType.equals("romaji")) {
-                    // game over for romaji
+                    // game over for romaji, pass the score and results
                     Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
                     intent.putExtra("correct", correct);
                     intent.putExtra("wrong", wrong);
@@ -140,7 +146,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 } else {
-                    // game over for other types
+                    // game over for other type, pass the score and results
                     Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
                     intent.putExtra("correct", correct);
                     intent.putExtra("wrong", wrong);
@@ -184,20 +190,28 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     height = getResources().getDisplayMetrics().heightPixels * 90 / 100; // Set the height to 90% of the screen height
                 }
 
+                //set width and height for the popup window
                 popupWindow.setWidth(width);
                 popupWindow.setHeight(height);
-
                 popupWindow.showAtLocation(popupView, Gravity.CENTER, 0, 0);
             }
         });
 
+        //Onclick listener
         b_answer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Find the parent view of the button to be removed
+                ViewGroup parentView = (ViewGroup) b_answer1s.getParent();
+                if (parentView != null) {
+                    // Remove the button to be removed from its parent view
+                    parentView.removeView(b_answer1s);
+                }
+
                 //check if the answer is correct
                 if(magicTroubleQuestionItems.get(currentQuestion).getAnswer1().equals(magicTroubleQuestionItems.get(currentQuestion).getCorrect())){
                     //background green
-                    b_answer1.setBackgroundColor(getResources().getColor(R.color.green));
+                    b_answer1.setBackgroundResource(R.drawable.button_magic_trouble_answer1_green);
 
                     //correct
                     correct +=1;
@@ -210,7 +224,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
 
                     // Set the toast message
                     TextView toastTextView = (TextView) toastLayout.findViewById(R.id.toast_text);
-                    toastTextView.setText("Correct!"+ "You guessed" + magicTroubleQuestionItems.get(currentQuestion).getCorrect());
+                    toastTextView.setText("Correct! "+ "You guessed " + magicTroubleQuestionItems.get(currentQuestion).getCorrect());
 
                     // Create and show the toast
                     Toast toast = new Toast(getApplicationContext());
@@ -221,6 +235,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     // Get the sound string from the current question
                     String soundName = magicTroubleQuestionItems.get(currentQuestion).getSound();
 
+                    // Load media player and play sound based on JSON file, if it doesnt load it will display a error log with the file that it failed on
                     MediaPlayer mediaPlayer = loadAudio(soundName);
                     if (mediaPlayer != null) {
                         mediaPlayer.start();
@@ -234,16 +249,18 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                             }
                         }, 10000);
                     } else {
+                        // For Testing
                         // Handle error creating MediaPlayer object
                         Log.e(TAG, "Error creating MediaPlayer object");
                         Log.d(TAG, "Sound name: " + soundName);
                     }
 
                 }else {
-                    //wrong
+                    // Set background red
+                    b_answer1.setBackgroundResource(R.drawable.button_magic_trouble_answer1_red);
+
+                    // Add 1+ to wrong
                     wrong +=1;
-                    //background red
-                    b_answer1.setBackgroundColor(getResources().getColor(R.color.red));
 
                     // Inflate the custom toast layout
                     View toastLayout = getLayoutInflater().inflate(R.layout.magic_trouble_popup, (ViewGroup) findViewById(R.id.toast_layout_root));
@@ -259,29 +276,31 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     toast.show();
                 }
 
+                // Move to next question
                 currentQuestion++;
-                Log.d(TAG, "Current question index: " + currentQuestion);
 
-                //Load next set of questions if any
+                // Load next set of questions if any
                 if(currentQuestion < magicTroubleQuestionItems.size()-1){
-                    //Delay for 1 second (1000 milliseconds)
+                    // Delay for 1 second (1000 milliseconds)
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
+                            // Put question on the screen
                             setQuestionScreen(currentQuestion);
 
                             // Reset the background color of the button after a slight delay
                             new Handler().postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
-                                    b_answer1.setBackgroundColor(getResources().getColor(R.color.white));
+                                    // Set background back to default
+                                    b_answer1.setBackgroundResource(R.drawable.button_magic_trouble_answer1);
                                 }
-                            }, 500); // Delay for 100 milliseconds
+                            }, 100); // Delay for 100 milliseconds
                         }
-                    }, 1000); // Delay for 1 second (1000 milliseconds)
+                    }, 1100); // Delay for 1 second (1000 milliseconds)
                 } else {
                     if (selectedType.equals("romaji")) {
-                        // game over for romaji
+                        // game over for romaji, pass the score and results
                         Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
@@ -289,7 +308,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     } else {
-                        // game over for other types
+                        // game over for other types, pass the score and results
                         Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
@@ -300,13 +319,22 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                 }
             }
         });
+
+        //Onclick listener
         b_answer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Find the parent view of the button to be removed
+                ViewGroup parentView = (ViewGroup) b_answer2s.getParent();
+                if (parentView != null) {
+                    // Remove the button to be removed from its parent view
+                    parentView.removeView(b_answer2s);
+                }
+
                 //check if the answer is correct
                 if(magicTroubleQuestionItems.get(currentQuestion).getAnswer2().equals(magicTroubleQuestionItems.get(currentQuestion).getCorrect())){
                     //background green
-                    b_answer2.setBackgroundColor(getResources().getColor(R.color.green));
+                    b_answer2.setBackgroundResource(R.drawable.button_magic_trouble_answer2_green);
 
                     //correct
                     correct +=1;
@@ -314,11 +342,12 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     TextView magictroubleScore = findViewById(R.id.text_view_magic_trouble_score);
                     magictroubleScore.setText("" + score);
 
+                    // Inflate the custom toast layout
                     View toastLayout = getLayoutInflater().inflate(R.layout.magic_trouble_popup, (ViewGroup) findViewById(R.id.toast_layout_root));
 
                     // Set the toast message
                     TextView toastTextView = (TextView) toastLayout.findViewById(R.id.toast_text);
-                    toastTextView.setText("Correct!");
+                    toastTextView.setText("Correct! "+ "You guessed " + magicTroubleQuestionItems.get(currentQuestion).getCorrect());
 
                     // Create and show the toast
                     Toast toast = new Toast(getApplicationContext());
@@ -329,6 +358,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     // Get the sound string from the current question
                     String soundName = magicTroubleQuestionItems.get(currentQuestion).getSound();
 
+                    // Load media player and play sound based on JSON file, if it doesnt load it will display a error log with the file that it failed on
                     MediaPlayer mediaPlayer = loadAudio(soundName);
                     if (mediaPlayer != null) {
                         mediaPlayer.start();
@@ -342,16 +372,18 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                             }
                         }, 10000);
                     } else {
+                        // For Testing
                         // Handle error creating MediaPlayer object
                         Log.e(TAG, "Error creating MediaPlayer object");
                         Log.d(TAG, "Sound name: " + soundName);
                     }
 
                 }else {
-                    //wrong
+                    // Set background red
+                    b_answer2.setBackgroundResource(R.drawable.button_magic_trouble_answer2_red);
+
+                    // Add 1+ to wrong
                     wrong +=1;
-                    //background red
-                    b_answer2.setBackgroundColor(getResources().getColor(R.color.red));
 
                     // Inflate the custom toast layout
                     View toastLayout = getLayoutInflater().inflate(R.layout.magic_trouble_popup, (ViewGroup) findViewById(R.id.toast_layout_root));
@@ -367,29 +399,31 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     toast.show();
                 }
 
+                // Move to next question
                 currentQuestion++;
-                Log.d(TAG, "Current question index: " + currentQuestion);
 
-                //Load next set of questions if any
+                // Load next set of questions if any
                 if(currentQuestion < magicTroubleQuestionItems.size()-1){
-                    //Delay for 1 second (1000 milliseconds)
+                    // Delay for 1 second (1000 milliseconds)
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
+                            // Put question on the screen
                             setQuestionScreen(currentQuestion);
 
                             // Reset the background color of the button after a slight delay
                             new Handler().postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
-                                    b_answer2.setBackgroundColor(getResources().getColor(R.color.white));
+                                    // Set background back to default
+                                    b_answer2.setBackgroundResource(R.drawable.button_magic_trouble_answer2);
                                 }
-                            }, 500); // Delay for 100 milliseconds
+                            }, 100); // Delay for 100 milliseconds
                         }
-                    }, 1000); // Delay for 1 second (1000 milliseconds)
+                    }, 1100); // Delay for 1 second (1000 milliseconds)
                 } else {
                     if (selectedType.equals("romaji")) {
-                        // game over for romaji
+                        // game over for romaji, pass the score and results
                         Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
@@ -397,7 +431,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     } else {
-                        // game over for other types
+                        // game over for other types, pass the score and results
                         Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
@@ -408,13 +442,22 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                 }
             }
         });
+
+        //Onclick listener
         b_answer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Find the parent view of the button to be removed
+                ViewGroup parentView = (ViewGroup) b_answer3s.getParent();
+                if (parentView != null) {
+                    // Remove the button to be removed from its parent view
+                    parentView.removeView(b_answer3s);
+                }
+
                 //check if the answer is correct
                 if(magicTroubleQuestionItems.get(currentQuestion).getAnswer3().equals(magicTroubleQuestionItems.get(currentQuestion).getCorrect())){
                     //background green
-                    b_answer3.setBackgroundColor(getResources().getColor(R.color.green));
+                    b_answer3.setBackgroundResource(R.drawable.button_magic_trouble_answer3_green);
 
                     //correct
                     correct +=1;
@@ -422,11 +465,12 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     TextView magictroubleScore = findViewById(R.id.text_view_magic_trouble_score);
                     magictroubleScore.setText("" + score);
 
+                    // Inflate the custom toast layout
                     View toastLayout = getLayoutInflater().inflate(R.layout.magic_trouble_popup, (ViewGroup) findViewById(R.id.toast_layout_root));
 
                     // Set the toast message
                     TextView toastTextView = (TextView) toastLayout.findViewById(R.id.toast_text);
-                    toastTextView.setText("Correct!");
+                    toastTextView.setText("Correct! "+ "You guessed " + magicTroubleQuestionItems.get(currentQuestion).getCorrect());
 
                     // Create and show the toast
                     Toast toast = new Toast(getApplicationContext());
@@ -437,6 +481,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     // Get the sound string from the current question
                     String soundName = magicTroubleQuestionItems.get(currentQuestion).getSound();
 
+                    // Load media player and play sound based on JSON file, if it doesnt load it will display a error log with the file that it failed on
                     MediaPlayer mediaPlayer = loadAudio(soundName);
                     if (mediaPlayer != null) {
                         mediaPlayer.start();
@@ -450,16 +495,18 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                             }
                         }, 10000);
                     } else {
+                        // For Testing
                         // Handle error creating MediaPlayer object
                         Log.e(TAG, "Error creating MediaPlayer object");
                         Log.d(TAG, "Sound name: " + soundName);
                     }
 
                 }else {
-                    //wrong
+                    // Set background red
+                    b_answer3.setBackgroundResource(R.drawable.button_magic_trouble_answer3_red);
+
+                    // Add 1+ to wrong
                     wrong +=1;
-                    //background red
-                    b_answer3.setBackgroundColor(getResources().getColor(R.color.red));
 
                     // Inflate the custom toast layout
                     View toastLayout = getLayoutInflater().inflate(R.layout.magic_trouble_popup, (ViewGroup) findViewById(R.id.toast_layout_root));
@@ -475,29 +522,31 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     toast.show();
                 }
 
+                // Move to next question
                 currentQuestion++;
-                Log.d(TAG, "Current question index: " + currentQuestion);
 
-                //Load next set of questions if any
+                // Load next set of questions if any
                 if(currentQuestion < magicTroubleQuestionItems.size()-1){
-                    //Delay for 1 second (1000 milliseconds)
+                    // Delay for 1 second (1000 milliseconds)
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
+                            // Put question on the screen
                             setQuestionScreen(currentQuestion);
 
                             // Reset the background color of the button after a slight delay
                             new Handler().postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
-                                    b_answer3.setBackgroundColor(getResources().getColor(R.color.white));
+                                    // Set background back to default
+                                    b_answer3.setBackgroundResource(R.drawable.button_magic_trouble_answer3);
                                 }
-                            }, 500); // Delay for 100 milliseconds
+                            }, 100); // Delay for 100 milliseconds
                         }
-                    }, 1000); // Delay for 1 second (1000 milliseconds)
+                    }, 1100); // Delay for 1 second (1000 milliseconds)
                 } else {
                     if (selectedType.equals("romaji")) {
-                        // game over for romaji
+                        // game over for romaji, pass the score and results
                         Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
@@ -505,7 +554,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     } else {
-                        // game over for other types
+                        // game over for other types, pass the score and results
                         Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
@@ -516,13 +565,22 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                 }
             }
         });
+
+        //Onclick listener
         b_answer4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Find the parent view of the button to be removed
+                ViewGroup parentView = (ViewGroup) b_answer4s.getParent();
+                if (parentView != null) {
+                    // Remove the button to be removed from its parent view
+                    parentView.removeView(b_answer4s);
+                }
+
                 //check if the answer is correct
                 if(magicTroubleQuestionItems.get(currentQuestion).getAnswer4().equals(magicTroubleQuestionItems.get(currentQuestion).getCorrect())){
                     //background green
-                    b_answer4.setBackgroundColor(getResources().getColor(R.color.green));
+                    b_answer4.setBackgroundResource(R.drawable.button_magic_trouble_answer4_green);
 
                     //correct
                     correct +=1;
@@ -530,11 +588,12 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     TextView magictroubleScore = findViewById(R.id.text_view_magic_trouble_score);
                     magictroubleScore.setText("" + score);
 
+                    // Inflate the custom toast layout
                     View toastLayout = getLayoutInflater().inflate(R.layout.magic_trouble_popup, (ViewGroup) findViewById(R.id.toast_layout_root));
 
                     // Set the toast message
                     TextView toastTextView = (TextView) toastLayout.findViewById(R.id.toast_text);
-                    toastTextView.setText("Correct!");
+                    toastTextView.setText("Correct! "+ "You guessed " + magicTroubleQuestionItems.get(currentQuestion).getCorrect());
 
                     // Create and show the toast
                     Toast toast = new Toast(getApplicationContext());
@@ -545,6 +604,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     // Get the sound string from the current question
                     String soundName = magicTroubleQuestionItems.get(currentQuestion).getSound();
 
+                    // Load media player and play sound based on JSON file, if it doesnt load it will display a error log with the file that it failed on
                     MediaPlayer mediaPlayer = loadAudio(soundName);
                     if (mediaPlayer != null) {
                         mediaPlayer.start();
@@ -558,16 +618,18 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                             }
                         }, 10000);
                     } else {
+                        // For Testing
                         // Handle error creating MediaPlayer object
                         Log.e(TAG, "Error creating MediaPlayer object");
                         Log.d(TAG, "Sound name: " + soundName);
                     }
 
                 }else {
-                    //wrong
+                    // Set background red
+                    b_answer4.setBackgroundResource(R.drawable.button_magic_trouble_answer4_red);
+
+                    // Add 1+ to wrong
                     wrong +=1;
-                    //background red
-                    b_answer4.setBackgroundColor(getResources().getColor(R.color.red));
 
                     // Inflate the custom toast layout
                     View toastLayout = getLayoutInflater().inflate(R.layout.magic_trouble_popup, (ViewGroup) findViewById(R.id.toast_layout_root));
@@ -583,29 +645,31 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     toast.show();
                 }
 
+                // Move to next question
                 currentQuestion++;
-                Log.d(TAG, "Current question index: " + currentQuestion);
 
-                //Load next set of questions if any
+                // Load next set of questions if any
                 if(currentQuestion < magicTroubleQuestionItems.size()-1){
-                    //Delay for 1 second (1000 milliseconds)
+                    // Delay for 1 second (1000 milliseconds)
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
+                            // Put question on the screen
                             setQuestionScreen(currentQuestion);
 
                             // Reset the background color of the button after a slight delay
                             new Handler().postDelayed(new Runnable() {
                                 @Override
                                 public void run() {
-                                    b_answer4.setBackgroundColor(getResources().getColor(R.color.white));
+                                    // Set background back to default
+                                    b_answer4.setBackgroundResource(R.drawable.button_magic_trouble_answer4);
                                 }
-                            }, 500); // Delay for 100 milliseconds
+                            }, 100); // Delay for 100 milliseconds
                         }
-                    }, 1000); // Delay for 1 second (1000 milliseconds)
+                    }, 1100); // Delay for 1 second (1000 milliseconds)
                 } else {
                     if (selectedType.equals("romaji")) {
-                        // game over for romaji
+                        // game over for romaji, pass the score and results
                         Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
@@ -613,7 +677,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                         startActivity(intent);
                         finish();
                     } else {
-                        // game over for other types
+                        // game over for other types, pass the score and results
                         Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
@@ -650,17 +714,11 @@ public class MagicTroubleGamePage extends AppCompatActivity {
         b_answer3 = findViewById(R.id.answer3);
         b_answer4 = findViewById(R.id.answer4);
 
-        // Log the text of each answer button for debugging
-        Log.d(TAG, "Answer 1: " + magicTroubleQuestionItem.getAnswer1());
-        Log.d(TAG, "Answer 2: " + magicTroubleQuestionItem.getAnswer2());
-        Log.d(TAG, "Answer 3: " + magicTroubleQuestionItem.getAnswer3());
-        Log.d(TAG, "Answer 4: " + magicTroubleQuestionItem.getAnswer4());
-
         // Set the text of each answer button
-        b_answer1.setText(magicTroubleQuestionItem.getAnswer1());
-        b_answer2.setText(magicTroubleQuestionItem.getAnswer2());
-        b_answer3.setText(magicTroubleQuestionItem.getAnswer3());
-        b_answer4.setText(magicTroubleQuestionItem.getAnswer4());
+        answer1_text.setText(magicTroubleQuestionItem.getAnswer1());
+        answer2_text.setText(magicTroubleQuestionItem.getAnswer2());
+        answer3_text.setText(magicTroubleQuestionItem.getAnswer3());
+        answer4_text.setText(magicTroubleQuestionItem.getAnswer4());
     }
 
     //make list with all the questions
@@ -675,9 +733,9 @@ public class MagicTroubleGamePage extends AppCompatActivity {
             JSONObject jsonObj = new JSONObject(jsonStr);
             JSONArray questions = jsonObj.getJSONArray("questions");
 
+            // for each question get all elements from json and set as variables
             for (int i = 0; i < questions.length(); i++) {
                 JSONObject question = questions.getJSONObject(i);
-
                 String questionString = question.getString("question");
                 String answer1String = question.getString("answer1");
                 String answer2String = question.getString("answer2");

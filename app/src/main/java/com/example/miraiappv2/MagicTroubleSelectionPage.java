@@ -17,6 +17,7 @@ public class MagicTroubleSelectionPage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         //Removes the default title bar from the top of the application for screen
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -27,6 +28,7 @@ public class MagicTroubleSelectionPage extends AppCompatActivity {
 
         //Use button name to match id in xml file
         buttonMagicTroubleSelectionRomaji = findViewById(R.id.button_magic_trouble_selection_romaji);
+
         //Onclick listener
         buttonMagicTroubleSelectionRomaji.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +47,7 @@ public class MagicTroubleSelectionPage extends AppCompatActivity {
 
         //Use button name to match id in xml file
         buttonMagicTroubleSelectionKana = findViewById(R.id.button_magic_trouble_selection_kana);
+
         //Onclick listener
         buttonMagicTroubleSelectionKana.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +65,7 @@ public class MagicTroubleSelectionPage extends AppCompatActivity {
 
         //Use button name to match id in xml file
         buttonBack = findViewById(R.id.button_magic_trouble_returnbtn);
+
         //Onclick listener
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override

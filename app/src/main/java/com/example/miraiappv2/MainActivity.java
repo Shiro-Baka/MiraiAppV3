@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        /*
         buttonMainMenuInfo = findViewById(R.id.button_main_menu_info);
         buttonMainMenuInfo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, BubbleMatchSelectionPage.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         //buttonMainMenuKanaChallenge = findViewById(R.id.button_main_menu_kana_challenge);
         //buttonMainMenuKanaChallenge.setOnClickListener(new View.OnClickListener() {

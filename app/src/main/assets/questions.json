@@ -933,7 +933,7 @@
         "correct": "yellow",
         "topic": "Colours",
         "type": "kana",
-        "sound": "kiiro(i)"
+        "sound": "kiiro_kiiroi"
       },
       {
         "question": "ちゃいろ(い)",
@@ -2143,7 +2143,7 @@
         "correct": "orange juice",
         "topic": "Food & Drink",
         "type": "kana",
-        "sound": "orenji juusu"
+        "sound": "orenji_juusu"
       },
       {
         "question": "レモネード",
@@ -2649,7 +2649,7 @@
         "correct": "candy; sweets",
         "topic": "Food & Drink",
         "type": "kana",
-        "sound": "(o)kashi"
+        "sound": "okashi"
       },
       {
         "question": "くだもの",
@@ -2781,7 +2781,7 @@
         "correct": "why",
         "topic": "General",
         "type": "kana",
-        "sound": "doushite; naze"
+        "sound": "doushitenaze"
       },
       {
         "question": "どう",
@@ -2792,7 +2792,7 @@
         "correct": "how",
         "topic": "General",
         "type": "kana",
-        "sound": "dou "
+        "sound": "dou"
       },
       {
         "question": "いくつ",
@@ -2902,7 +2902,7 @@
         "correct": "occasionally",
         "topic": "General",
         "type": "kana",
-        "sound": "tama ni"
+        "sound": "tama_ni"
       },
       {
         "question": "あまり",
@@ -2935,7 +2935,7 @@
         "correct": "seldom; rarely",
         "topic": "General",
         "type": "kana",
-        "sound": "metta ni"
+        "sound": "metta_ni"
       },
       {
         "question": "おはよう ございます",
@@ -2946,7 +2946,7 @@
         "correct": "good morning",
         "topic": "Greetings",
         "type": "kana",
-        "sound": "ohayou gozaimasu"
+        "sound": "ohayou_gozaimasu"
       },
       {
         "question": "こんにちは",
@@ -2979,7 +2979,7 @@
         "correct": "good night",
         "topic": "Greetings",
         "type": "kana",
-        "sound": "oyasumi nasai"
+        "sound": "oyasumi_nasai"
       },
       {
         "question": "さようなら",
@@ -3001,7 +3001,7 @@
         "correct": "hello (telephone)",
         "topic": "Greetings",
         "type": "kana",
-        "sound": "moshi moshi"
+        "sound": "moshi_moshi"
       },
       {
         "question": "またあした",
@@ -3012,7 +3012,7 @@
         "correct": "see you tomorrow",
         "topic": "Greetings",
         "type": "kana",
-        "sound": "mata ashita"
+        "sound": "mata_ashita"
       },
       {
         "question": "れい; ゼロ",
@@ -3452,7 +3452,7 @@
         "correct": "stand up (please)",
         "topic": "School",
         "type": "kana",
-        "sound": "tatte (kudasai)"
+        "sound": "tatte_kudasai"
       },
       {
         "question": "すわって (ださい)",
@@ -3463,7 +3463,7 @@
         "correct": "sit down (please)",
         "topic": "School",
         "type": "kana",
-        "sound": "swatte (kudasai)"
+        "sound": "swatte_kudasai"
       },
       {
         "question": "しずかに",
@@ -3474,7 +3474,7 @@
         "correct": "(be) quiet",
         "topic": "School",
         "type": "kana",
-        "sound": "shizuka ni"
+        "sound": "shizuka_ni"
       },
       {
         "question": "よくできました",
@@ -3485,7 +3485,7 @@
         "correct": "good job well done",
         "topic": "School",
         "type": "kana",
-        "sound": "yoku dekimashita"
+        "sound": "yoku_dekimashita"
       },
       {
         "question": "しゅくだい",
@@ -3881,7 +3881,7 @@
         "correct": "to study",
         "topic": "Verbs",
         "type": "kana",
-        "sound": "benkyou shimasu"
+        "sound": "benkyou_shimasu"
       },
       {
         "question": "れんしゅうします",
@@ -3892,7 +3892,7 @@
         "correct": "to practise",
         "topic": "Verbs",
         "type": "kana",
-        "sound": "renshuu shimasu"
+        "sound": "renshuu_shimasu"
       },
       {
         "question": "みます",
@@ -5036,7 +5036,7 @@
         "correct": "red",
         "topic": "Colours",
         "type": "romaji",
-        "sound": "aka(i)"
+        "sound": "akai"
       },
       {
         "question": "ao(i)",
@@ -5047,7 +5047,7 @@
         "correct": "blue",
         "topic": "Colours",
         "type": "romaji",
-        "sound": "ao(i)"
+        "sound": "ao_aoi"
       },
       {
         "question": "orenji",
@@ -5069,7 +5069,7 @@
         "correct": "yellow",
         "topic": "Colours",
         "type": "romaji",
-        "sound": "kiiro(i)"
+        "sound": "kiiro_kiiroi"
       },
       {
         "question": "chairo(i)",
@@ -5080,7 +5080,7 @@
         "correct": "brown",
         "topic": "Colours",
         "type": "romaji",
-        "sound": "chairo(i)"
+        "sound": "chairo_chairoi"
       },
       {
         "question": "kuro(i)",
@@ -5091,7 +5091,7 @@
         "correct": "black",
         "topic": "Colours",
         "type": "romaji",
-        "sound": "kuro(i)"
+        "sound": "kuro_kuroi"
       },
       {
         "question": "shiro(i)",
@@ -5102,7 +5102,7 @@
         "correct": "white",
         "topic": "Colours",
         "type": "romaji",
-        "sound": "shiro(i)"
+        "sound": "shiro_shiroi"
       },
       {
         "question": "midori",
@@ -5575,7 +5575,7 @@
         "correct": "thank you very much",
         "topic": "Essential",
         "type": "romaji",
-        "sound": "arigatou gozaimasu"
+        "sound": "arigatou_gozaimasu"
       },
       {
         "question": "douitashimashite",
@@ -5619,7 +5619,7 @@
         "correct": "nice to meet you",
         "topic": "Essential",
         "type": "romaji",
-        "sound": "douzo yoroshiku"
+        "sound": "douzo_yoroshiku"
       },
       {
         "question": "daijoubu",
@@ -5641,7 +5641,7 @@
         "correct": "It is so? really?",
         "topic": "Essential",
         "type": "romaji",
-        "sound": "sou desu ka"
+        "sound": "sou_desu_ka"
       },
       {
         "question": "ogenki desu ka",
@@ -5652,7 +5652,7 @@
         "correct": "How are you?",
         "topic": "Essential",
         "type": "romaji",
-        "sound": "ogenki desu ka"
+        "sound": "ogenki_desu_ka"
       },
       {
         "question": "genki desu",
@@ -5663,7 +5663,7 @@
         "correct": "I’m fine\/well",
         "topic": "Essential",
         "type": "romaji",
-        "sound": "genki desu"
+        "sound": "genki_desu"
       },
       {
         "question": "wakarimasu",
@@ -5718,7 +5718,7 @@
         "correct": "I’m sorry",
         "topic": "Essential",
         "type": "romaji",
-        "sound": "gomen nasai"
+        "sound": "gomen_nasai"
       },
       {
         "question": "mou ichi do",
@@ -5729,7 +5729,7 @@
         "correct": "one more time",
         "topic": "Essential",
         "type": "romaji",
-        "sound": "mou ichi do"
+        "sound": "mou_ichi_do"
       },
       {
         "question": "jaa mata",
@@ -5740,7 +5740,7 @@
         "correct": "see you later",
         "topic": "Essential",
         "type": "romaji",
-        "sound": "jaa mata"
+        "sound": "jaa_mata"
       },
       {
         "question": "hai",
@@ -5861,7 +5861,7 @@
         "correct": "I (for males)",
         "topic": "Essential",
         "type": "romaji",
-        "sound": "boku; ore"
+        "sound": "boku_ore"
       },
       {
         "question": "oosutoraria",
@@ -6279,7 +6279,7 @@
         "correct": "orange juice",
         "topic": "Food & Drink",
         "type": "romaji",
-        "sound": "orenji juusu"
+        "sound": "orenji_juusu"
       },
       {
         "question": "remoneedo",
@@ -6400,7 +6400,7 @@
         "correct": "chopsticks",
         "topic": "Food & Drink",
         "type": "romaji",
-        "sound": "(o)hashi"
+        "sound": "ohashi"
       },
       {
         "question": "yasai",
@@ -6785,7 +6785,7 @@
         "correct": "candy; sweets",
         "topic": "Food & Drink",
         "type": "romaji",
-        "sound": "(o)kashi"
+        "sound": "okashi"
       },
       {
         "question": "kudamono",
@@ -6840,7 +6840,7 @@
         "correct": "ice cream",
         "topic": "Food & Drink",
         "type": "romaji",
-        "sound": "aisu kuriimu"
+        "sound": "aisu_kuriimu"
       },
       {
         "question": "mizu",
@@ -6917,7 +6917,7 @@
         "correct": "why",
         "topic": "General",
         "type": "romaji",
-        "sound": "doushite; naze"
+        "sound": "doushitenaze"
       },
       {
         "question": "dou ",
@@ -6928,7 +6928,7 @@
         "correct": "how",
         "topic": "General",
         "type": "romaji",
-        "sound": "dou "
+        "sound": "dou"
       },
       {
         "question": "ikutsu",
@@ -7038,7 +7038,7 @@
         "correct": "occasionally",
         "topic": "General",
         "type": "romaji",
-        "sound": "tama ni"
+        "sound": "tama_ni"
       },
       {
         "question": "amari",
@@ -7071,7 +7071,7 @@
         "correct": "seldom; rarely",
         "topic": "General",
         "type": "romaji",
-        "sound": "metta ni"
+        "sound": "metta_ni"
       },
       {
         "question": "ohayou gozaimasu",
@@ -7082,7 +7082,7 @@
         "correct": "good morning",
         "topic": "Greetings",
         "type": "romaji",
-        "sound": "ohayou gozaimasu"
+        "sound": "ohayou_gozaimasu"
       },
       {
         "question": "konnichiwa",
@@ -7115,7 +7115,7 @@
         "correct": "good night",
         "topic": "Greetings",
         "type": "romaji",
-        "sound": "oyasumi nasai"
+        "sound": "oyasumi_nasai"
       },
       {
         "question": "sayounara",
@@ -7137,7 +7137,7 @@
         "correct": "hello (telephone)",
         "topic": "Greetings",
         "type": "romaji",
-        "sound": "moshi moshi"
+        "sound": "moshi_moshi"
       },
       {
         "question": "mata ashita",
@@ -7148,7 +7148,7 @@
         "correct": "see you tomorrow",
         "topic": "Greetings",
         "type": "romaji",
-        "sound": "mata ashita"
+        "sound": "mata_ashita"
       },
       {
         "question": "rei",
@@ -7588,7 +7588,7 @@
         "correct": "stand up (please)",
         "topic": "School",
         "type": "romaji",
-        "sound": "tatte (kudasai)"
+        "sound": "tatte_kudasai"
       },
       {
         "question": "swatte (kudasai)",
@@ -7599,7 +7599,7 @@
         "correct": "sit down (please)",
         "topic": "School",
         "type": "romaji",
-        "sound": "swatte (kudasai)"
+        "sound": "swatte_kudasai"
       },
       {
         "question": "shizuka ni",
@@ -7610,7 +7610,7 @@
         "correct": "(be) quiet",
         "topic": "School",
         "type": "romaji",
-        "sound": "shizuka ni"
+        "sound": "shizuka_ni"
       },
       {
         "question": "yoku dekimashita",
@@ -7621,7 +7621,7 @@
         "correct": "good job well done",
         "topic": "School",
         "type": "romaji",
-        "sound": "yoku dekimashita"
+        "sound": "yoku_dekimashita"
       },
       {
         "question": "shukudai",
@@ -8017,7 +8017,7 @@
         "correct": "to study",
         "topic": "Verbs",
         "type": "romaji",
-        "sound": "benkyou shimasu"
+        "sound": "benkyou_shimasu"
       },
       {
         "question": "renshuu shimasu",
@@ -8028,7 +8028,7 @@
         "correct": "to practise",
         "topic": "Verbs",
         "type": "romaji",
-        "sound": "renshuu shimasu"
+        "sound": "renshuu_shimasu"
       },
       {
         "question": "mimasu",

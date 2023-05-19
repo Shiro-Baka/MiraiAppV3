@@ -13,33 +13,43 @@
         tools:targetApi="31" >
         <activity
             android:name=".MagicTroubleEndKPage"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".BubbleMatchEndRPage"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MagicTroubleEndRPage"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MagicTroubleTopicPage"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MagicTroubleGamePage"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".BubbleMatchGamePage"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".BubbleMatchTopicPage"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MagicTroubleSelectionPage"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".BubbleMatchSelectionPage"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
