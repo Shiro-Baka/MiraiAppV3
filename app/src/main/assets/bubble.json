@@ -2,49 +2,168 @@
 "bubble": [
   {
     "id": "1",
-    "english": "eword1",
-    "japanese": "jword1",
-    "topic": "Essential",
+    "eword": "eword1",
+    "jword": "jword1",
+    "topic": "Greetings",
     "type": "romaji",
     "sound": "word"
   },
   {
     "id": "2",
-    "english": "eword2",
-    "japanese": "jword2",
-    "topic": "Essential",
+    "eword": "eword2",
+    "jword": "jword2",
+    "topic": "Numbers",
     "type": "romaji",
     "sound": "word"
   },
   {
     "id": "3",
-    "english": "eword3",
-    "japanese": "jword3",
-    "topic": "Essential",
+    "eword": "eword3",
+    "jword": "jword3",
+    "topic": "Numbers",
     "type": "romaji",
     "sound": "word"
   },
   {
     "id": "4",
-    "english": "eword4",
-    "japanese": "jword4",
-    "topic": "Essential",
+    "eword": "eword4",
+    "jword": "jword4",
+    "topic": "Numbers",
     "type": "romaji",
     "sound": "word"
   },
   {
     "id": "5",
-    "english": "eword5",
-    "japanese": "jword5",
-    "topic": "Essential",
+    "eword": "eword5",
+    "jword": "jword5",
+    "topic": "Numbers",
     "type": "romaji",
     "sound": "word"
   },
   {
     "id": "6",
-    "english": "eword6",
-    "japanese": "jword7",
-    "topic": "Essential",
+    "eword": "eword6",
+    "jword": "jword6",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "7",
+    "eword": "eword7",
+    "jword": "jword7",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "8",
+    "eword": "eword8",
+    "jword": "jword8",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "9",
+    "eword": "eword9",
+    "jword": "jword9",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "10",
+    "eword": "eword10",
+    "jword": "jword10",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "11",
+    "eword": "eword11",
+    "jword": "jword11",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },{
+    "id": "12",
+    "eword": "eword12",
+    "jword": "jword12",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "13",
+    "eword": "eword13",
+    "jword": "jword13",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "14",
+    "eword": "eword14",
+    "jword": "jword14",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "15",
+    "eword": "eword15",
+    "jword": "jword15",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "16",
+    "eword": "eword16",
+    "jword": "jword16",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "17",
+    "eword": "eword17",
+    "jword": "jword17",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "18",
+    "eword": "eword18",
+    "jword": "jword18",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "19",
+    "eword": "eword19",
+    "jword": "jword19",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "20",
+    "eword": "eword20",
+    "jword": "jword20",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "word"
+  },
+  {
+    "id": "21",
+    "eword": "eword21",
+    "jword": "jword21",
+    "topic": "Numbers",
     "type": "romaji",
     "sound": "word"
   }

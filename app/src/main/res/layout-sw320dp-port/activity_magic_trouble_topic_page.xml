@@ -15,7 +15,7 @@
         android:id="@+id/button_return_bm"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="15dp"
+        android:layout_margin="12dp"
         android:background="@drawable/button_return_menu"
         android:contentDescription="TODO"
         android:scaleType="centerCrop"
