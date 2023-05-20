@@ -1,0 +1,3012 @@
+{
+  "questions": [
+    {
+      "question": "Blue",
+      "topic": "color",
+      "answer1": "むらさき",
+      "answer2": "くろ",
+      "answer3": "あお",
+      "answer4": "しろ",
+      "correct": "あお",
+      "sound": "ao"
+    },
+    {
+      "question": "Red",
+      "topic": "color",
+      "answer1": "みどり",
+      "answer2": "あお",
+      "answer3": "きいろ",
+      "answer4": "あか",
+      "correct": "あか",
+      "sound": "aka"
+    },
+    {
+      "question": "Yellow",
+      "topic": "color",
+      "answer1": "きいろ",
+      "answer2": "みどり",
+      "answer3": "ちゃいろ",
+      "answer4": "だいだいいろ",
+      "correct": "きいろ",
+      "sound": "kiiro"
+    },
+    {
+      "question": "Green",
+      "topic": "color",
+      "answer1": "ちゃいろ",
+      "answer2": "くろ",
+      "answer3": "しろ",
+      "answer4": "みどり",
+      "correct": "みどり",
+      "sound": "midori"
+    },
+    {
+      "question": "Purple",
+      "topic": "color",
+      "answer1": "あお",
+      "answer2": "むらさき",
+      "answer3": "あか",
+      "answer4": "きいろ",
+      "correct": "むらさき",
+      "sound": "murasaki"
+    },
+    {
+      "question": "Black",
+      "topic": "color",
+      "answer1": "しろ",
+      "answer2": "ちゃいろ",
+      "answer3": "みどり",
+      "answer4": "くろ",
+      "correct": "くろ",
+      "sound": "kuro"
+    },
+    {
+      "question": "White",
+      "topic": "color",
+      "answer1": "むらさき",
+      "answer2": "きいろ",
+      "answer3": "しろ",
+      "answer4": "だいだいいろ",
+      "correct": "しろ",
+      "sound": "shiro"
+    },
+    {
+      "question": "Pink",
+      "topic": "color",
+      "answer1": "みどり",
+      "answer2": "あか",
+      "answer3": "ピンク",
+      "answer4": "ももいろ",
+      "correct": "ピンク",
+      "sound": "pinku"
+    },
+    {
+      "question": "Gold",
+      "topic": "color",
+      "answer1": "きにろ",
+      "answer2": "ぎにろ",
+      "answer3": "くろ",
+      "answer4": "しろ",
+      "correct": "きにろ",
+      "sound": "kiniro"
+    },
+    {
+      "question": "Silver",
+      "topic": "color",
+      "answer1": "きにろ",
+      "answer2": "ぎにろ",
+      "answer3": "しろがねいろ",
+      "answer4": "ちゃいろ",
+      "correct": "ぎにろ",
+      "sound": "giniro"
+    },
+    {
+      "question": "Gray",
+      "topic": "color",
+      "answer1": "はいいろ",
+      "answer2": "ちゃいろ",
+      "answer3": "きいろ",
+      "answer4": "だいだいいろ",
+      "correct": "はいいろ",
+      "sound": "haiiro"
+    },
+    {
+      "question": "Rainbow colored",
+      "topic": "color",
+      "answer1": "きいろ",
+      "answer2": "しろ",
+      "answer3": "あお",
+      "answer4": "にじいろ",
+      "correct": "にじいろ",
+      "sound": "nijiiro"
+    },
+    {
+      "question": "Brown",
+      "topic": "color",
+      "answer1": "あお",
+      "answer2": "ちゃいろ",
+      "answer3": "くろ",
+      "answer4": "しろ",
+      "correct": "ちゃいろ",
+      "sound": "chairo"
+    },
+    {
+      "question": "Color",
+      "topic": "color",
+      "answer1": "あお",
+      "answer2": "むらさき",
+      "answer3": "いろ",
+      "answer4": "にじいろ",
+      "correct": "いろ",
+      "sound": "iro"
+    },
+    {
+      "question": "Orange",
+      "topic": "color",
+      "answer1": "おれんじ",
+      "answer2": "むらさき",
+      "answer3": "いろ",
+      "answer4": "にじいろ",
+      "correct": "おれんじ",
+      "sound": "orenji"
+    },
+    {
+      "topic": "greetings",
+      "question": "see you tomorrow",
+      "answer1": "またあした",
+      "answer2": "もし",
+      "answer3": "さようなら",
+      "answer4": "おやすみなさい",
+      "correct": "またあした",
+      "sound": "mataashita"
+    },
+    {
+      "topic": "greetings",
+      "question": "good afternoon",
+      "answer1": "おやすみなさい",
+      "answer2": "こんにちは",
+      "answer3": "さようなら",
+      "answer4": "また明日",
+      "correct": "こんにちは",
+      "sound": "konnichiwa"
+    },
+    {
+      "topic": "greetings",
+      "question": "good morning",
+      "answer1": "おはようございます",
+      "answer2": "おやすみなさい",
+      "answer3": "さようなら",
+      "answer4": "また明日",
+      "correct": "おはようございます",
+      "sound": "ohayougozaimasu"
+    },
+    {
+      "topic": "greetings",
+      "question": "good night",
+      "answer1": "おやすみなさい",
+      "answer2": "こんにちは",
+      "answer3": "さようなら",
+      "answer4": "また明日",
+      "correct": "おやすみなさい",
+      "sound": "oyasumimasai"
+    },
+    {
+      "topic": "greetings",
+      "question": "good bye",
+      "answer1": "おやすみなさい",
+      "answer2": "こんにちは",
+      "answer3": "さようなら",
+      "answer4": "また明日",
+      "correct": "さようなら",
+      "sound": "sayounara"
+    },
+    {
+      "topic": "greetings",
+      "question": "good evening",
+      "answer1": "おやすみなさい",
+      "answer2": "こんにちは",
+      "answer3": "さようなら",
+      "answer4": "こんばんは",
+      "correct": "こんばんは",
+      "sound": "konbanwa"
+    },
+    {
+      "topic": "greetings",
+      "question": "Hello (on the Telephone)",
+      "answer1": "もしもし",
+      "answer2": "こんにちは",
+      "answer3": "さようなら",
+      "answer4": "また明日",
+      "correct": "もしもし",
+      "sound": "moshimoshi"
+    },
+    {
+      "topic": "greetings",
+      "question": "farewell",
+      "answer1": "おやすみなさい",
+      "answer2": "こんにちは",
+      "answer3": "さようなら",
+      "answer4": "また明日",
+      "correct": "さようなら",
+      "sound": "sayounara"
+    },
+    {
+      "topic": "greetings",
+      "question": "You're welcome",
+      "answer1": "おやすみなさい",
+      "answer2": "こんにちは",
+      "answer3": "どういたしまして",
+      "answer4": "また明日",
+      "correct": "どういたしまして",
+      "sound": "none"
+    },
+    {
+      "topic": "greetings",
+      "question": "How are you?",
+      "answer1": "おやすみなさい",
+      "answer2": "こんにちは",
+      "answer3": "げんきですか",
+      "answer4": "また明日",
+      "correct": "げんきですか",
+      "sound": "none"
+    },
+    {
+      "topic": "greetings",
+      "question": "Talk to you later",
+      "answer1": "おやすみなさい",
+      "answer2": "こんにちは",
+      "answer3": "じゃまたね",
+      "answer4": "また明日",
+      "correct": "じゃまたね",
+      "sound": "none"
+    },
+    {
+      "topic": "greetings",
+      "question": "Have a nice day",
+      "answer1": "おやすみなさい",
+      "answer2": "こんにちは",
+      "answer3": "よい一日を",
+      "answer4": "また明日",
+      "correct": "よい一日を",
+      "sound": "none"
+    },
+    {
+      "topic": "greetings",
+      "question": "It's good to see you",
+      "answer1": "おやすみなさい",
+      "answer2": "こんにちは",
+      "answer3": "よろしくお願いします",
+      "answer4": "また明日",
+      "correct": "よろしくお願いします",
+      "sound": "none"
+    },
+    {
+      "topic": "greetings",
+      "question": "How is your day?",
+      "answer1": "おやすみなさい",
+      "answer2": "こんにちは",
+      "answer3": "今何時ですか",
+      "answer4": "また明日",
+      "correct": "今何時ですか",
+      "sound": "none"
+    },
+    {
+      "topic": "greetings",
+      "question": "Pleased to meet you",
+      "answer1": "おやすみなさい",
+      "answer2": "こんにちは",
+      "answer3": "はじめまして",
+      "answer4": "また明日",
+      "correct": "はじめまして",
+      "sound": "none"
+    },
+    {
+      "topic": "animals",
+      "question": "Cat",
+      "answer1": "やぎ",
+      "answer2": "ねこ",
+      "answer3": "さかな",
+      "answer4": "こいぬ",
+      "correct": "ねこ",
+      "sound": "neko"
+    },
+    {
+      "topic": "animals",
+      "question": "Dog",
+      "answer1": "さかな",
+      "answer2": "いぬ",
+      "answer3": "やぎ",
+      "answer4": "へび",
+      "correct": "いぬ",
+      "sound": "inu"
+    },
+    {
+      "topic": "animals",
+      "question": "Chicken",
+      "answer1": "へび",
+      "answer2": "こいぬ",
+      "answer3": "にわとり",
+      "answer4": "とら",
+      "correct": "にわとり",
+      "sound": "niwatori"
+    },
+    {
+      "topic": "animals",
+      "question": "Tiger",
+      "answer1": "ねこ",
+      "answer2": "へび",
+      "answer3": "くも",
+      "answer4": "とら",
+      "correct": "とら",
+      "sound": "tora"
+    },
+    {
+      "topic": "animals",
+      "question": "Bird",
+      "answer1": "ぞう",
+      "answer2": "やぎ",
+      "answer3": "さかな",
+      "answer4": "とり",
+      "correct": "とり",
+      "sound": "tori"
+    },
+    {
+      "topic": "animals",
+      "question": "Elephant",
+      "answer1": "とり",
+      "answer2": "いぬ",
+      "answer3": "さかな",
+      "answer4": "とら",
+      "correct": "ぞう",
+      "sound": "zou"
+    },
+    {
+      "topic": "animals",
+      "question": "Monkey",
+      "answer1": "ねこ",
+      "answer2": "へび",
+      "answer3": "さる",
+      "answer4": "とら",
+      "correct": "さる",
+      "sound": "saru"
+    },
+    {
+      "topic": "animals",
+      "question": "Wolf",
+      "answer1": "さる",
+      "answer2": "いぬ",
+      "answer3": "さかな",
+      "answer4": "おおかみ",
+      "correct": "おおかみ",
+      "sound": "ookami"
+    },
+    {
+      "topic": "animals",
+      "question": "Cow",
+      "answer1": "さる",
+      "answer2": "うし",
+      "answer3": "らいおん",
+      "answer4": "とら",
+      "correct": "うし",
+      "sound": "ushi"
+    },
+    {
+      "topic": "animals",
+      "question": "Horse",
+      "answer1": "うさぎ",
+      "answer2": "いぬ",
+      "answer3": "さかな",
+      "answer4": "うま",
+      "correct": "うま",
+      "sound": "uma"
+    },
+    {
+      "topic": "animals",
+      "question": "Rabbit",
+      "answer1": "ねこ",
+      "answer2": "うさぎ",
+      "answer3": "さかな",
+      "answer4": "とら",
+      "correct": "うさぎ",
+      "sound": "usagi"
+    },
+    {
+      "topic": "animals",
+      "question": "animal",
+      "answer1": "くも",
+      "answer2": "へび",
+      "answer3": "かえる",
+      "answer4": "どうぶつ",
+      "correct": "どうぶつ",
+      "sound": "doubutsu"
+    },
+    {
+      "topic": "animals",
+      "question": "Rat",
+      "answer1": "かえる",
+      "answer2": "ねずみ",
+      "answer3": "さかな",
+      "answer4": "へび",
+      "correct": "ねずみ",
+      "sound": "nezumi"
+    },
+    {
+      "topic": "animals",
+      "question": "Snake",
+      "answer1": "へび",
+      "answer2": "きりん",
+      "answer3": "さかな",
+      "answer4": "ペンギン",
+      "correct": "へび",
+      "sound": "hebi"
+    },
+    {
+      "topic": "animals",
+      "question": "Sheep",
+      "answer1": "さかな",
+      "answer2": "ペンギン",
+      "answer3": "ひつじ",
+      "answer4": "とら",
+      "correct": "ひつじ",
+      "sound": "hitsuji"
+    },
+    {
+      "topic": "adjectives",
+      "question": "Big",
+      "answer1": "おおきい",
+      "answer2": "かわいい",
+      "answer3": "あつい",
+      "answer4": "やすい",
+      "correct": "おおきい",
+      "sound": "ookii"
+    },
+    {
+      "topic": "adjectives",
+      "question": "Small",
+      "answer1": "かわいい",
+      "answer2": "ちいさい",
+      "answer3": "やすい",
+      "answer4": "あつい",
+      "correct": "ちいさい",
+      "sound": "chiisai"
+    },
+    {
+      "topic": "adjectives",
+      "question": "Hot",
+      "answer1": "あつい",
+      "answer2": "かわいい",
+      "answer3": "たかい",
+      "answer4": "やすい",
+      "correct": "あつい",
+      "sound": "atsui"
+    },
+    {
+      "topic": "adjectives",
+      "question": "Cold",
+      "answer1": "さむい",
+      "answer2": "かわいい",
+      "answer3": "あつい",
+      "answer4": "やすい",
+      "correct": "さむい",
+      "sound": "samui"
+    },
+    {
+      "topic": "adjectives",
+      "question": "Beautiful",
+      "answer1": "うつくしい",
+      "answer2": "ちいさい",
+      "answer3": "さむい",
+      "answer4": "おそい",
+      "correct": "うつくしい",
+      "sound": "utsukushii"
+    },
+    {
+      "topic": "adjectives",
+      "question": "old",
+      "answer1": "ふるい",
+      "answer2": "ちいさい",
+      "answer3": "うつくしい",
+      "answer4": "やすい",
+      "correct": "ふるい",
+      "sound": "furui"
+    },
+    {
+      "topic": "adjectives",
+      "question": "Fast",
+      "answer1": "おそい",
+      "answer2": "みにくい",
+      "answer3": "あつい",
+      "answer4": "はやい",
+      "correct": "はやい",
+      "sound": "hayai"
+    },
+    {
+      "topic": "adjectives",
+      "question": "Slow",
+      "answer1": "おそい",
+      "answer2": "うつくし",
+      "answer3": "あつい",
+      "answer4": "おいしい",
+      "correct": "おそい",
+      "sound": "osoi"
+    },
+    {
+      "topic": "adjectives",
+      "question": "Delicious",
+      "answer1": "おいしい",
+      "answer2": "すてき",
+      "answer3": "すばらしい",
+      "answer4": "あつい",
+      "correct": "おいしい",
+      "sound": "oishii"
+    },
+    {
+      "topic": "adjectives",
+      "question": "Bad",
+      "answer1": "かわいい",
+      "answer2": "わるい",
+      "answer3": "すてき",
+      "answer4": "すばらしい",
+      "correct": "わるい",
+      "sound": "warui"
+    },
+    {
+      "topic": "adjectives",
+      "question": "Funny",
+      "answer1": "ひま",
+      "answer2": "げんき",
+      "answer3": "たのしい",
+      "answer4": "いそがしい",
+      "correct": "たのしい",
+      "sound": "tanoshii"
+    },
+    {
+      "topic": "adjectives",
+      "question": "new",
+      "answer1": "おたく",
+      "answer2": "あたらしい",
+      "answer3": "かわいい",
+      "answer4": "うれしい",
+      "correct": "あたらしい",
+      "sound": "atarashii"
+    },
+    {
+      "topic": "adjectives",
+      "question": "long",
+      "answer1": "やさしい",
+      "answer2": "たかい",
+      "answer3": "ながい",
+      "answer4": "かるい",
+      "correct": "ながい",
+      "sound": "nagai"
+    },
+    {
+      "topic": "adjectives",
+      "question": "cool",
+      "answer1": "くろい",
+      "answer2": "かっこい",
+      "answer3": "たかい",
+      "answer4": "おいしい",
+      "correct": "かっこい",
+      "sound": "kakkoii"
+    },
+    {
+      "topic": "adjectives",
+      "question": "Tall",
+      "answer1": "たかい",
+      "answer2": "かわいい",
+      "answer3": "ちいさい",
+      "answer4": "あたたかい",
+      "correct": "たかい",
+      "sound": "takai"
+    },
+    {
+      "topic": "adjectives",
+      "question": "short",
+      "answer1": "かたい",
+      "answer2": "しずか",
+      "answer3": "みじかい",
+      "answer4": "あつい",
+      "correct": "みじかい",
+      "sound": "mijikai"
+    },
+    {
+      "topic": "seasons",
+      "question": "Spring",
+      "answer1": "ふゆ",
+      "answer2": "あき",
+      "answer3": "なつ",
+      "answer4": "はる",
+      "correct": "はる",
+      "sound": "haru"
+    },
+    {
+      "topic": "seasons",
+      "question": "Summer",
+      "answer1": "あき",
+      "answer2": "ふゆ",
+      "answer3": "はる",
+      "answer4": "なつ",
+      "correct": "なつ",
+      "sound": "natsu"
+    },
+    {
+      "topic": "seasons",
+      "question": "Autumn",
+      "answer1": "なつ",
+      "answer2": "ふゆ",
+      "answer3": "あき",
+      "answer4": "はる",
+      "correct": "あき",
+      "sound": "aki"
+    },
+    {
+      "topic": "seasons",
+      "question": "Winter",
+      "answer1": "なつ",
+      "answer2": "あき",
+      "answer3": "ふゆ",
+      "answer4": "はる",
+      "correct": "ふゆ",
+      "sound": "fuyu"
+    },
+    {
+      "topic": "seasons",
+      "question": "Sunny",
+      "answer1": "はる",
+      "answer2": "あめ",
+      "answer3": "はれ",
+      "answer4": "かぜ",
+      "correct": "はれ",
+      "sound": "none"
+    },
+    {
+      "topic": "seasons",
+      "question": "Rainy",
+      "answer1": "くもり",
+      "answer2": "なつ",
+      "answer3": "はれ",
+      "answer4": "かぜ",
+      "correct": "あめ",
+      "sound": "none"
+    },
+    {
+      "topic": "seasons",
+      "question": "Cloudy",
+      "answer1": "かぜ",
+      "answer2": "あめ",
+      "answer3": "はれ",
+      "answer4": "くもり",
+      "correct": "くもり",
+      "sound": "none"
+    },
+    {
+      "topic": "seasons",
+      "question": "Windy",
+      "answer1": "てんき",
+      "answer2": "ゆき",
+      "answer3": "かぜ",
+      "answer4": "ふゆ",
+      "correct": "かぜ",
+      "sound": "none"
+    },
+    {
+      "topic": "seasons",
+      "question": "Cold",
+      "answer1": "さむい",
+      "answer2": "あつい",
+      "answer3": "あめ",
+      "answer4": "かぜ",
+      "correct": "さむい",
+      "sound": "none"
+    },
+    {
+      "topic": "seasons",
+      "question": "Hot",
+      "answer1": "てんき",
+      "answer2": "あつい",
+      "answer3": "ふゆ",
+      "answer4": "かぜ",
+      "correct": "あつい",
+      "sound": "none"
+    },
+    {
+      "topic": "seasons",
+      "question": "hail",
+      "answer1": "きせつ",
+      "answer2": "はる",
+      "answer3": "あき",
+      "answer4": "ひょう",
+      "correct": "ひょう",
+      "sound": "hyou"
+    },
+    {
+      "topic": "seasons",
+      "question": "season",
+      "answer1": "あき",
+      "answer2": "きせつ",
+      "answer3": "てんき",
+      "answer4": "なつ",
+      "correct": "きせつ",
+      "sound": "kisetsu"
+    },
+    {
+      "topic": "seasons",
+      "question": "weather",
+      "answer1": "なつ",
+      "answer2": "あめ",
+      "answer3": "きせつ",
+      "answer4": "てんき",
+      "correct": "てんき",
+      "sound": "tenki"
+    },
+    {
+      "topic": "seasons",
+      "question": "Snowy",
+      "answer1": "かぜ",
+      "answer2": "あめ",
+      "answer3": "はれ",
+      "answer4": "ゆき",
+      "correct": "ゆき",
+      "sound": "yuki"
+    },
+    {
+      "topic": "seasons",
+      "question": "Foggy",
+      "answer1": "くもり",
+      "answer2": "あめ",
+      "answer3": "はかり",
+      "answer4": "はれ",
+      "correct": "はかり",
+      "sound": "none"
+    },
+    {
+      "topic": "body",
+      "question": "Head",
+      "answer1": "て",
+      "answer2": "くび",
+      "answer3": "あし",
+      "answer4": "あたま",
+      "correct": "あたま",
+      "sound": "atama"
+    },
+    {
+      "topic": "body",
+      "question": "Arm",
+      "answer1": "みみ",
+      "answer2": "ひじ",
+      "answer3": "うで",
+      "answer4": "くち",
+      "correct": "うで",
+      "sound": "ude"
+    },
+    {
+      "topic": "body",
+      "question": "Leg",
+      "answer1": "くび",
+      "answer2": "あし",
+      "answer3": "て",
+      "answer4": "ひざ",
+      "correct": "あし",
+      "sound": "ashi"
+    },
+    {
+      "topic": "body",
+      "question": "Eye",
+      "answer1": "みみ",
+      "answer2": "め",
+      "answer3": "うで",
+      "answer4": "くち",
+      "correct": "め",
+      "sound": "me"
+    },
+    {
+      "topic": "body",
+      "question": "Ear",
+      "answer1": "みみ",
+      "answer2": "ひじ",
+      "answer3": "うで",
+      "answer4": "くち",
+      "correct": "みみ",
+      "sound": "mimi"
+    },
+    {
+      "topic": "body",
+      "question": "Hand",
+      "answer1": "くび",
+      "answer2": "あし",
+      "answer3": "て",
+      "answer4": "ひざ",
+      "correct": "て",
+      "sound": "te"
+    },
+    {
+      "topic": "body",
+      "question": "Mouth",
+      "answer1": "くび",
+      "answer2": "あし",
+      "answer3": "て",
+      "answer4": "くち",
+      "correct": "くち",
+      "sound": "kuchi"
+    },
+    {
+      "topic": "body",
+      "question": "Nose",
+      "answer1": "はな",
+      "answer2": "ひじ",
+      "answer3": "うで",
+      "answer4": "みみ",
+      "correct": "はな",
+      "sound": "hana"
+    },
+    {
+      "topic": "body",
+      "question": "Foot",
+      "answer1": "くび",
+      "answer2": "あし",
+      "answer3": "て",
+      "answer4": "ひざ",
+      "correct": "あし",
+      "sound": "ashi"
+    },
+    {
+      "topic": "body",
+      "question": "Chest",
+      "answer1": "くび",
+      "answer2": "むね",
+      "answer3": "うで",
+      "answer4": "ひざ",
+      "correct": "むね",
+      "sound": "mune"
+    },
+    {
+      "topic": "body",
+      "question": "Shoulder",
+      "answer1": "うで",
+      "answer2": "ひじ",
+      "answer3": "くび",
+      "answer4": "かた",
+      "correct": "かた",
+      "sound": "kata"
+    },
+    {
+      "topic": "body",
+      "question": "Stomach",
+      "answer1": "かた",
+      "answer2": "くび",
+      "answer3": "うで",
+      "answer4": "お腹",
+      "correct": "お腹",
+      "sound": "onaka"
+    },
+    {
+      "topic": "body",
+      "question": "Knees",
+      "answer1": "て",
+      "answer2": "ひざ",
+      "answer3": "こし",
+      "answer4": "あたま",
+      "correct": "ひざ",
+      "sound": "hiza"
+    },
+    {
+      "topic": "body",
+      "question": "Teeth",
+      "answer1": "くち",
+      "answer2": "はな",
+      "answer3": "みみ",
+      "answer4": "は",
+      "correct": "は",
+      "sound": "ha"
+    },
+    {
+      "topic": "body",
+      "question": "body",
+      "answer1": "体",
+      "answer2": "ひじ",
+      "answer3": "うで",
+      "answer4": "かた",
+      "correct": "体",
+      "sound": "karada"
+    },
+    {
+      "topic":"school",
+      "question": "Physical Education (P.E)",
+      "answer1": "たいく",
+      "answer2": "りか",
+      "answer3": "すうがく",
+      "answer4": "ほん",
+      "correct": "たいく",
+      "sound": "taiiku"
+    },
+    {
+      "topic":"school",
+      "question": "Mathematics (math)",
+      "answer1": "ともだち",
+      "answer2": "せんぱい",
+      "answer3": "ちゅうがっこう",
+      "answer4": "すうがく",
+      "correct": "すうがく",
+      "sound": "suugaku"
+    },
+    {
+      "topic":"school",
+      "question": "good job, well done",
+      "answer1": "ともだち",
+      "answer2": "せんぱい",
+      "answer3": "よくできました",
+      "answer4": "ほん",
+      "correct": "よくできました",
+      "sound": "yokudekimashita"
+    },
+    {
+      "topic":"school",
+      "question": "Primary School",
+      "answer1": "しょうがっこう",
+      "answer2": "せんぱい",
+      "answer3": "よくできました",
+      "answer4": "ほん",
+      "correct": "しょうがっこう",
+      "sound": "shougakkou"
+    },
+    {
+      "topic":"school",
+      "question": "Friend",
+      "answer1": "せんぱい",
+      "answer2": "しょうがっこう",
+      "answer3": "じゅぎょう",
+      "answer4": "ともだち",
+      "correct": "ともだち",
+      "sound": "tomodachi"
+    },
+    {
+      "topic":"school",
+      "question": "One's senior",
+      "answer1": "ちゅうがっこう",
+      "answer2": "しょうがっこう",
+      "answer3": "せんぱい",
+      "answer4": "ともだち",
+      "correct": "せんぱい",
+      "sound": "senpai"
+    },
+    {
+      "topic":"school",
+      "question": "Science",
+      "answer1": "たいく",
+      "answer2": "りか",
+      "answer3": "すうがく",
+      "answer4": "ほん",
+      "correct": "りか",
+      "sound": "rika"
+    },
+    {
+      "topic":"school",
+      "question": "book(s)",
+      "answer1": "すうがく",
+      "answer2": "ほん",
+      "answer3": "たいく",
+      "answer4": "りか",
+      "correct": "ほん",
+      "sound": "hon"
+    },
+    {
+      "topic":"school",
+      "question": "Lesson, class",
+      "answer1": "しょうがっこう",
+      "answer2": "ちゅうがっこう",
+      "answer3": "すうがく",
+      "answer4": "じゅぎょう",
+      "correct": "じゅぎょう",
+      "sound": "jugyou"
+    },
+    {
+      "topic":"school",
+      "question": "Junior High school",
+      "answer1": "じゅぎょう",
+      "answer2": "ちゅうがっこう",
+      "answer3": "すうがく",
+      "answer4": "しょうがっこう",
+      "correct": "ちゅうがっこう",
+      "sound": "chuugakkou"
+    },
+    {
+      "topic":"school",
+      "question": "Art",
+      "answer1": "せんせい",
+      "answer2": "じゅぎょう",
+      "answer3": "びじゅつ",
+      "answer4": "きゅうしょく",
+      "correct": "びじゅつ",
+      "sound": "bijutsu"
+    },
+    {
+      "topic":"school",
+      "question": "library",
+      "answer1": "じゅぎょう",
+      "answer2": "あそびじかん",
+      "answer3": "としょかん",
+      "answer4": "かいしょく",
+      "correct": "としょかん",
+      "sound": "toshokan"
+    },
+    {
+      "topic":"school",
+      "question": "students",
+      "answer1": "せんぱい",
+      "answer2": "がくせい",
+      "answer3": "かぞく",
+      "answer4": "ともだち",
+      "correct": "がくせい",
+      "sound": "gakusei"
+    },
+    {
+      "topic":"school",
+      "question": "History",
+      "answer1": "くつ",
+      "answer2": "れきし",
+      "answer3": "ほん",
+      "answer4": "がっこう",
+      "correct": "れきし",
+      "sound": "rekishi"
+    },
+    {
+      "topic":"school",
+      "question": "desk",
+      "answer1": "せいふく",
+      "answer2": "ほん",
+      "answer3": "いす",
+      "answer4": "つくえ",
+      "correct": "つくえ",
+      "sound": "tsukue"
+    },
+    {
+      "topic":"essential",
+      "question": "I'm fine/well",
+      "answer1": "じゃあまた",
+      "answer2": "人",
+      "answer3": "わかります",
+      "answer4": "元気です",
+      "correct": "元気です",
+      "sound": "genkidesu"
+    },
+    {
+      "topic":"essential",
+      "question": "I",
+      "answer1": "私",
+      "answer2": "じゃあまた",
+      "answer3": "元気です",
+      "answer4": "ください",
+      "correct": "私",
+      "sound": "watashi"
+    },
+    {
+      "topic":"essential",
+      "question": "I understand",
+      "answer1": "ようこそ",
+      "answer2": "僕",
+      "answer3": "はい",
+      "answer4": "わかります",
+      "correct": "わかります",
+      "sound": "wakarimasu"
+    },
+    {
+      "topic":"essential",
+      "question": "yes",
+      "answer1": "はい",
+      "answer2": "人",
+      "answer3": "元気です",
+      "answer4": "ようこそ",
+      "correct": "はい",
+      "sound": "hai"
+    },
+    {
+      "topic":"essential",
+      "question": "welcome",
+      "answer1": "じゃあまた",
+      "answer2": "どうぞ",
+      "answer3": "僕",
+      "answer4": "ようこそ",
+      "correct": "ようこそ",
+      "sound": "youkoso"
+    },
+    {
+      "topic":"essential",
+      "question": "see you later",
+      "answer1": "どうぞ",
+      "answer2": "じゃあまた",
+      "answer3": "僕",
+      "answer4": "ください",
+      "correct": "じゃあまた",
+      "sound": "nihon"
+    },
+    {
+      "topic":"essential",
+      "question": "I (for males)",
+      "answer1": "元気です",
+      "answer2": "どうぞ",
+      "answer3": "人",
+      "answer4": "僕",
+      "correct": "僕",
+      "sound": "boku"
+    },
+    {
+      "topic":"essential",
+      "question": "here you go",
+      "answer1": "どうぞ",
+      "answer2": "僕",
+      "answer3": "じゃあまた",
+      "answer4": "ようこそ",
+      "correct": "どうぞ",
+      "sound": "douzo"
+    },
+    {
+      "topic":"essential",
+      "question": "person",
+      "answer1": "じゃあまた",
+      "answer2": "人",
+      "answer3": "わかります",
+      "answer4": "私",
+      "correct": "人",
+      "sound": "hito"
+    },
+    {
+      "topic":"essential",
+      "question": "please",
+      "answer1": "わかります",
+      "answer2": "ください",
+      "answer3": "人",
+      "answer4": "はい",
+      "correct": "ください",
+      "sound": "kudasai"
+    },
+    {
+      "topic":"essential",
+      "question": "Japan",
+      "answer1": "どうぞ",
+      "answer2": "にほん",
+      "answer3": "ぼく",
+      "answer4": "ください",
+      "correct": "にほん",
+      "sound": "nihon"
+    },
+    {
+      "topic":"essential",
+      "question": "name",
+      "answer1": "なまえ",
+      "answer2": "ひと",
+      "answer3": "ぼく",
+      "answer4": "どうぞ",
+      "correct": "なまえ",
+      "sound": "namae"
+    },
+    {
+      "topic":"essential",
+      "question": "no",
+      "answer1": "はい",
+      "answer2": "いいえ",
+      "answer3": "どうぞ",
+      "answer4": "わたし",
+      "correct": "いいえ",
+      "sound": "iie"
+    },
+    {
+      "topic":"essential",
+      "question": "you",
+      "answer1": "わたし",
+      "answer2": "あなた",
+      "answer3": "いいえ",
+      "answer4": "はい",
+      "correct": "あなた",
+      "sound": "anata"
+    },
+    {
+      "topic":"essential",
+      "question": "excuse me",
+      "answer1": "すみません",
+      "answer2": "ありがとう",
+      "answer3": "ください",
+      "answer4": "わたし",
+      "correct": "すみません",
+      "sound": "sumimasen"
+    },
+    {
+      "topic":"essential",
+      "question": "I understand",
+      "answer1": "わかります",
+      "answer2": "わかりません",
+      "answer3": "じゃあまた",
+      "answer4": "あなた",
+      "correct": "わかりません",
+      "sound": "wakarimasen"
+    },
+    {
+      "topic":"verbs",
+      "question": "there is (inanimate object)",
+      "answer1": "あります",
+      "answer2": "教えます",
+      "answer3": "開けます",
+      "answer4": "言います",
+      "correct": "あります",
+      "sound": "arimasu"
+    },
+    {
+      "topic":"verbs",
+      "question": "to write",
+      "answer1": "教えます",
+      "answer2": "開けます",
+      "answer3": "書きます",
+      "answer4": "話します",
+      "correct": "書きます",
+      "sound": "kakimasu"
+    },
+    {
+      "topic":"verbs",
+      "question": "to listen",
+      "answer1": "言います",
+      "answer2": "分かります",
+      "answer3": "教えます",
+      "answer4": "聞きます",
+      "correct": "聞きます",
+      "sound": "kikimasu"
+    },
+    {
+      "topic":"verbs",
+      "question": "to open",
+      "answer1": "開けます",
+      "answer2": "練習します",
+      "answer3": "話します",
+      "answer4": "聞きます",
+      "correct": "開けます",
+      "sound": "akemasu"
+    },
+    {
+      "topic":"verbs",
+      "question": "to teach",
+      "answer1": "教えます",
+      "answer2": "開けます",
+      "answer3": "話します",
+      "answer4": "練習します",
+      "correct": "教えます",
+      "sound": "oshiemasu"
+    },
+    {
+      "topic":"verbs",
+      "question": "to practice",
+      "answer1": "あります",
+      "answer2": "練習します",
+      "answer3": "話します",
+      "answer4": "開けます",
+      "correct": "練習します",
+      "sound": "renshuushimasu"
+    },
+    {
+      "topic":"verbs",
+      "question": "to say",
+      "answer1": "聞きます",
+      "answer2": "買います",
+      "answer3": "書きます",
+      "answer4": "言います",
+      "correct": "言います",
+      "sound": "iimasu"
+    },
+    {
+      "topic":"verbs",
+      "question": "to understand",
+      "answer1": "聞きます",
+      "answer2": "練習します",
+      "answer3": "書きます",
+      "answer4": "分かります",
+      "correct": "分かります",
+      "sound": "wakarimasu"
+    },
+    {
+      "topic":"verbs",
+      "question": "to buy",
+      "answer1": "かきます",
+      "answer2": "おしえます",
+      "answer3": "かいます",
+      "answer4": "あけます",
+      "correct": "かいます",
+      "sound": "kaimasu"
+    },
+    {
+      "topic":"verbs",
+      "question": "to speak",
+      "answer1": "れんしゅうします",
+      "answer2": "かいます",
+      "answer3": "あります",
+      "answer4": "はなします",
+      "correct": "はなします",
+      "sound": "hanashimasu"
+    },
+    {
+      "topic":"verbs",
+      "question": "to eat",
+      "answer1": "たべます",
+      "answer2": "あそびます",
+      "answer3": "しにます",
+      "answer4": "つかいます",
+      "correct": "たべます",
+      "sound": "tabemasu"
+    },
+    {
+      "topic":"verbs",
+      "question": "to walk",
+      "answer1": "かいます",
+      "answer2": "あるきます",
+      "answer3": "あります",
+      "answer4": "いらっしゃいます",
+      "correct": "あるきます",
+      "sound": "arukimasu"
+    },
+    {
+      "topic":"verbs",
+      "question": "to learn",
+      "answer1": "おきます",
+      "answer2": "ならいます",
+      "answer3": "あす",
+      "answer4": "いく",
+      "correct": "ならいます",
+      "sound": "naraimasu"
+    },
+    {
+      "topic": "verbs",
+      "question": "to run",
+      "answer1": "いく",
+      "answer2": "はしります",
+      "answer3": "たべます",
+      "answer4": "よみます",
+      "correct": "はしります",
+      "sound": "hashirimasu"
+    },
+    {
+      "topic": "verbs",
+      "question": "to watch",
+      "answer1": "つぶいます",
+      "answer2": "たちます",
+      "answer3": "みます",
+      "answer4": "かえります",
+      "correct": "みます",
+      "sound": "mimasu"
+    },
+
+    {
+      "topic": "food",
+      "question": "pineapple",
+      "answer1": "パイナップル",
+      "answer2": "ナシ",
+      "answer3": "スイカ",
+      "answer4": "玉ねぎ",
+      "correct": "パイナップル",
+      "sound": "painappuru"
+    },
+    {
+      "topic": "food",
+      "question": "vegetables",
+      "answer1": "玉ねぎ",
+      "answer2": "牛肉",
+      "answer3": "スイカ",
+      "answer4": "野菜",
+      "correct": "野菜",
+      "sound": "yasai"
+    },
+    {
+      "topic": "food",
+      "question": "pear",
+      "answer1": "ナシ",
+      "answer2": "パイナップル",
+      "answer3": "スイカ",
+      "answer4": "卵",
+      "correct": "ナシ",
+      "sound": "nashi"
+    },
+    {
+      "topic": "food",
+      "question": "onion",
+      "answer1": "パイナップル",
+      "answer2": "玉ねぎ",
+      "answer3": "スイカ",
+      "answer4": "野菜",
+      "correct": "玉ねぎ",
+      "sound": "tamanegi"
+    },
+    {
+      "topic": "food",
+      "question": "bread",
+      "answer1": "ナシ",
+      "answer2": "パン",
+      "answer3": "ステーキ",
+      "answer4": "卵",
+      "correct": "パン",
+      "sound": "pan"
+    },
+    {
+      "topic": "food",
+      "question": "watermelon",
+      "answer1": "スイカ",
+      "answer2": "ナシ",
+      "answer3": "野菜",
+      "answer4": "パン",
+      "correct": "スイカ",
+      "sound": "suika"
+    },
+    {
+      "topic": "food",
+      "question": "egg",
+      "answer1": "スイカ",
+      "answer2": "ナシ",
+      "answer3": "卵",
+      "answer4": "玉ねぎ",
+      "correct": "卵",
+      "sound": "tamago"
+    },
+    {
+      "topic": "food",
+      "question": "beef",
+      "answer1": "牛肉",
+      "answer2": "玉ねぎ",
+      "answer3": "卵",
+      "answer4": "野菜",
+      "correct": "牛肉",
+      "sound": "gyuuniku"
+    },
+    {
+      "topic": "food",
+      "question": "candy;sweets",
+      "answer1": "卵",
+      "answer2": "野菜",
+      "answer3": "ナシ",
+      "answer4": "お菓子",
+      "correct": "お菓子",
+      "sound": "okashi"
+    },
+    {
+      "topic": "food",
+      "question": "steak",
+      "answer1": "卵",
+      "answer2": "お菓子",
+      "answer3": "ナシ",
+      "answer4": "ステーキ",
+      "correct": "ステーキ",
+      "sound": "suteeki"
+    },
+    {
+      "topic": "food",
+      "question": "rice",
+      "answer1": "もち",
+      "answer2": "しお",
+      "answer3": "ごはん",
+      "answer4": "にぎり",
+      "correct": "ごはん",
+      "sound": "gohan"
+    },
+    {
+      "topic": "food",
+      "question": "fish",
+      "answer1": "たこ",
+      "answer2": "まぐろ",
+      "answer3": "えび",
+      "answer4": "さかな",
+      "correct": "さかな",
+      "sound": "sakana"
+    },
+    {
+      "topic": "food",
+      "question": "tea",
+      "answer1": "お茶",
+      "answer2": "そば",
+      "answer3": "焼きそば",
+      "answer4": "うどん",
+      "correct": "お茶",
+      "sound": "ocha"
+    },
+    {
+      "topic": "food",
+      "question": "apple",
+      "answer1": "みかん",
+      "answer2": "りんご",
+      "answer3": "いちご",
+      "answer4": "なし",
+      "correct": "りんご",
+      "sound": "ringo"
+    },
+    {
+      "topic": "food",
+      "question": "cake",
+      "answer1": "果物",
+      "answer2": "牛乳",
+      "answer3": "ケーキ",
+      "answer4": "おかし",
+      "correct": "ケーキ",
+      "sound": "keeki"
+    },
+    {
+      "topic": "family",
+      "question": "parents",
+      "answer1": "りょうしん",
+      "answer2": "こども",
+      "answer3": "むすめ",
+      "answer4": "いもうと",
+      "correct": "りょうしん",
+      "sound": "ryoushin"
+    },
+    {
+      "topic": "family",
+      "question": "child(ren)",
+      "answer1": "こども",
+      "answer2": "いもうと",
+      "answer3": "さんにん",
+      "answer4": "じゅうにん",
+      "correct": "こども",
+      "sound": "kodomo"
+    },
+    {
+      "topic": "family",
+      "question": "younger sister",
+      "answer1": "いもうと",
+      "answer2": "しちにん",
+      "answer3": "りょうしん",
+      "answer4": "ごにん",
+      "correct": "いもうと",
+      "sound": "imouto"
+    },
+    {
+      "topic": "family",
+      "question": "5 people",
+      "answer1": "おとうさん",
+      "answer2": "りょうしん",
+      "answer3": "ごにん",
+      "answer4": "さんにん",
+      "correct": "ごにん",
+      "sound": "gonin"
+    },
+    {
+      "topic": "family",
+      "question": "10 people",
+      "answer1": "りょうしん",
+      "answer2": "さんにん",
+      "answer3": "いもうと",
+      "answer4": "じゅうにん",
+      "correct": "じゅうにん",
+      "sound": "juunin"
+    },
+    {
+      "topic": "family",
+      "question": "daughter",
+      "answer1": "しちにん",
+      "answer2": "むすめ",
+      "answer3": "ごにん",
+      "answer4": "さんにん",
+      "correct": "むすめ",
+      "sound": "musume"
+    },
+    {
+      "topic": "family",
+      "question": "father",
+      "answer1": "しちにん",
+      "answer2": "じゅうにん",
+      "answer3": "むすめ",
+      "answer4": "おとうさん",
+      "correct": "おとうさん",
+      "sound": "otousan"
+    },
+    {
+      "topic": "family",
+      "question": "1 person",
+      "answer1": "ひとり",
+      "answer2": "しちにん",
+      "answer3": "むすめ",
+      "answer4": "こども",
+      "correct": "ひとり",
+      "sound": "hitori"
+    },
+    {
+      "topic": "family",
+      "question": "7 people",
+      "answer1": "じゅうにん",
+      "answer2": "しちにん",
+      "answer3": "ひとり",
+      "answer4": "おとうさん",
+      "correct": "しちにん",
+      "sound": "shichinin"
+    },
+    {
+      "topic": "family",
+      "question": "3 people",
+      "answer1": "さんにん",
+      "answer2": "しちにん",
+      "answer3": "いもうと",
+      "answer4": "おとうせん",
+      "correct": "さんにん",
+      "sound": "sannin"
+    },
+    {
+      "topic": "family",
+      "question": "son",
+      "answer1": "じゅうにん",
+      "answer2": "おとうと",
+      "answer3": "おねえさん",
+      "answer4": "むすこ",
+      "correct": "むすこ",
+      "sound": "musuko"
+    },
+    {
+      "topic": "family",
+      "question": "mother",
+      "answer1": "いもうと",
+      "answer2": "お母さん",
+      "answer3": "むすこ",
+      "answer4": "むすめ",
+      "correct": "お母さん",
+      "sound": "okaasan"
+    },
+    {
+      "topic": "family",
+      "question": "uncle",
+      "answer1": "おじさん",
+      "answer2": "いもうと",
+      "answer3": "むすこ",
+      "answer4": "さんにん",
+      "correct": "おじさん",
+      "sound": "ojiisan"
+    },
+    {
+      "topic": "family",
+      "question": "younger brother",
+      "answer1": "むすこ",
+      "answer2": "おとうと",
+      "answer3": "こども",
+      "answer4": "おじ",
+      "correct": "おとうと",
+      "sound": "otouto"
+    },
+    {
+      "topic": "family",
+      "question": "aunty",
+      "answer1": "おばさん",
+      "answer2": "おじ",
+      "answer3": "ははおや",
+      "answer4": "こども",
+      "correct": "おばさん",
+      "sound": "obaasan"
+    },
+    {
+      "topic": "general",
+      "question": "how much(price)",
+      "answer1": "いくら",
+      "answer2": "いくつ",
+      "answer3": "どう",
+      "answer4": "だれ",
+      "correct": "いくら",
+      "sound": "ikura"
+    },
+    {
+      "topic": "general",
+      "question": "who",
+      "answer1": "いくら",
+      "answer2": "だれ",
+      "answer3": "たいてい",
+      "answer4": "よく",
+      "correct": "だれ",
+      "sound": "dare"
+    },
+    {
+      "topic": "general",
+      "question": "always",
+      "answer1": "どく",
+      "answer2": "いつも",
+      "answer3": "よく",
+      "answer4": "たまに",
+      "correct": "いつも",
+      "sound": "itsumo"
+    },
+    {
+      "topic": "general",
+      "question": "not at all",
+      "answer1": "どく",
+      "answer2": "よく",
+      "answer3": "たまに",
+      "answer4": "ぜんぜん",
+      "correct": "ぜんぜん",
+      "sound": "zenzen"
+    },
+    {
+      "topic": "general",
+      "question": "occasionally",
+      "answer1": "たまに",
+      "answer2": "だれ",
+      "answer3": "よく",
+      "answer4": "いつも",
+      "correct": "たまに",
+      "sound": "tamani"
+    },
+    {
+      "topic": "general",
+      "question": "where",
+      "answer1": "たいてい",
+      "answer2": "どう",
+      "answer3": "いくつ",
+      "answer4": "どこ",
+      "correct": "どこ",
+      "sound": "doko"
+    },
+    {
+      "topic": "general",
+      "question": "how",
+      "answer1": "ぜんぜん",
+      "answer2": "いつも",
+      "answer3": "どく",
+      "answer4": "どう",
+      "correct": "どう",
+      "sound": "dou"
+    },
+    {
+      "topic": "general",
+      "question": "usually",
+      "answer1": "いくつ",
+      "answer2": "どこ",
+      "answer3": "たいてい",
+      "answer4": "いくら",
+      "correct": "たいてい",
+      "sound": "taitei"
+    },
+    {
+      "topic": "general",
+      "question": "often",
+      "answer1": "よく",
+      "answer2": "いくつ",
+      "answer3": "どう",
+      "answer4": "どこ",
+      "correct": "よく",
+      "sound": "yoku"
+    },
+    {
+      "topic": "general",
+      "question": "how many",
+      "answer1": "全然",
+      "answer2": "よく",
+      "answer3": "たいてい",
+      "answer4": "いくつ",
+      "correct": "いくつ",
+      "sound": "ikutsu"
+    },
+    {
+      "topic": "general",
+      "question": "rarely",
+      "answer1": "よう",
+      "answer2": "いくつ",
+      "answer3": "たまに",
+      "answer4": "だれ",
+      "correct": "滅多に",
+      "sound": "mettani"
+    },
+    {
+      "topic": "general",
+      "question": "what",
+      "answer1": "何",
+      "answer2": "いくつ",
+      "answer3": "どく",
+      "answer4": "どう",
+      "correct": "何",
+      "sound": "nani"
+    },
+    {
+      "topic": "general",
+      "question": "when",
+      "answer1": "いつ",
+      "answer2": "いくつ",
+      "answer3": "どく",
+      "answer4": "何",
+      "correct": "いつ",
+      "sound": "itsu"
+    },
+    {
+      "topic": "general",
+      "question": "why",
+      "answer1": "いくつ",
+      "answer2": "いつ",
+      "answer3": "何",
+      "answer4": "どうして",
+      "correct": "どうして",
+      "sound": "doushite"
+    },
+    {
+      "topic": "general",
+      "question": "what kind",
+      "answer1": "だれ",
+      "answer2": "どんな",
+      "answer3": "どく",
+      "answer4": "たいてい",
+      "correct": "どんな",
+      "sound": "donna"
+    },
+    {
+      "topic": "days",
+      "question": "last year",
+      "answer1": "きょねん",
+      "answer2": "せんしゅう",
+      "answer3": "こんしゅう",
+      "answer4": "まいつき",
+      "correct": "きょねん",
+      "sound": "none"
+    },
+    {
+      "topic": "days",
+      "question": "tomorrow",
+      "answer1": "じゅうちがつ",
+      "answer2": "はちがつ",
+      "answer3": "あした",
+      "answer4": "まいつき",
+      "correct": "あした",
+      "sound": "ashita"
+    },
+    {
+      "topic": "days",
+      "question": "August",
+      "answer1": "まいつき",
+      "answer2": "せんしゅう",
+      "answer3": "はちがつ",
+      "answer4": "きょねん",
+      "correct": "はちがつ",
+      "sound": "hachigatsu"
+    },
+    {
+      "topic": "days",
+      "question": "last week",
+      "answer1": "せんしゅう",
+      "answer2": "しちがつ",
+      "answer3": "こんしゅう",
+      "answer4": "どようび",
+      "correct": "せんしゅう",
+      "sound": "senshuu"
+    },
+    {
+      "topic": "days",
+      "question": "July",
+      "answer1": "にがつ",
+      "answer2": "しちがつ",
+      "answer3": "はちがつ",
+      "answer4": "まいつき",
+      "correct": "しちがつ",
+      "sound": "shichigatsu"
+    },
+    {
+      "topic": "days",
+      "question": "February",
+      "answer1": "にがつ",
+      "answer2": "こんしゅう",
+      "answer3": "しちがつ",
+      "answer4": "まいつき",
+      "correct": "にがつ",
+      "sound": "nigatsu"
+    },
+    {
+      "topic": "days",
+      "question": "this week",
+      "answer1": "こんしゅう",
+      "answer2": "せんしゅう",
+      "answer3": "じゅういちがつ",
+      "answer4": "どようび",
+      "correct": "こんしゅう",
+      "sound": "konshuu"
+    },
+    {
+      "topic": "days",
+      "question": "november",
+      "answer1": "じゅういちがつ",
+      "answer2": "にがつ",
+      "answer3": "こんしゅう",
+      "answer4": "どようび",
+      "correct": "じゅういちがつ",
+      "sound": "juuichigatsu"
+    },
+    {
+      "topic": "days",
+      "question": "every month",
+      "answer1": "まいつき",
+      "answer2": "はちがつ",
+      "answer3": "こんしゅう",
+      "answer4": "にがつ",
+      "correct": "まいつき",
+      "sound": "maitsukimaigetsu"
+    },
+    {
+      "topic": "days",
+      "question": "saturday",
+      "answer1": "せんしゅう",
+      "answer2": "にがつ",
+      "answer3": "きょねん",
+      "answer4": "どようび",
+      "correct": "どようび",
+      "sound": "doyoubi"
+    },
+    {
+      "topic": "days",
+      "question": "sunday",
+      "answer1": "にちようび",
+      "answer2": "にがつ",
+      "answer3": "せんしゅう",
+      "answer4": "きのう",
+      "correct": "にちようび",
+      "sound": "nichiyoubi"
+    },
+    {
+      "topic": "days",
+      "question": "monday",
+      "answer1": "げつようび",
+      "answer2": "こんしゅう",
+      "answer3": "きょねん",
+      "answer4": "とうきょう",
+      "correct": "げつようび",
+      "sound": "getsuyoubi"
+    },
+    {
+      "topic": "days",
+      "question": "tuesday",
+      "answer1": "かようび",
+      "answer2": "じゅうがつ",
+      "answer3": "へいせい",
+      "answer4": "あした",
+      "correct": "かようび",
+      "sound": "kayoubi"
+    },
+    {
+      "topic": "days",
+      "question": "wednesday",
+      "answer1": "すいようび",
+      "answer2": "さくら",
+      "answer3": "せんそう",
+      "answer4": "きのう",
+      "correct": "すいようび",
+      "sound": "suiyoubi"
+    },
+    {
+      "topic": "days",
+      "question": "thursday",
+      "answer1": "もくようび",
+      "answer2": "はる",
+      "answer3": "しょうわ",
+      "answer4": "あした",
+      "correct": "もくようび",
+      "sound": "mokuyoubi"
+    },
+    {
+      "topic": "days",
+      "question": "friday",
+      "answer1": "きんようび",
+      "answer2": "なつ",
+      "answer3": "れいわ",
+      "answer4": "いま",
+      "correct": "きんようび",
+      "sound": "kinyoubi"
+    },
+    {
+      "question": "1",
+      "topic": "numbers",
+      "answer1": "いち",
+      "answer2": "なな",
+      "answer3": "はち",
+      "answer4": "じゅう",
+      "correct": "いち",
+      "sound": "ichi"
+    },
+
+    {
+      "question": "2",
+      "topic": "numbers",
+      "answer1": "さん",
+      "answer2": "に",
+      "answer3": "ご",
+      "answer4": "し",
+      "correct": "に",
+      "sound": "no"
+    },
+
+    {
+      "question": "3",
+      "topic": "numbers",
+      "answer1": "はち",
+      "answer2": "く",
+      "answer3": "さん",
+      "answer4": "よん",
+      "correct": "さん",
+      "sound": "san"
+    },
+
+    {
+      "question": "4",
+      "topic": "numbers",
+      "answer1": "し",
+      "answer2": "ご",
+      "answer3": "ろく",
+      "answer4": "よん",
+      "correct": "し",
+      "sound": "shi"
+    },
+
+    {
+      "question": "5",
+      "topic": "numbers",
+      "answer1": "ご",
+      "answer2": "ろく",
+      "answer3": "しち",
+      "answer4": "はち",
+      "correct": "ご",
+      "sound": "go"
+    },
+
+    {
+      "question": "6",
+      "topic": "numbers",
+      "answer1": "く",
+      "answer2": "し",
+      "answer3": "ろく",
+      "answer4": "なな",
+      "correct": "ろく",
+      "sound": "roku"
+    },
+
+    {
+      "question": "7",
+      "topic": "numbers",
+      "answer1": "しち",
+      "answer2": "なな",
+      "answer3": "く",
+      "answer4": "はち",
+      "correct": "しち",
+      "sound": "shichi"
+    },
+
+    {
+      "question": "8",
+      "topic": "numbers",
+      "answer1": "く",
+      "answer2": "はち",
+      "answer3": "しち",
+      "answer4": "ご",
+      "correct": "はち",
+      "sound": "hachi"
+    },
+
+    {
+      "question": "9",
+      "topic": "numbers",
+      "answer1": "し",
+      "answer2": "なな",
+      "answer3": "きゅう",
+      "answer4": "じゅう",
+      "correct": "きゅう",
+      "sound": "kyuu"
+    },
+    {
+      "question": "10",
+      "topic": "numbers",
+      "answer1": "ご",
+      "answer2": "はち",
+      "answer3": "じゅう",
+      "answer4": "いち",
+      "correct": "じゅう",
+      "sound": "juu"
+    },
+    {
+      "question": "11",
+      "topic": "numbers",
+      "answer1": "じゅういち",
+      "answer2": "じゅうに",
+      "answer3": "じゅうさんご",
+      "answer4": "じゅうご",
+      "correct": "じゅういち",
+      "sound":"juuichi"
+    },
+    {
+      "question": "12",
+      "topic": "numbers",
+      "answer1": "じゅうはち",
+      "answer2": "じゅうなな",
+      "answer3": "じゅうに",
+      "answer4": "じゅうじ",
+      "correct": "じゅうに",
+      "sound": "juuni"
+    },
+    {
+      "question": "13",
+      "topic": "numbers",
+      "answer1": "じゅういちご",
+      "answer2": "じゅうさん",
+      "answer3": "じゅうろく",
+      "answer4": "じゅうご",
+      "correct": "じゅうさん",
+      "sound": "juusan"
+    },
+    {
+      "question": "14",
+      "topic": "numbers",
+      "answer1": "じゅうよん",
+      "answer2": "じゅうなな",
+      "answer3": "じゅうごご",
+      "answer4": "じゅうしち",
+      "correct": "じゅうよん",
+      "sound": "juuyon"
+    },
+    {
+      "question": "15",
+      "topic": "numbers",
+      "answer1": "じゅうごご",
+      "answer2": "じゅうろく",
+      "answer3": "じゅうご",
+      "answer4": "じゅうはち",
+      "correct": "じゅうご",
+      "sound": "juugo"
+    },
+    {
+      "question": "16",
+      "topic": "numbers",
+      "answer1": "じゅうろく",
+      "answer2": "じゅうなな",
+      "answer3": "じゅうしち",
+      "answer4": "じゅうに",
+      "correct": "じゅうろく",
+      "sound": "juuroku"
+    },
+    {
+      "question": "17",
+      "topic": "numbers",
+      "answer1": "じゅうなな",
+      "answer2": "じゅうに",
+      "answer3": "じゅういちご",
+      "answer4": "じゅうごなな",
+      "correct": "じゅうなな",
+      "sound": "juunana"
+    },
+    {
+      "question": "18",
+      "topic": "numbers",
+      "answer1": "じゅうはち",
+      "answer2": "じゅうにじゅう",
+      "answer3": "じゅうごはち",
+      "answer4": "じゅうさんご",
+      "correct": "じゅうはち",
+      "sound": "juuhachi"
+    },
+    {
+      "question": "19",
+      "topic": "numbers",
+      "answer1": "じゅうさんご",
+      "answer2": "じゅうに",
+      "answer3": "じゅうきゅう",
+      "answer4": "じゅうはち",
+      "correct": "じゅうきゅう",
+      "sound": "juukyuu"
+    },
+    {
+      "question": "20",
+      "topic": "numbers",
+      "answer1": "にじゅう",
+      "answer2": "じゅうに",
+      "answer3": "じゅうさんご",
+      "answer4": "じゅうご",
+      "correct": "にじゅう",
+      "sound": "nijuu"
+    },
+    {
+      "question": "21",
+      "topic": "numbers",
+      "answer1": "にじゅういち",
+      "answer2": "にじゅうに",
+      "answer3": "にじゅうさんご",
+      "answer4": "にじゅうご",
+      "correct": "にじゅういち",
+      "sound": "none"
+    },
+    {
+      "question": "22",
+      "topic": "numbers",
+      "answer1": "にじゅうはち",
+      "answer2": "にじゅうなな",
+      "answer3": "にじゅうに",
+      "answer4": "にじゅうじ",
+      "correct": "にじゅうに",
+      "sound": "none"
+    },
+    {
+      "question": "23",
+      "topic": "numbers",
+      "answer1": "にじゅうさんご",
+      "answer2": "にじゅうさん",
+      "answer3": "にじゅうよん",
+      "answer4": "にじゅうご",
+      "correct": "にじゅうさん",
+      "sound": "none"
+    },
+    {
+      "question": "24",
+      "topic": "numbers",
+      "answer1": "にじゅうよん",
+      "answer2": "にじゅうご",
+      "answer3": "にじゅうろく",
+      "answer4": "にじゅうなな",
+      "correct": "にじゅうよん",
+      "sound": "none"
+    },
+    {
+      "question": "25",
+      "topic": "numbers",
+      "answer1": "にじゅうご",
+      "answer2": "にじゅうろく",
+      "answer3": "にじゅうさん",
+      "answer4": "にじゅうはち",
+      "correct": "にじゅうご",
+      "sound": "none"
+    },
+    {
+      "question": "26",
+      "topic": "numbers",
+      "answer1": "にじゅうろく",
+      "answer2": "にじゅうなな",
+      "answer3": "にじゅうしち",
+      "answer4": "にじゅうに",
+      "correct": "にじゅうろく",
+      "sound": "none"
+    },
+    {
+      "question": "27",
+      "topic": "numbers",
+      "answer1": "にじゅうしち",
+      "answer2": "にじゅうに",
+      "answer3": "にじゅういちご",
+      "answer4": "にじゅうごなな",
+      "correct": "にじゅうしち",
+      "sound": "none"
+    },
+    {
+      "question": "28",
+      "topic": "numbers",
+      "answer1": "にじゅうはち",
+      "answer2": "にじゅうにじゅう",
+      "answer3": "にじゅうごはち",
+      "answer4": "にじゅうさんご",
+      "correct": "にじゅうはち",
+      "sound": "none"
+    },
+    {
+      "question": "29",
+      "topic": "numbers",
+      "answer1": "にじゅうさんご",
+      "answer2": "にじゅうに",
+      "answer3": "にじゅうじゅう",
+      "answer4": "にじゅうはち",
+      "correct": "にじゅうじゅう",
+      "sound": "none"
+    },
+    {
+      "question": "30",
+      "topic": "numbers",
+      "answer1": "さんじゅう",
+      "answer2": "にじゅうに",
+      "answer3": "にじゅうさんご",
+      "answer4": "にじゅうご",
+      "correct": "さんじゅう",
+      "sound": "none"
+    },
+    {
+      "question": "31",
+      "topic": "numbers",
+      "answer1": "さんじゅういち",
+      "answer2": "さんじゅうに",
+      "answer3": "さんじゅうさんご",
+      "answer4": "さんじゅうご",
+      "correct": "さんじゅういち",
+      "sound": "none"
+    },
+    {
+      "question": "32",
+      "topic": "numbers",
+      "answer1": "さんじゅうに",
+      "answer2": "さんじゅうさんご",
+      "answer3": "さんじゅうよん",
+      "answer4": "さんじゅうご",
+      "correct": "さんじゅうに",
+      "sound": "none"
+    },
+    {
+      "question": "33",
+      "topic": "numbers",
+      "answer1": "さんじゅうさんご",
+      "answer2": "さんじゅうよん",
+      "answer3": "さんじゅうろく",
+      "answer4": "さんじゅうさん",
+      "correct": "さんじゅうさん",
+      "sound": "none"
+    },
+    {
+      "question": "34",
+      "topic": "numbers",
+      "answer1": "さんじゅうよん",
+      "answer2": "さんじゅうご",
+      "answer3": "さんじゅうろく",
+      "answer4": "さんじゅうなな",
+      "correct": "さんじゅうよん",
+      "sound": "none"
+    },
+    {
+      "question": "35",
+      "topic": "numbers",
+      "answer1": "さんじゅうご",
+      "answer2": "さんじゅうろく",
+      "answer3": "さんじゅうさん",
+      "answer4": "さんじゅうはち",
+      "correct": "さんじゅうご",
+      "sound": "none"
+    },
+    {
+      "question": "36",
+      "topic": "numbers",
+      "answer1": "さんじゅうろく",
+      "answer2": "さんじゅうなな",
+      "answer3": "さんじゅうしち",
+      "answer4": "さんじゅうに",
+      "correct": "さんじゅうろく",
+      "sound": "none"
+    },
+    {
+      "question": "37",
+      "topic": "numbers",
+      "answer1": "さんじゅうしち",
+      "answer2": "さんじゅうに",
+      "answer3": "さんじゅういちご",
+      "answer4": "さんじゅうごなな",
+      "correct": "さんじゅうしち",
+      "sound": "none"
+    },
+    {
+      "question": "38",
+      "topic": "numbers",
+      "answer1": "さんじゅうはち",
+      "answer2": "さんじゅうにじゅう",
+      "answer3": "さんじゅうごはち",
+      "answer4": "さんじゅうさんご",
+      "correct": "さんじゅうはち",
+      "sound": "none"
+    },
+    {
+      "question": "39",
+      "topic": "numbers",
+      "answer1": "さんじゅうさんご",
+      "answer2": "さんじゅうに",
+      "answer3": "さんじゅうきゅう",
+      "answer4": "さんじゅうはち",
+      "correct": "さんじゅうきゅう",
+      "sound": "none"
+    },
+    {
+      "question": "40",
+      "topic": "numbers",
+      "answer1": "よんじゅう",
+      "answer2": "さんじゅうに",
+      "answer3": "さんじゅうさんご",
+      "answer4": "さんじゅうご",
+      "correct": "よんじゅう",
+      "sound": "none"
+    },
+    {
+      "question": "41",
+      "topic": "numbers",
+      "answer1": "よんじゅういち",
+      "answer2": "よんじゅうに",
+      "answer3": "よんじゅうさんご",
+      "answer4": "よんじゅうご",
+      "correct": "よんじゅういち",
+      "sound": "none"
+    },
+    {
+      "question": "42",
+      "topic": "numbers",
+      "answer1": "よんじゅうはち",
+      "answer2": "よんじゅうなな",
+      "answer3": "よんじゅうに",
+      "answer4": "よんじゅうじ",
+      "correct": "よんじゅうに",
+      "sound": "none"
+    },
+    {
+      "question": "43",
+      "topic": "numbers",
+      "answer1": "よんじゅうさんご",
+      "answer2": "よんじゅうさん",
+      "answer3": "よんじゅうよん",
+      "answer4": "よんじゅうご",
+      "correct": "よんじゅうさんご",
+      "sound": "none"
+    },
+    {
+      "question": "44",
+      "topic": "numbers",
+      "answer1": "よんじゅうよん",
+      "answer2": "よんじゅうご",
+      "answer3": "よんじゅうろく",
+      "answer4": "よんじゅうなな",
+      "correct": "よんじゅうよん",
+      "sound": "none"
+    },
+    {
+      "question": "45",
+      "topic": "numbers",
+      "answer1": "よんじゅうご",
+      "answer2": "よんじゅうろく",
+      "answer3": "よんじゅうさん",
+      "answer4": "よんじゅうはち",
+      "correct": "よんじゅうご",
+      "sound": "none"
+    },
+    {
+      "question": "46",
+      "topic": "numbers",
+      "answer1": "よんじゅうろく",
+      "answer2": "よんじゅうなな",
+      "answer3": "よんじゅうしち",
+      "answer4": "よんじゅうに",
+      "correct": "よんじゅうろく",
+      "sound": "none"
+    },
+    {
+      "question": "47",
+      "topic": "numbers",
+      "answer1": "よんじゅうしち",
+      "answer2": "よんじゅうに",
+      "answer3": "よんじゅういちご",
+      "answer4": "よんじゅうごなな",
+      "correct": "よんじゅうしち",
+      "sound": "none"
+    },
+    {
+      "question": "48",
+      "topic": "numbers",
+      "answer1": "よんじゅうはち",
+      "answer2": "よんじゅうにじゅう",
+      "answer3": "よんじゅうごはち",
+      "answer4": "よんじゅうさんご",
+      "correct": "よんじゅうはち",
+      "sound": "none"
+    },
+    {
+      "question": "49",
+      "topic": "numbers",
+      "answer1": "よんじゅうさんご",
+      "answer2": "よんじゅうに",
+      "answer3": "よんじゅうきゅう",
+      "answer4": "よんじゅうはち",
+      "correct": "よんじゅうきゅう",
+      "sound": "none"
+    },
+    {
+      "question": "50",
+      "topic": "numbers",
+      "answer1": "ごじゅう",
+      "answer2": "よんじゅうに",
+      "answer3": "よんじゅうさんご",
+      "answer4": "よんじゅうご",
+      "correct": "ごじゅう",
+      "sound": "none"
+    },
+    {
+      "question": "51",
+      "topic": "numbers",
+      "answer1": "ごじゅういち",
+      "answer2": "ごじゅうに",
+      "answer3": "ごじゅうさんご",
+      "answer4": "ごじゅうご",
+      "correct": "ごじゅういち",
+      "sound": "none"
+    },
+    {
+      "question": "52",
+      "topic": "numbers",
+      "answer1": "ごじゅうはち",
+      "answer2": "ごじゅうなな",
+      "answer3": "ごじゅうに",
+      "answer4": "ごじゅうじ",
+      "correct": "ごじゅうに",
+      "sound": "none"
+    },
+    {
+      "question": "53",
+      "topic": "numbers",
+      "answer1": "ごじゅうさんご",
+      "answer2": "ごじゅうさん",
+      "answer3": "ごじゅうよん",
+      "answer4": "ごじゅうご",
+      "correct": "ごじゅうさんご",
+      "sound": "none"
+    },
+    {
+      "question": "54",
+      "topic": "numbers",
+      "answer1": "ごじゅうよん",
+      "answer2": "ごじゅうご",
+      "answer3": "ごじゅうろく",
+      "answer4": "ごじゅうなな",
+      "correct": "ごじゅうよん",
+      "sound": "none"
+    },
+    {
+      "question": "55",
+      "topic": "numbers",
+      "answer1": "ごじゅうご",
+      "answer2": "ごじゅうろく",
+      "answer3": "ごじゅうさん",
+      "answer4": "ごじゅうはち",
+      "correct": "ごじゅうご",
+      "sound": "none"
+    },
+    {
+      "question": "56",
+      "topic": "numbers",
+      "answer1": "ごじゅうろく",
+      "answer2": "ごじゅうなな",
+      "answer3": "ごじゅうしち",
+      "answer4": "ごじゅうに",
+      "correct": "ごじゅうろく",
+      "sound": "none"
+    },
+    {
+      "question": "57",
+      "topic": "numbers",
+      "answer1": "ごじゅうしち",
+      "answer2": "ごじゅうに",
+      "answer3": "ごじゅういちご",
+      "answer4": "ごじゅうごなな",
+      "correct": "ごじゅうしち",
+      "sound": "none"
+    },
+    {
+      "question": "58",
+      "topic": "numbers",
+      "answer1": "ごじゅうはち",
+      "answer2": "ごじゅうにじゅう",
+      "answer3": "ごじゅうごはち",
+      "answer4": "ごじゅうさんご",
+      "correct": "ごじゅうはち",
+      "sound": "none"
+    },
+    {
+      "question": "59",
+      "topic": "numbers",
+      "answer1": "ごじゅうさんご",
+      "answer2": "ごじゅうに",
+      "answer3": "ごじゅうきゅう",
+      "answer4": "ごじゅうはち",
+      "correct": "ごじゅうきゅう",
+      "sound": "none"
+    },
+    {
+      "question": "60",
+      "topic": "numbers",
+      "answer1": "ろくじゅう",
+      "answer2": "ごじゅうに",
+      "answer3": "ごじゅうさんご",
+      "answer4": "ごじゅうご",
+      "correct": "ろくじゅう",
+      "sound": "none"
+    },
+    {
+      "question": "61",
+      "topic": "numbers",
+      "answer1": "ろくじゅういち",
+      "answer2": "ろくじゅうに",
+      "answer3": "ろくじゅうさんご",
+      "answer4": "ろくじゅうご",
+      "correct": "ろくじゅういち",
+      "sound": "none"
+    },
+    {
+      "question": "62",
+      "topic": "numbers",
+      "answer1": "ろくじゅうはち",
+      "answer2": "ろくじゅうなな",
+      "answer3": "ろくじゅうに",
+      "answer4": "ろくじゅうじ",
+      "correct": "ろくじゅうに",
+      "sound": "none"
+    },
+    {
+      "question": "63",
+      "topic": "numbers",
+      "answer1": "ろくじゅうさんご",
+      "answer2": "ろくじゅうさん",
+      "answer3": "ろくじゅうよん",
+      "answer4": "ろくじゅうご",
+      "correct": "ろくじゅうさんご",
+      "sound": "none"
+    },
+    {
+      "question": "64",
+      "topic": "numbers",
+      "answer1": "ろくじゅうよん",
+      "answer2": "ろくじゅうご",
+      "answer3": "ろくじゅうろく",
+      "answer4": "ろくじゅうなな",
+      "correct": "ろくじゅうよん",
+      "sound": "none"
+    },
+    {
+      "question": "65",
+      "topic": "numbers",
+      "answer1": "ろくじゅうご",
+      "answer2": "ろくじゅうろく",
+      "answer3": "ろくじゅうさん",
+      "answer4": "ろくじゅうはち",
+      "correct": "ろくじゅうご",
+      "sound": "none"
+    },
+    {
+      "question": "66",
+      "topic": "numbers",
+      "answer1": "ろくじゅうろく",
+      "answer2": "ろくじゅうなな",
+      "answer3": "ろくじゅうしち",
+      "answer4": "ろくじゅうに",
+      "correct": "ろくじゅうろく",
+      "sound": "none"
+    },
+    {
+      "question": "67",
+      "topic": "numbers",
+      "answer1": "ろくじゅうしち",
+      "answer2": "ろくじゅうに",
+      "answer3": "ろくじゅういちご",
+      "answer4": "ろくじゅうごなな",
+      "correct": "ろくじゅうしち",
+      "sound": "none"
+    },
+    {
+      "question": "68",
+      "topic": "numbers",
+      "answer1": "ろくじゅうはち",
+      "answer2": "ろくじゅうにじゅう",
+      "answer3": "ろくじゅうごはち",
+      "answer4": "ろくじゅうさんご",
+      "correct": "ろくじゅうはち",
+      "sound": "none"
+    },
+    {
+      "question": "69",
+      "topic": "numbers",
+      "answer1": "ろくじゅうさんご",
+      "answer2": "ろくじゅうに",
+      "answer3": "ろくじゅうきゅう",
+      "answer4": "ろくじゅうはち",
+      "correct": "ろくじゅうきゅう",
+      "sound": "none"
+    },
+    {
+      "question": "70",
+      "topic": "numbers",
+      "answer1": "ななじゅう",
+      "answer2": "ろくじゅうに",
+      "answer3": "ろくじゅうさんご",
+      "answer4": "ろくじゅうご",
+      "correct": "ななじゅう",
+      "sound": "none"
+    },
+    {
+      "question": "71",
+      "topic": "numbers",
+      "answer1": "ななじゅういち",
+      "answer2": "ななじゅうに",
+      "answer3": "ななじゅうさんご",
+      "answer4": "ななじゅうご",
+      "correct": "ななじゅういち",
+      "sound": "none"
+    },
+    {
+      "question": "72",
+      "topic": "numbers",
+      "answer1": "ななじゅうはち",
+      "answer2": "ななじゅうなな",
+      "answer3": "ななじゅうに",
+      "answer4": "ななじゅうにじゅう",
+      "correct": "ななじゅうに",
+      "sound": "none"
+    },
+    {
+      "question": "73",
+      "topic": "numbers",
+      "answer1": "ななじゅうさんご",
+      "answer2": "ななじゅうさん",
+      "answer3": "ななじゅうよん",
+      "answer4": "ななじゅうご",
+      "correct": "ななじゅうさんご",
+      "sound": "none"
+    },
+    {
+      "question": "74",
+      "topic": "numbers",
+      "answer1": "ななじゅうよん",
+      "answer2": "ななじゅうご",
+      "answer3": "ななじゅうろく",
+      "answer4": "ななじゅうなな",
+      "correct": "ななじゅうよん",
+      "sound": "none"
+    },
+    {
+      "question": "75",
+      "topic": "numbers",
+      "answer1": "ななじゅうご",
+      "answer2": "ななじゅうろく",
+      "answer3": "ななじゅうさん",
+      "answer4": "ななじゅうはち",
+      "correct": "ななじゅうご",
+      "sound": "none"
+    },
+    {
+      "question": "76",
+      "topic": "numbers",
+      "answer1": "ななじゅうろく",
+      "answer2": "ななじゅうなな",
+      "answer3": "ななじゅうしち",
+      "answer4": "ななじゅうに",
+      "correct": "ななじゅうろく",
+      "sound": "none"
+    },
+    {
+      "question": "77",
+      "topic": "numbers",
+      "answer1": "ななじゅうしち",
+      "answer2": "ななじゅうに",
+      "answer3": "ななじゅうにじゅう",
+      "answer4": "ななじゅうごなな",
+      "correct": "ななじゅうしち",
+      "sound": "none"
+    },
+    {
+      "question": "78",
+      "topic": "numbers",
+      "answer1": "ななじゅうはち",
+      "answer2": "ななじゅうきゅう",
+      "answer3": "ななじゅうさん",
+      "answer4": "ななじゅうよん",
+      "correct": "ななじゅうはち",
+      "sound": "none"
+    },
+    {
+      "question": "79",
+      "topic": "numbers",
+      "answer1": "ななじゅうきゅう",
+      "answer2": "ななじゅうはち",
+      "answer3": "ななじゅうご",
+      "answer4": "ななじゅうさん",
+      "correct": "ななじゅうきゅう",
+      "sound": "none"
+    },
+    {
+      "question": "80",
+      "topic": "numbers",
+      "answer1": "はちじゅう",
+      "answer2": "はちじゅうに",
+      "answer3": "はちじゅうさんご",
+      "answer4": "はちじゅうご",
+      "correct": "はちじゅう",
+      "sound": "none"
+    },
+    {
+      "question": "81",
+      "topic": "numbers",
+      "answer1": "はちじゅういち",
+      "answer2": "はちじゅうに",
+      "answer3": "はちじゅうさんご",
+      "answer4": "はちじゅうご",
+      "correct": "はちじゅういち",
+      "sound": "none"
+    },
+    {
+      "question": "82",
+      "topic": "numbers",
+      "answer1": "はちじゅうに",
+      "answer2": "はちじゅうなな",
+      "answer3": "はちじゅうに",
+      "answer4": "はちじゅうご",
+      "correct": "はちじゅうに",
+      "sound": "none"
+    },
+    {
+      "question": "83",
+      "topic": "numbers",
+      "answer1": "はちじゅうさんご",
+      "answer2": "はちじゅうさん",
+      "answer3": "はちじゅうよん",
+      "answer4": "はちじゅうご",
+      "correct": "はちじゅうさんご",
+      "sound": "none"
+    },
+    {
+      "question": "84",
+      "topic": "numbers",
+      "answer1": "はちじゅうよん",
+      "answer2": "はちじゅうご",
+      "answer3": "はちじゅうろく",
+      "answer4": "はちじゅうなな",
+      "correct": "はちじゅうよん",
+      "sound": "none"
+    },
+    {
+      "question": "85",
+      "topic": "numbers",
+      "answer1": "はちじゅうご",
+      "answer2": "はちじゅうろく",
+      "answer3": "はちじゅうさん",
+      "answer4": "はちじゅうはち",
+      "correct": "はちじゅうご",
+      "sound": "none"
+    },
+    {
+      "question": "86",
+      "topic": "numbers",
+      "answer1": "はちじゅうろく",
+      "answer2": "はちじゅうなな",
+      "answer3": "はちじゅうしち",
+      "answer4": "はちじゅうに",
+      "correct": "はちじゅうろく",
+      "sound": "none"
+    },
+    {
+      "question": "87",
+      "topic": "numbers",
+      "answer1": "はちじゅうしち",
+      "answer2": "はちじゅうに",
+      "answer3": "はちじゅうご",
+      "answer4": "はちじゅうにじゅう",
+      "correct": "はちじゅうしち",
+      "sound": "none"
+    },
+    {
+      "question": "88",
+      "topic": "numbers",
+      "answer1": "はちじゅうはち",
+      "answer2": "はちじゅうきゅう",
+      "answer3": "はちじゅうさん",
+      "answer4": "はちじゅうよん",
+      "correct": "はちじゅうはち",
+      "sound": "none"
+    },
+    {
+      "question": "89",
+      "topic": "numbers",
+      "answer1": "はちじゅうきゅう",
+      "answer2": "はちじゅうはち",
+      "answer3": "はちじゅうご",
+      "answer4": "はちじゅうさん",
+      "correct": "はちじゅうきゅう",
+      "sound": "none"
+    },
+    {
+      "question": "90",
+      "topic": "numbers",
+      "answer1": "きゅうじゅう",
+      "answer2": "きゅうじゅうに",
+      "answer3": "きゅうじゅうさんご",
+      "answer4": "きゅうじゅうご",
+      "correct": "きゅうじゅう",
+      "sound": "none"
+    },
+    {
+      "question": "91",
+      "topic": "numbers",
+      "answer1": "きゅうじゅういち",
+      "answer2": "きゅうじゅうに",
+      "answer3": "きゅうじゅうさんご",
+      "answer4": "きゅうじゅうご",
+      "correct": "きゅうじゅういち",
+      "sound": "none"
+    },
+    {
+      "question": "92",
+      "topic": "numbers",
+      "answer1": "きゅうじゅうに",
+      "answer2": "きゅうじゅうなな",
+      "answer3": "きゅうじゅうに",
+      "answer4": "きゅうじゅうご",
+      "correct": "きゅうじゅうに",
+      "sound": "none"
+    },
+    {
+      "question": "93",
+      "topic": "numbers",
+      "answer1": "きゅうじゅうさんご",
+      "answer2": "きゅうじゅうさん",
+      "answer3": "きゅうじゅうよん",
+      "answer4": "きゅうじゅうご",
+      "correct": "きゅうじゅうさんご",
+      "sound": "none"
+    },
+    {
+      "question": "94",
+      "topic": "numbers",
+      "answer1": "きゅうじゅうよん",
+      "answer2": "きゅうじゅうご",
+      "answer3": "きゅうじゅうろく",
+      "answer4": "きゅうじゅうなな",
+      "correct": "きゅうじゅうよん",
+      "sound": "none"
+    },
+    {
+      "question": "95",
+      "topic": "numbers",
+      "answer1": "きゅうじゅうご",
+      "answer2": "きゅうじゅうろく",
+      "answer3": "きゅうじゅうさん",
+      "answer4": "きゅうじゅうはち",
+      "correct": "きゅうじゅうご",
+      "sound": "none"
+    },
+    {
+      "question": "96",
+      "topic": "numbers",
+      "answer1": "きゅうじゅうろく",
+      "answer2": "きゅうじゅうなな",
+      "answer3": "きゅうじゅうしち",
+      "answer4": "きゅうじゅうに",
+      "correct": "きゅうじゅうろく",
+      "sound": "none"
+    },
+    {
+      "question": "97",
+      "topic": "numbers",
+      "answer1": "きゅうじゅうしち",
+      "answer2": "きゅうじゅうに",
+      "answer3": "きゅうじゅうご",
+      "answer4": "きゅうじゅうにじゅう",
+      "correct": "きゅうじゅうしち",
+      "sound": "none"
+    },
+    {
+      "question": "98",
+      "topic": "numbers",
+      "answer1": "きゅうじゅうはち",
+      "answer2": "きゅうじゅうきゅう",
+      "answer3": "きゅうじゅうさん",
+      "answer4": "きゅうじゅうよん",
+      "correct": "きゅうじゅうはち",
+      "sound": "none"
+    },
+    {
+      "question": "99",
+      "topic": "numbers",
+      "answer1": "きゅうじゅうきゅう",
+      "answer2": "きゅうじゅうはち",
+      "answer3": "きゅうじゅうご",
+      "answer4": "きゅうじゅうさん",
+      "correct": "きゅうじゅうきゅう",
+      "sound": "none"
+    },
+    {
+      "question": "100",
+      "topic": "numbers",
+      "answer1": "きゅうじゅうきゅう",
+      "answer2": "ひゃくじゅうに",
+      "answer3": "ひゃくさんご",
+      "answer4": "ひゃく",
+      "correct": "ひゃく",
+      "sound": "none"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ]
+}
+
+
+

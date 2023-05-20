@@ -48,6 +48,18 @@
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
+            android:name=".VC_ScoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VC_GameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VC_TopicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VC_MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:exported="true" >

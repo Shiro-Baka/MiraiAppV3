@@ -45,7 +45,7 @@ public class BubbleMatchGamePage extends AppCompatActivity {
         //Removes the Title bar from the top of the application for all screens.
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
 
         setContentView(R.layout.activity_bubble_match_game_page);
 
