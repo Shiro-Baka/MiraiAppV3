@@ -2,4 +2,5 @@
 <resources>
     <dimen name="button_width">64dp</dimen> <!-- Replace 64dp with your desired width -->
     <dimen name="button_height">64dp</dimen> <!-- Replace 64dp with your desired height -->
+    <dimen name="button_size">40dp</dimen>
 </resources>

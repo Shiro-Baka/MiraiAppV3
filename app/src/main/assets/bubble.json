@@ -1,171 +1,6020 @@
 {
 "bubble": [
   {
-    "id": "1",
-    "eword": "eword1",
-    "jword": "jword1",
+    "id": 1,
+    "eword": "funny, interesting",
+    "jword": "おもしろい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "omoshiroi"
+  },
+  {
+    "id": 2,
+    "eword": "fun, enjoyable",
+    "jword": "たのしい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "tanoshii"
+  },
+  {
+    "id": 3,
+    "eword": "delicious",
+    "jword": "おいしい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "oishii"
+  },
+  {
+    "id": 4,
+    "eword": "new",
+    "jword": "あたらしい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "atarashii"
+  },
+  {
+    "id": 5,
+    "eword": "good",
+    "jword": "よい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "yoi"
+  },
+  {
+    "id": 6,
+    "eword": "boring",
+    "jword": "つまらない",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "tsumaranai"
+  },
+  {
+    "id": 7,
+    "eword": "pretty",
+    "jword": "きれい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "kirei"
+  },
+  {
+    "id": 8,
+    "eword": "strange",
+    "jword": "へん",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "hen"
+  },
+  {
+    "id": 9,
+    "eword": "difficult",
+    "jword": "むずかしい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "muzukashii"
+  },
+  {
+    "id": 10,
+    "eword": "old",
+    "jword": "ふるい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "furui"
+  },
+  {
+    "id": 11,
+    "eword": "beautiful",
+    "jword": "うつくしい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "utsukushii"
+  },
+  {
+    "id": 12,
+    "eword": "bad",
+    "jword": "わるい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "warui"
+  },
+  {
+    "id": 13,
+    "eword": "splendid, wonderful",
+    "jword": "すばらしい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "subarashii"
+  },
+  {
+    "id": 14,
+    "eword": "wow! amazing",
+    "jword": "すごい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "sugoi"
+  },
+  {
+    "id": 15,
+    "eword": "wonderful; nice",
+    "jword": "すてき",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "suteki"
+  },
+  {
+    "id": 16,
+    "eword": "tall; high; expensive",
+    "jword": "たかい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "takai"
+  },
+  {
+    "id": 17,
+    "eword": "fast, quick",
+    "jword": "はやい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "hayai"
+  },
+  {
+    "id": 18,
+    "eword": "strict",
+    "jword": "きびしい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "kibishii"
+  },
+  {
+    "id": 19,
+    "eword": "long",
+    "jword": "ながい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "nagai"
+  },
+  {
+    "id": 20,
+    "eword": "trendy; cool",
+    "jword": "かっこいい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "kakkoii"
+  },
+  {
+    "id": 21,
+    "eword": "kind; gentle",
+    "jword": "やさしい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "yasashii"
+  },
+  {
+    "id": 22,
+    "eword": "warm",
+    "jword": "あたたかい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "atatakai"
+  },
+  {
+    "id": 23,
+    "eword": "short",
+    "jword": "みじかい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "mijikai"
+  },
+  {
+    "id": 24,
+    "eword": "thin; slender",
+    "jword": "ほそい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "hosoi"
+  },
+  {
+    "id": 25,
+    "eword": "slow",
+    "jword": "おそい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "osoi"
+  },
+  {
+    "id": 26,
+    "eword": "famous",
+    "jword": "ゆうめい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "yuumei"
+  },
+  {
+    "id": 27,
+    "eword": "cool; cold (to touch)",
+    "jword": "つめたい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "tsumetai"
+  },
+  {
+    "id": 28,
+    "eword": "cheap; inexpensive",
+    "jword": "やすい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "yasui"
+  },
+  {
+    "id": 29,
+    "eword": "young",
+    "jword": "わかい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "wakai"
+  },
+  {
+    "id": 30,
+    "eword": "convenient",
+    "jword": "げんり",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "benri"
+  },
+  {
+    "id": 31,
+    "eword": "large, big",
+    "jword": "おおきい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "ookii"
+  },
+  {
+    "id": 32,
+    "eword": "small",
+    "jword": "ちいさい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "chiisai"
+  },
+  {
+    "id": 33,
+    "eword": "hot",
+    "jword": "あつい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "atsui"
+  },
+  {
+    "id": 34,
+    "eword": "cold",
+    "jword": "さむい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "samui"
+  },
+  {
+    "id": 35,
+    "eword": "cute",
+    "jword": "かわいい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "kawaii"
+  },
+  {
+    "id": 36,
+    "eword": "scary",
+    "jword": "こわい",
+    "topic": "Adjectives",
+    "type": "kana",
+    "sound": "kowai"
+  },
+  {
+    "id": 37,
+    "eword": "animal",
+    "jword": "どうぶつ",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "doubutsu"
+  },
+  {
+    "id": 38,
+    "eword": "zoo",
+    "jword": "どうぶつえん",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "doubutsuen"
+  },
+  {
+    "id": 39,
+    "eword": "dog",
+    "jword": "いぬ",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "inu"
+  },
+  {
+    "id": 40,
+    "eword": "puppy",
+    "jword": "こいぬ",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "koinu"
+  },
+  {
+    "id": 41,
+    "eword": "cat  ",
+    "jword": "ねこ",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "neko"
+  },
+  {
+    "id": 42,
+    "eword": "kitten",
+    "jword": "こねこ",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "koneko"
+  },
+  {
+    "id": 43,
+    "eword": "bird",
+    "jword": "とり",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "tori"
+  },
+  {
+    "id": 44,
+    "eword": "horse",
+    "jword": "うま",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "uma"
+  },
+  {
+    "id": 45,
+    "eword": "monkey; ape",
+    "jword": "さる",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "saru"
+  },
+  {
+    "id": 46,
+    "eword": "snake",
+    "jword": "へび",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "hebi"
+  },
+  {
+    "id": 47,
+    "eword": "cow",
+    "jword": "うし",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "ushi"
+  },
+  {
+    "id": 48,
+    "eword": "deer",
+    "jword": "しか",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "shika"
+  },
+  {
+    "id": 49,
+    "eword": "elephant",
+    "jword": "ぞう",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "zou"
+  },
+  {
+    "id": 50,
+    "eword": "mouse; rat",
+    "jword": "ねずみ",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "nezumi"
+  },
+  {
+    "id": 51,
+    "eword": "chicken",
+    "jword": "にわとり",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "niwatori"
+  },
+  {
+    "id": 52,
+    "eword": "turtle; tortoise",
+    "jword": "かめ",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "kame"
+  },
+  {
+    "id": 53,
+    "eword": "frog",
+    "jword": "かえる",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "kaeru"
+  },
+  {
+    "id": 54,
+    "eword": "spider",
+    "jword": "くも",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "kumo"
+  },
+  {
+    "id": 55,
+    "eword": "tiger",
+    "jword": "とら",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "tora"
+  },
+  {
+    "id": 56,
+    "eword": "rabbit; hare",
+    "jword": "うさぎ",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "usagi"
+  },
+  {
+    "id": 57,
+    "eword": "sheep",
+    "jword": "ひつじ",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "hitsuji"
+  },
+  {
+    "id": 58,
+    "eword": "squirrel",
+    "jword": "りす",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "risu"
+  },
+  {
+    "id": 59,
+    "eword": "pig",
+    "jword": "ぶた",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "buta"
+  },
+  {
+    "id": 60,
+    "eword": "goat",
+    "jword": "やぎ",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "yagi"
+  },
+  {
+    "id": 61,
+    "eword": "bear",
+    "jword": "くま",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "kuma"
+  },
+  {
+    "id": 62,
+    "eword": "wolf",
+    "jword": "おおかみ",
+    "topic": "Animals",
+    "type": "kana",
+    "sound": "ookami"
+  },
+  {
+    "id": 63,
+    "eword": "body",
+    "jword": "からだ",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "karada"
+  },
+  {
+    "id": 64,
+    "eword": "head",
+    "jword": "あたま",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "atama"
+  },
+  {
+    "id": 65,
+    "eword": "hair",
+    "jword": "かみ",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "kami"
+  },
+  {
+    "id": 66,
+    "eword": "eye(s)",
+    "jword": "め",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "me"
+  },
+  {
+    "id": 67,
+    "eword": "nose",
+    "jword": "はな",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "hana"
+  },
+  {
+    "id": 68,
+    "eword": "mouth",
+    "jword": "くち",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "kuchi"
+  },
+  {
+    "id": 69,
+    "eword": "tooth; teeth",
+    "jword": "は",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "ha"
+  },
+  {
+    "id": 70,
+    "eword": "ear(s)",
+    "jword": "みみ",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "mimi"
+  },
+  {
+    "id": 71,
+    "eword": "throat",
+    "jword": "のど",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "nodo"
+  },
+  {
+    "id": 72,
+    "eword": "shoulder",
+    "jword": "かた",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "kata"
+  },
+  {
+    "id": 73,
+    "eword": "chest",
+    "jword": "むね",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "mune"
+  },
+  {
+    "id": 74,
+    "eword": "stomach",
+    "jword": "おなか",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "onaka"
+  },
+  {
+    "id": 75,
+    "eword": "arm(s)",
+    "jword": "うで",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "ude"
+  },
+  {
+    "id": 76,
+    "eword": "elbow(s)",
+    "jword": "ひじ",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "hiji"
+  },
+  {
+    "id": 77,
+    "eword": "hand(s)",
+    "jword": "て",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "te"
+  },
+  {
+    "id": 78,
+    "eword": "finger(s)",
+    "jword": "ゆび",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "yubi"
+  },
+  {
+    "id": 79,
+    "eword": "leg(s); foot; feet",
+    "jword": "あし",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "ashi"
+  },
+  {
+    "id": 80,
+    "eword": "knee(s)",
+    "jword": "ひざ",
+    "topic": "Body Parts",
+    "type": "kana",
+    "sound": "hiza"
+  },
+  {
+    "id": 81,
+    "eword": "colour",
+    "jword": "いろ",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "iro"
+  },
+  {
+    "id": 82,
+    "eword": "red",
+    "jword": "あか(い)",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "aka(i)"
+  },
+  {
+    "id": 83,
+    "eword": "blue",
+    "jword": "あお(い)",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "ao(i)"
+  },
+  {
+    "id": 84,
+    "eword": "orange",
+    "jword": "オレンジ",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "orenji"
+  },
+  {
+    "id": 85,
+    "eword": "yellow",
+    "jword": "きいろ(い)",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "kiiro(i)"
+  },
+  {
+    "id": 86,
+    "eword": "brown",
+    "jword": "ちゃいろ(い)",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "chairo(i)"
+  },
+  {
+    "id": 87,
+    "eword": "black",
+    "jword": "くろ(い)",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "kuro(i)"
+  },
+  {
+    "id": 88,
+    "eword": "white",
+    "jword": "しろ(い)",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "shiro(i)"
+  },
+  {
+    "id": 89,
+    "eword": "green",
+    "jword": "みどり",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "midori"
+  },
+  {
+    "id": 90,
+    "eword": "pink",
+    "jword": "ピンク",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "pinku"
+  },
+  {
+    "id": 91,
+    "eword": "purple",
+    "jword": "むらさき",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "murasaki"
+  },
+  {
+    "id": 92,
+    "eword": "gold",
+    "jword": "きんいろ",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "kiniro"
+  },
+  {
+    "id": 93,
+    "eword": "silver",
+    "jword": "ぎんいろ",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "giniro"
+  },
+  {
+    "id": 94,
+    "eword": "grey",
+    "jword": "はいいろ",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "haiiro"
+  },
+  {
+    "id": 95,
+    "eword": "rainbow coloured",
+    "jword": "にじいろ",
+    "topic": "Colours",
+    "type": "kana",
+    "sound": "nijiiro"
+  },
+  {
+    "id": 96,
+    "eword": "today",
+    "jword": "きょう",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "kyou"
+  },
+  {
+    "id": 97,
+    "eword": "tomorrow",
+    "jword": "あした",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "ashita"
+  },
+  {
+    "id": 98,
+    "eword": "yesterday",
+    "jword": "きのう",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "kinou"
+  },
+  {
+    "id": 99,
+    "eword": "Monday",
+    "jword": "げつようび",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "getsuyoubi"
+  },
+  {
+    "id": 100,
+    "eword": "Tuesday",
+    "jword": "かようび",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "kayoubi"
+  },
+  {
+    "id": 101,
+    "eword": "Wednesday",
+    "jword": "すいようび",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "suiyoubi"
+  },
+  {
+    "id": 102,
+    "eword": "Thursday",
+    "jword": "もくようび",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "mokuyoubi"
+  },
+  {
+    "id": 103,
+    "eword": "Friday",
+    "jword": "きんようび",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "kinyoubi"
+  },
+  {
+    "id": 104,
+    "eword": "Saturday",
+    "jword": "どようび",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "doyoubi"
+  },
+  {
+    "id": 105,
+    "eword": "Sunday",
+    "jword": "にちようび",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "nichiyoubi"
+  },
+  {
+    "id": 106,
+    "eword": "this week",
+    "jword": "こんしゅう",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "konshuu"
+  },
+  {
+    "id": 107,
+    "eword": "last week",
+    "jword": "せんしゅう",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "senshuu"
+  },
+  {
+    "id": 108,
+    "eword": "next week",
+    "jword": "らいしゅう",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "raishuu"
+  },
+  {
+    "id": 109,
+    "eword": "January",
+    "jword": "いちがつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "ichigatsu"
+  },
+  {
+    "id": 110,
+    "eword": "February",
+    "jword": "にがつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "nigatsu"
+  },
+  {
+    "id": 111,
+    "eword": "March",
+    "jword": "さんがつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "sangatsu"
+  },
+  {
+    "id": 112,
+    "eword": "April",
+    "jword": "しがつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "shigatsu"
+  },
+  {
+    "id": 113,
+    "eword": "May",
+    "jword": "ごがつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "gogatsu"
+  },
+  {
+    "id": 114,
+    "eword": "June",
+    "jword": "ろくがつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "rokugatsu"
+  },
+  {
+    "id": 115,
+    "eword": "July",
+    "jword": "しちがつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "shichigatsu"
+  },
+  {
+    "id": 116,
+    "eword": "August",
+    "jword": "はちがつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "hachigatsu"
+  },
+  {
+    "id": 117,
+    "eword": "September",
+    "jword": "くがつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "kugatsu"
+  },
+  {
+    "id": 118,
+    "eword": "October",
+    "jword": "じゅうがつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "juugatsu"
+  },
+  {
+    "id": 119,
+    "eword": "November",
+    "jword": "じゅういちがつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "juuichigatsu"
+  },
+  {
+    "id": 120,
+    "eword": "December",
+    "jword": "じゅうにがつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "juunigatsu"
+  },
+  {
+    "id": 121,
+    "eword": "this month",
+    "jword": "こんげつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "kongetsu"
+  },
+  {
+    "id": 122,
+    "eword": "last month",
+    "jword": "せんげつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "sengetsu"
+  },
+  {
+    "id": 123,
+    "eword": "next month",
+    "jword": "らいげつ",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "raigetsu"
+  },
+  {
+    "id": 124,
+    "eword": "this year",
+    "jword": "ことし",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "kotoshi"
+  },
+  {
+    "id": 125,
+    "eword": "last year",
+    "jword": "きょねん",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "kyonen"
+  },
+  {
+    "id": 126,
+    "eword": "next year",
+    "jword": "らいねん",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "rainen"
+  },
+  {
+    "id": 127,
+    "eword": "every day",
+    "jword": "まいにち",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "mainichi"
+  },
+  {
+    "id": 128,
+    "eword": "every week",
+    "jword": "まいしゅう",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "maishuu"
+  },
+  {
+    "id": 129,
+    "eword": "every month",
+    "jword": "まいつき",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "maitsuki"
+  },
+  {
+    "id": 130,
+    "eword": "every year",
+    "jword": "まいとし",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "kana",
+    "sound": "maitoshi"
+  },
+  {
+    "id": 131,
+    "eword": "thank you very much",
+    "jword": "ありがとう ございます",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "arigatou gozaimasu"
+  },
+  {
+    "id": 132,
+    "eword": "you’re welcome",
+    "jword": "どういたしまして",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "douitashimashite"
+  },
+  {
+    "id": 133,
+    "eword": "how do you do?",
+    "jword": "はじめまして",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "hajimemashite"
+  },
+  {
+    "id": 134,
+    "eword": "please give me",
+    "jword": "おねがいします",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "onegaishimasu"
+  },
+  {
+    "id": 135,
+    "eword": "nice to meet you",
+    "jword": "どうぞよろしく",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "douzo yoroshiku"
+  },
+  {
+    "id": 136,
+    "eword": "fine, ok",
+    "jword": "だいじょうぶ",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "daijoubu"
+  },
+  {
+    "id": 137,
+    "eword": "It is so? really?",
+    "jword": "そうですか",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "sou desu ka"
+  },
+  {
+    "id": 138,
+    "eword": "How are you?",
+    "jword": "おげんきですか",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "ogenki desu ka"
+  },
+  {
+    "id": 139,
+    "eword": "I’m fine\/well",
+    "jword": "げんきです",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "genki desu"
+  },
+  {
+    "id": 140,
+    "eword": "I understand",
+    "jword": "わかります",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "wakarimasu"
+  },
+  {
+    "id": 141,
+    "eword": "I don’t understand",
+    "jword": "わかりません",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "wakarimasen"
+  },
+  {
+    "id": 142,
+    "eword": "please",
+    "jword": "ください",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "kudasai"
+  },
+  {
+    "id": 143,
+    "eword": "excuse me; sorry",
+    "jword": "すみません",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "sumimasen"
+  },
+  {
+    "id": 144,
+    "eword": "I’m sorry",
+    "jword": "ごめんなさい",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "gomen nasai"
+  },
+  {
+    "id": 145,
+    "eword": "one more time",
+    "jword": "もういちど",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "mou ichi do"
+  },
+  {
+    "id": 146,
+    "eword": "see you later",
+    "jword": "じゃあまた",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "jaa mata"
+  },
+  {
+    "id": 147,
+    "eword": "yes",
+    "jword": "はい",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "hai"
+  },
+  {
+    "id": 148,
+    "eword": "no",
+    "jword": "いいえ",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "iie"
+  },
+  {
+    "id": 149,
+    "eword": "I",
+    "jword": "わたし",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "watashi"
+  },
+  {
+    "id": 150,
+    "eword": "you",
+    "jword": "あなた",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "anata"
+  },
+  {
+    "id": 151,
+    "eword": "person",
+    "jword": "ひと",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "hito"
+  },
+  {
+    "id": 152,
+    "eword": "name",
+    "jword": "なまえ",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "namae"
+  },
+  {
+    "id": 153,
+    "eword": "he",
+    "jword": "かれ",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "kare"
+  },
+  {
+    "id": 154,
+    "eword": "she",
+    "jword": "かのじょ",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "kanojo"
+  },
+  {
+    "id": 155,
+    "eword": "here you go",
+    "jword": "どうぞ",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "douzo"
+  },
+  {
+    "id": 156,
+    "eword": "welcome",
+    "jword": "ようこそ",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "youkoso"
+  },
+  {
+    "id": 157,
+    "eword": "I (for males)",
+    "jword": "ぼく; おれ",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "boku; ore"
+  },
+  {
+    "id": 158,
+    "eword": "Australia",
+    "jword": "オーストラリア",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "oosutoraria"
+  },
+  {
+    "id": 159,
+    "eword": "Japan",
+    "jword": "にほん",
+    "topic": "Essential",
+    "type": "kana",
+    "sound": "nihon"
+  },
+  {
+    "id": 160,
+    "eword": "grandfather",
+    "jword": "おじいさん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "ojiisan"
+  },
+  {
+    "id": 161,
+    "eword": "grandmother",
+    "jword": "おばあさん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "obaasan"
+  },
+  {
+    "id": 162,
+    "eword": "father",
+    "jword": "おとうさん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "otousan"
+  },
+  {
+    "id": 163,
+    "eword": "mother",
+    "jword": "おかあさん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "okaasan"
+  },
+  {
+    "id": 164,
+    "eword": "older brother",
+    "jword": "おにいさん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "oniisan"
+  },
+  {
+    "id": 165,
+    "eword": "older sister",
+    "jword": "おねえさん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "oneesan"
+  },
+  {
+    "id": 166,
+    "eword": "younger sister",
+    "jword": "いもうと",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "imouto"
+  },
+  {
+    "id": 167,
+    "eword": "younger brother",
+    "jword": "おとうと",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "otouto"
+  },
+  {
+    "id": 168,
+    "eword": "family",
+    "jword": "かぞく",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "kazoku"
+  },
+  {
+    "id": 169,
+    "eword": "aunt",
+    "jword": "おばさん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "obasan"
+  },
+  {
+    "id": 170,
+    "eword": "uncle",
+    "jword": "おじさん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "ojisan"
+  },
+  {
+    "id": 171,
+    "eword": "son",
+    "jword": "むすこ",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "musuko"
+  },
+  {
+    "id": 172,
+    "eword": "daughter",
+    "jword": "むすめ",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "musume"
+  },
+  {
+    "id": 173,
+    "eword": "child(ren)",
+    "jword": "こども",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "kodomo"
+  },
+  {
+    "id": 174,
+    "eword": "niece",
+    "jword": "めい",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "mei"
+  },
+  {
+    "id": 175,
+    "eword": "nephew",
+    "jword": "おい",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "oi"
+  },
+  {
+    "id": 176,
+    "eword": "parents",
+    "jword": "りょうしん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "ryoushin"
+  },
+  {
+    "id": 177,
+    "eword": "1 person",
+    "jword": "ひとり",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "hitori"
+  },
+  {
+    "id": 178,
+    "eword": "2 people",
+    "jword": "ふたり",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "futari"
+  },
+  {
+    "id": 179,
+    "eword": "3 people",
+    "jword": "さんにん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "sannin"
+  },
+  {
+    "id": 180,
+    "eword": "4 people",
+    "jword": "よにん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "yonin"
+  },
+  {
+    "id": 181,
+    "eword": "5 people",
+    "jword": "ごにん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "gonin"
+  },
+  {
+    "id": 182,
+    "eword": "6 people",
+    "jword": "ろくにん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "rokunin"
+  },
+  {
+    "id": 183,
+    "eword": "7 people",
+    "jword": "しちにん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "shichinin"
+  },
+  {
+    "id": 184,
+    "eword": "8 people",
+    "jword": "はちにん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "hachinin"
+  },
+  {
+    "id": 185,
+    "eword": "9 people",
+    "jword": "きゅうにん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "kyuunin"
+  },
+  {
+    "id": 186,
+    "eword": "10 people",
+    "jword": "じゅうにん",
+    "topic": "Family & Counting",
+    "type": "kana",
+    "sound": "juunin"
+  },
+  {
+    "id": 187,
+    "eword": "fish",
+    "jword": "さかな",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "sakana"
+  },
+  {
+    "id": 188,
+    "eword": "cheese",
+    "jword": "チーズ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "chiizu"
+  },
+  {
+    "id": 189,
+    "eword": "pasta",
+    "jword": "パスタ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "pasuta"
+  },
+  {
+    "id": 190,
+    "eword": "beer",
+    "jword": "ビール",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "biiru"
+  },
+  {
+    "id": 191,
+    "eword": "hamburger",
+    "jword": "ハンバーガー",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "hanbaagaa"
+  },
+  {
+    "id": 192,
+    "eword": "pizza",
+    "jword": "ピザ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "piza"
+  },
+  {
+    "id": 193,
+    "eword": "lettuce",
+    "jword": "レタス",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "retasu"
+  },
+  {
+    "id": 194,
+    "eword": "coffee",
+    "jword": "コーヒー",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "koohii"
+  },
+  {
+    "id": 195,
+    "eword": "orange juice",
+    "jword": "オレンジジュース",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "orenji juusu"
+  },
+  {
+    "id": 196,
+    "eword": "lemonade",
+    "jword": "レモネード",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "remoneedo"
+  },
+  {
+    "id": 197,
+    "eword": "doughnut, donut",
+    "jword": "ドーナツ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "doonatsu"
+  },
+  {
+    "id": 198,
+    "eword": "muffin",
+    "jword": "マフィン",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "mafin"
+  },
+  {
+    "id": 199,
+    "eword": "chocolate",
+    "jword": "チョコレート",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "chokoreeto"
+  },
+  {
+    "id": 200,
+    "eword": "cookie",
+    "jword": "クッキー",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "kukkii"
+  },
+  {
+    "id": 201,
+    "eword": "meat",
+    "jword": "にく",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "niku"
+  },
+  {
+    "id": 202,
+    "eword": "rice; meal",
+    "jword": "ごはん",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "gohan"
+  },
+  {
+    "id": 203,
+    "eword": "breakfast",
+    "jword": "あさごはん",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "asagohan"
+  },
+  {
+    "id": 204,
+    "eword": "dinner",
+    "jword": "ばんごはん",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "bangohan"
+  },
+  {
+    "id": 205,
+    "eword": "lunch",
+    "jword": "ひるごはん",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "hirugohan"
+  },
+  {
+    "id": 206,
+    "eword": "chopsticks",
+    "jword": "(お)はし",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "(o)hashi"
+  },
+  {
+    "id": 207,
+    "eword": "vegetables",
+    "jword": "やさい",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "yasai"
+  },
+  {
+    "id": 208,
+    "eword": "onion",
+    "jword": "たまねぎ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "tamanegi"
+  },
+  {
+    "id": 209,
+    "eword": "egg",
+    "jword": "たまご",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "tamago"
+  },
+  {
+    "id": 210,
+    "eword": "bread",
+    "jword": "パン",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "pan"
+  },
+  {
+    "id": 211,
+    "eword": "salt",
+    "jword": "しお",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "shio"
+  },
+  {
+    "id": 212,
+    "eword": "sugar",
+    "jword": "さとう",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "satou"
+  },
+  {
+    "id": 213,
+    "eword": "soy sauce",
+    "jword": "しょうゆ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "shouyu"
+  },
+  {
+    "id": 214,
+    "eword": "salad",
+    "jword": "サラダ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "sarada"
+  },
+  {
+    "id": 215,
+    "eword": "pork",
+    "jword": "ぶたにく",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "butaniku"
+  },
+  {
+    "id": 216,
+    "eword": "beef",
+    "jword": "ぎゅうにく",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "gyuuniku"
+  },
+  {
+    "id": 217,
+    "eword": "milk",
+    "jword": "ぎゅうにゅう",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "gyuunyuu"
+  },
+  {
+    "id": 218,
+    "eword": "steak",
+    "jword": "ステーキ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "suteeki"
+  },
+  {
+    "id": 219,
+    "eword": "chicken (meat)",
+    "jword": "とりにく",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "toriniku"
+  },
+  {
+    "id": 220,
+    "eword": "prawn; shrimp; lobster",
+    "jword": "えび",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "ebi"
+  },
+  {
+    "id": 221,
+    "eword": "seaweed",
+    "jword": "のり",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "nori"
+  },
+  {
+    "id": 222,
+    "eword": "carrot",
+    "jword": "にんじん",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "ninjin"
+  },
+  {
+    "id": 223,
+    "eword": "banana",
+    "jword": "バナナ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "banana."
+  },
+  {
+    "id": 224,
+    "eword": "cake",
+    "jword": "ケーキ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "keeki"
+  },
+  {
+    "id": 225,
+    "eword": "tomato",
+    "jword": "トマト",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "tomato."
+  },
+  {
+    "id": 226,
+    "eword": "grapes",
+    "jword": "ぶどう",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "budou"
+  },
+  {
+    "id": 227,
+    "eword": "peach",
+    "jword": "もも",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "momo"
+  },
+  {
+    "id": 228,
+    "eword": "melon",
+    "jword": "メロン",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "meron"
+  },
+  {
+    "id": 229,
+    "eword": "mango",
+    "jword": "マンゴー",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "mangoo"
+  },
+  {
+    "id": 230,
+    "eword": "lime",
+    "jword": "ライム",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "raimu"
+  },
+  {
+    "id": 231,
+    "eword": "mandarin",
+    "jword": "みかん",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "mikan"
+  },
+  {
+    "id": 232,
+    "eword": "coconut",
+    "jword": "ココナッツ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "kokonattsu"
+  },
+  {
+    "id": 233,
+    "eword": "pineapple",
+    "jword": "パイナップル",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "painappuru"
+  },
+  {
+    "id": 234,
+    "eword": "cherry",
+    "jword": "さくらんぼ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "sakuranbo"
+  },
+  {
+    "id": 235,
+    "eword": "pear",
+    "jword": "なし",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "nashi"
+  },
+  {
+    "id": 236,
+    "eword": "lemon",
+    "jword": "レモン",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "remon"
+  },
+  {
+    "id": 237,
+    "eword": "orange",
+    "jword": "オレンジ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "orenji"
+  },
+  {
+    "id": 238,
+    "eword": "watermelon",
+    "jword": "すいか",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "suika"
+  },
+  {
+    "id": 239,
+    "eword": "apple",
+    "jword": "りんご",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "ringo"
+  },
+  {
+    "id": 240,
+    "eword": "strawberry",
+    "jword": "いちご",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "ichigo"
+  },
+  {
+    "id": 241,
+    "eword": "candy; sweets",
+    "jword": "(お)かし",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "(o)kashi"
+  },
+  {
+    "id": 242,
+    "eword": "fruit",
+    "jword": "くだもの",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "kudamono"
+  },
+  {
+    "id": 243,
+    "eword": "food",
+    "jword": "たべもの",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "tabemono"
+  },
+  {
+    "id": 244,
+    "eword": "drink",
+    "jword": "のみもの",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "nomimono"
+  },
+  {
+    "id": 245,
+    "eword": "wine",
+    "jword": "ワイン",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "wain"
+  },
+  {
+    "id": 246,
+    "eword": "ice cream",
+    "jword": "アイスクリーム",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "aisu_kuriimu"
+  },
+  {
+    "id": 247,
+    "eword": "water",
+    "jword": "みず",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "mizu"
+  },
+  {
+    "id": 248,
+    "eword": "cola; coke",
+    "jword": "コーラ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "koora"
+  },
+  {
+    "id": 249,
+    "eword": "green tea",
+    "jword": "おちゃ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "ocha"
+  },
+  {
+    "id": 250,
+    "eword": "black tea",
+    "jword": "こうちゃ",
+    "topic": "Food & Drink",
+    "type": "kana",
+    "sound": "koucha"
+  },
+  {
+    "id": 251,
+    "eword": "where",
+    "jword": "どこ",
+    "topic": "General",
+    "type": "kana",
+    "sound": "doko"
+  },
+  {
+    "id": 252,
+    "eword": "who",
+    "jword": "だれ",
+    "topic": "General",
+    "type": "kana",
+    "sound": "dare"
+  },
+  {
+    "id": 253,
+    "eword": "why",
+    "jword": "どうして; なぜ",
+    "topic": "General",
+    "type": "kana",
+    "sound": "doushite; naze"
+  },
+  {
+    "id": 254,
+    "eword": "how",
+    "jword": "どう",
+    "topic": "General",
+    "type": "kana",
+    "sound": "dou "
+  },
+  {
+    "id": 255,
+    "eword": "how many",
+    "jword": "いくつ",
+    "topic": "General",
+    "type": "kana",
+    "sound": "ikutsu"
+  },
+  {
+    "id": 256,
+    "eword": "how much (price)",
+    "jword": "いくら",
+    "topic": "General",
+    "type": "kana",
+    "sound": "ikura"
+  },
+  {
+    "id": 257,
+    "eword": "what",
+    "jword": "なに",
+    "topic": "General",
+    "type": "kana",
+    "sound": "nani"
+  },
+  {
+    "id": 258,
+    "eword": "what kind of",
+    "jword": "どんな",
+    "topic": "General",
+    "type": "kana",
+    "sound": "donna"
+  },
+  {
+    "id": 259,
+    "eword": "when",
+    "jword": "いつ",
+    "topic": "General",
+    "type": "kana",
+    "sound": "itsu"
+  },
+  {
+    "id": 260,
+    "eword": "sometimes",
+    "jword": "ときどき",
+    "topic": "General",
+    "type": "kana",
+    "sound": "tokidoki"
+  },
+  {
+    "id": 261,
+    "eword": "always",
+    "jword": "いつも",
+    "topic": "General",
+    "type": "kana",
+    "sound": "itsumo"
+  },
+  {
+    "id": 262,
+    "eword": "often",
+    "jword": "よく",
+    "topic": "General",
+    "type": "kana",
+    "sound": "yoku"
+  },
+  {
+    "id": 263,
+    "eword": "usually",
+    "jword": "たいてい",
+    "topic": "General",
+    "type": "kana",
+    "sound": "taitei"
+  },
+  {
+    "id": 264,
+    "eword": "occasionally",
+    "jword": "たまに",
+    "topic": "General",
+    "type": "kana",
+    "sound": "tama ni"
+  },
+  {
+    "id": 265,
+    "eword": "not very often",
+    "jword": "あまり",
+    "topic": "General",
+    "type": "kana",
+    "sound": "amari"
+  },
+  {
+    "id": 266,
+    "eword": "not at all",
+    "jword": "ぜんぜん",
+    "topic": "General",
+    "type": "kana",
+    "sound": "zenzen"
+  },
+  {
+    "id": 267,
+    "eword": "seldom; rarely",
+    "jword": "めったに",
+    "topic": "General",
+    "type": "kana",
+    "sound": "metta ni"
+  },
+  {
+    "id": 268,
+    "eword": "good morning",
+    "jword": "おはよう ございます",
+    "topic": "Greetings",
+    "type": "kana",
+    "sound": "ohayou gozaimasu"
+  },
+  {
+    "id": 269,
+    "eword": "good afternoon",
+    "jword": "こんにちは",
+    "topic": "Greetings",
+    "type": "kana",
+    "sound": "konnichiwa"
+  },
+  {
+    "id": 270,
+    "eword": "good evening",
+    "jword": "こんばんは",
+    "topic": "Greetings",
+    "type": "kana",
+    "sound": "konbanwa"
+  },
+  {
+    "id": 271,
+    "eword": "good night",
+    "jword": "おやすみ なさい",
+    "topic": "Greetings",
+    "type": "kana",
+    "sound": "oyasumi nasai"
+  },
+  {
+    "id": 272,
+    "eword": "goodbye",
+    "jword": "さようなら",
+    "topic": "Greetings",
+    "type": "kana",
+    "sound": "sayounara"
+  },
+  {
+    "id": 273,
+    "eword": "hello (telephone)",
+    "jword": "もしもし",
+    "topic": "Greetings",
+    "type": "kana",
+    "sound": "moshi moshi"
+  },
+  {
+    "id": 274,
+    "eword": "see you tomorrow",
+    "jword": "またあした",
+    "topic": "Greetings",
+    "type": "kana",
+    "sound": "mata ashita"
+  },
+  {
+    "id": 275,
+    "eword": "zero",
+    "jword": "れい; ゼロ",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "rei; zero"
+  },
+  {
+    "id": 276,
+    "eword": 1,
+    "jword": "いち",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "ichi"
+  },
+  {
+    "id": 277,
+    "eword": 2,
+    "jword": "に",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "ni"
+  },
+  {
+    "id": 278,
+    "eword": 3,
+    "jword": "さん",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "san"
+  },
+  {
+    "id": 279,
+    "eword": 4,
+    "jword": "し; よん",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "shi; yon"
+  },
+  {
+    "id": 280,
+    "eword": 5,
+    "jword": "ご",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "go"
+  },
+  {
+    "id": 281,
+    "eword": 6,
+    "jword": "ろく",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "roku"
+  },
+  {
+    "id": 282,
+    "eword": 7,
+    "jword": "しち; なな",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "shichi; nana"
+  },
+  {
+    "id": 283,
+    "eword": 8,
+    "jword": "はち",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "hachi"
+  },
+  {
+    "id": 284,
+    "eword": 9,
+    "jword": "きゅう; く",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "kyuu; ku"
+  },
+  {
+    "id": 285,
+    "eword": 10,
+    "jword": "じゅう",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "juu"
+  },
+  {
+    "id": 286,
+    "eword": 11,
+    "jword": "じゅういち",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "juuichi"
+  },
+  {
+    "id": 287,
+    "eword": 12,
+    "jword": "じゅうに",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "juuni"
+  },
+  {
+    "id": 288,
+    "eword": 13,
+    "jword": "じゅうさん",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "juusan"
+  },
+  {
+    "id": 289,
+    "eword": 14,
+    "jword": "じゅうよん",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "juuyon"
+  },
+  {
+    "id": 290,
+    "eword": 15,
+    "jword": "じゅうご",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "juugo"
+  },
+  {
+    "id": 291,
+    "eword": 16,
+    "jword": "じゅうろく",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "juuroku"
+  },
+  {
+    "id": 292,
+    "eword": 17,
+    "jword": "じゅうなな",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "juunana"
+  },
+  {
+    "id": 293,
+    "eword": 18,
+    "jword": "じゅうはち",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "juuhachi"
+  },
+  {
+    "id": 294,
+    "eword": 19,
+    "jword": "じゅうきゅう",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "juukyuu"
+  },
+  {
+    "id": 295,
+    "eword": 20,
+    "jword": "にじゅう",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "nijuu"
+  },
+  {
+    "id": 296,
+    "eword": 30,
+    "jword": "さんじゅう",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "sanjuu"
+  },
+  {
+    "id": 297,
+    "eword": 40,
+    "jword": "よんじゅう",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "yonjuu"
+  },
+  {
+    "id": 298,
+    "eword": 50,
+    "jword": "ごじゅう",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "gojuu"
+  },
+  {
+    "id": 299,
+    "eword": 60,
+    "jword": "ろくじゅう",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "rokujuu"
+  },
+  {
+    "id": 300,
+    "eword": 70,
+    "jword": "ななじゅう",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "nanajuu"
+  },
+  {
+    "id": 301,
+    "eword": 80,
+    "jword": "はちじゅう",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "hachijuu"
+  },
+  {
+    "id": 302,
+    "eword": 90,
+    "jword": "きゅうじゅう",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "kyuujuu"
+  },
+  {
+    "id": 303,
+    "eword": 100,
+    "jword": "ひゃく",
+    "topic": "Numbers",
+    "type": "kana",
+    "sound": "hyaku"
+  },
+  {
+    "id": 304,
+    "eword": "school",
+    "jword": "がっこう",
+    "topic": "School",
+    "type": "kana",
+    "sound": "gakkou"
+  },
+  {
+    "id": 305,
+    "eword": "friend",
+    "jword": "ともだち",
+    "topic": "School",
+    "type": "kana",
+    "sound": "tomodachi"
+  },
+  {
+    "id": 306,
+    "eword": "student",
+    "jword": "がくせい",
+    "topic": "School",
+    "type": "kana",
+    "sound": "gakusei"
+  },
+  {
+    "id": 307,
+    "eword": "student, pupil",
+    "jword": "せいと",
+    "topic": "School",
+    "type": "kana",
+    "sound": "seito"
+  },
+  {
+    "id": 308,
+    "eword": "teacher",
+    "jword": "せんせい",
+    "topic": "School",
+    "type": "kana",
+    "sound": "sensei"
+  },
+  {
+    "id": 309,
+    "eword": "one's senior",
+    "jword": "せんぱい",
+    "topic": "School",
+    "type": "kana",
+    "sound": "senpai"
+  },
+  {
+    "id": 310,
+    "eword": "primary school",
+    "jword": "しょうがっこう",
+    "topic": "School",
+    "type": "kana",
+    "sound": "shougakkou"
+  },
+  {
+    "id": 311,
+    "eword": "junior high school",
+    "jword": "ちゅうがっこう",
+    "topic": "School",
+    "type": "kana",
+    "sound": "chuugakkou"
+  },
+  {
+    "id": 312,
+    "eword": "senior high school",
+    "jword": "こうこう",
+    "topic": "School",
+    "type": "kana",
+    "sound": "koukou"
+  },
+  {
+    "id": 313,
+    "eword": "university",
+    "jword": "だいがく",
+    "topic": "School",
+    "type": "kana",
+    "sound": "daigaku"
+  },
+  {
+    "id": 314,
+    "eword": "stand up (please)",
+    "jword": "たって (ださい)",
+    "topic": "School",
+    "type": "kana",
+    "sound": "tatte (kudasai)"
+  },
+  {
+    "id": 315,
+    "eword": "sit down (please)",
+    "jword": "すわって (ださい)",
+    "topic": "School",
+    "type": "kana",
+    "sound": "swatte (kudasai)"
+  },
+  {
+    "id": 316,
+    "eword": "(be) quiet",
+    "jword": "しずかに",
+    "topic": "School",
+    "type": "kana",
+    "sound": "shizuka ni"
+  },
+  {
+    "id": 317,
+    "eword": "good job, well done",
+    "jword": "よくできました",
+    "topic": "School",
+    "type": "kana",
+    "sound": "yoku dekimashita"
+  },
+  {
+    "id": 318,
+    "eword": "homework",
+    "jword": "しゅくだい",
+    "topic": "School",
+    "type": "kana",
+    "sound": "shukudai"
+  },
+  {
+    "id": 319,
+    "eword": "exam, test",
+    "jword": "しけん",
+    "topic": "School",
+    "type": "kana",
+    "sound": "shiken"
+  },
+  {
+    "id": 320,
+    "eword": "do your best; good luck",
+    "jword": "がんばって",
+    "topic": "School",
+    "type": "kana",
+    "sound": "ganbatte"
+  },
+  {
+    "id": 321,
+    "eword": "everyone",
+    "jword": "みなさん",
+    "topic": "School",
+    "type": "kana",
+    "sound": "minasan"
+  },
+  {
+    "id": 322,
+    "eword": "lesson, class",
+    "jword": "じゅぎょう",
+    "topic": "School",
+    "type": "kana",
+    "sound": "jugyou"
+  },
+  {
+    "id": 323,
+    "eword": "question",
+    "jword": "しつもん",
+    "topic": "School",
+    "type": "kana",
+    "sound": "shitsumon"
+  },
+  {
+    "id": 324,
+    "eword": "dictionary",
+    "jword": "じしょ",
+    "topic": "School",
+    "type": "kana",
+    "sound": "jisho"
+  },
+  {
+    "id": 325,
+    "eword": "desk",
+    "jword": "つくえ",
+    "topic": "School",
+    "type": "kana",
+    "sound": "tsukue"
+  },
+  {
+    "id": 326,
+    "eword": "chair",
+    "jword": "いす",
+    "topic": "School",
+    "type": "kana",
+    "sound": "isu"
+  },
+  {
+    "id": 327,
+    "eword": "pencil",
+    "jword": "えんぴつ",
+    "topic": "School",
+    "type": "kana",
+    "sound": "enpitsu"
+  },
+  {
+    "id": 328,
+    "eword": "rubber, eraser",
+    "jword": "けしゴム",
+    "topic": "School",
+    "type": "kana",
+    "sound": "keshigomu"
+  },
+  {
+    "id": 329,
+    "eword": "library",
+    "jword": "としょかん",
+    "topic": "School",
+    "type": "kana",
+    "sound": "toshokan"
+  },
+  {
+    "id": 330,
+    "eword": "book(s)",
+    "jword": "ほん",
+    "topic": "School",
+    "type": "kana",
+    "sound": "hon"
+  },
+  {
+    "id": 331,
+    "eword": "subject (school)",
+    "jword": "かもく",
+    "topic": "School",
+    "type": "kana",
+    "sound": "kamoku"
+  },
+  {
+    "id": 332,
+    "eword": "Japanese (language)",
+    "jword": "にほんご",
+    "topic": "School",
+    "type": "kana",
+    "sound": "nihongo"
+  },
+  {
+    "id": 333,
+    "eword": "English (language)",
+    "jword": "えいご",
+    "topic": "School",
+    "type": "kana",
+    "sound": "eigo"
+  },
+  {
+    "id": 334,
+    "eword": "mathematics (maths)",
+    "jword": "すうがく",
+    "topic": "School",
+    "type": "kana",
+    "sound": "suugaku"
+  },
+  {
+    "id": 335,
+    "eword": "science",
+    "jword": "りか",
+    "topic": "School",
+    "type": "kana",
+    "sound": "rika"
+  },
+  {
+    "id": 336,
+    "eword": "history",
+    "jword": "れきし",
+    "topic": "School",
+    "type": "kana",
+    "sound": "rekishi"
+  },
+  {
+    "id": 337,
+    "eword": "physical education (P.E.)",
+    "jword": "たいいく",
+    "topic": "School",
+    "type": "kana",
+    "sound": "taiiku"
+  },
+  {
+    "id": 338,
+    "eword": "music",
+    "jword": "おんがく",
+    "topic": "School",
+    "type": "kana",
+    "sound": "ongaku"
+  },
+  {
+    "id": 339,
+    "eword": "art",
+    "jword": "びじゅつ",
+    "topic": "School",
+    "type": "kana",
+    "sound": "bijutsu"
+  },
+  {
+    "id": 340,
+    "eword": "arithmetic (maths)",
+    "jword": "さんすう",
+    "topic": "School",
+    "type": "kana",
+    "sound": "sansuu"
+  },
+  {
+    "id": 341,
+    "eword": "to go",
+    "jword": "いきます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "ikimasu"
+  },
+  {
+    "id": 342,
+    "eword": "to come",
+    "jword": "きます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "kimasu"
+  },
+  {
+    "id": 343,
+    "eword": "to return",
+    "jword": "かえります",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "kaerimasu"
+  },
+  {
+    "id": 344,
+    "eword": "to understand",
+    "jword": "わかります",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "wakarimasu"
+  },
+  {
+    "id": 345,
+    "eword": "to speak",
+    "jword": "はなします",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "hanashimasu"
+  },
+  {
+    "id": 346,
+    "eword": "to do",
+    "jword": "します",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "shimasu"
+  },
+  {
+    "id": 347,
+    "eword": "can do",
+    "jword": "できます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "dekimasu"
+  },
+  {
+    "id": 348,
+    "eword": "to listen",
+    "jword": "ききます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "kikimasu"
+  },
+  {
+    "id": 349,
+    "eword": "to sleep",
+    "jword": "ねます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "nemasu"
+  },
+  {
+    "id": 350,
+    "eword": "to wake up",
+    "jword": "おきます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "okimasu"
+  },
+  {
+    "id": 351,
+    "eword": "to eat",
+    "jword": "たべます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "tabemasu"
+  },
+  {
+    "id": 352,
+    "eword": "to drink",
+    "jword": "のみます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "nomimasu"
+  },
+  {
+    "id": 353,
+    "eword": "to study",
+    "jword": "べんきょうします",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "benkyou shimasu"
+  },
+  {
+    "id": 354,
+    "eword": "to practise",
+    "jword": "れんしゅうします",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "renshuu shimasu"
+  },
+  {
+    "id": 355,
+    "eword": "to see\/look",
+    "jword": "みます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "mimasu"
+  },
+  {
+    "id": 356,
+    "eword": "to buy",
+    "jword": "かいます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "kaimasu"
+  },
+  {
+    "id": 357,
+    "eword": "to read",
+    "jword": "よみます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "yomimasu"
+  },
+  {
+    "id": 358,
+    "eword": "to write",
+    "jword": "かきます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "kakimasu"
+  },
+  {
+    "id": 359,
+    "eword": "to walk",
+    "jword": "あるきます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "arukimasu"
+  },
+  {
+    "id": 360,
+    "eword": "to run",
+    "jword": "はしります",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "hashirimasu"
+  },
+  {
+    "id": 361,
+    "eword": "to say",
+    "jword": "いいます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "iimasu"
+  },
+  {
+    "id": 362,
+    "eword": "to open",
+    "jword": "あけます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "akemasu"
+  },
+  {
+    "id": 363,
+    "eword": "to close",
+    "jword": "しめます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "shimemasu"
+  },
+  {
+    "id": 364,
+    "eword": "to teach",
+    "jword": "おしえます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "oshiemasu"
+  },
+  {
+    "id": 365,
+    "eword": "to learn",
+    "jword": "ならいます",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "naraimasu"
+  },
+  {
+    "id": 366,
+    "eword": "there is (animate object)",
+    "jword": "います",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "imasu"
+  },
+  {
+    "id": 367,
+    "eword": "there is (inanimate object)",
+    "jword": "あります",
+    "topic": "Verbs",
+    "type": "kana",
+    "sound": "arimasu"
+  },
+  {
+    "id": 368,
+    "eword": "seasons",
+    "jword": "きせつ",
+    "topic": "Seasons & Weather",
+    "type": "kana",
+    "sound": "kisetsu"
+  },
+  {
+    "id": 369,
+    "eword": "spring",
+    "jword": "はる",
+    "topic": "Seasons & Weather",
+    "type": "kana",
+    "sound": "haru"
+  },
+  {
+    "id": 370,
+    "eword": "summer",
+    "jword": "なつ",
+    "topic": "Seasons & Weather",
+    "type": "kana",
+    "sound": "natsu"
+  },
+  {
+    "id": 371,
+    "eword": "autumn",
+    "jword": "あき",
+    "topic": "Seasons & Weather",
+    "type": "kana",
+    "sound": "aki"
+  },
+  {
+    "id": 372,
+    "eword": "winter",
+    "jword": "ふゆ",
+    "topic": "Seasons & Weather",
+    "type": "kana",
+    "sound": "fuyu"
+  },
+  {
+    "id": 373,
+    "eword": "rain",
+    "jword": "あめ",
+    "topic": "Seasons & Weather",
+    "type": "kana",
+    "sound": "ame"
+  },
+  {
+    "id": 374,
+    "eword": "snow",
+    "jword": "ゆき",
+    "topic": "Seasons & Weather",
+    "type": "kana",
+    "sound": "yuki"
+  },
+  {
+    "id": 375,
+    "eword": "hail",
+    "jword": "ひょう",
+    "topic": "Seasons & Weather",
+    "type": "kana",
+    "sound": "hyou"
+  },
+  {
+    "id": 376,
+    "eword": "weather",
+    "jword": "てんき",
+    "topic": "Seasons & Weather",
+    "type": "kana",
+    "sound": "tenki"
+  },
+  {
+    "id": 1,
+    "eword": "funny, interesting",
+    "jword": "omoshiroi",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "omoshiroi"
+  },
+  {
+    "id": 2,
+    "eword": "fun, enjoyable",
+    "jword": "tanoshii",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "tanoshii"
+  },
+  {
+    "id": 3,
+    "eword": "delicious",
+    "jword": "oishii",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "oishii"
+  },
+  {
+    "id": 4,
+    "eword": "new",
+    "jword": "atarashii",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "atarashii"
+  },
+  {
+    "id": 5,
+    "eword": "good",
+    "jword": "yoi",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "yoi"
+  },
+  {
+    "id": 6,
+    "eword": "boring",
+    "jword": "tsumaranai",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "tsumaranai"
+  },
+  {
+    "id": 7,
+    "eword": "pretty",
+    "jword": "kirei",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "kirei"
+  },
+  {
+    "id": 8,
+    "eword": "strange",
+    "jword": "hen",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "hen"
+  },
+  {
+    "id": 9,
+    "eword": "difficult",
+    "jword": "muzukashii",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "muzukashii"
+  },
+  {
+    "id": 10,
+    "eword": "old",
+    "jword": "furui",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "furui"
+  },
+  {
+    "id": 11,
+    "eword": "beautiful",
+    "jword": "utsukushii",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "utsukushii"
+  },
+  {
+    "id": 12,
+    "eword": "bad",
+    "jword": "warui",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "warui"
+  },
+  {
+    "id": 13,
+    "eword": "splendid, wonderful",
+    "jword": "subarashii",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "subarashii"
+  },
+  {
+    "id": 14,
+    "eword": "wow! amazing",
+    "jword": "sugoi",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "sugoi"
+  },
+  {
+    "id": 15,
+    "eword": "wonderful; nice",
+    "jword": "suteki",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "suteki"
+  },
+  {
+    "id": 16,
+    "eword": "tall; high; expensive",
+    "jword": "takai",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "takai"
+  },
+  {
+    "id": 17,
+    "eword": "fast, quick",
+    "jword": "hayai",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "hayai"
+  },
+  {
+    "id": 18,
+    "eword": "strict",
+    "jword": "kibishii",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "kibishii"
+  },
+  {
+    "id": 19,
+    "eword": "long",
+    "jword": "nagai",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "nagai"
+  },
+  {
+    "id": 20,
+    "eword": "trendy; cool",
+    "jword": "kakkoii",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "kakkoii"
+  },
+  {
+    "id": 21,
+    "eword": "kind; gentle",
+    "jword": "yasashii",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "yasashii"
+  },
+  {
+    "id": 22,
+    "eword": "warm",
+    "jword": "atatakai",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "atatakai"
+  },
+  {
+    "id": 23,
+    "eword": "short",
+    "jword": "mijikai",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "mijikai"
+  },
+  {
+    "id": 24,
+    "eword": "thin; slender",
+    "jword": "hosoi",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "hosoi"
+  },
+  {
+    "id": 25,
+    "eword": "slow",
+    "jword": "osoi",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "osoi"
+  },
+  {
+    "id": 26,
+    "eword": "famous",
+    "jword": "yuumei",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "yuumei"
+  },
+  {
+    "id": 27,
+    "eword": "cool; cold (to touch)",
+    "jword": "tsumetai",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "tsumetai"
+  },
+  {
+    "id": 28,
+    "eword": "cheap; inexpensive",
+    "jword": "yasui",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "yasui"
+  },
+  {
+    "id": 29,
+    "eword": "young",
+    "jword": "wakai",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "wakai"
+  },
+  {
+    "id": 30,
+    "eword": "convenient",
+    "jword": "benri",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "benri"
+  },
+  {
+    "id": 31,
+    "eword": "large, big",
+    "jword": "ookii",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "ookii"
+  },
+  {
+    "id": 32,
+    "eword": "small",
+    "jword": "chiisai",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "chiisai"
+  },
+  {
+    "id": 33,
+    "eword": "hot",
+    "jword": "atsui",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "atsui"
+  },
+  {
+    "id": 34,
+    "eword": "cold",
+    "jword": "samui",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "samui"
+  },
+  {
+    "id": 35,
+    "eword": "cute",
+    "jword": "kawaii",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "kawaii"
+  },
+  {
+    "id": 36,
+    "eword": "scary",
+    "jword": "kowai",
+    "topic": "Adjectives",
+    "type": "romaji",
+    "sound": "kowai"
+  },
+  {
+    "id": 37,
+    "eword": "animal",
+    "jword": "doubutsu",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "doubutsu"
+  },
+  {
+    "id": 38,
+    "eword": "zoo",
+    "jword": "doubutsuen",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "doubutsuen"
+  },
+  {
+    "id": 39,
+    "eword": "dog",
+    "jword": "inu",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "inu"
+  },
+  {
+    "id": 40,
+    "eword": "puppy",
+    "jword": "koinu",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "koinu"
+  },
+  {
+    "id": 41,
+    "eword": "cat  ",
+    "jword": "neko",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "neko"
+  },
+  {
+    "id": 42,
+    "eword": "kitten",
+    "jword": "koneko",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "koneko"
+  },
+  {
+    "id": 43,
+    "eword": "bird",
+    "jword": "tori",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "tori"
+  },
+  {
+    "id": 44,
+    "eword": "horse",
+    "jword": "uma",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "uma"
+  },
+  {
+    "id": 45,
+    "eword": "monkey; ape",
+    "jword": "saru",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "saru"
+  },
+  {
+    "id": 46,
+    "eword": "snake",
+    "jword": "hebi",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "hebi"
+  },
+  {
+    "id": 47,
+    "eword": "cow",
+    "jword": "ushi",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "ushi"
+  },
+  {
+    "id": 48,
+    "eword": "deer",
+    "jword": "shika",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "shika"
+  },
+  {
+    "id": 49,
+    "eword": "elephant",
+    "jword": "zou",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "zou"
+  },
+  {
+    "id": 50,
+    "eword": "mouse; rat",
+    "jword": "nezumi",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "nezumi"
+  },
+  {
+    "id": 51,
+    "eword": "chicken",
+    "jword": "niwatori",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "niwatori"
+  },
+  {
+    "id": 52,
+    "eword": "turtle; tortoise",
+    "jword": "kame",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "kame"
+  },
+  {
+    "id": 53,
+    "eword": "frog",
+    "jword": "kaeru",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "kaeru"
+  },
+  {
+    "id": 54,
+    "eword": "spider",
+    "jword": "kumo",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "kumo"
+  },
+  {
+    "id": 55,
+    "eword": "tiger",
+    "jword": "tora",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "tora"
+  },
+  {
+    "id": 56,
+    "eword": "rabbit; hare",
+    "jword": "usagi",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "usagi"
+  },
+  {
+    "id": 57,
+    "eword": "sheep",
+    "jword": "hitsuji",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "hitsuji"
+  },
+  {
+    "id": 58,
+    "eword": "squirrel",
+    "jword": "risu",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "risu"
+  },
+  {
+    "id": 59,
+    "eword": "pig",
+    "jword": "buta",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "buta"
+  },
+  {
+    "id": 60,
+    "eword": "goat",
+    "jword": "yagi",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "yagi"
+  },
+  {
+    "id": 61,
+    "eword": "bear",
+    "jword": "kuma",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "kuma"
+  },
+  {
+    "id": 62,
+    "eword": "wolf",
+    "jword": "ookami",
+    "topic": "Animals",
+    "type": "romaji",
+    "sound": "ookami"
+  },
+  {
+    "id": 63,
+    "eword": "body",
+    "jword": "karada",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "karada"
+  },
+  {
+    "id": 64,
+    "eword": "head",
+    "jword": "atama",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "atama"
+  },
+  {
+    "id": 65,
+    "eword": "hair",
+    "jword": "kami",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "kami"
+  },
+  {
+    "id": 66,
+    "eword": "eye(s)",
+    "jword": "me",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "me"
+  },
+  {
+    "id": 67,
+    "eword": "nose",
+    "jword": "hana",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "hana"
+  },
+  {
+    "id": 68,
+    "eword": "mouth",
+    "jword": "kuchi",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "kuchi"
+  },
+  {
+    "id": 69,
+    "eword": "tooth; teeth",
+    "jword": "ha",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "ha"
+  },
+  {
+    "id": 70,
+    "eword": "ear(s)",
+    "jword": "mimi",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "mimi"
+  },
+  {
+    "id": 71,
+    "eword": "throat",
+    "jword": "nodo",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "nodo"
+  },
+  {
+    "id": 72,
+    "eword": "shoulder",
+    "jword": "kata",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "kata"
+  },
+  {
+    "id": 73,
+    "eword": "chest",
+    "jword": "mune",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "mune"
+  },
+  {
+    "id": 74,
+    "eword": "stomach",
+    "jword": "onaka",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "onaka"
+  },
+  {
+    "id": 75,
+    "eword": "arm(s)",
+    "jword": "ude",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "ude"
+  },
+  {
+    "id": 76,
+    "eword": "elbow(s)",
+    "jword": "hiji",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "hiji"
+  },
+  {
+    "id": 77,
+    "eword": "hand(s)",
+    "jword": "te",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "te"
+  },
+  {
+    "id": 78,
+    "eword": "finger(s)",
+    "jword": "yubi",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "yubi"
+  },
+  {
+    "id": 79,
+    "eword": "leg(s); foot; feet",
+    "jword": "ashi",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "ashi"
+  },
+  {
+    "id": 80,
+    "eword": "knee(s)",
+    "jword": "hiza",
+    "topic": "Body Parts",
+    "type": "romaji",
+    "sound": "hiza"
+  },
+  {
+    "id": 81,
+    "eword": "colour",
+    "jword": "iro",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "iro"
+  },
+  {
+    "id": 82,
+    "eword": "red",
+    "jword": "aka(i)",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "aka(i)"
+  },
+  {
+    "id": 83,
+    "eword": "blue",
+    "jword": "ao(i)",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "ao(i)"
+  },
+  {
+    "id": 84,
+    "eword": "orange",
+    "jword": "orenji",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "orenji"
+  },
+  {
+    "id": 85,
+    "eword": "yellow",
+    "jword": "kiiro(i)",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "kiiro(i)"
+  },
+  {
+    "id": 86,
+    "eword": "brown",
+    "jword": "chairo(i)",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "chairo(i)"
+  },
+  {
+    "id": 87,
+    "eword": "black",
+    "jword": "kuro(i)",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "kuro(i)"
+  },
+  {
+    "id": 88,
+    "eword": "white",
+    "jword": "shiro(i)",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "shiro(i)"
+  },
+  {
+    "id": 89,
+    "eword": "green",
+    "jword": "midori",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "midori"
+  },
+  {
+    "id": 90,
+    "eword": "pink",
+    "jword": "pinku",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "pinku"
+  },
+  {
+    "id": 91,
+    "eword": "purple",
+    "jword": "murasaki",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "murasaki"
+  },
+  {
+    "id": 92,
+    "eword": "gold",
+    "jword": "kiniro",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "kiniro"
+  },
+  {
+    "id": 93,
+    "eword": "silver",
+    "jword": "giniro",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "giniro"
+  },
+  {
+    "id": 94,
+    "eword": "grey",
+    "jword": "haiiro",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "haiiro"
+  },
+  {
+    "id": 95,
+    "eword": "rainbow coloured",
+    "jword": "nijiiro",
+    "topic": "Colours",
+    "type": "romaji",
+    "sound": "nijiiro"
+  },
+  {
+    "id": 96,
+    "eword": "today",
+    "jword": "kyou",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "kyou"
+  },
+  {
+    "id": 97,
+    "eword": "tomorrow",
+    "jword": "ashita",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "ashita"
+  },
+  {
+    "id": 98,
+    "eword": "yesterday",
+    "jword": "kinou",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "kinou"
+  },
+  {
+    "id": 99,
+    "eword": "Monday",
+    "jword": "getsuyoubi",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "getsuyoubi"
+  },
+  {
+    "id": 100,
+    "eword": "Tuesday",
+    "jword": "kayoubi",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "kayoubi"
+  },
+  {
+    "id": 101,
+    "eword": "Wednesday",
+    "jword": "suiyoubi",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "suiyoubi"
+  },
+  {
+    "id": 102,
+    "eword": "Thursday",
+    "jword": "mokuyoubi",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "mokuyoubi"
+  },
+  {
+    "id": 103,
+    "eword": "Friday",
+    "jword": "kinyoubi",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "kinyoubi"
+  },
+  {
+    "id": 104,
+    "eword": "Saturday",
+    "jword": "doyoubi",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "doyoubi"
+  },
+  {
+    "id": 105,
+    "eword": "Sunday",
+    "jword": "nichiyoubi",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "nichiyoubi"
+  },
+  {
+    "id": 106,
+    "eword": "this week",
+    "jword": "konshuu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "konshuu"
+  },
+  {
+    "id": 107,
+    "eword": "last week",
+    "jword": "senshuu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "senshuu"
+  },
+  {
+    "id": 108,
+    "eword": "next week",
+    "jword": "raishuu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "raishuu"
+  },
+  {
+    "id": 109,
+    "eword": "January",
+    "jword": "ichigatsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "ichigatsu"
+  },
+  {
+    "id": 110,
+    "eword": "February",
+    "jword": "nigatsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "nigatsu"
+  },
+  {
+    "id": 111,
+    "eword": "March",
+    "jword": "sangatsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "sangatsu"
+  },
+  {
+    "id": 112,
+    "eword": "April",
+    "jword": "shigatsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "shigatsu"
+  },
+  {
+    "id": 113,
+    "eword": "May",
+    "jword": "gogatsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "gogatsu"
+  },
+  {
+    "id": 114,
+    "eword": "June",
+    "jword": "rokugatsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "rokugatsu"
+  },
+  {
+    "id": 115,
+    "eword": "July",
+    "jword": "shichigatsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "shichigatsu"
+  },
+  {
+    "id": 116,
+    "eword": "August",
+    "jword": "hachigatsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "hachigatsu"
+  },
+  {
+    "id": 117,
+    "eword": "September",
+    "jword": "kugatsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "kugatsu"
+  },
+  {
+    "id": 118,
+    "eword": "October",
+    "jword": "juugatsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "juugatsu"
+  },
+  {
+    "id": 119,
+    "eword": "November",
+    "jword": "juuichigatsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "juuichigatsu"
+  },
+  {
+    "id": 120,
+    "eword": "December",
+    "jword": "juunigatsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "juunigatsu"
+  },
+  {
+    "id": 121,
+    "eword": "this month",
+    "jword": "kongetsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "kongetsu"
+  },
+  {
+    "id": 122,
+    "eword": "last month",
+    "jword": "sengetsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "sengetsu"
+  },
+  {
+    "id": 123,
+    "eword": "next month",
+    "jword": "raigetsu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "raigetsu"
+  },
+  {
+    "id": 124,
+    "eword": "this year",
+    "jword": "kotoshi",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "kotoshi"
+  },
+  {
+    "id": 125,
+    "eword": "last year",
+    "jword": "kyonen",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "kyonen"
+  },
+  {
+    "id": 126,
+    "eword": "next year",
+    "jword": "rainen",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "rainen"
+  },
+  {
+    "id": 127,
+    "eword": "every day",
+    "jword": "mainichi",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "mainichi"
+  },
+  {
+    "id": 128,
+    "eword": "every week",
+    "jword": "maishuu",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "maishuu"
+  },
+  {
+    "id": 129,
+    "eword": "every month",
+    "jword": "maitsuki",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "maitsuki"
+  },
+  {
+    "id": 130,
+    "eword": "every year",
+    "jword": "maitoshi",
+    "topic": "Days, Weeks, Months, Years",
+    "type": "romaji",
+    "sound": "maitoshi"
+  },
+  {
+    "id": 131,
+    "eword": "thank you very much",
+    "jword": "arigatou gozaimasu",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "arigatou gozaimasu"
+  },
+  {
+    "id": 132,
+    "eword": "you’re welcome",
+    "jword": "douitashimashite",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "douitashimashite"
+  },
+  {
+    "id": 133,
+    "eword": "how do you do?",
+    "jword": "hajimemashite",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "hajimemashite"
+  },
+  {
+    "id": 134,
+    "eword": "please give me",
+    "jword": "onegaishimasu",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "onegaishimasu"
+  },
+  {
+    "id": 135,
+    "eword": "nice to meet you",
+    "jword": "douzo yoroshiku",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "douzo yoroshiku"
+  },
+  {
+    "id": 136,
+    "eword": "fine, ok",
+    "jword": "daijoubu",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "daijoubu"
+  },
+  {
+    "id": 137,
+    "eword": "It is so? really?",
+    "jword": "sou desu ka",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "sou desu ka"
+  },
+  {
+    "id": 138,
+    "eword": "How are you?",
+    "jword": "ogenki desu ka",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "ogenki desu ka"
+  },
+  {
+    "id": 139,
+    "eword": "I’m fine\/well",
+    "jword": "genki desu",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "genki desu"
+  },
+  {
+    "id": 140,
+    "eword": "I understand",
+    "jword": "wakarimasu",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "wakarimasu"
+  },
+  {
+    "id": 141,
+    "eword": "I don’t understand",
+    "jword": "wakarimasen",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "wakarimasen"
+  },
+  {
+    "id": 142,
+    "eword": "please",
+    "jword": "kudasai",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "kudasai"
+  },
+  {
+    "id": 143,
+    "eword": "excuse me; sorry",
+    "jword": "sumimasen",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "sumimasen"
+  },
+  {
+    "id": 144,
+    "eword": "I’m sorry",
+    "jword": "gomen nasai",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "gomen nasai"
+  },
+  {
+    "id": 145,
+    "eword": "one more time",
+    "jword": "mou ichi do",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "mou ichi do"
+  },
+  {
+    "id": 146,
+    "eword": "see you later",
+    "jword": "jaa mata",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "jaa mata"
+  },
+  {
+    "id": 147,
+    "eword": "yes",
+    "jword": "hai",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "hai"
+  },
+  {
+    "id": 148,
+    "eword": "no",
+    "jword": "iie",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "iie"
+  },
+  {
+    "id": 149,
+    "eword": "I",
+    "jword": "watashi",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "watashi"
+  },
+  {
+    "id": 150,
+    "eword": "you",
+    "jword": "anata",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "anata"
+  },
+  {
+    "id": 151,
+    "eword": "person",
+    "jword": "hito",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "hito"
+  },
+  {
+    "id": 152,
+    "eword": "name",
+    "jword": "namae",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "namae"
+  },
+  {
+    "id": 153,
+    "eword": "he",
+    "jword": "kare",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "kare"
+  },
+  {
+    "id": 154,
+    "eword": "she",
+    "jword": "kanojo",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "kanojo"
+  },
+  {
+    "id": 155,
+    "eword": "here you go",
+    "jword": "douzo",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "douzo"
+  },
+  {
+    "id": 156,
+    "eword": "welcome",
+    "jword": "youkoso",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "youkoso"
+  },
+  {
+    "id": 157,
+    "eword": "I (for males)",
+    "jword": "boku; ore",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "boku; ore"
+  },
+  {
+    "id": 158,
+    "eword": "Australia",
+    "jword": "oosutoraria",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "oosutoraria"
+  },
+  {
+    "id": 159,
+    "eword": "Japan",
+    "jword": "nihon",
+    "topic": "Essential",
+    "type": "romaji",
+    "sound": "nihon"
+  },
+  {
+    "id": 160,
+    "eword": "grandfather",
+    "jword": "ojiisan",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "ojiisan"
+  },
+  {
+    "id": 161,
+    "eword": "grandmother",
+    "jword": "obaasan",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "obaasan"
+  },
+  {
+    "id": 162,
+    "eword": "father",
+    "jword": "otousan",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "otousan"
+  },
+  {
+    "id": 163,
+    "eword": "mother",
+    "jword": "okaasan",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "okaasan"
+  },
+  {
+    "id": 164,
+    "eword": "older brother",
+    "jword": "oniisan",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "oniisan"
+  },
+  {
+    "id": 165,
+    "eword": "older sister",
+    "jword": "oneesan",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "oneesan"
+  },
+  {
+    "id": 166,
+    "eword": "younger sister",
+    "jword": "imouto",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "imouto"
+  },
+  {
+    "id": 167,
+    "eword": "younger brother",
+    "jword": "otouto",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "otouto"
+  },
+  {
+    "id": 168,
+    "eword": "family",
+    "jword": "kazoku",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "kazoku"
+  },
+  {
+    "id": 169,
+    "eword": "aunt",
+    "jword": "obasan",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "obasan"
+  },
+  {
+    "id": 170,
+    "eword": "uncle",
+    "jword": "ojisan",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "ojisan"
+  },
+  {
+    "id": 171,
+    "eword": "son",
+    "jword": "musuko",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "musuko"
+  },
+  {
+    "id": 172,
+    "eword": "daughter",
+    "jword": "musume",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "musume"
+  },
+  {
+    "id": 173,
+    "eword": "child(ren)",
+    "jword": "kodomo",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "kodomo"
+  },
+  {
+    "id": 174,
+    "eword": "niece",
+    "jword": "mei",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "mei"
+  },
+  {
+    "id": 175,
+    "eword": "nephew",
+    "jword": "oi",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "oi"
+  },
+  {
+    "id": 176,
+    "eword": "parents",
+    "jword": "ryoushin",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "ryoushin"
+  },
+  {
+    "id": 177,
+    "eword": "1 person",
+    "jword": "hitori",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "hitori"
+  },
+  {
+    "id": 178,
+    "eword": "2 people",
+    "jword": "futari",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "futari"
+  },
+  {
+    "id": 179,
+    "eword": "3 people",
+    "jword": "sannin",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "sannin"
+  },
+  {
+    "id": 180,
+    "eword": "4 people",
+    "jword": "yonin",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "yonin"
+  },
+  {
+    "id": 181,
+    "eword": "5 people",
+    "jword": "gonin",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "gonin"
+  },
+  {
+    "id": 182,
+    "eword": "6 people",
+    "jword": "rokunin",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "rokunin"
+  },
+  {
+    "id": 183,
+    "eword": "7 people",
+    "jword": "shichinin",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "shichinin"
+  },
+  {
+    "id": 184,
+    "eword": "8 people",
+    "jword": "hachinin",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "hachinin"
+  },
+  {
+    "id": 185,
+    "eword": "9 people",
+    "jword": "kyuunin",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "kyuunin"
+  },
+  {
+    "id": 186,
+    "eword": "10 people",
+    "jword": "juunin",
+    "topic": "Family & Counting",
+    "type": "romaji",
+    "sound": "juunin"
+  },
+  {
+    "id": 187,
+    "eword": "fish",
+    "jword": "sakana",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "sakana"
+  },
+  {
+    "id": 188,
+    "eword": "cheese",
+    "jword": "chiizu",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "chiizu"
+  },
+  {
+    "id": 189,
+    "eword": "pasta",
+    "jword": "pasuta",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "pasuta"
+  },
+  {
+    "id": 190,
+    "eword": "beer",
+    "jword": "biiru",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "biiru"
+  },
+  {
+    "id": 191,
+    "eword": "hamburger",
+    "jword": "hanbaagaa",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "hanbaagaa"
+  },
+  {
+    "id": 192,
+    "eword": "pizza",
+    "jword": "piza",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "piza"
+  },
+  {
+    "id": 193,
+    "eword": "lettuce",
+    "jword": "retasu",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "retasu"
+  },
+  {
+    "id": 194,
+    "eword": "coffee",
+    "jword": "koohii",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "koohii"
+  },
+  {
+    "id": 195,
+    "eword": "orange juice",
+    "jword": "orenji juusu",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "orenji juusu"
+  },
+  {
+    "id": 196,
+    "eword": "lemonade",
+    "jword": "remoneedo",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "remoneedo"
+  },
+  {
+    "id": 197,
+    "eword": "doughnut, donut",
+    "jword": "doonatsu",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "doonatsu"
+  },
+  {
+    "id": 198,
+    "eword": "muffin",
+    "jword": "mafin",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "mafin"
+  },
+  {
+    "id": 199,
+    "eword": "chocolate",
+    "jword": "chokoreeto",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "chokoreeto"
+  },
+  {
+    "id": 200,
+    "eword": "cookie",
+    "jword": "kukkii",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "kukkii"
+  },
+  {
+    "id": 201,
+    "eword": "meat",
+    "jword": "niku",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "niku"
+  },
+  {
+    "id": 202,
+    "eword": "rice; meal",
+    "jword": "gohan",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "gohan"
+  },
+  {
+    "id": 203,
+    "eword": "breakfast",
+    "jword": "asagohan",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "asagohan"
+  },
+  {
+    "id": 204,
+    "eword": "dinner",
+    "jword": "bangohan",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "bangohan"
+  },
+  {
+    "id": 205,
+    "eword": "lunch",
+    "jword": "hirugohan",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "hirugohan"
+  },
+  {
+    "id": 206,
+    "eword": "chopsticks",
+    "jword": "(o)hashi",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "(o)hashi"
+  },
+  {
+    "id": 207,
+    "eword": "vegetables",
+    "jword": "yasai",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "yasai"
+  },
+  {
+    "id": 208,
+    "eword": "onion",
+    "jword": "tamanegi",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "tamanegi"
+  },
+  {
+    "id": 209,
+    "eword": "egg",
+    "jword": "tamago",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "tamago"
+  },
+  {
+    "id": 210,
+    "eword": "bread",
+    "jword": "pan",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "pan"
+  },
+  {
+    "id": 211,
+    "eword": "salt",
+    "jword": "shio",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "shio"
+  },
+  {
+    "id": 212,
+    "eword": "sugar",
+    "jword": "satou",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "satou"
+  },
+  {
+    "id": 213,
+    "eword": "soy sauce",
+    "jword": "shouyu",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "shouyu"
+  },
+  {
+    "id": 214,
+    "eword": "salad",
+    "jword": "sarada",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "sarada"
+  },
+  {
+    "id": 215,
+    "eword": "pork",
+    "jword": "butaniku",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "butaniku"
+  },
+  {
+    "id": 216,
+    "eword": "beef",
+    "jword": "gyuuniku",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "gyuuniku"
+  },
+  {
+    "id": 217,
+    "eword": "milk",
+    "jword": "gyuunyuu",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "gyuunyuu"
+  },
+  {
+    "id": 218,
+    "eword": "steak",
+    "jword": "suteeki",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "suteeki"
+  },
+  {
+    "id": 219,
+    "eword": "chicken (meat)",
+    "jword": "toriniku",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "toriniku"
+  },
+  {
+    "id": 220,
+    "eword": "prawn; shrimp; lobster",
+    "jword": "ebi",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "ebi"
+  },
+  {
+    "id": 221,
+    "eword": "seaweed",
+    "jword": "nori",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "nori"
+  },
+  {
+    "id": 222,
+    "eword": "carrot",
+    "jword": "ninjin",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "ninjin"
+  },
+  {
+    "id": 223,
+    "eword": "banana",
+    "jword": "banana.",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "banana."
+  },
+  {
+    "id": 224,
+    "eword": "cake",
+    "jword": "keeki",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "keeki"
+  },
+  {
+    "id": 225,
+    "eword": "tomato",
+    "jword": "tomato.",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "tomato."
+  },
+  {
+    "id": 226,
+    "eword": "grapes",
+    "jword": "budou",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "budou"
+  },
+  {
+    "id": 227,
+    "eword": "peach",
+    "jword": "momo",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "momo"
+  },
+  {
+    "id": 228,
+    "eword": "melon",
+    "jword": "meron",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "meron"
+  },
+  {
+    "id": 229,
+    "eword": "mango",
+    "jword": "mangoo",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "mangoo"
+  },
+  {
+    "id": 230,
+    "eword": "lime",
+    "jword": "raimu",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "raimu"
+  },
+  {
+    "id": 231,
+    "eword": "mandarin",
+    "jword": "mikan",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "mikan"
+  },
+  {
+    "id": 232,
+    "eword": "coconut",
+    "jword": "kokonattsu",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "kokonattsu"
+  },
+  {
+    "id": 233,
+    "eword": "pineapple",
+    "jword": "painappuru",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "painappuru"
+  },
+  {
+    "id": 234,
+    "eword": "cherry",
+    "jword": "sakuranbo",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "sakuranbo"
+  },
+  {
+    "id": 235,
+    "eword": "pear",
+    "jword": "nashi",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "nashi"
+  },
+  {
+    "id": 236,
+    "eword": "lemon",
+    "jword": "remon",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "remon"
+  },
+  {
+    "id": 237,
+    "eword": "orange",
+    "jword": "orenji",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "orenji"
+  },
+  {
+    "id": 238,
+    "eword": "watermelon",
+    "jword": "suika",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "suika"
+  },
+  {
+    "id": 239,
+    "eword": "apple",
+    "jword": "ringo",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "ringo"
+  },
+  {
+    "id": 240,
+    "eword": "strawberry",
+    "jword": "ichigo",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "ichigo"
+  },
+  {
+    "id": 241,
+    "eword": "candy; sweets",
+    "jword": "(o)kashi",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "(o)kashi"
+  },
+  {
+    "id": 242,
+    "eword": "fruit",
+    "jword": "kudamono",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "kudamono"
+  },
+  {
+    "id": 243,
+    "eword": "food",
+    "jword": "tabemono",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "tabemono"
+  },
+  {
+    "id": 244,
+    "eword": "drink",
+    "jword": "nomimono",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "nomimono"
+  },
+  {
+    "id": 245,
+    "eword": "wine",
+    "jword": "wain",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "wain"
+  },
+  {
+    "id": 246,
+    "eword": "ice cream",
+    "jword": "aisu kuriimu",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "aisu kuriimu"
+  },
+  {
+    "id": 247,
+    "eword": "water",
+    "jword": "mizu",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "mizu"
+  },
+  {
+    "id": 248,
+    "eword": "cola; coke",
+    "jword": "koora",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "koora"
+  },
+  {
+    "id": 249,
+    "eword": "green tea",
+    "jword": "ocha",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "ocha"
+  },
+  {
+    "id": 250,
+    "eword": "black tea",
+    "jword": "koucha",
+    "topic": "Food & Drink",
+    "type": "romaji",
+    "sound": "koucha"
+  },
+  {
+    "id": 251,
+    "eword": "where",
+    "jword": "doko",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "doko"
+  },
+  {
+    "id": 252,
+    "eword": "who",
+    "jword": "dare",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "dare"
+  },
+  {
+    "id": 253,
+    "eword": "why",
+    "jword": "doushite; naze",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "doushite; naze"
+  },
+  {
+    "id": 254,
+    "eword": "how",
+    "jword": "dou ",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "dou "
+  },
+  {
+    "id": 255,
+    "eword": "how many",
+    "jword": "ikutsu",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "ikutsu"
+  },
+  {
+    "id": 256,
+    "eword": "how much (price)",
+    "jword": "ikura",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "ikura"
+  },
+  {
+    "id": 257,
+    "eword": "what",
+    "jword": "nani",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "nani"
+  },
+  {
+    "id": 258,
+    "eword": "what kind of",
+    "jword": "donna",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "donna"
+  },
+  {
+    "id": 259,
+    "eword": "when",
+    "jword": "itsu",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "itsu"
+  },
+  {
+    "id": 260,
+    "eword": "sometimes",
+    "jword": "tokidoki",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "tokidoki"
+  },
+  {
+    "id": 261,
+    "eword": "always",
+    "jword": "itsumo",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "itsumo"
+  },
+  {
+    "id": 262,
+    "eword": "often",
+    "jword": "yoku",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "yoku"
+  },
+  {
+    "id": 263,
+    "eword": "usually",
+    "jword": "taitei",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "taitei"
+  },
+  {
+    "id": 264,
+    "eword": "occasionally",
+    "jword": "tama ni",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "tama ni"
+  },
+  {
+    "id": 265,
+    "eword": "not very often",
+    "jword": "amari",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "amari"
+  },
+  {
+    "id": 266,
+    "eword": "not at all",
+    "jword": "zenzen",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "zenzen"
+  },
+  {
+    "id": 267,
+    "eword": "seldom; rarely",
+    "jword": "metta ni",
+    "topic": "General",
+    "type": "romaji",
+    "sound": "metta ni"
+  },
+  {
+    "id": 268,
+    "eword": "good morning",
+    "jword": "ohayou gozaimasu",
     "topic": "Greetings",
     "type": "romaji",
-    "sound": "word"
+    "sound": "ohayou gozaimasu"
   },
   {
-    "id": "2",
-    "eword": "eword2",
-    "jword": "jword2",
-    "topic": "Numbers",
+    "id": 269,
+    "eword": "good afternoon",
+    "jword": "konnichiwa",
+    "topic": "Greetings",
     "type": "romaji",
-    "sound": "word"
+    "sound": "konnichiwa"
   },
   {
-    "id": "3",
-    "eword": "eword3",
-    "jword": "jword3",
-    "topic": "Numbers",
+    "id": 270,
+    "eword": "good evening",
+    "jword": "konbanwa",
+    "topic": "Greetings",
     "type": "romaji",
-    "sound": "word"
+    "sound": "konbanwa"
   },
   {
-    "id": "4",
-    "eword": "eword4",
-    "jword": "jword4",
-    "topic": "Numbers",
+    "id": 271,
+    "eword": "good night",
+    "jword": "oyasumi nasai",
+    "topic": "Greetings",
     "type": "romaji",
-    "sound": "word"
+    "sound": "oyasumi nasai"
   },
   {
-    "id": "5",
-    "eword": "eword5",
-    "jword": "jword5",
-    "topic": "Numbers",
+    "id": 272,
+    "eword": "goodbye",
+    "jword": "sayounara",
+    "topic": "Greetings",
     "type": "romaji",
-    "sound": "word"
+    "sound": "sayounara"
   },
   {
-    "id": "6",
-    "eword": "eword6",
-    "jword": "jword6",
-    "topic": "Numbers",
+    "id": 273,
+    "eword": "hello (telephone)",
+    "jword": "moshi moshi",
+    "topic": "Greetings",
     "type": "romaji",
-    "sound": "word"
+    "sound": "moshi moshi"
   },
   {
-    "id": "7",
-    "eword": "eword7",
-    "jword": "jword7",
-    "topic": "Numbers",
+    "id": 274,
+    "eword": "see you tomorrow",
+    "jword": "mata ashita",
+    "topic": "Greetings",
     "type": "romaji",
-    "sound": "word"
+    "sound": "mata ashita"
   },
   {
-    "id": "8",
-    "eword": "eword8",
-    "jword": "jword8",
+    "id": 275,
+    "eword": "zero",
+    "jword": "rei; zero",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
+    "sound": "rei; zero"
   },
   {
-    "id": "9",
-    "eword": "eword9",
-    "jword": "jword9",
+    "id": 276,
+    "eword": 1,
+    "jword": "ichi",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
+    "sound": "ichi"
   },
   {
-    "id": "10",
-    "eword": "eword10",
-    "jword": "jword10",
+    "id": 277,
+    "eword": 2,
+    "jword": "ni",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
+    "sound": "ni"
   },
   {
-    "id": "11",
-    "eword": "eword11",
-    "jword": "jword11",
+    "id": 278,
+    "eword": 3,
+    "jword": "san",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
-  },{
-    "id": "12",
-    "eword": "eword12",
-    "jword": "jword12",
-    "topic": "Numbers",
-    "type": "romaji",
-    "sound": "word"
+    "sound": "san"
   },
   {
-    "id": "13",
-    "eword": "eword13",
-    "jword": "jword13",
+    "id": 279,
+    "eword": 4,
+    "jword": "shi; yon",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
+    "sound": "shi; yon"
   },
   {
-    "id": "14",
-    "eword": "eword14",
-    "jword": "jword14",
+    "id": 280,
+    "eword": 5,
+    "jword": "go",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
+    "sound": "go"
   },
   {
-    "id": "15",
-    "eword": "eword15",
-    "jword": "jword15",
+    "id": 281,
+    "eword": 6,
+    "jword": "roku",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
+    "sound": "roku"
   },
   {
-    "id": "16",
-    "eword": "eword16",
-    "jword": "jword16",
+    "id": 282,
+    "eword": 7,
+    "jword": "shichi; nana",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
+    "sound": "shichi; nana"
   },
   {
-    "id": "17",
-    "eword": "eword17",
-    "jword": "jword17",
+    "id": 283,
+    "eword": 8,
+    "jword": "hachi",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
+    "sound": "hachi"
   },
   {
-    "id": "18",
-    "eword": "eword18",
-    "jword": "jword18",
+    "id": 284,
+    "eword": 9,
+    "jword": "kyuu; ku",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
+    "sound": "kyuu; ku"
   },
   {
-    "id": "19",
-    "eword": "eword19",
-    "jword": "jword19",
+    "id": 285,
+    "eword": 10,
+    "jword": "juu",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
+    "sound": "juu"
   },
   {
-    "id": "20",
-    "eword": "eword20",
-    "jword": "jword20",
+    "id": 286,
+    "eword": 11,
+    "jword": "juuichi",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
+    "sound": "juuichi"
   },
   {
-    "id": "21",
-    "eword": "eword21",
-    "jword": "jword21",
+    "id": 287,
+    "eword": 12,
+    "jword": "juuni",
     "topic": "Numbers",
     "type": "romaji",
-    "sound": "word"
+    "sound": "juuni"
+  },
+  {
+    "id": 288,
+    "eword": 13,
+    "jword": "juusan",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "juusan"
+  },
+  {
+    "id": 289,
+    "eword": 14,
+    "jword": "juuyon",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "juuyon"
+  },
+  {
+    "id": 290,
+    "eword": 15,
+    "jword": "juugo",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "juugo"
+  },
+  {
+    "id": 291,
+    "eword": 16,
+    "jword": "juuroku",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "juuroku"
+  },
+  {
+    "id": 292,
+    "eword": 17,
+    "jword": "juunana",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "juunana"
+  },
+  {
+    "id": 293,
+    "eword": 18,
+    "jword": "juuhachi",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "juuhachi"
+  },
+  {
+    "id": 294,
+    "eword": 19,
+    "jword": "juukyuu",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "juukyuu"
+  },
+  {
+    "id": 295,
+    "eword": 20,
+    "jword": "nijuu",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "nijuu"
+  },
+  {
+    "id": 296,
+    "eword": 30,
+    "jword": "sanjuu",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "sanjuu"
+  },
+  {
+    "id": 297,
+    "eword": 40,
+    "jword": "yonjuu",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "yonjuu"
+  },
+  {
+    "id": 298,
+    "eword": 50,
+    "jword": "gojuu",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "gojuu"
+  },
+  {
+    "id": 299,
+    "eword": 60,
+    "jword": "rokujuu",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "rokujuu"
+  },
+  {
+    "id": 300,
+    "eword": 70,
+    "jword": "nanajuu",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "nanajuu"
+  },
+  {
+    "id": 301,
+    "eword": 80,
+    "jword": "hachijuu",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "hachijuu"
+  },
+  {
+    "id": 302,
+    "eword": 90,
+    "jword": "kyuujuu",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "kyuujuu"
+  },
+  {
+    "id": 303,
+    "eword": 100,
+    "jword": "hyaku",
+    "topic": "Numbers",
+    "type": "romaji",
+    "sound": "hyaku"
+  },
+  {
+    "id": 304,
+    "eword": "school",
+    "jword": "gakkou",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "gakkou"
+  },
+  {
+    "id": 305,
+    "eword": "friend",
+    "jword": "tomodachi",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "tomodachi"
+  },
+  {
+    "id": 306,
+    "eword": "student",
+    "jword": "gakusei",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "gakusei"
+  },
+  {
+    "id": 307,
+    "eword": "student, pupil",
+    "jword": "seito",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "seito"
+  },
+  {
+    "id": 308,
+    "eword": "teacher",
+    "jword": "sensei",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "sensei"
+  },
+  {
+    "id": 309,
+    "eword": "one's senior",
+    "jword": "senpai",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "senpai"
+  },
+  {
+    "id": 310,
+    "eword": "primary school",
+    "jword": "shougakkou",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "shougakkou"
+  },
+  {
+    "id": 311,
+    "eword": "junior high school",
+    "jword": "chuugakkou",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "chuugakkou"
+  },
+  {
+    "id": 312,
+    "eword": "senior high school",
+    "jword": "koukou",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "koukou"
+  },
+  {
+    "id": 313,
+    "eword": "university",
+    "jword": "daigaku",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "daigaku"
+  },
+  {
+    "id": 314,
+    "eword": "stand up (please)",
+    "jword": "tatte (kudasai)",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "tatte (kudasai)"
+  },
+  {
+    "id": 315,
+    "eword": "sit down (please)",
+    "jword": "swatte (kudasai)",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "swatte (kudasai)"
+  },
+  {
+    "id": 316,
+    "eword": "(be) quiet",
+    "jword": "shizuka ni",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "shizuka ni"
+  },
+  {
+    "id": 317,
+    "eword": "good job, well done",
+    "jword": "yoku dekimashita",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "yoku dekimashita"
+  },
+  {
+    "id": 318,
+    "eword": "homework",
+    "jword": "shukudai",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "shukudai"
+  },
+  {
+    "id": 319,
+    "eword": "exam, test",
+    "jword": "shiken",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "shiken"
+  },
+  {
+    "id": 320,
+    "eword": "do your best; good luck",
+    "jword": "ganbatte",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "ganbatte"
+  },
+  {
+    "id": 321,
+    "eword": "everyone",
+    "jword": "minasan",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "minasan"
+  },
+  {
+    "id": 322,
+    "eword": "lesson, class",
+    "jword": "jugyou",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "jugyou"
+  },
+  {
+    "id": 323,
+    "eword": "question",
+    "jword": "shitsumon",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "shitsumon"
+  },
+  {
+    "id": 324,
+    "eword": "dictionary",
+    "jword": "jisho",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "jisho"
+  },
+  {
+    "id": 325,
+    "eword": "desk",
+    "jword": "tsukue",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "tsukue"
+  },
+  {
+    "id": 326,
+    "eword": "chair",
+    "jword": "isu",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "isu"
+  },
+  {
+    "id": 327,
+    "eword": "pencil",
+    "jword": "enpitsu",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "enpitsu"
+  },
+  {
+    "id": 328,
+    "eword": "rubber, eraser",
+    "jword": "keshigomu",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "keshigomu"
+  },
+  {
+    "id": 329,
+    "eword": "library",
+    "jword": "toshokan",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "toshokan"
+  },
+  {
+    "id": 330,
+    "eword": "book(s)",
+    "jword": "hon",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "hon"
+  },
+  {
+    "id": 331,
+    "eword": "subject (school)",
+    "jword": "kamoku",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "kamoku"
+  },
+  {
+    "id": 332,
+    "eword": "Japanese (language)",
+    "jword": "nihongo",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "nihongo"
+  },
+  {
+    "id": 333,
+    "eword": "English (language)",
+    "jword": "eigo",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "eigo"
+  },
+  {
+    "id": 334,
+    "eword": "mathematics (maths)",
+    "jword": "suugaku",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "suugaku"
+  },
+  {
+    "id": 335,
+    "eword": "science",
+    "jword": "rika",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "rika"
+  },
+  {
+    "id": 336,
+    "eword": "history",
+    "jword": "rekishi",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "rekishi"
+  },
+  {
+    "id": 337,
+    "eword": "physical education (P.E.)",
+    "jword": "taiiku",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "taiiku"
+  },
+  {
+    "id": 338,
+    "eword": "music",
+    "jword": "ongaku",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "ongaku"
+  },
+  {
+    "id": 339,
+    "eword": "art",
+    "jword": "bijutsu",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "bijutsu"
+  },
+  {
+    "id": 340,
+    "eword": "arithmetic (maths)",
+    "jword": "sansuu",
+    "topic": "School",
+    "type": "romaji",
+    "sound": "sansuu"
+  },
+  {
+    "id": 341,
+    "eword": "to go",
+    "jword": "ikimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "ikimasu"
+  },
+  {
+    "id": 342,
+    "eword": "to come",
+    "jword": "kimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "kimasu"
+  },
+  {
+    "id": 343,
+    "eword": "to return",
+    "jword": "kaerimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "kaerimasu"
+  },
+  {
+    "id": 344,
+    "eword": "to understand",
+    "jword": "wakarimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "wakarimasu"
+  },
+  {
+    "id": 345,
+    "eword": "to speak",
+    "jword": "hanashimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "hanashimasu"
+  },
+  {
+    "id": 346,
+    "eword": "to do",
+    "jword": "shimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "shimasu"
+  },
+  {
+    "id": 347,
+    "eword": "can do",
+    "jword": "dekimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "dekimasu"
+  },
+  {
+    "id": 348,
+    "eword": "to listen",
+    "jword": "kikimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "kikimasu"
+  },
+  {
+    "id": 349,
+    "eword": "to sleep",
+    "jword": "nemasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "nemasu"
+  },
+  {
+    "id": 350,
+    "eword": "to wake up",
+    "jword": "okimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "okimasu"
+  },
+  {
+    "id": 351,
+    "eword": "to eat",
+    "jword": "tabemasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "tabemasu"
+  },
+  {
+    "id": 352,
+    "eword": "to drink",
+    "jword": "nomimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "nomimasu"
+  },
+  {
+    "id": 353,
+    "eword": "to study",
+    "jword": "benkyou shimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "benkyou shimasu"
+  },
+  {
+    "id": 354,
+    "eword": "to practise",
+    "jword": "renshuu shimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "renshuu shimasu"
+  },
+  {
+    "id": 355,
+    "eword": "to see\/look",
+    "jword": "mimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "mimasu"
+  },
+  {
+    "id": 356,
+    "eword": "to buy",
+    "jword": "kaimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "kaimasu"
+  },
+  {
+    "id": 357,
+    "eword": "to read",
+    "jword": "yomimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "yomimasu"
+  },
+  {
+    "id": 358,
+    "eword": "to write",
+    "jword": "kakimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "kakimasu"
+  },
+  {
+    "id": 359,
+    "eword": "to walk",
+    "jword": "arukimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "arukimasu"
+  },
+  {
+    "id": 360,
+    "eword": "to run",
+    "jword": "hashirimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "hashirimasu"
+  },
+  {
+    "id": 361,
+    "eword": "to say",
+    "jword": "iimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "iimasu"
+  },
+  {
+    "id": 362,
+    "eword": "to open",
+    "jword": "akemasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "akemasu"
+  },
+  {
+    "id": 363,
+    "eword": "to close",
+    "jword": "shimemasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "shimemasu"
+  },
+  {
+    "id": 364,
+    "eword": "to teach",
+    "jword": "oshiemasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "oshiemasu"
+  },
+  {
+    "id": 365,
+    "eword": "to learn",
+    "jword": "naraimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "naraimasu"
+  },
+  {
+    "id": 366,
+    "eword": "there is (animate object)",
+    "jword": "imasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "imasu"
+  },
+  {
+    "id": 367,
+    "eword": "there is (inanimate object)",
+    "jword": "arimasu",
+    "topic": "Verbs",
+    "type": "romaji",
+    "sound": "arimasu"
+  },
+  {
+    "id": 368,
+    "eword": "seasons",
+    "jword": "kisetsu",
+    "topic": "Seasons & Weather",
+    "type": "romaji",
+    "sound": "kisetsu"
+  },
+  {
+    "id": 369,
+    "eword": "spring",
+    "jword": "haru",
+    "topic": "Seasons & Weather",
+    "type": "romaji",
+    "sound": "haru"
+  },
+  {
+    "id": 370,
+    "eword": "summer",
+    "jword": "natsu",
+    "topic": "Seasons & Weather",
+    "type": "romaji",
+    "sound": "natsu"
+  },
+  {
+    "id": 371,
+    "eword": "autumn",
+    "jword": "aki",
+    "topic": "Seasons & Weather",
+    "type": "romaji",
+    "sound": "aki"
+  },
+  {
+    "id": 372,
+    "eword": "winter",
+    "jword": "fuyu",
+    "topic": "Seasons & Weather",
+    "type": "romaji",
+    "sound": "fuyu"
+  },
+  {
+    "id": 373,
+    "eword": "rain",
+    "jword": "ame",
+    "topic": "Seasons & Weather",
+    "type": "romaji",
+    "sound": "ame"
+  },
+  {
+    "id": 374,
+    "eword": "snow",
+    "jword": "yuki",
+    "topic": "Seasons & Weather",
+    "type": "romaji",
+    "sound": "yuki"
+  },
+  {
+    "id": 375,
+    "eword": "hail",
+    "jword": "hyou",
+    "topic": "Seasons & Weather",
+    "type": "romaji",
+    "sound": "hyou"
+  },
+  {
+    "id": 376,
+    "eword": "weather",
+    "jword": "tenki",
+    "topic": "Seasons & Weather",
+    "type": "romaji",
+    "sound": "tenki"
   }
 ]
 }

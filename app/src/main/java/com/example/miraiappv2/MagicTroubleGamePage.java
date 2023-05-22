@@ -164,23 +164,23 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                 LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
                 View popupView = inflater.inflate(R.layout.magic_trouble_info_popup, null);
 
-                // Create the popup window
+                // Create the magic_popup window
                 int width;
                 int height;
-                boolean focusable = true; // Allows the user to interact with elements behind the popup window
+                boolean focusable = true; // Allows the user to interact with elements behind the magic_popup window
                 final PopupWindow popupWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, focusable);
 
-                // Set an onClickListener to the close button in the popup layout XML file
+                // Set an onClickListener to the close button in the magic_popup layout XML file
                 Button closeButton = popupView.findViewById(R.id.infobackbtn);
                 closeButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        // Dismiss the popup window
+                        // Dismiss the magic_popup window
                         popupWindow.dismiss();
                     }
                 });
 
-                // Determine the size of the popup window based on the device orientation
+                // Determine the size of the magic_popup window based on the device orientation
                 int orientation = getResources().getConfiguration().orientation;
                 if (orientation == Configuration.ORIENTATION_PORTRAIT) {
                     width = getResources().getDisplayMetrics().widthPixels * 90 / 100; // Set the width to 90% of the screen width
@@ -190,7 +190,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                     height = getResources().getDisplayMetrics().heightPixels * 90 / 100; // Set the height to 90% of the screen height
                 }
 
-                //set width and height for the popup window
+                //set width and height for the magic_popup window
                 popupWindow.setWidth(width);
                 popupWindow.setHeight(height);
                 popupWindow.showAtLocation(popupView, Gravity.CENTER, 0, 0);
@@ -765,7 +765,6 @@ public class MagicTroubleGamePage extends AppCompatActivity {
             throw new RuntimeException(e);
         }
     }
-
     //
     private MediaPlayer loadAudio(String soundName) {
         int resID = getResources().getIdentifier(soundName, "raw", getPackageName());
@@ -778,6 +777,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
             return null;
         }
     }
+
 
     //Load json file from folder
     private String loadJSONFromAsset(String file){
