@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     //private ImageButton buttonMainMenuKanaChallenge;
     private ImageButton buttonMainMenuMagicTrouble;
     private ImageButton buttonMainMenuStudy;
-    //private ImageButton buttonMainMenuVocabConfusion;
+    private ImageButton buttonMainMenuVocabConfusion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         //Removes the Title bar from the top of the application for all screens.
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
 
         //sets screen
         setContentView(R.layout.activity_main);
@@ -78,13 +78,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //buttonMainMenuVocabConfusion = findViewById(R.id.button_main_menu_vocab_confusion);
-        //buttonMainMenuVocabConfusion.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View view) {
-        //        //Intent intent = new Intent(MainActivity.this, VocabConfusionSelectionPage.class);
-                //startActivity(intent);
-        //    }
-        //});
+        buttonMainMenuVocabConfusion = findViewById(R.id.button_main_menu_vocab_confusion);
+        buttonMainMenuVocabConfusion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openVocabActivity();
+            }
+        });
+
+    }
+    public void openVocabActivity(){
+        Intent intent = new Intent(this, VC_MainActivity.class);
+        startActivity(intent);
     }
 }
