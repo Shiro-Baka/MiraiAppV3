@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="5dp"
-    android:background="@drawable/popup">
+    android:background="@drawable/bubble_popup">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:background="@drawable/magic_hat"
+        android:background="@drawable/bubble_fish_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:0.8"
         app:layout_constraintEnd_toStartOf="@+id/guideline21"
@@ -25,7 +25,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:background="@drawable/scary_pot_plant"
+        android:background="@drawable/bubble_fish_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:0.9"
         app:layout_constraintEnd_toStartOf="@+id/guideline19"

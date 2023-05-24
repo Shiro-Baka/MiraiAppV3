@@ -10,7 +10,8 @@ import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class BubbleMatchEndRPage extends AppCompatActivity {
+public class BubbleMatchEndKPage extends AppCompatActivity {
+
 
     TextView tv_result1, tv_result2, tv_score;
     ImageButton buttonRestart, buttonMenu;
@@ -24,7 +25,7 @@ public class BubbleMatchEndRPage extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
-        setContentView(R.layout.activity_bubble_match_end_r_page);
+        setContentView(R.layout.activity_bubble_match_end_k_page);
 
         tv_score = findViewById(R.id.score);
         int score = getIntent().getIntExtra("score", 0);
