@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/game_screen"
-    android:theme="@android:style/Theme.Light.NoTitleBar"
     tools:context=".VC_GameActivity">
 
     <ImageButton
@@ -58,60 +57,65 @@
     <Button
         android:id="@+id/button1"
         android:layout_width="170dp"
-        android:layout_height="80dp"
+        android:layout_height="130dp"
         android:background="#00FFFFFF"
+        android:backgroundTint="@null"
         android:text="answer1"
         android:textAlignment="center"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
-        android:textAllCaps="false"
         app:layout_constraintEnd_toStartOf="@+id/vocabvertical1"
         app:layout_constraintLeft_toLeftOf="@id/vocabvertical"
         app:layout_constraintStart_toStartOf="@+id/vocabvertical"
-        app:layout_constraintTop_toTopOf="@id/vocabhorizontal" />
+        app:layout_constraintTop_toTopOf="@id/vocabhorizontal"
+        app:srcCompat="@drawable/info" />
+
     <Button
         android:id="@+id/button2"
-        android:layout_width="170dp"
-        android:layout_height="80dp"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
         android:background="#00FFFFFF"
         android:text="answer2"
         android:textAlignment="center"
-        android:textColor="@color/white"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/vocabvertical1"
         app:layout_constraintLeft_toLeftOf="@id/vocabvertical"
         app:layout_constraintStart_toStartOf="@+id/vocabvertical"
         app:layout_constraintTop_toTopOf="@id/vocabhorizontal2" />
+
     <Button
         android:id="@+id/button3"
-        android:layout_width="170dp"
-        android:layout_height="80dp"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
         android:background="#00FFFFFF"
         android:backgroundTint="@null"
         android:text="answer3"
         android:textAlignment="center"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
-        android:textAllCaps="false"
         app:layout_constraintEnd_toStartOf="@+id/vocabvertical1"
         app:layout_constraintLeft_toLeftOf="@id/vocabvertical"
         app:layout_constraintStart_toStartOf="@+id/vocabvertical"
         app:layout_constraintTop_toTopOf="@id/vocabhorizontal3" />
+
     <Button
         android:id="@+id/button4"
-        android:layout_width="170dp"
-        android:layout_height="80dp"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
         android:background="#00FFFFFF"
         android:text="answer4"
         android:textAlignment="center"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
-        android:textAllCaps="false"
         app:layout_constraintEnd_toStartOf="@+id/vocabvertical1"
         app:layout_constraintLeft_toLeftOf="@id/vocabvertical"
         app:layout_constraintStart_toStartOf="@+id/vocabvertical"
@@ -140,13 +144,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.15" />
+        app:layout_constraintGuide_percent="0.13" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vocabhorizontal2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.33" />
+        app:layout_constraintGuide_percent="0.32" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vocabhorizontalquestion"
         android:layout_width="wrap_content"
@@ -158,13 +162,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.53" />
+        app:layout_constraintGuide_percent="0.51" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vocabhorizontal4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.72" />
+        app:layout_constraintGuide_percent="0.70" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/scoreguideline"
         android:layout_width="wrap_content"
