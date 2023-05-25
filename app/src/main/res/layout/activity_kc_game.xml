@@ -42,9 +42,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="150dp"
+        android:height="100dp"
         android:text="Question"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="24dp"
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/vocabhorizontalguideline"
         app:layout_constraintLeft_toLeftOf="@id/vocabguidevertical4" />
@@ -231,7 +232,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.52" />
+        app:layout_constraintGuide_percent="0.49" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/scoreguideline"
         android:layout_width="wrap_content"

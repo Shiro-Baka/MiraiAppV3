@@ -72,6 +72,12 @@
             android:name=".KCscoreActivity"
             android:exported="false" />
         <activity
+            android:name=".TopicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TopicMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
