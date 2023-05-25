@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kctopic"
+    tools:context=".KC_TopicActivity">
+
+    <ImageButton
+        android:id="@+id/BackButton"
+        android:background="@drawable/topicback"
+        android:contentDescription="kcbackbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:0.6"
+        app:layout_constraintBottom_toTopOf="@+id/kcTopicGuidelineTop2"
+        app:layout_constraintEnd_toStartOf="@+id/kcGuidelineLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/EssentialButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/kcvertical"
+        app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
+        app:layout_constraintTop_toTopOf="@+id/kcTopicGuidelineTop"
+        app:srcCompat="@drawable/essential" />
+
+    <ImageButton
+        android:id="@+id/GreetingsButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/kcvertical"
+        app:layout_constraintTop_toTopOf="@+id/kcTopicGuidelineTop"
+        app:srcCompat="@drawable/greetings" />
+
+    <ImageButton
+        android:id="@+id/ColorsButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/kcvertical"
+        app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/EssentialButton"
+        app:srcCompat="@drawable/colours" />
+
+    <ImageButton
+        android:id="@+id/GeneralButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/kcvertical"
+        app:layout_constraintTop_toBottomOf="@+id/GreetingsButton"
+        app:srcCompat="@drawable/general" />
+
+    <ImageButton
+        android:id="@+id/NumbersButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/kcvertical"
+        app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/ColorsButton"
+        app:srcCompat="@drawable/numbers" />
+
+    <ImageButton
+        android:id="@+id/SchoolButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/kcvertical"
+        app:layout_constraintTop_toBottomOf="@+id/GeneralButton"
+        app:srcCompat="@drawable/school" />
+
+    <ImageButton
+        android:id="@+id/AdjectivesButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/kcvertical"
+        app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/NumbersButton"
+        app:srcCompat="@drawable/adjectives" />
+    <ImageButton
+        android:id="@+id/VerbsButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/kcvertical"
+        app:layout_constraintTop_toBottomOf="@+id/SchoolButton"
+        app:srcCompat="@drawable/verbs" />
+    <ImageButton
+        android:id="@+id/animalsButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/kcvertical"
+        app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/AdjectivesButton"
+        app:srcCompat="@drawable/animals" />
+    <ImageButton
+        android:id="@+id/bodyButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/kcvertical"
+        app:layout_constraintTop_toBottomOf="@+id/VerbsButton"
+        app:srcCompat="@drawable/body" />
+    <ImageButton
+        android:id="@+id/daysButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/kcvertical"
+        app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/animalsButton"
+        app:srcCompat="@drawable/day" />
+    <ImageButton
+        android:id="@+id/familyButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/kcvertical"
+        app:layout_constraintTop_toBottomOf="@+id/bodyButton"
+        app:srcCompat="@drawable/family" />
+    <ImageButton
+        android:id="@+id/foodButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/kcvertical"
+        app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/daysButton"
+        app:srcCompat="@drawable/food" />
+
+    <ImageButton
+        android:id="@+id/seasonsButton"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/kcvertical"
+        app:layout_constraintTop_toBottomOf="@+id/familyButton"
+        app:srcCompat="@drawable/seasons" />
+
+    <ImageButton
+        android:id="@+id/startButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/topicbegingame"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:layout_margin="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/kcTopicGuidelineBottom2"
+        app:layout_constraintDimensionRatio="0.8:0.3"
+        app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
+        app:layout_constraintTop_toTopOf="@+id/kcTopicGuidelineBottom" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/kcTopicGuidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.17"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/kcTopicGuidelineTop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/kcTopicGuidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/kcTopicGuidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/kcTopicGuidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/kcTopicGuidelineBottom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/kcvertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/kcGuidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

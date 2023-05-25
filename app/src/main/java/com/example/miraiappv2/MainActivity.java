@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     //Set buttons
     private ImageButton buttonMainMenuBubbleMatch;
     private ImageButton buttonMainMenuInfo;
-    //private ImageButton buttonMainMenuKanaChallenge;
+    private ImageButton buttonMainMenuKanaChallenge;
     private ImageButton buttonMainMenuMagicTrouble;
     private ImageButton buttonMainMenuStudy;
     private ImageButton buttonMainMenuVocabConfusion;
@@ -51,14 +51,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
-        //buttonMainMenuKanaChallenge = findViewById(R.id.button_main_menu_kana_challenge);
-        //buttonMainMenuKanaChallenge.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View view) {
-        //        Intent intent = new Intent(MainActivity.this, KanaChallengeTopicSelectionPage.class);
-        //        startActivity(intent);
-        //    }
-        //});
+        buttonMainMenuKanaChallenge = findViewById(R.id.button_main_menu_kana_challenge);
+        buttonMainMenuKanaChallenge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               openKanaChallengeActivity();
+            }
+        });
 
         buttonMainMenuMagicTrouble = findViewById(R.id.button_main_menu_magic_trouble);
         buttonMainMenuMagicTrouble.setOnClickListener(new View.OnClickListener() {
@@ -89,6 +88,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openVocabActivity(){
         Intent intent = new Intent(this, VC_MainActivity.class);
+        startActivity(intent);
+    }
+    public void openKanaChallengeActivity(){
+        Intent intent = new Intent(this, KC_TopicActivity.class);
         startActivity(intent);
     }
 }

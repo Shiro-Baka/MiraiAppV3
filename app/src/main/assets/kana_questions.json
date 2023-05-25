@@ -1066,18 +1066,18 @@
       "answer1": "じゃあまた",
       "answer2": "人",
       "answer3": "わかります",
-      "answer4": "元気です",
-      "correct": "元気です",
+      "answer4": "げんきでんす",
+      "correct": "げんきでんす",
       "sound": "genkidesu"
     },
     {
       "topic":"essential",
       "question": "I",
-      "answer1": "私",
+      "answer1": "わたし",
       "answer2": "じゃあまた",
       "answer3": "元気です",
       "answer4": "ください",
-      "correct": "私",
+      "correct": "わたし",
       "sound": "watashi"
     },
     {
@@ -1126,8 +1126,8 @@
       "answer1": "元気です",
       "answer2": "どうぞ",
       "answer3": "人",
-      "answer4": "僕",
-      "correct": "僕",
+      "answer4": "ぼく",
+      "correct": "ぼく",
       "sound": "boku"
     },
     {
@@ -1144,10 +1144,10 @@
       "topic":"essential",
       "question": "person",
       "answer1": "じゃあまた",
-      "answer2": "人",
+      "answer2": "ひと",
       "answer3": "わかります",
       "answer4": "私",
-      "correct": "人",
+      "correct": "ひと",
       "sound": "hito"
     },
     {
@@ -1155,7 +1155,7 @@
       "question": "please",
       "answer1": "わかります",
       "answer2": "ください",
-      "answer3": "人",
+      "answer3": "ひと",
       "answer4": "はい",
       "correct": "ください",
       "sound": "kudasai"
@@ -1234,10 +1234,10 @@
       "topic":"verbs",
       "question": "to write",
       "answer1": "教えます",
-      "answer2": "開けます",
-      "answer3": "書きます",
+      "answer2": "かきます",
+      "answer3": "かきます",
       "answer4": "話します",
-      "correct": "書きます",
+      "correct": "かきます",
       "sound": "kakimasu"
     },
     {
@@ -1246,28 +1246,28 @@
       "answer1": "言います",
       "answer2": "分かります",
       "answer3": "教えます",
-      "answer4": "聞きます",
-      "correct": "聞きます",
+      "answer4": "ききます",
+      "correct": "ききます",
       "sound": "kikimasu"
     },
     {
       "topic":"verbs",
       "question": "to open",
-      "answer1": "開けます",
+      "answer1": "あけます",
       "answer2": "練習します",
       "answer3": "話します",
       "answer4": "聞きます",
-      "correct": "開けます",
+      "correct": "あけます",
       "sound": "akemasu"
     },
     {
       "topic":"verbs",
       "question": "to teach",
       "answer1": "教えます",
-      "answer2": "開けます",
+      "answer2": "おしえます",
       "answer3": "話します",
       "answer4": "練習します",
-      "correct": "教えます",
+      "correct": "おしえます",
       "sound": "oshiemasu"
     },
     {
@@ -1277,7 +1277,7 @@
       "answer2": "練習します",
       "answer3": "話します",
       "answer4": "開けます",
-      "correct": "練習します",
+      "correct": "れんしゅうします",
       "sound": "renshuushimasu"
     },
     {
@@ -1286,18 +1286,18 @@
       "answer1": "聞きます",
       "answer2": "買います",
       "answer3": "書きます",
-      "answer4": "言います",
-      "correct": "言います",
+      "answer4": "いいます",
+      "correct": "いいます",
       "sound": "iimasu"
     },
     {
       "topic":"verbs",
       "question": "to understand",
       "answer1": "聞きます",
-      "answer2": "練習します",
+      "answer2": "わかります",
       "answer3": "書きます",
       "answer4": "分かります",
-      "correct": "分かります",
+      "correct": "わかります",
       "sound": "wakarimasu"
     },
     {
@@ -2989,7 +2989,6 @@
       "correct": "ひゃく",
       "sound": "none"
     }
-
 
   ]
 }

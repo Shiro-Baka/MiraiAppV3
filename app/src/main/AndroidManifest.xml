@@ -63,6 +63,15 @@
             android:name=".VC_MainActivity"
             android:exported="false" />
         <activity
+            android:name=".KC_TopicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KC_GameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KCscoreActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
