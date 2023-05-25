@@ -145,10 +145,10 @@ public class VC_GameActivity extends AppCompatActivity {
                     correct++;
                     score+=200;
                     display_score.setText(String.valueOf(score));
-                    b_answer1.setBackgroundColor(Color.GREEN);
-                    b_answer2.setBackgroundColor(Color.RED);
-                    b_answer3.setBackgroundColor(Color.RED);
-                    b_answer4.setBackgroundColor(Color.RED);
+                    b_answer1.setBackgroundResource(R.drawable.greenleft);
+                    b_answer2.setBackgroundResource(R.drawable.redright);
+                    b_answer3.setBackgroundResource(R.drawable.redleft);
+                    b_answer4.setBackgroundResource(R.drawable.redright);
 
 
                     //play the sound
@@ -174,24 +174,26 @@ public class VC_GameActivity extends AppCompatActivity {
 
                 }else{
                     incorrect++;
-                    b_answer1.setBackgroundColor(Color.RED);
+                    b_answer1.setBackgroundResource(R.drawable.redleft);
+
 
                     //make the correct answer green and wrong answer red
                     if(b_answer2.getText().equals(questionItems.get(currentQuestion).getCorrect())){
-                        b_answer2.setBackgroundColor(Color.GREEN);
-                        b_answer3.setBackgroundColor(Color.RED);
-                        b_answer4.setBackgroundColor(Color.RED);
+                        b_answer2.setBackgroundResource(R.drawable.greenright);
+                        b_answer3.setBackgroundResource(R.drawable.redleft);
+                        b_answer4.setBackgroundResource(R.drawable.redright);
 
 
                     } else if (b_answer3.getText().equals(questionItems.get(currentQuestion).getCorrect())) {
-                        b_answer2.setBackgroundColor(Color.RED);
-                        b_answer3.setBackgroundColor(Color.GREEN);
-                        b_answer4.setBackgroundColor(Color.RED);
+                        b_answer2.setBackgroundResource(R.drawable.redright);
+                        b_answer3.setBackgroundResource(R.drawable.greenleft);
+                        b_answer4.setBackgroundResource(R.drawable.redright);
                         //System.out.println("correct2");
                     } else if (b_answer4.getText().equals(questionItems.get(currentQuestion).getCorrect())) {
-                        b_answer2.setBackgroundColor(Color.RED);
-                        b_answer3.setBackgroundColor(Color.RED);
-                        b_answer4.setBackgroundColor(Color.GREEN);
+
+                        b_answer2.setBackgroundResource(R.drawable.redright);
+                        b_answer3.setBackgroundResource(R.drawable.redleft);
+                        b_answer4.setBackgroundResource(R.drawable.greenright);
                         //System.out.println("correct3");
                     }
 
@@ -231,10 +233,10 @@ public class VC_GameActivity extends AppCompatActivity {
                     correct++;
                     score+=200;
                     display_score.setText(String.valueOf(score));
-                    b_answer2.setBackgroundColor(Color.GREEN);
-                    b_answer1.setBackgroundColor(Color.RED);
-                    b_answer3.setBackgroundColor(Color.RED);
-                    b_answer4.setBackgroundColor(Color.RED);
+                    b_answer1.setBackgroundResource(R.drawable.redleft);
+                    b_answer2.setBackgroundResource(R.drawable.greenright);
+                    b_answer3.setBackgroundResource(R.drawable.redleft);
+                    b_answer4.setBackgroundResource(R.drawable.redright);
 
                     //play the sound
                     String SoundName = questionItems.get(currentQuestion).getSound();
@@ -259,22 +261,23 @@ public class VC_GameActivity extends AppCompatActivity {
 
                 }else{
                     incorrect++;
-                    b_answer2.setBackgroundColor(Color.RED);
+                    b_answer2.setBackgroundResource(R.drawable.redright);
+
                     //make the correct answer green and wrong answer red
                     if(b_answer1.getText().equals(questionItems.get(currentQuestion).getCorrect())){
-                        b_answer1.setBackgroundColor(Color.GREEN);
-                        b_answer3.setBackgroundColor(Color.RED);
-                        b_answer4.setBackgroundColor(Color.RED);
+                        b_answer1.setBackgroundResource(R.drawable.greenleft);
+                        b_answer3.setBackgroundResource(R.drawable.redleft);
+                        b_answer4.setBackgroundResource(R.drawable.redright);
 
                     } else if (b_answer3.getText().equals(questionItems.get(currentQuestion).getCorrect())) {
-                        b_answer1.setBackgroundColor(Color.RED);
-                        b_answer3.setBackgroundColor(Color.GREEN);
-                        b_answer4.setBackgroundColor(Color.RED);
+                        b_answer1.setBackgroundResource(R.drawable.redleft);
+                        b_answer3.setBackgroundResource(R.drawable.greenleft);
+                        b_answer4.setBackgroundResource(R.drawable.redright);
                         //System.out.println("correct2");
                     } else if (b_answer4.getText().equals(questionItems.get(currentQuestion).getCorrect())) {
-                        b_answer1.setBackgroundColor(Color.RED);
-                        b_answer3.setBackgroundColor(Color.RED);
-                        b_answer4.setBackgroundColor(Color.GREEN);
+                        b_answer1.setBackgroundResource(R.drawable.redleft);
+                        b_answer3.setBackgroundResource(R.drawable.redleft);
+                        b_answer4.setBackgroundResource(R.drawable.greenright);
                         //System.out.println("correct3");
                     }
                 }
@@ -313,10 +316,10 @@ public class VC_GameActivity extends AppCompatActivity {
                     correct++;
                     score+=200;
                     display_score.setText(String.valueOf(score));
-                    b_answer3.setBackgroundColor(Color.GREEN);
-                    b_answer2.setBackgroundColor(Color.RED);
-                    b_answer1.setBackgroundColor(Color.RED);
-                    b_answer4.setBackgroundColor(Color.RED);
+                    b_answer1.setBackgroundResource(R.drawable.redleft);
+                    b_answer2.setBackgroundResource(R.drawable.redright);
+                    b_answer3.setBackgroundResource(R.drawable.greenright);
+                    b_answer4.setBackgroundResource(R.drawable.redright);
                     //play the sound
                     String SoundName = questionItems.get(currentQuestion).getSound();
 
@@ -339,22 +342,24 @@ public class VC_GameActivity extends AppCompatActivity {
                     }
                 }else{
                     incorrect++;
-                    b_answer3.setBackgroundColor(Color.RED);
+                    b_answer3.setBackgroundResource(R.drawable.redleft);
+
                     //make the correct answer green and wrong answer red
                     if(b_answer2.getText().equals(questionItems.get(currentQuestion).getCorrect())){
-                        b_answer2.setBackgroundColor(Color.GREEN);
-                        b_answer1.setBackgroundColor(Color.RED);
-                        b_answer4.setBackgroundColor(Color.RED);
+
+                        b_answer2.setBackgroundResource(R.drawable.greenright);
+                        b_answer1.setBackgroundResource(R.drawable.redleft);
+                        b_answer4.setBackgroundResource(R.drawable.redright);
 
                     } else if (b_answer1.getText().equals(questionItems.get(currentQuestion).getCorrect())) {
-                        b_answer2.setBackgroundColor(Color.RED);
-                        b_answer1.setBackgroundColor(Color.GREEN);
-                        b_answer4.setBackgroundColor(Color.RED);
+                        b_answer2.setBackgroundResource(R.drawable.redright);
+                        b_answer1.setBackgroundResource(R.drawable.greenleft);
+                        b_answer4.setBackgroundResource(R.drawable.redright);
                         //System.out.println("correct2");
                     } else if (b_answer4.getText().equals(questionItems.get(currentQuestion).getCorrect())) {
-                        b_answer2.setBackgroundColor(Color.RED);
-                        b_answer1.setBackgroundColor(Color.RED);
-                        b_answer4.setBackgroundColor(Color.GREEN);
+                        b_answer2.setBackgroundResource(R.drawable.redright);
+                        b_answer1.setBackgroundResource(R.drawable.redleft);
+                        b_answer4.setBackgroundResource(R.drawable.greenright);
                         //System.out.println("correct3");
                     }
                 }
@@ -396,10 +401,10 @@ public class VC_GameActivity extends AppCompatActivity {
                     correct++;
                     score+=200;
                     display_score.setText(String.valueOf(score));
-                    b_answer4.setBackgroundColor(Color.GREEN);
-                    b_answer2.setBackgroundColor(Color.RED);
-                    b_answer3.setBackgroundColor(Color.RED);
-                    b_answer1.setBackgroundColor(Color.RED);
+                    b_answer2.setBackgroundResource(R.drawable.redright);
+                    b_answer1.setBackgroundResource(R.drawable.redleft);
+                    b_answer3.setBackgroundResource(R.drawable.redleft);
+                    b_answer4.setBackgroundResource(R.drawable.greenright);
 
                     //play the sound
                     String SoundName = questionItems.get(currentQuestion).getSound();
@@ -424,22 +429,22 @@ public class VC_GameActivity extends AppCompatActivity {
 
                 }else{
                     incorrect++;
-                    b_answer4.setBackgroundColor(Color.RED);
+                    b_answer4.setBackgroundResource(R.drawable.redright);
                     //make the correct answer green and wrong answer red
                     if(b_answer2.getText().equals(questionItems.get(currentQuestion).getCorrect())){
-                        b_answer2.setBackgroundColor(Color.GREEN);
-                        b_answer3.setBackgroundColor(Color.RED);
-                        b_answer1.setBackgroundColor(Color.RED);
+                        b_answer1.setBackgroundResource(R.drawable.redleft);
+                        b_answer2.setBackgroundResource(R.drawable.greenright);
+                        b_answer3.setBackgroundResource(R.drawable.redleft);
 
                     } else if (b_answer3.getText().equals(questionItems.get(currentQuestion).getCorrect())) {
-                        b_answer2.setBackgroundColor(Color.RED);
-                        b_answer3.setBackgroundColor(Color.GREEN);
-                        b_answer1.setBackgroundColor(Color.RED);
+                        b_answer1.setBackgroundResource(R.drawable.redleft);
+                        b_answer2.setBackgroundResource(R.drawable.redright);
+                        b_answer3.setBackgroundResource(R.drawable.greenleft);
 
                     } else if (b_answer1.getText().equals(questionItems.get(currentQuestion).getCorrect())) {
-                        b_answer2.setBackgroundColor(Color.RED);
-                        b_answer3.setBackgroundColor(Color.RED);
-                        b_answer1.setBackgroundColor(Color.GREEN);
+                        b_answer1.setBackgroundResource(R.drawable.greenleft);
+                        b_answer2.setBackgroundResource(R.drawable.redright);
+                        b_answer3.setBackgroundResource(R.drawable.redleft);
 
                     }
                 }

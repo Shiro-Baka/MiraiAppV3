@@ -664,7 +664,7 @@
       "topic": "seasons",
       "question": "Rainy",
       "answer1": "くもり",
-      "answer2": "なつ",
+      "answer2": "あめ",
       "answer3": "はれ",
       "answer4": "かぜ",
       "correct": "あめ",
@@ -1776,9 +1776,9 @@
       "question": "rarely",
       "answer1": "よう",
       "answer2": "いくつ",
-      "answer3": "たまに",
+      "answer3": "めったに",
       "answer4": "だれ",
-      "correct": "滅多に",
+      "correct": "めったに",
       "sound": "mettani"
     },
     {
@@ -2989,20 +2989,6 @@
       "correct": "ひゃく",
       "sound": "none"
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   ]
