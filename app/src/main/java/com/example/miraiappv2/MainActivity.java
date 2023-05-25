@@ -72,8 +72,7 @@ public class MainActivity extends AppCompatActivity {
         buttonMainMenuStudy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent(MainActivity.this, StudyTopicPage.class);
-                //startActivity(intent);
+                openStudySection();
             }
         });
 
@@ -92,6 +91,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openKanaChallengeActivity(){
         Intent intent = new Intent(this, KC_TopicActivity.class);
+        startActivity(intent);
+    }
+    public void openStudySection(){
+        Intent intent = new Intent(this, TopicMainActivity.class);
         startActivity(intent);
     }
 }
