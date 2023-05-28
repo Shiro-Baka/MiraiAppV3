@@ -318,7 +318,7 @@ public class VC_GameActivity extends AppCompatActivity {
                     display_score.setText(String.valueOf(score));
                     b_answer1.setBackgroundResource(R.drawable.redleft);
                     b_answer2.setBackgroundResource(R.drawable.redright);
-                    b_answer3.setBackgroundResource(R.drawable.greenright);
+                    b_answer3.setBackgroundResource(R.drawable.greenleft);
                     b_answer4.setBackgroundResource(R.drawable.redright);
                     //play the sound
                     String SoundName = questionItems.get(currentQuestion).getSound();
