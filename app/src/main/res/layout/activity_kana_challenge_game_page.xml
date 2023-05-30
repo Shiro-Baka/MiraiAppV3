@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/kanachallengebackground"
-    tools:context=".KanaChallengerGamePage">
+    tools:context=".KanaChallengeGamePage">
 
     <ImageButton
         android:id="@+id/endgame"

@@ -232,7 +232,7 @@ public class KanaChallengeTopicPage extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                 }else{
                     String topics = TextUtils.join(",",all_topics);
-                    Intent intent = new Intent(getApplicationContext(), KanaChallengerGamePage.class);
+                    Intent intent = new Intent(getApplicationContext(), KanaChallengeGamePage.class);
                     intent.putStringArrayListExtra("all_topics",all_topics);
                     startActivity(intent);
                     finish();

@@ -26,7 +26,7 @@ public class VocabularyConfusionScorePage extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //set the view
-        setContentView(R.layout.activity_voabulary_cofusion_score_page);
+        setContentView(R.layout.activity_voabulary_confusion_score_page);
 
 
         //scores

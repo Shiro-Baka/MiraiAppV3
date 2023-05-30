@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class KanaChallengerGamePage extends AppCompatActivity {
+public class KanaChallengeGamePage extends AppCompatActivity {
 
     TextView preview;
     TextView question;
