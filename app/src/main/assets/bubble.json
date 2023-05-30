@@ -5626,7 +5626,7 @@
   },
   {
     "id": 328,
-    "eword": "rubber, eraser",
+    "eword": "rubber\neraser",
     "jword": "keshigomu",
     "topic": "School",
     "type": "romaji",
@@ -5650,7 +5650,7 @@
   },
   {
     "id": 331,
-    "eword": "subject (school)",
+    "eword": "subject\n(school)",
     "jword": "kamoku",
     "topic": "School",
     "type": "romaji",
@@ -5658,7 +5658,7 @@
   },
   {
     "id": 332,
-    "eword": "Japanese (language)",
+    "eword": "Japanese\n(language)",
     "jword": "nihongo",
     "topic": "School",
     "type": "romaji",
@@ -5666,7 +5666,7 @@
   },
   {
     "id": 333,
-    "eword": "English (language)",
+    "eword": "English\n(language)",
     "jword": "eigo",
     "topic": "School",
     "type": "romaji",
@@ -5674,7 +5674,7 @@
   },
   {
     "id": 334,
-    "eword": "mathematics (maths)",
+    "eword": "mathematics\n(maths)",
     "jword": "suugaku",
     "topic": "School",
     "type": "romaji",
@@ -5698,7 +5698,7 @@
   },
   {
     "id": 337,
-    "eword": "physical education (P.E.)",
+    "eword": "physical education\n(P.E.)",
     "jword": "taiiku",
     "topic": "School",
     "type": "romaji",
@@ -5722,7 +5722,7 @@
   },
   {
     "id": 340,
-    "eword": "arithmetic (maths)",
+    "eword": "arithmetic\n(maths)",
     "jword": "sansuu",
     "topic": "School",
     "type": "romaji",
@@ -5827,22 +5827,22 @@
   {
     "id": 353,
     "eword": "to study",
-    "jword": "benkyou shimasu",
+    "jword": "benkyou\nshimasu",
     "topic": "Verbs",
     "type": "romaji",
-    "sound": "benkyou shimasu"
+    "sound": "benkyou_shimasu"
   },
   {
     "id": 354,
     "eword": "to practise",
-    "jword": "renshuu shimasu",
+    "jword": "renshuu\nshimasu",
     "topic": "Verbs",
     "type": "romaji",
-    "sound": "renshuu shimasu"
+    "sound": "renshuu_shimasu"
   },
   {
     "id": 355,
-    "eword": "to see\/look",
+    "eword": "to see\nlook",
     "jword": "mimasu",
     "topic": "Verbs",
     "type": "romaji",
@@ -5930,7 +5930,7 @@
   },
   {
     "id": 366,
-    "eword": "there is (animate object)",
+    "eword": "there is\n(animate object)",
     "jword": "imasu",
     "topic": "Verbs",
     "type": "romaji",
@@ -5938,7 +5938,7 @@
   },
   {
     "id": 367,
-    "eword": "there is (inanimate object)",
+    "eword": "there is\n(inanimate object)",
     "jword": "arimasu",
     "topic": "Verbs",
     "type": "romaji",

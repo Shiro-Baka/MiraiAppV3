@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
         app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
         app:layout_constraintTop_toTopOf="@+id/kcTopicGuidelineTop"
-        app:srcCompat="@drawable/button_topic_essential_unselected" />
+        app:srcCompat="@drawable/button_topic_essential" />
 
     <ImageButton
         android:id="@+id/GreetingsButton"
@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
         app:layout_constraintStart_toStartOf="@+id/kcvertical"
         app:layout_constraintTop_toTopOf="@+id/kcTopicGuidelineTop"
-        app:srcCompat="@drawable/button_topic_greetings_unselected" />
+        app:srcCompat="@drawable/button_topic_greetings" />
 
     <ImageButton
         android:id="@+id/ColorsButton"
@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
         app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/EssentialButton"
-        app:srcCompat="@drawable/button_topic_colours_unselected" />
+        app:srcCompat="@drawable/button_topic_colours" />
 
     <ImageButton
         android:id="@+id/GeneralButton"
@@ -63,7 +63,7 @@
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
         app:layout_constraintStart_toEndOf="@+id/kcvertical"
         app:layout_constraintTop_toBottomOf="@+id/GreetingsButton"
-        app:srcCompat="@drawable/button_topic_general_unselected" />
+        app:srcCompat="@drawable/button_topic_general" />
 
     <ImageButton
         android:id="@+id/NumbersButton"
@@ -74,7 +74,7 @@
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
         app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/ColorsButton"
-        app:srcCompat="@drawable/button_topic_numbers_unselected" />
+        app:srcCompat="@drawable/button_topic_numbers" />
 
     <ImageButton
         android:id="@+id/SchoolButton"
@@ -85,7 +85,7 @@
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
         app:layout_constraintStart_toEndOf="@+id/kcvertical"
         app:layout_constraintTop_toBottomOf="@+id/GeneralButton"
-        app:srcCompat="@drawable/button_topic_school_unselected" />
+        app:srcCompat="@drawable/button_topic_school" />
 
     <ImageButton
         android:id="@+id/AdjectivesButton"
@@ -96,7 +96,7 @@
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
         app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/NumbersButton"
-        app:srcCompat="@drawable/button_topic_adjectives_unselected" />
+        app:srcCompat="@drawable/button_topic_adjectives" />
     <ImageButton
         android:id="@+id/VerbsButton"
         android:layout_width="140dp"
@@ -106,7 +106,7 @@
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
         app:layout_constraintStart_toEndOf="@+id/kcvertical"
         app:layout_constraintTop_toBottomOf="@+id/SchoolButton"
-        app:srcCompat="@drawable/button_topic_verbs_unselected" />
+        app:srcCompat="@drawable/button_topic_verbs" />
     <ImageButton
         android:id="@+id/animalsButton"
         android:layout_width="140dp"
@@ -116,7 +116,7 @@
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
         app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/AdjectivesButton"
-        app:srcCompat="@drawable/button_topic_animals_unselected" />
+        app:srcCompat="@drawable/button_topic_animals" />
     <ImageButton
         android:id="@+id/bodyButton"
         android:layout_width="140dp"
@@ -126,7 +126,7 @@
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
         app:layout_constraintStart_toEndOf="@+id/kcvertical"
         app:layout_constraintTop_toBottomOf="@+id/VerbsButton"
-        app:srcCompat="@drawable/button_topic_body_parts_unselected" />
+        app:srcCompat="@drawable/button_topic_body_parts" />
     <ImageButton
         android:id="@+id/daysButton"
         android:layout_width="140dp"
@@ -136,7 +136,7 @@
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
         app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/animalsButton"
-        app:srcCompat="@drawable/button_topic_dwmy_unselected" />
+        app:srcCompat="@drawable/button_topic_dwmy" />
     <ImageButton
         android:id="@+id/familyButton"
         android:layout_width="140dp"
@@ -146,7 +146,7 @@
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
         app:layout_constraintStart_toEndOf="@+id/kcvertical"
         app:layout_constraintTop_toBottomOf="@+id/bodyButton"
-        app:srcCompat="@drawable/button_topic_family_counting_unselected" />
+        app:srcCompat="@drawable/button_topic_family_counting" />
     <ImageButton
         android:id="@+id/foodButton"
         android:layout_width="140dp"
@@ -156,7 +156,7 @@
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
         app:layout_constraintStart_toStartOf="@+id/kcTopicGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/daysButton"
-        app:srcCompat="@drawable/button_topic_food_drink_unselected" />
+        app:srcCompat="@drawable/button_topic_food_drink" />
 
     <ImageButton
         android:id="@+id/seasonsButton"
@@ -167,7 +167,7 @@
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
         app:layout_constraintStart_toEndOf="@+id/kcvertical"
         app:layout_constraintTop_toBottomOf="@+id/familyButton"
-        app:srcCompat="@drawable/button_topic_seasons_weather_unselected" />
+        app:srcCompat="@drawable/button_topic_seasons_weather" />
 
     <ImageButton
         android:id="@+id/startButton"

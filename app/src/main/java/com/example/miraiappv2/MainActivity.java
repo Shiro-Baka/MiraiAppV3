@@ -2,12 +2,18 @@ package com.example.miraiappv2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.content.Intent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.PopupWindow;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,15 +47,46 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*
+
         buttonMainMenuInfo = findViewById(R.id.button_main_menu_info);
         buttonMainMenuInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, BubbleMatchSelectionPage.class);
-                startActivity(intent);
+                LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+                View popupView = inflater.inflate(R.layout.main_menu_info_popup, null);
+
+                // Create the magic_popup window
+                int width;
+                int height;
+                boolean focusable = true; // Allows the user to interact with elements behind the magic_popup window
+                final PopupWindow popupWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, focusable);
+
+                // Set an onClickListener to the close button in the magic_popup layout XML file
+                Button closeButton = popupView.findViewById(R.id.infobackbtn);
+                closeButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        // Dismiss the magic_popup window
+                        popupWindow.dismiss();
+                    }
+                });
+
+                // Determine the size of the magic_popup window based on the device orientation
+                int orientation = getResources().getConfiguration().orientation;
+                if (orientation == Configuration.ORIENTATION_PORTRAIT) {
+                    width = getResources().getDisplayMetrics().widthPixels * 90 / 100; // Set the width to 90% of the screen width
+                    height = getResources().getDisplayMetrics().heightPixels * 95 / 100; // Set the height to 80% of the screen height
+                } else {
+                    width = getResources().getDisplayMetrics().widthPixels * 80 / 100; // Set the width to 80% of the screen width
+                    height = getResources().getDisplayMetrics().heightPixels * 90 / 100; // Set the height to 90% of the screen height
+                }
+
+                //set width and height for the magic_popup window
+                popupWindow.setWidth(width);
+                popupWindow.setHeight(height);
+                popupWindow.showAtLocation(popupView, Gravity.CENTER, 0, 0);
             }
-        });*/
+        });
 
         buttonMainMenuKanaChallenge = findViewById(R.id.button_main_menu_kana_challenge);
         buttonMainMenuKanaChallenge.setOnClickListener(new View.OnClickListener() {
