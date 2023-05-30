@@ -103,7 +103,6 @@ public class BubbleMatchGamePage extends AppCompatActivity {
         setContentView(R.layout.activity_bubble_match_game_page);
 
         GridLayout gridLayout = findViewById(R.id.grid_layout_bubble_match);
-
         bubbleMatchButton = new ArrayList<BubbleMatchButton>();
 
         // Retrieve the selectedTopics and selectedType values from the intent
@@ -223,12 +222,9 @@ public class BubbleMatchGamePage extends AppCompatActivity {
             // Iterate over the shuffled game elements and create buttons for eword and jword
             for (BubbleMatchButton buttonData : bubbleMatchButton) {
                 // Modify the button size
-                int buttonWidth = 480;
-                int buttonHeight = 190;
-                int leftMarginInPixels = 15; // Replace with your desired left margin
-                int topMarginInPixels = 15; // Replace with your desired top margin
-                int rightMarginInPixels = 15; // Replace with your desired right margin
-                int bottomMarginInPixels = 15; // Replace with your desired bottom margin
+                int buttonWidth = getResources().getDimensionPixelSize(R.dimen.button_width);
+                int buttonHeight = getResources().getDimensionPixelSize(R.dimen.button_height);
+                int marginInPixels = getResources().getDimensionPixelSize(R.dimen.button_margin);
 
                 // Check if the generated word count has reached the desired limit
                 if (generatedWordCount >= 12 * numberOfSelectedTopics ) {
@@ -242,14 +238,15 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                 generatedButtons.add(ewordButton);
                 RelativeLayout.LayoutParams ebuttonLayoutParams = new RelativeLayout.LayoutParams(buttonWidth, buttonHeight);
 
-                ebuttonLayoutParams.setMargins(leftMarginInPixels, topMarginInPixels, rightMarginInPixels, bottomMarginInPixels);
+                ebuttonLayoutParams.setMargins(marginInPixels, marginInPixels, marginInPixels, marginInPixels);
                 ewordButton.setLayoutParams(ebuttonLayoutParams);
 
                 TextView ewordText = new TextView(this);
                 ewordText.setText(buttonData.getEword());
-                ewordText.setTextSize(25); // Set the text size to 16 (change the value as needed)
+                ewordText.setTextSize(25);
                 ewordText.setTextColor(Color.WHITE);
-                ewordText.setShadowLayer(10, 0, 0, Color.BLUE);// Set the outline
+                ewordText.setShadowLayer(10, 0, 0, Color.BLUE);
+
                 if (selectedType.equals("romaji")) {
                     // Load the desired font from assets
                     Typeface typeface = Typeface.createFromAsset(getAssets(), "comicsans.ttf");
@@ -280,7 +277,7 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                 jwordButton.setBackgroundResource(R.drawable.button_bubble_match_default);
                 generatedButtons.add(jwordButton);
                 RelativeLayout.LayoutParams jbuttonLayoutParams = new RelativeLayout.LayoutParams(buttonWidth, buttonHeight);
-                jbuttonLayoutParams.setMargins(leftMarginInPixels, topMarginInPixels, rightMarginInPixels, bottomMarginInPixels);
+                jbuttonLayoutParams.setMargins(marginInPixels, marginInPixels, marginInPixels, marginInPixels);
                 jwordButton.setLayoutParams(jbuttonLayoutParams);
 
                 TextView jwordText = new TextView(this);
@@ -288,6 +285,7 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                 jwordText.setTextSize(25); // Set the text size to 16 (change the value as needed)
                 jwordText.setTextColor(Color.WHITE);
                 jwordText.setShadowLayer(10, 0, 0, Color.BLUE);// Set the outline
+
                 if (selectedType.equals("romaji")) {
                     // Load the desired font from assets
                     Typeface typeface = Typeface.createFromAsset(getAssets(), "comicsans.ttf");
