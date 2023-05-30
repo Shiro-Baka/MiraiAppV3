@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_bubble_match_end_kana_phone"
-    tools:context=".BubbleMatchEndKPage">
+    android:background="@drawable/background_magic_trouble_end_romaji_phone"
+    tools:context=".MagicTroubleEndPage"
+    android:id="@+id/magic_trouble_layout">
 
     <TextView
         android:id="@+id/score"

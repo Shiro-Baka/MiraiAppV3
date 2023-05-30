@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_magic_trouble_end_kana_phone"
-    tools:context=".MagicTroubleEndKPage">
+    android:background="@drawable/background_magic_trouble_end_romaji_phone"
+    tools:context=".MagicTroubleEndPage"
+    android:id="@+id/magic_trouble_layout">
 
     <TextView
         android:id="@+id/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textSize="20dp"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/guideline12"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -24,7 +24,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textSize="20dp"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -36,7 +35,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textSize="20dp"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -48,7 +46,7 @@
         android:id="@+id/button_restart_magic"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:background="@drawable/button_game_menu"
         app:layout_constraintDimensionRatio="0.9:0.4"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
@@ -60,7 +58,7 @@
         android:id="@+id/button_main_menu"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:background="@drawable/button_main_menu"
         app:layout_constraintDimensionRatio="0.9:0.4"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
@@ -73,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.10" />
+        app:layout_constraintGuide_percent="0.15" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline26"
@@ -150,7 +148,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9" />
+        app:layout_constraintGuide_percent="0.86" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

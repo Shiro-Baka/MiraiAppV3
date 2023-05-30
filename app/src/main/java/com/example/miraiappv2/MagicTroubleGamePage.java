@@ -13,7 +13,6 @@ import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -26,8 +25,6 @@ import android.widget.ImageButton;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.miraiappv2.MagicTroubleEndKPage;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -139,18 +136,20 @@ public class MagicTroubleGamePage extends AppCompatActivity {
             public void onClick(View view) {
                 if (selectedType.equals("romaji")) {
                     // game over for romaji, pass the score and results
-                    Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
+                    Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                     intent.putExtra("correct", correct);
                     intent.putExtra("wrong", wrong);
                     intent.putExtra("score", score);
+                    intent.putExtra("background", R.drawable.background_magic_trouble_end_romaji_phone);
                     startActivity(intent);
                     finish();
                 } else {
                     // game over for other type, pass the score and results
-                    Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
+                    Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                     intent.putExtra("correct", correct);
                     intent.putExtra("wrong", wrong);
                     intent.putExtra("score", score);
+                    intent.putExtra("background", R.drawable.background_magic_trouble_end_kana_phone);
                     startActivity(intent);
                     finish();
                 }
@@ -301,18 +300,20 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                 } else {
                     if (selectedType.equals("romaji")) {
                         // game over for romaji, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_romaji_phone);
                         startActivity(intent);
                         finish();
                     } else {
                         // game over for other types, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_kana_phone);
                         startActivity(intent);
                         finish();
                     }
@@ -424,18 +425,20 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                 } else {
                     if (selectedType.equals("romaji")) {
                         // game over for romaji, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_kana_phone);
                         startActivity(intent);
                         finish();
                     } else {
                         // game over for other types, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_kana_phone);
                         startActivity(intent);
                         finish();
                     }
@@ -547,18 +550,20 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                 } else {
                     if (selectedType.equals("romaji")) {
                         // game over for romaji, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_romaji_phone);
                         startActivity(intent);
                         finish();
                     } else {
                         // game over for other types, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_kana_phone);
                         startActivity(intent);
                         finish();
                     }
@@ -670,18 +675,20 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                 } else {
                     if (selectedType.equals("romaji")) {
                         // game over for romaji, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_romaji_phone);
                         startActivity(intent);
                         finish();
                     } else {
                         // game over for other types, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_kana_phone);
                         startActivity(intent);
                         finish();
                     }

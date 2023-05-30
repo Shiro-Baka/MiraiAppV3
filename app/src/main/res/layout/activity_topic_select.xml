@@ -36,14 +36,14 @@
                 android:layout_width="146dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:background="@raw/img_1"
+                android:background="@drawable/button_topic_essential"
                 android:padding="8dp" />
             <View
                 android:layout_width="18dp"
                 android:layout_height="0dp" />
 
             <ImageButton
-                android:background="@raw/img_2"
+                android:background="@drawable/button_topic_greetings"
                 android:id="@+id/imageButton3"
                 android:layout_width="146dp"
                 android:layout_height="48dp"
@@ -63,14 +63,14 @@
                 android:layout_width="146dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:background="@raw/img_3"
+                android:background="@drawable/button_topic_colours"
                 android:padding="8dp" />
             <View
                 android:layout_width="18dp"
                 android:layout_height="18dp" />
 
             <ImageButton
-                android:background="@raw/img_4"
+                android:background="@drawable/button_topic_general"
                 android:id="@+id/imageButton5"
                 android:layout_width="146dp"
                 android:layout_height="48dp"
@@ -87,7 +87,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:background="@raw/img_5"
+                android:background="@drawable/button_topic_numbers"
                 android:id="@+id/imageButton6"
                 android:layout_width="146dp"
                 android:layout_height="48dp"
@@ -98,7 +98,7 @@
                 android:layout_height="18dp" />
 
             <ImageButton
-                android:background="@raw/img_6"
+                android:background="@drawable/button_topic_school"
                 android:id="@+id/imageButton7"
                 android:layout_width="146dp"
                 android:layout_height="48dp"
@@ -115,7 +115,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:background="@raw/img_7"
+                android:background="@drawable/button_topic_adjectives"
                 android:id="@+id/imageButton8"
                 android:layout_width="146dp"
                 android:layout_height="48dp"
@@ -126,7 +126,7 @@
                 android:layout_height="18dp" />
 
             <ImageButton
-                android:background="@raw/img_8"
+                android:background="@drawable/button_topic_verbs"
                 android:id="@+id/imageButton9"
                 android:layout_width="146dp"
                 android:layout_height="48dp"
@@ -143,7 +143,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:background="@raw/img_9"
+                android:background="@drawable/button_topic_animals"
                 android:id="@+id/imageButton10"
                 android:layout_width="146dp"
                 android:layout_height="48dp"
@@ -154,7 +154,7 @@
                 android:layout_height="18dp" />
 
             <ImageButton
-                android:background="@raw/img_10"
+                android:background="@drawable/button_topic_body_parts"
                 android:id="@+id/imageButton11"
                 android:layout_width="146dp"
                 android:layout_height="48dp"
