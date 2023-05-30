@@ -31,7 +31,7 @@ public class VocabularyConfusionSelectionPage extends AppCompatActivity {
 
 
         //set the view
-        setContentView(R.layout.activity_voabulary_confusion_selection_page);
+        setContentView(R.layout.activity_vocabulary_confusion_selection_page);
 
         //buttons
         romanji = (ImageButton) findViewById(R.id.RomanjiButton);

@@ -42,7 +42,7 @@ public class VocabularyConfusionTopicPage extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //set the view
-        setContentView(R.layout.activity_voabulary_confusion_topic_page);
+        setContentView(R.layout.activity_vocabulary_confusion_topic_page);
 
         //buttons
         greetingslesson = (ImageButton) findViewById(R.id.GreetingsButton);

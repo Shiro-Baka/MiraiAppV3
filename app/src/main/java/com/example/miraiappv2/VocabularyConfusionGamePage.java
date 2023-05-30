@@ -62,7 +62,7 @@ public class VocabularyConfusionGamePage extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //set the view
-        setContentView(R.layout.activity_voabulary_confusion_game_page);
+        setContentView(R.layout.activity_vocabulary_confusion_game_page);
 
         //array of all the topics selected
         all_topics = getIntent().getStringArrayListExtra("all_topics");
