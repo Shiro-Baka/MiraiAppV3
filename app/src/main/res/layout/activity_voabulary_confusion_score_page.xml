@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/score_screen"
-    tools:context=".VC_ScoreActivity">
+    tools:context=".VocabularyConfusionScorePage">
 
 
     <TextView
@@ -50,7 +50,7 @@
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:scaleType="fitCenter"
-        android:background="@drawable/gamemenu"
+        android:background="@drawable/button_game_menu_unselected"
         android:contentDescription="TODO"
         app:layout_constraintTop_toTopOf="@+id/vocabhorizontal1"
         app:layout_constraintDimensionRatio="1:0.4"
@@ -61,7 +61,7 @@
         android:layout_width="130dp"
         android:layout_height="50dp"
         android:scaleType="fitCenter"
-        android:background="@drawable/mainmenu"
+        android:background="@drawable/button_main_menu"
         android:contentDescription="TODO"
         app:layout_constraintTop_toTopOf="@+id/vocabhorizontal1"
         app:layout_constraintDimensionRatio="1:0.4"

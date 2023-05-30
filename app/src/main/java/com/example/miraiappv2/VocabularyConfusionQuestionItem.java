@@ -1,9 +1,9 @@
 package com.example.miraiappv2;
 
-public class VC_QuestionItem {
+public class VocabularyConfusionQuestionItem {
     private String question, answer1, answer2, answer3, answer4, correct, sound;
 
-    public VC_QuestionItem(String question, String answer1, String answer2, String answer3, String answer4, String correct, String sound) {
+    public VocabularyConfusionQuestionItem(String question, String answer1, String answer2, String answer3, String answer4, String correct, String sound) {
         this.question = question;
         this.answer1 = answer1;
         this.answer2 = answer2;

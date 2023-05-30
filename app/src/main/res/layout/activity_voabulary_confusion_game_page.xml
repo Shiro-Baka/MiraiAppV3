@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/game_screen"
-    tools:context=".VC_GameActivity">
+    tools:context=".VocabularyConfusionGamePage">
 
     <ImageButton
         android:id="@+id/endgame"
@@ -15,7 +15,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintLeft_toLeftOf="@+id/vocabverticalquestion"
         app:layout_constraintBottom_toBottomOf="@id/scoreguideline"
-        app:srcCompat="@drawable/endgame" />
+        app:srcCompat="@drawable/button_end_game" />
 
     <ImageButton
         android:id="@+id/info"
@@ -26,7 +26,7 @@
         android:scaleType="fitCenter"
         app:layout_constraintRight_toRightOf="@+id/vocabvertical1"
         app:layout_constraintBottom_toBottomOf="@id/scoreguideline"
-        app:srcCompat="@drawable/info" />
+        app:srcCompat="@drawable/button_info_button" />
 
 
     <TextView
@@ -72,7 +72,7 @@
         app:layout_constraintLeft_toLeftOf="@id/vocabvertical"
         app:layout_constraintStart_toStartOf="@+id/vocabvertical"
         app:layout_constraintTop_toTopOf="@id/vocabhorizontal"
-        app:srcCompat="@drawable/info" />
+        app:srcCompat="@drawable/button_info_button" />
 
     <Button
         android:id="@+id/button2"

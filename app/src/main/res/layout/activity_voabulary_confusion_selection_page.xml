@@ -8,12 +8,12 @@
     android:gravity="center"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
-    tools:context=".VC_MainActivity">
+    tools:context=".VocabularyConfusionSelectionPage">
 
 
     <ImageButton
         android:id="@+id/MenuBack"
-        android:background="@drawable/menu_back"
+        android:background="@drawable/button_return_menu"
         android:contentDescription="vocabbackbutton"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -27,7 +27,7 @@
 
     <ImageButton
         android:id="@+id/RomanjiButton"
-        android:background="@drawable/romanji"
+        android:background="@drawable/button_selection_romaji_unclicked"
         android:contentDescription="vocabromajibutton"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -40,7 +40,7 @@
 
     <ImageButton
         android:id="@+id/KanaButton"
-        android:background="@drawable/kana"
+        android:background="@drawable/button_selection_kana_unclicked"
         android:contentDescription="vocabkanabutton"
         android:layout_width="0dp"
         android:layout_height="0dp"

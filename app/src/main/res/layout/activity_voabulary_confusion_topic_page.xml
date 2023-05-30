@@ -8,12 +8,12 @@
     android:gravity="center"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
-    tools:context=".VC_TopicActivity">
+    tools:context=".VocabularyConfusionTopicPage">
 
 
     <ImageButton
         android:id="@+id/OrangeBackButton"
-        android:background="@drawable/topicback"
+        android:background="@drawable/button_return_button"
         android:contentDescription="vocabbackbutton"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -34,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
         app:layout_constraintStart_toStartOf="@+id/vocabTopicGuidelineLeft"
         app:layout_constraintTop_toTopOf="@+id/vocabTopicGuidelineTop"
-        app:srcCompat="@drawable/essential" />
+        app:srcCompat="@drawable/button_topic_essential_unselected" />
 
     <ImageButton
         android:id="@+id/GreetingsButton"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
         app:layout_constraintStart_toStartOf="@+id/vocabvertical"
         app:layout_constraintTop_toTopOf="@+id/vocabTopicGuidelineTop"
-        app:srcCompat="@drawable/greetings" />
+        app:srcCompat="@drawable/button_topic_greetings_unselected" />
 
     <ImageButton
         android:id="@+id/ColorsButton"
@@ -56,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
         app:layout_constraintStart_toStartOf="@+id/vocabTopicGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/EssentialButton"
-        app:srcCompat="@drawable/colours" />
+        app:srcCompat="@drawable/button_topic_colours_unselected" />
 
     <ImageButton
         android:id="@+id/GeneralButton"
@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
         app:layout_constraintStart_toEndOf="@+id/vocabvertical"
         app:layout_constraintTop_toBottomOf="@+id/GreetingsButton"
-        app:srcCompat="@drawable/general" />
+        app:srcCompat="@drawable/button_topic_general_unselected" />
 
     <ImageButton
         android:id="@+id/NumbersButton"
@@ -78,7 +78,7 @@
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
         app:layout_constraintStart_toStartOf="@+id/vocabTopicGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/ColorsButton"
-        app:srcCompat="@drawable/numbers" />
+        app:srcCompat="@drawable/button_topic_numbers_unselected" />
 
     <ImageButton
         android:id="@+id/SchoolButton"
@@ -89,7 +89,7 @@
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
         app:layout_constraintStart_toEndOf="@+id/vocabvertical"
         app:layout_constraintTop_toBottomOf="@+id/GeneralButton"
-        app:srcCompat="@drawable/school" />
+        app:srcCompat="@drawable/button_topic_school_unselected" />
 
     <ImageButton
         android:id="@+id/AdjectivesButton"
@@ -100,7 +100,7 @@
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
         app:layout_constraintStart_toStartOf="@+id/vocabTopicGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/NumbersButton"
-        app:srcCompat="@drawable/adjectives" />
+        app:srcCompat="@drawable/button_topic_adjectives_unselected" />
     <ImageButton
         android:id="@+id/VerbsButton"
         android:layout_width="140dp"
@@ -110,7 +110,7 @@
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
         app:layout_constraintStart_toEndOf="@+id/vocabvertical"
         app:layout_constraintTop_toBottomOf="@+id/SchoolButton"
-        app:srcCompat="@drawable/verbs" />
+        app:srcCompat="@drawable/button_topic_verbs_unselected" />
     <ImageButton
         android:id="@+id/animalsButton"
         android:layout_width="140dp"
@@ -120,7 +120,7 @@
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
         app:layout_constraintStart_toStartOf="@+id/vocabTopicGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/AdjectivesButton"
-        app:srcCompat="@drawable/animals" />
+        app:srcCompat="@drawable/button_topic_animals_unselected" />
     <ImageButton
         android:id="@+id/bodyButton"
         android:layout_width="140dp"
@@ -130,7 +130,7 @@
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
         app:layout_constraintStart_toEndOf="@+id/vocabvertical"
         app:layout_constraintTop_toBottomOf="@+id/VerbsButton"
-        app:srcCompat="@drawable/body" />
+        app:srcCompat="@drawable/button_topic_body_parts_unselected" />
     <ImageButton
         android:id="@+id/daysButton"
         android:layout_width="140dp"
@@ -140,7 +140,7 @@
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
         app:layout_constraintStart_toStartOf="@+id/vocabTopicGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/animalsButton"
-        app:srcCompat="@drawable/day" />
+        app:srcCompat="@drawable/button_topic_dwmy_unselected" />
     <ImageButton
         android:id="@+id/familyButton"
         android:layout_width="140dp"
@@ -150,7 +150,7 @@
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
         app:layout_constraintStart_toEndOf="@+id/vocabvertical"
         app:layout_constraintTop_toBottomOf="@+id/bodyButton"
-        app:srcCompat="@drawable/family" />
+        app:srcCompat="@drawable/button_topic_family_counting_unselected" />
     <ImageButton
         android:id="@+id/foodButton"
         android:layout_width="140dp"
@@ -160,7 +160,7 @@
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
         app:layout_constraintStart_toStartOf="@+id/vocabTopicGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/daysButton"
-        app:srcCompat="@drawable/food" />
+        app:srcCompat="@drawable/button_topic_food_drink_unselected" />
 
     <ImageButton
         android:id="@+id/seasonsButton"
@@ -171,13 +171,13 @@
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
         app:layout_constraintStart_toEndOf="@+id/vocabvertical"
         app:layout_constraintTop_toBottomOf="@+id/familyButton"
-        app:srcCompat="@drawable/seasons" />
+        app:srcCompat="@drawable/button_topic_seasons_weather_unselected" />
 
     <ImageButton
         android:id="@+id/startButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/topicbegingame"
+        android:background="@drawable/button_begin_game"
         android:contentDescription="TODO"
         android:scaleType="centerCrop"
         android:layout_margin="25dp"

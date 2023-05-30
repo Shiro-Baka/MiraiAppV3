@@ -1,10 +1,10 @@
 package com.example.miraiappv2;
 
-public class KCQuestionItem {
+public class KanaChallengeQuestionItem {
 
     private String question, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8,answer9, answer10, correct;
 
-    public KCQuestionItem(String question, String answer1, String answer2, String answer3, String answer4,String answer5, String answer6,String answer7, String answer8,String answer9, String answer10, String correct) {
+    public KanaChallengeQuestionItem(String question, String answer1, String answer2, String answer3, String answer4, String answer5, String answer6, String answer7, String answer8, String answer9, String answer10, String correct) {
         this.question = question;
         this.answer1 = answer1;
         this.answer2 = answer2;
