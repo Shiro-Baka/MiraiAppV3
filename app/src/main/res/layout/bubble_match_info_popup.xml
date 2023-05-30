@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/magic_trouble_info"
+    android:background="@drawable/bubble_match_info"
     android:gravity="center"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar">

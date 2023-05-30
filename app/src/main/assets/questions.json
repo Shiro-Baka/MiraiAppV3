@@ -2,7 +2,7 @@
   "questions": [
       {
         "question": "おもしろい",
-        "answer1": "cool; cold (to touch)",
+        "answer1": "cool; \ncold (to touch)",
         "answer2": "long",
         "answer3": "bad",
         "answer4": "funny, interesting",
@@ -15,7 +15,7 @@
         "question": "たのしい",
         "answer1": "pretty",
         "answer2": "small",
-        "answer3": "tall; high; expensive",
+        "answer3": "expensive",
         "answer4": "fun, enjoyable",
         "correct": "fun, enjoyable",
         "topic": "Adjectives",
@@ -35,7 +35,7 @@
       },
       {
         "question": "あたらしい",
-        "answer1": "trendy; cool",
+        "answer1": "trendy",
         "answer2": "delicious",
         "answer3": "fun, enjoyable",
         "answer4": "new",
@@ -58,9 +58,9 @@
       {
         "question": "つまらない",
         "answer1": "boring",
-        "answer2": "thin; slender",
+        "answer2": "thin",
         "answer3": "strange",
-        "answer4": "cool; cold (to touch)",
+        "answer4": "cold (to touch)",
         "correct": "boring",
         "topic": "Adjectives",
         "type": "kana",
@@ -71,7 +71,7 @@
         "answer1": "hot",
         "answer2": "pretty",
         "answer3": "young",
-        "answer4": "cool; cold (to touch)",
+        "answer4": "cold (to touch)",
         "correct": "pretty",
         "topic": "Adjectives",
         "type": "kana",
@@ -92,7 +92,7 @@
         "question": "むずかしい",
         "answer1": "difficult",
         "answer2": "strict",
-        "answer3": "splendid, wonderful",
+        "answer3": "wonderful",
         "answer4": "convenient",
         "correct": "difficult",
         "topic": "Adjectives",
@@ -113,7 +113,7 @@
       {
         "question": "うつくしい",
         "answer1": "delicious",
-        "answer2": "fun, enjoyable",
+        "answer2": "fun",
         "answer3": "beautiful",
         "answer4": "young",
         "correct": "beautiful",
@@ -123,7 +123,7 @@
       },
       {
         "question": "わるい",
-        "answer1": "kind; gentle",
+        "answer1": "gentle",
         "answer2": "pretty",
         "answer3": "famous",
         "answer4": "bad",
@@ -137,7 +137,7 @@
         "answer1": "splendid, wonderful",
         "answer2": "pretty",
         "answer3": "warm",
-        "answer4": "kind; gentle",
+        "answer4": "gentle",
         "correct": "splendid, wonderful",
         "topic": "Adjectives",
         "type": "kana",
@@ -159,7 +159,7 @@
         "answer1": "wonderful; nice",
         "answer2": "new",
         "answer3": "delicious",
-        "answer4": "fun, enjoyable",
+        "answer4": "fun",
         "correct": "wonderful; nice",
         "topic": "Adjectives",
         "type": "kana",
@@ -168,10 +168,10 @@
       {
         "question": "たかい",
         "answer1": "scary",
-        "answer2": "cheap; inexpensive",
+        "answer2": "inexpensive",
         "answer3": "wonderful; nice",
-        "answer4": "tall; high; expensive",
-        "correct": "tall; high; expensive",
+        "answer4": "tall; expensive",
+        "correct": "tall; expensive",
         "topic": "Adjectives",
         "type": "kana",
         "sound": "takai"
@@ -191,7 +191,7 @@
         "question": "きびしい",
         "answer1": "small",
         "answer2": "strict",
-        "answer3": "kind; gentle",
+        "answer3": "gentle",
         "answer4": "warm",
         "correct": "strict",
         "topic": "Adjectives",
@@ -212,9 +212,9 @@
       {
         "question": "かっこいい",
         "answer1": "warm",
-        "answer2": "wonderful; nice",
+        "answer2": "wonderful",
         "answer3": "trendy; cool",
-        "answer4": "funny, interesting",
+        "answer4": "interesting",
         "correct": "trendy; cool",
         "topic": "Adjectives",
         "type": "kana",
@@ -1483,7 +1483,7 @@
         "correct": "nice to meet you",
         "topic": "Essential",
         "type": "kana",
-        "sound": "douzo yoroshiku"
+        "sound": "douzo_yoroshiku"
       },
       {
         "question": "だいじょうぶ",
@@ -1500,12 +1500,12 @@
         "question": "そうですか",
         "answer1": "please give me",
         "answer2": "yes",
-        "answer3": "please,give,me",
+        "answer3": "no",
         "answer4": "It is so? really?",
         "correct": "It is so? really?",
         "topic": "Essential",
         "type": "kana",
-        "sound": "sou desu ka"
+        "sound": "sou_desu_ka"
       },
       {
         "question": "おげんきですか",
@@ -1516,18 +1516,18 @@
         "correct": "How are you?",
         "topic": "Essential",
         "type": "kana",
-        "sound": "ogenki desu ka"
+        "sound": "ogenki_desu_ka"
       },
       {
         "question": "げんきです",
         "answer1": "yes",
         "answer2": "see,you,later",
         "answer3": "nice,to,meet,you",
-        "answer4": "I’m fine\/well",
-        "correct": "I’m fine\/well",
+        "answer4": "I’m fine well",
+        "correct": "I’m fine well",
         "topic": "Essential",
         "type": "kana",
-        "sound": "genki desu"
+        "sound": "genki_desu"
       },
       {
         "question": "わかります",
@@ -1565,7 +1565,7 @@
       {
         "question": "すみません",
         "answer1": "one more time",
-        "answer2": "one,more,time",
+        "answer2": "no",
         "answer3": "thank,you,very,much",
         "answer4": "excuse me; sorry",
         "correct": "excuse me; sorry",
@@ -1582,24 +1582,24 @@
         "correct": "I’m sorry",
         "topic": "Essential",
         "type": "kana",
-        "sound": "gomen nasai"
+        "sound": "gomen_nasai"
       },
       {
         "question": "もういちど",
         "answer1": "you",
-        "answer2": "I’m fine\/well",
+        "answer2": "I’m fine well",
         "answer3": "It is so? really?",
         "answer4": "one more time",
         "correct": "one more time",
         "topic": "Essential",
         "type": "kana",
-        "sound": "mou ichi do"
+        "sound": "mou_ichi_do"
       },
       {
         "question": "じゃあまた",
         "answer1": "fine ok",
         "answer2": "Australia",
-        "answer3": "excuse,me;,sorry",
+        "answer3": "excuse me; sorry",
         "answer4": "see you later",
         "correct": "see you later",
         "topic": "Essential",
@@ -2797,7 +2797,7 @@
       {
         "question": "いくつ",
         "answer1": "how many",
-        "answer2": "how much (price)",
+        "answer2": "who",
         "answer3": "what",
         "answer4": "how much (price)",
         "correct": "how many",
@@ -6933,7 +6933,7 @@
       {
         "question": "ikutsu",
         "answer1": "how many",
-        "answer2": "how much (price)",
+        "answer2": "who",
         "answer3": "what",
         "answer4": "how much (price)",
         "correct": "how many",
@@ -7978,7 +7978,7 @@
       {
         "question": "okimasu",
         "answer1": "to eat",
-        "answer2": "there is (inanimate object)",
+        "answer2": "there is \n(inanimate object)",
         "answer3": "to wake up",
         "answer4": "to write",
         "correct": "to wake up",
@@ -8032,11 +8032,11 @@
       },
       {
         "question": "mimasu",
-        "answer1": "to see\/look",
+        "answer1": "to see",
         "answer2": "to teach",
         "answer3": "to eat",
-        "answer4": "there is (animate object)",
-        "correct": "to see\/look",
+        "answer4": "there is \n(animate object)",
+        "correct": "to see",
         "topic": "Verbs",
         "type": "romaji",
         "sound": "mimasu"
@@ -8066,7 +8066,7 @@
       {
         "question": "kakimasu",
         "answer1": "to learn",
-        "answer2": "there is (animate object)",
+        "answer2": "there is \n(animate object)",
         "answer3": "to write",
         "answer4": "to speak",
         "correct": "to write",

@@ -654,7 +654,7 @@
     "jword": "あか(い)",
     "topic": "Colours",
     "type": "kana",
-    "sound": "aka(i)"
+    "sound": "aka_akai"
   },
   {
     "id": 83,
@@ -662,7 +662,7 @@
     "jword": "あお(い)",
     "topic": "Colours",
     "type": "kana",
-    "sound": "ao(i)"
+    "sound": "ao_aoi"
   },
   {
     "id": 84,
@@ -678,7 +678,7 @@
     "jword": "きいろ(い)",
     "topic": "Colours",
     "type": "kana",
-    "sound": "kiiro(i)"
+    "sound": "kiiro_kiiroi"
   },
   {
     "id": 86,
@@ -686,7 +686,7 @@
     "jword": "ちゃいろ(い)",
     "topic": "Colours",
     "type": "kana",
-    "sound": "chairo(i)"
+    "sound": "chairo_chairoi"
   },
   {
     "id": 87,

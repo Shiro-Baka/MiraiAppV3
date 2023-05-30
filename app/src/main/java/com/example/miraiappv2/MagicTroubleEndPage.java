@@ -1,6 +1,7 @@
 package com.example.miraiappv2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +11,7 @@ import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-public class BubbleMatchEndRPage extends AppCompatActivity {
+public class MagicTroubleEndPage extends AppCompatActivity {
 
     TextView tv_result1, tv_result2, tv_score;
     ImageButton buttonRestart, buttonMenu;
@@ -22,9 +23,16 @@ public class BubbleMatchEndRPage extends AppCompatActivity {
         //Removes the Title bar from the top of the application for all screens.
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
 
-        setContentView(R.layout.activity_bubble_match_end_r_page);
+        setContentView(R.layout.activity_magic_trouble_end_page);
+
+        // Retrieve the background image resource identifier from the intent
+        int background = getIntent().getIntExtra("background", 0);
+
+        // Set the background image for the root ConstraintLayout
+        ConstraintLayout rootLayout = findViewById(R.id.magic_trouble_layout);
+        rootLayout.setBackgroundResource(background);
 
         tv_score = findViewById(R.id.score);
         int score = getIntent().getIntExtra("score", 0);
@@ -50,7 +58,7 @@ public class BubbleMatchEndRPage extends AppCompatActivity {
         buttonRestart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                RestartBubble();
+                RestartMagic();
             }
         });
     }
@@ -58,8 +66,8 @@ public class BubbleMatchEndRPage extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-    public void RestartBubble(){
-        Intent intent = new Intent(this, BubbleMatchSelectionPage.class);
+    public void RestartMagic(){
+        Intent intent = new Intent(this, MagicTroubleSelectionPage.class);
         startActivity(intent);
     }
 }

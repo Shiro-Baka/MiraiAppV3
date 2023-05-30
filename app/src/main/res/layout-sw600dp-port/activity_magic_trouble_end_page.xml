@@ -5,14 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_magic_trouble_end_romaji_phone"
-    tools:context=".MagicTroubleEndRPage">
+    tools:context=".MagicTroubleEndPage"
+    android:id="@+id/magic_trouble_layout">
 
     <TextView
         android:id="@+id/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textSize="40dp"
+        android:textSize="20dp"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/guideline12"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -24,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textSize="40dp"
+        android:textSize="20dp"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -36,8 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textSize="20dp"
         android:textColor="@android:color/white"
-        android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline28"
@@ -73,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.15" />
+        app:layout_constraintGuide_percent="0.10" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline26"
@@ -150,7 +151,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.86" />
+        app:layout_constraintGuide_percent="0.9" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

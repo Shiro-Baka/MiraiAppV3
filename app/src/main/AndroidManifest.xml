@@ -12,18 +12,7 @@
         android:theme="@style/Theme.MiraiAppV2"
         tools:targetApi="31">
         <activity
-            android:name=".BubbleMatchEndKPage"
-            android:exported="false" />
-        <activity
-            android:name=".MagicTroubleEndKPage"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".BubbleMatchEndRPage"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".MagicTroubleEndRPage"
+            android:name=".MagicTroubleEndPage"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
@@ -51,32 +40,45 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".BubbleMatchEndPage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".VC_ScoreActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".VC_GameActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".VC_TopicActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".VC_MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".KC_TopicActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".KC_GameActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".KCscoreActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TopicActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TopicMainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

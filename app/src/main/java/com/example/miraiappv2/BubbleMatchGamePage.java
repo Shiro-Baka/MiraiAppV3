@@ -5,6 +5,7 @@ import static android.content.ContentValues.TAG;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.CountDownTimer;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -160,18 +161,20 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                 public void onClick(View view) {
                     if (selectedType.equals("romaji")) {
                         // game over for romaji, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), BubbleMatchEndRPage.class);
+                        Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_bubble_match_end_romaji_phone);
                         startActivity(intent);
                         finish();
                     } else {
                         // game over for other type, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), BubbleMatchEndKPage.class);
+                        Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_bubble_match_end_kana_phone);
                         startActivity(intent);
                         finish();
                     }
@@ -182,7 +185,7 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-                    View popupView = inflater.inflate(R.layout.magic_trouble_info_popup, null);
+                    View popupView = inflater.inflate(R.layout.bubble_match_info_popup, null);
 
                     // Create the magic_popup window
                     int width;
@@ -247,6 +250,18 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                 ewordText.setTextSize(25); // Set the text size to 16 (change the value as needed)
                 ewordText.setTextColor(Color.WHITE);
                 ewordText.setShadowLayer(10, 0, 0, Color.BLUE);// Set the outline
+                if (selectedType.equals("romaji")) {
+                    // Load the desired font from assets
+                    Typeface typeface = Typeface.createFromAsset(getAssets(), "comicsans.ttf");
+                    // Apply the font to the TextView
+                    ewordText.setTypeface(typeface);
+                } else {
+                    // Load the desired font from assets
+                    Typeface typeface = Typeface.createFromAsset(getAssets(), "kyo.ttc");
+                    // Apply the font to the TextView
+                    ewordText.setTypeface(typeface);
+                }
+
                 RelativeLayout.LayoutParams etextLayoutParams = new RelativeLayout.LayoutParams(
                         RelativeLayout.LayoutParams.WRAP_CONTENT,
                         RelativeLayout.LayoutParams.WRAP_CONTENT
@@ -273,6 +288,17 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                 jwordText.setTextSize(25); // Set the text size to 16 (change the value as needed)
                 jwordText.setTextColor(Color.WHITE);
                 jwordText.setShadowLayer(10, 0, 0, Color.BLUE);// Set the outline
+                if (selectedType.equals("romaji")) {
+                    // Load the desired font from assets
+                    Typeface typeface = Typeface.createFromAsset(getAssets(), "comicsans.ttf");
+                    // Apply the font to the TextView
+                    jwordText.setTypeface(typeface);
+                } else {
+                    // Load the desired font from assets
+                    Typeface typeface = Typeface.createFromAsset(getAssets(), "kyo.ttc");
+                    // Apply the font to the TextView
+                    jwordText.setTypeface(typeface);
+                }
                 RelativeLayout.LayoutParams jtextLayoutParams = new RelativeLayout.LayoutParams(
                         RelativeLayout.LayoutParams.WRAP_CONTENT,
                         RelativeLayout.LayoutParams.WRAP_CONTENT
@@ -384,18 +410,20 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                                             if (matchesFound == 6 * numberOfSelectedTopics) {
                                                 if (selectedType.equals("romaji")) {
                                                     // game over for romaji, pass the score and results
-                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndRPage.class);
+                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                                                     intent.putExtra("correct", correct);
                                                     intent.putExtra("wrong", wrong);
                                                     intent.putExtra("score", score);
+                                                    intent.putExtra("background", R.drawable.background_bubble_match_end_romaji_phone);
                                                     startActivity(intent);
                                                     finish();
                                                 } else {
                                                     // game over for other type, pass the score and results
-                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndKPage.class);
+                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                                                     intent.putExtra("correct", correct);
                                                     intent.putExtra("wrong", wrong);
                                                     intent.putExtra("score", score);
+                                                    intent.putExtra("background", R.drawable.background_bubble_match_end_kana_phone);
                                                     startActivity(intent);
                                                     finish();
                                                 }
@@ -533,18 +561,20 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                                             if (matchesFound == 6 * numberOfSelectedTopics) {
                                                 if (selectedType.equals("romaji")) {
                                                     // game over for romaji, pass the score and results
-                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndRPage.class);
+                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                                                     intent.putExtra("correct", correct);
                                                     intent.putExtra("wrong", wrong);
                                                     intent.putExtra("score", score);
+                                                    intent.putExtra("background", R.drawable.background_bubble_match_end_romaji_phone);
                                                     startActivity(intent);
                                                     finish();
                                                 } else {
                                                     // game over for other type, pass the score and results
-                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndKPage.class);
+                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                                                     intent.putExtra("correct", correct);
                                                     intent.putExtra("wrong", wrong);
                                                     intent.putExtra("score", score);
+                                                    intent.putExtra("background", R.drawable.background_bubble_match_end_kana_phone);
                                                     startActivity(intent);
                                                     finish();
                                                 }
@@ -626,18 +656,20 @@ public class BubbleMatchGamePage extends AppCompatActivity {
 
                 if (selectedType.equals("romaji")) {
                     // game over for romaji, pass the score and results
-                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndRPage.class);
+                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                     intent.putExtra("correct", correct);
                     intent.putExtra("wrong", wrong);
                     intent.putExtra("score", score);
+                    intent.putExtra("background", R.drawable.background_bubble_match_end_romaji_phone);
                     startActivity(intent);
                     finish();
                 } else {
                     // game over for other type, pass the score and results
-                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndKPage.class);
+                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                     intent.putExtra("correct", correct);
                     intent.putExtra("wrong", wrong);
                     intent.putExtra("score", score);
+                    intent.putExtra("background", R.drawable.background_bubble_match_end_kana_phone);
                     startActivity(intent);
                     finish();
                 }
