@@ -86,11 +86,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void openVocabActivity(){
-        Intent intent = new Intent(this, VC_MainActivity.class);
+        Intent intent = new Intent(this, VocabularyConfusionSelectionPage.class);
         startActivity(intent);
     }
     public void openKanaChallengeActivity(){
-        Intent intent = new Intent(this, KC_TopicActivity.class);
+        Intent intent = new Intent(this, KanaChallengeTopicPage.class);
         startActivity(intent);
     }
     public void openStudySection(){

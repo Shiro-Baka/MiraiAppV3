@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class VC_TopicActivity extends AppCompatActivity {
+public class VocabularyConfusionTopicPage extends AppCompatActivity {
 
     private ImageButton greetingslesson;
     private ImageButton essentiallesson;
@@ -42,7 +42,7 @@ public class VC_TopicActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //set the view
-        setContentView(R.layout.activity_vc_topic);
+        setContentView(R.layout.activity_voabulary_cofusion_topic_page);
 
         //buttons
         greetingslesson = (ImageButton) findViewById(R.id.GreetingsButton);
@@ -71,7 +71,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (greetingslesson.isPressed()){
-                    greetingslesson.setImageResource(R.drawable.greetingspressed);
+                    greetingslesson.setImageResource(R.drawable.button_topic_greetings_selected);
                     topicselected = true;
                     all_topics.add("greetings");
                     System.out.println(all_topics);
@@ -84,7 +84,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (essentiallesson.isPressed()){
-                    essentiallesson.setImageResource(R.drawable.essentialpressed);
+                    essentiallesson.setImageResource(R.drawable.button_topic_essential_selected);
                     topicselected = true;
                     all_topics.add("essential");
                 }
@@ -95,7 +95,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (numberslesson.isPressed()){
-                    numberslesson.setImageResource(R.drawable.numberspressed);
+                    numberslesson.setImageResource(R.drawable.button_topic_numbers_selected);
                     topicselected = true;
                     all_topics.add("numbers");
                 }
@@ -106,7 +106,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (colorslesson.isPressed()){
-                    colorslesson.setImageResource(R.drawable.colourspressed);
+                    colorslesson.setImageResource(R.drawable.button_topic_colours_selected);
                     topicselected = true;
                     all_topics.add("color");
                 }
@@ -118,7 +118,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (schoollesson.isPressed()){
-                    schoollesson.setImageResource(R.drawable.schoolpressed);
+                    schoollesson.setImageResource(R.drawable.button_topic_school_selected);
                     topicselected = true;
                     all_topics.add("school");
                 }
@@ -129,7 +129,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (generallesson.isPressed()){
-                    generallesson.setImageResource(R.drawable.generalpressed);
+                    generallesson.setImageResource(R.drawable.button_topic_general_selected);
                     topicselected = true;
                     all_topics.add("general");
                 }
@@ -140,7 +140,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (adjectiveslesson.isPressed()){
-                    adjectiveslesson.setImageResource(R.drawable.adjectivespressed);
+                    adjectiveslesson.setImageResource(R.drawable.button_topic_adjectives_selected);
                     topicselected = true;
                     all_topics.add("adjectives");
                 }
@@ -151,7 +151,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (verbslesson.isPressed()){
-                    verbslesson.setImageResource(R.drawable.verbspressed);
+                    verbslesson.setImageResource(R.drawable.button_topic_verbs_selected);
                     topicselected = true;
                     all_topics.add("verbs");
                 }
@@ -162,7 +162,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (animalslesson.isPressed()){
-                    animalslesson.setImageResource(R.drawable.animalspressed);
+                    animalslesson.setImageResource(R.drawable.button_topic_animals_selected);
                     topicselected = true;
                     all_topics.add("animals");
                 }
@@ -173,7 +173,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (bodylesson.isPressed()){
-                    bodylesson.setImageResource(R.drawable.bodypressed);
+                    bodylesson.setImageResource(R.drawable.button_topic_body_parts_selected);
                     topicselected = true;
                     all_topics.add("body");
                 }
@@ -184,7 +184,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (dayslesson.isPressed()){
-                    dayslesson.setImageResource(R.drawable.dayspressed);
+                    dayslesson.setImageResource(R.drawable.button_topic_dwmy_selected);
                     topicselected = true;
                     all_topics.add("days");
                 }
@@ -195,7 +195,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (seasonslesson.isPressed()){
-                    seasonslesson.setImageResource(R.drawable.seasonspressed);
+                    seasonslesson.setImageResource(R.drawable.button_topic_seasons_weather_selected);
                     topicselected = true;
                     all_topics.add("seasons");
                 }
@@ -206,7 +206,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (familylesson.isPressed()){
-                    familylesson.setImageResource(R.drawable.familypressed);
+                    familylesson.setImageResource(R.drawable.button_topic_family_counting_selected);
                     topicselected = true;
                     all_topics.add("family");
                 }
@@ -217,7 +217,7 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (foodlesson.isPressed()){
-                    foodlesson.setImageResource(R.drawable.foodpressed);
+                    foodlesson.setImageResource(R.drawable.button_topic_food_drink_selected);
                     topicselected = true;
                     all_topics.add("food");
                 }
@@ -228,12 +228,12 @@ public class VC_TopicActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (beginGame.isPressed() && topicselected == false){
-                    Toast.makeText(VC_TopicActivity.this, "Please Select one or more topics",
+                    Toast.makeText(VocabularyConfusionTopicPage.this, "Please Select one or more topics",
                             Toast.LENGTH_SHORT).show();
                 }else{
                     String topics = TextUtils.join(",",all_topics);
                     String language = getIntent().getStringExtra("language");
-                    Intent intent = new Intent(getApplicationContext(), VC_GameActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), VocabularyConfusionGamePage.class);
                     intent.putExtra("language",language);
                     intent.putStringArrayListExtra("all_topics",all_topics);
                     startActivity(intent);
@@ -256,7 +256,7 @@ public class VC_TopicActivity extends AppCompatActivity {
     }
 
     public void ReturnToMain(){
-        Intent intent = new Intent(this, VC_MainActivity.class);
+        Intent intent = new Intent(this, VocabularyConfusionSelectionPage.class);
         startActivity(intent);
     }
 

@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 
-public class VC_MainActivity extends AppCompatActivity {
+public class VocabularyConfusionSelectionPage extends AppCompatActivity {
 
     private ImageButton romanji;
     private  ImageButton Menu;
@@ -31,7 +31,7 @@ public class VC_MainActivity extends AppCompatActivity {
 
 
         //set the view
-        setContentView(R.layout.activity_vc_main);
+        setContentView(R.layout.activity_voabulary_cofusion_selection_page);
 
         //buttons
         romanji = (ImageButton) findViewById(R.id.RomanjiButton);
@@ -44,9 +44,9 @@ public class VC_MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (romanji.isPressed()){
-                    romanji.setImageResource(R.drawable.romanjipressed);
+                    romanji.setImageResource(R.drawable.button_selection_romaji_clicked);
                     language = "romaji_questions.json";
-                    Intent intent = new Intent(getApplicationContext(), VC_TopicActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), VocabularyConfusionTopicPage.class);
                     intent.putExtra("language",language);
                     startActivity(intent);
                     //openTopicActivity();
@@ -57,10 +57,9 @@ public class VC_MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (kana.isPressed()){
-                    kana.setImageResource(R.drawable.kanapressed);
-                    kana.setImageResource(R.drawable.kanapressed);
+                    kana.setImageResource(R.drawable.button_selection_kana_clicked);
                     language = "kana_questions.json";
-                    Intent intent = new Intent(getApplicationContext(), VC_TopicActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), VocabularyConfusionTopicPage.class);
                     intent.putExtra("language",language);
                     startActivity(intent);
 

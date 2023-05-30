@@ -26,12 +26,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class KC_GameActivity extends AppCompatActivity {
+public class KanaChallengerGamePage extends AppCompatActivity {
 
     TextView preview;
     TextView question;
     Button b_answer1, b_answer2, b_answer3, b_answer4,b_answer5, b_answer6, b_answer7, b_answer8,b_answer9, b_answer10;
-    List<KCQuestionItem> questionItems;
+    List<KanaChallengeQuestionItem> questionItems;
     String letter = "";
     int score = 0;
     TextView display_score;
@@ -63,7 +63,7 @@ public class KC_GameActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
-        setContentView(R.layout.activity_kc_game);
+        setContentView(R.layout.activity_kana_challenge_game_page);
 
         preview = findViewById(R.id.preview);
         question = findViewById(R.id.question);
@@ -129,7 +129,7 @@ public class KC_GameActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (endgame.isPressed()){
-                    Intent intent = new Intent(getApplicationContext(), KCscoreActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), KanaChallengeScorePage.class);
                     intent.putExtra("correct",correct);
                     intent.putExtra("incorrect", incorrect);
                     intent.putExtra("score",score);
@@ -150,7 +150,7 @@ public class KC_GameActivity extends AppCompatActivity {
                         preview.setText("");
                         preview.setTextColor(Color.WHITE);
                     }else{
-                        Intent intent = new Intent(getApplicationContext(), KCscoreActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), KanaChallengeScorePage.class);
                         intent.putExtra("correct",correct);
                         intent.putExtra("incorrect", incorrect);
                         intent.putExtra("score",score);
@@ -453,7 +453,7 @@ public class KC_GameActivity extends AppCompatActivity {
                         currentQuestion++;
                         setQuestionScreen(currentQuestion);
                     }else{
-                        Intent intent = new Intent(getApplicationContext(), KCscoreActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), KanaChallengeScorePage.class);
                         intent.putExtra("correct",correct);
                         intent.putExtra("incorrect", incorrect);
                         intent.putExtra("score",score);
@@ -498,7 +498,7 @@ public class KC_GameActivity extends AppCompatActivity {
                     b_answer9.setEnabled(true);
                     b_answer10.setEnabled(true);
                 }else{
-                    Intent intent = new Intent(getApplicationContext(), KCscoreActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), KanaChallengeScorePage.class);
                     intent.putExtra("correct",correct);
                     intent.putExtra("incorrect", incorrect);
                     intent.putExtra("score",score);
@@ -535,7 +535,7 @@ public class KC_GameActivity extends AppCompatActivity {
                 String correctisString = question.getString("correct");
 
                 if(all_topics.contains(topicString)) {
-                    questionItems.add(new KCQuestionItem(
+                    questionItems.add(new KanaChallengeQuestionItem(
                             questionString,
                             answer1isString,
                             answer2isString,
@@ -575,7 +575,7 @@ public class KC_GameActivity extends AppCompatActivity {
         return json;
     }
     public void openScoreActivity(){
-        Intent intent = new Intent(this, KCscoreActivity.class);
+        Intent intent = new Intent(this, KanaChallengeScorePage.class);
         startActivity(intent);
     }
 

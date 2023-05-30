@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class VC_ScoreActivity extends AppCompatActivity {
+public class VocabularyConfusionScorePage extends AppCompatActivity {
 
     TextView game_result;
     TextView game_score;
@@ -26,7 +26,7 @@ public class VC_ScoreActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //set the view
-        setContentView(R.layout.activity_vc_score);
+        setContentView(R.layout.activity_voabulary_cofusion_score_page);
 
 
         //scores
@@ -67,7 +67,7 @@ public class VC_ScoreActivity extends AppCompatActivity {
     }
 
     public void GameMenuActivity(){
-        Intent intent = new Intent(this, VC_MainActivity.class);
+        Intent intent = new Intent(this, VocabularyConfusionSelectionPage.class);
         startActivity(intent);
     }
     public void MainMenuActivity(){

@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class VC_GameActivity extends AppCompatActivity {
+public class VocabularyConfusionGamePage extends AppCompatActivity {
 
     private ImageButton endgame;
 
@@ -41,7 +41,7 @@ public class VC_GameActivity extends AppCompatActivity {
     TextView display_score;
     Button b_answer1, b_answer2, b_answer3, b_answer4;
 
-    List<VC_QuestionItem> questionItems;
+    List<VocabularyConfusionQuestionItem> questionItems;
     int currentQuestion = 0;
     int correct = 0;
     int incorrect = 0;
@@ -62,7 +62,7 @@ public class VC_GameActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //set the view
-        setContentView(R.layout.activity_vc_game);
+        setContentView(R.layout.activity_voabulary_confusion_game_page);
 
         //array of all the topics selected
         all_topics = getIntent().getStringArrayListExtra("all_topics");
@@ -121,7 +121,7 @@ public class VC_GameActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (endgame.isPressed()){
-                    Intent intent = new Intent(getApplicationContext(), VC_ScoreActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), VocabularyConfusionScorePage.class);
                     intent.putExtra("correct",correct);
                     intent.putExtra("incorrect", incorrect);
                     intent.putExtra("score",score);
@@ -214,7 +214,7 @@ public class VC_GameActivity extends AppCompatActivity {
                     }, 1700);
                 }else{
                     //game over go to score screen
-                    Intent intent = new Intent(getApplicationContext(), VC_ScoreActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), VocabularyConfusionScorePage.class);
                     intent.putExtra("correct",correct);
                     intent.putExtra("incorrect", incorrect);
                     intent.putExtra("score",score);
@@ -297,7 +297,7 @@ public class VC_GameActivity extends AppCompatActivity {
                     }, 1700);
                 }else{
                     //game over go to score screen
-                    Intent intent = new Intent(getApplicationContext(), VC_ScoreActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), VocabularyConfusionScorePage.class);
                     intent.putExtra("correct",correct);
                     intent.putExtra("incorrect", incorrect);
                     intent.putExtra("score",score);
@@ -382,7 +382,7 @@ public class VC_GameActivity extends AppCompatActivity {
                     }, 1700);
                 }else{
                     //game over go to score screen
-                    Intent intent = new Intent(getApplicationContext(), VC_ScoreActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), VocabularyConfusionScorePage.class);
                     intent.putExtra("correct",correct);
                     intent.putExtra("incorrect", incorrect);
                     intent.putExtra("score",score);
@@ -464,7 +464,7 @@ public class VC_GameActivity extends AppCompatActivity {
                     }, 1700);
                 }else{
                     //game over go to score screen
-                    Intent intent = new Intent(getApplicationContext(), VC_ScoreActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), VocabularyConfusionScorePage.class);
                     intent.putExtra("correct",correct);
                     intent.putExtra("incorrect", incorrect);
                     intent.putExtra("score",score);
@@ -533,7 +533,7 @@ public class VC_GameActivity extends AppCompatActivity {
                 String soundisString = question.getString("sound");
 
                 if(all_topics.contains(topicString)){
-                    questionItems.add(new VC_QuestionItem(
+                    questionItems.add(new VocabularyConfusionQuestionItem(
                             questionString,
                             answer1isString,
                             answer2isString,

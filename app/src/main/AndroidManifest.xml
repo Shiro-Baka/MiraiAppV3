@@ -51,25 +51,25 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".VC_ScoreActivity"
+            android:name=".VocabularyConfusionScorePage"
             android:exported="false" />
         <activity
-            android:name=".VC_GameActivity"
+            android:name=".VocabularyConfusionGamePage"
             android:exported="false" />
         <activity
-            android:name=".VC_TopicActivity"
+            android:name=".VocabularyConfusionTopicPage"
             android:exported="false" />
         <activity
-            android:name=".VC_MainActivity"
+            android:name=".VocabularyConfusionSelectionPage"
             android:exported="false" />
         <activity
-            android:name=".KC_TopicActivity"
+            android:name=".KanaChallengeTopicPage"
             android:exported="false" />
         <activity
-            android:name=".KC_GameActivity"
+            android:name=".KanaChallengerGamePage"
             android:exported="false" />
         <activity
-            android:name=".KCscoreActivity"
+            android:name=".KanaChallengeScorePage"
             android:exported="false" />
         <activity
             android:name=".TopicActivity"

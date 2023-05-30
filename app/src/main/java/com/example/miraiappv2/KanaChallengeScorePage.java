@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class KCscoreActivity extends AppCompatActivity {
+public class KanaChallengeScorePage extends AppCompatActivity {
 
     TextView game_result;
     TextView game_score;
@@ -28,7 +28,7 @@ public class KCscoreActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //getSupportActionBar().hide();
 
-        setContentView(R.layout.activity_kcscore);
+        setContentView(R.layout.activity_kana_challenge_score_page);
 
         //scores
         game_result = findViewById(R.id.result);
@@ -69,7 +69,7 @@ public class KCscoreActivity extends AppCompatActivity {
     }
 
     public void GameMenuActivity(){
-        Intent intent = new Intent(this, KC_TopicActivity.class);
+        Intent intent = new Intent(this, KanaChallengeTopicPage.class);
         startActivity(intent);
     }
     public void MainMenuActivity(){
