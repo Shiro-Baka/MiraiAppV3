@@ -28,7 +28,7 @@
     <ImageButton
         android:id="@+id/EssentialButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
@@ -39,7 +39,7 @@
     <ImageButton
         android:id="@+id/GreetingsButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
@@ -50,7 +50,7 @@
     <ImageButton
         android:id="@+id/ColorsButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
@@ -61,7 +61,7 @@
     <ImageButton
         android:id="@+id/GeneralButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
@@ -72,7 +72,7 @@
     <ImageButton
         android:id="@+id/NumbersButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
@@ -83,7 +83,7 @@
     <ImageButton
         android:id="@+id/SchoolButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
@@ -94,7 +94,7 @@
     <ImageButton
         android:id="@+id/AdjectivesButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
@@ -104,7 +104,7 @@
     <ImageButton
         android:id="@+id/VerbsButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
@@ -114,7 +114,7 @@
     <ImageButton
         android:id="@+id/animalsButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
@@ -124,7 +124,7 @@
     <ImageButton
         android:id="@+id/bodyButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
@@ -134,7 +134,7 @@
     <ImageButton
         android:id="@+id/daysButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
@@ -144,7 +144,7 @@
     <ImageButton
         android:id="@+id/familyButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
@@ -154,7 +154,7 @@
     <ImageButton
         android:id="@+id/foodButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/vocabvertical"
@@ -165,7 +165,7 @@
     <ImageButton
         android:id="@+id/seasonsButton"
         android:layout_width="140dp"
-        android:layout_height="60dp"
+        android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/vocabTopicGuidelineRight"
