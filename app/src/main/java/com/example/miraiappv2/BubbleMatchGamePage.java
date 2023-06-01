@@ -4,12 +4,15 @@ import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.CountDownTimer;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.ViewTreeObserver;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.animation.TranslateAnimation;
 import android.content.Intent;
 import android.graphics.Color;
@@ -46,6 +49,10 @@ import java.util.Random;
 import java.util.Set;
 
 public class BubbleMatchGamePage extends AppCompatActivity {
+    //private FrameLayout container = findViewById(R.id.container);
+    //private boolean isAnimationStarted = false;
+
+
     //Create media player for sounds
     MediaPlayer BubbleMatchMediaPlayer;
 
@@ -86,10 +93,11 @@ public class BubbleMatchGamePage extends AppCompatActivity {
     boolean isFirstSelection = false;
     boolean isSecondSelection = false;
     private int firstSelectedButtonId = -1;
+    private boolean isVisible = false;
     private List<ImageButton> generatedButtons = new ArrayList<>();
     //Set correct, wrong and score counters to zero
     int correct = 0, wrong = 0, score = 0;
-
+    private List<BubbleAnimation> bubbles = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,8 +107,9 @@ public class BubbleMatchGamePage extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //getSupportActionBar().hide();
 
-
         setContentView(R.layout.activity_bubble_match_game_page);
+
+        //container = findViewById(R.id.container);
 
         GridLayout gridLayout = findViewById(R.id.grid_layout_bubble_match);
         bubbleMatchButton = new ArrayList<BubbleMatchButton>();
@@ -633,6 +642,110 @@ public class BubbleMatchGamePage extends AppCompatActivity {
             gridLayout.addView(button);
         }
     }
+    /*@Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus && !isAnimationStarted) {
+            isAnimationStarted = true;
+
+            container.post(new Runnable() {
+                @Override
+                public void run() {
+                    Random random = new Random();
+                    int numberOfBubbles = random.nextInt(60) + 1;
+
+                    for (int i = 0; i < numberOfBubbles; i++) {
+                        BubbleAnimation bubble = new BubbleAnimation(BubbleMatchGamePage.this);
+                        container.addView(bubble);
+                        bubbles.add(bubble); // Add bubble to the list
+
+                        animateBubble(bubble);
+                    }
+                }
+            });
+        }
+    }
+
+    private void animateBubble(final BubbleAnimation bubble) {
+        Random random = new Random();
+        final int containerWidth = container.getWidth();
+        final int containerHeight = container.getHeight();
+        final int bubbleWidth = bubble.getWidth();
+        final int bubbleHeight = bubble.getHeight();
+        final int maxXDelta = containerWidth - bubbleWidth;
+        final int maxYDelta = containerHeight - bubbleHeight;
+
+        int toXDelta = random.nextInt(maxXDelta);
+        int toYDelta = random.nextInt(maxYDelta);
+
+        Animation animation = AnimationUtils.loadAnimation(BubbleMatchGamePage.this, R.anim.bubble_rise);
+        animation.setDuration(1000);
+        animation.setFillAfter(true); // Set animation to persist after it ends
+
+        animation.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+                bubble.setVisibility(View.VISIBLE);
+                bubble.setIsVisible(true); // Update visibility flag
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                // Remove the bubble from the container
+                container.removeView(bubble);
+                bubbles.remove(bubble); // Remove bubble from the list
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+            }
+        });
+
+        bubble.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Handle bubble click event
+                container.removeView(v);
+                bubbles.remove(bubble); // Remove bubble from the list
+            }
+        });
+
+        // Set the bubble's initial position
+        FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) bubble.getLayoutParams();
+        params.leftMargin = toXDelta;
+        params.topMargin = toYDelta;
+        bubble.setLayoutParams(params);
+
+        bubble.startAnimation(animation);
+    }
+
+    private void removeBubbles() {
+        for (BubbleAnimation bubble : bubbles) {
+            if (!bubble.isVisible()) {
+                container.removeView(bubble);
+            }
+        }
+        bubbles.clear(); // Clear the list of bubbles
+    }
+
+    public class BubbleAnimation extends androidx.appcompat.widget.AppCompatImageView {
+        private boolean isVisible = false;
+
+        public BubbleAnimation(Context context) {
+            super(context);
+        }
+
+        public void setIsVisible(boolean visible) {
+            isVisible = visible;
+        }
+
+        public boolean isVisible() {
+            return isVisible;
+        }
+
+    }
+*/
     // Method to reset the backgrounds of all buttons
     private void resetButtonBackgrounds() {
         Log.d("ResetButtonBackgrounds", "Running!");

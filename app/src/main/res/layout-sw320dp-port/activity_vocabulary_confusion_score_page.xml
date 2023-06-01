@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/score_screen"
+    tools:context=".VocabularyConfusionScorePage">
+
+
+    <TextView
+        android:id="@+id/total_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toBottomOf="@id/vocabhorizontalscore"
+        app:layout_constraintLeft_toLeftOf="@id/vocabverticalscore" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toBottomOf="@id/vocabhorizontalcorrect"
+        app:layout_constraintLeft_toLeftOf="@id/vocabverticalcorrect" />
+
+    <TextView
+        android:id="@+id/incorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toBottomOf="@id/vocabhorizontalincorrect"
+        app:layout_constraintLeft_toLeftOf="@id/vocabverticalincorrect" />
+
+
+    <ImageButton
+        android:id="@+id/GameMenuButton"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/button_game_menu_unselected"
+        android:contentDescription="TODO"
+        app:layout_constraintTop_toTopOf="@+id/vocabhorizontal1"
+        app:layout_constraintDimensionRatio="1:0.4"
+        app:layout_constraintStart_toStartOf="@+id/vocabvertical"
+         />
+    <ImageButton
+        android:id="@+id/MainMenuButton"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/button_main_menu"
+        android:contentDescription="TODO"
+        app:layout_constraintTop_toTopOf="@+id/vocabhorizontal1"
+        app:layout_constraintDimensionRatio="1:0.4"
+        app:layout_constraintEnd_toEndOf="@+id/vocabvertical2"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabvertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabvertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabhorizontal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.62" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabhorizontalscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabhorizontalcorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabhorizontalincorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabverticalscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.44" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabverticalcorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabverticalincorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <nl.dionsegijn.konfetti.xml.KonfettiView
+        android:id="@+id/konfettiView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

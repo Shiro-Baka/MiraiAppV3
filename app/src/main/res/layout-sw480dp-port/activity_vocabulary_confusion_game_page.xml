@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_screen"
+    tools:context=".VocabularyConfusionGamePage">
+
+    <ImageButton
+        android:id="@+id/endgame"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="@+id/vocabverticalquestion"
+        app:layout_constraintBottom_toBottomOf="@id/scoreguideline"
+        app:srcCompat="@drawable/button_end_game" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:onClick="showpopup"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintRight_toRightOf="@+id/vocabvertical1"
+        app:layout_constraintBottom_toBottomOf="@id/scoreguideline"
+        app:srcCompat="@drawable/button_info_button" />
+
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBottom_toBottomOf="@id/scoreguideline"
+        app:layout_constraintLeft_toLeftOf="@id/vocabvertical" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:height="75dp"
+        android:text="Question"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/vocabhorizontalquestion"
+        app:layout_constraintLeft_toLeftOf="@+id/vocabverticalquestion"
+        app:layout_constraintTop_toTopOf="@+id/vocabhorizontal2" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="@null"
+        android:text="answer1"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/vocabvertical1"
+        app:layout_constraintLeft_toLeftOf="@id/vocabvertical"
+        app:layout_constraintStart_toStartOf="@+id/vocabvertical"
+        app:layout_constraintTop_toTopOf="@id/vocabhorizontal"
+        app:srcCompat="@drawable/button_info_button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:background="#00FFFFFF"
+        android:text="answer2"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/vocabvertical1"
+        app:layout_constraintLeft_toLeftOf="@id/vocabvertical"
+        app:layout_constraintStart_toStartOf="@+id/vocabvertical"
+        app:layout_constraintTop_toTopOf="@id/vocabhorizontal2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="@null"
+        android:text="answer3"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/vocabvertical1"
+        app:layout_constraintLeft_toLeftOf="@id/vocabvertical"
+        app:layout_constraintStart_toStartOf="@+id/vocabvertical"
+        app:layout_constraintTop_toTopOf="@id/vocabhorizontal3" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:background="#00FFFFFF"
+        android:text="answer4"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/vocabvertical1"
+        app:layout_constraintLeft_toLeftOf="@id/vocabvertical"
+        app:layout_constraintStart_toStartOf="@+id/vocabvertical"
+        app:layout_constraintTop_toTopOf="@id/vocabhorizontal4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabvertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabvertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabverticalquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabhorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabhorizontal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabhorizontalquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabhorizontal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.51" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabhorizontal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/scoreguideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.077" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

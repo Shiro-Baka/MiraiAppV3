@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.PopupWindow;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,18 +56,22 @@ public class MainActivity extends AppCompatActivity {
                 LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
                 View popupView = inflater.inflate(R.layout.main_menu_info_popup, null);
 
-                // Create the magic_popup window
-                int width;
-                int height;
-                boolean focusable = true; // Allows the user to interact with elements behind the magic_popup window
-                final PopupWindow popupWindow = new PopupWindow(popupView, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, focusable);
+                TextView myTextView = popupView.findViewById(R.id.menu_info);
+                String longText = "Your long text goes here...";
+                myTextView.setText(longText);
 
-                // Set an onClickListener to the close button in the magic_popup layout XML file
+                // Create the PopupWindow
+                int width = ViewGroup.LayoutParams.WRAP_CONTENT;
+                int height = ViewGroup.LayoutParams.WRAP_CONTENT;
+                boolean focusable = true;
+                final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+
+                // Set an onClickListener to the close button in the popup layout XML file
                 Button closeButton = popupView.findViewById(R.id.infobackbtn);
                 closeButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        // Dismiss the magic_popup window
+                        // Dismiss the popup window
                         popupWindow.dismiss();
                     }
                 });

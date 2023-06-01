@@ -9,10 +9,59 @@
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar">
 
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/transparent"
-    android:id="@+id/infobackbtn"/>
+    <Button
+        android:id="@+id/infobackbtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/black" />
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/menu_info"
+        android:layout_margin="10dp"
+        android:text="Welcome to the Japres Japanese Vocabulary Study Buddy App! This app has been created to bring a little enjoyment to learning Japanese. The ‘Study’ section contains vocabulary cards with anime characters and includes a Japanese word written in hiragana/katakana, kanji and romaji as well as the English meaning.
+        &#10;&#10;You can choose from a range of topics and once you have learned each topic you can play the games to practise your Japanese knowledge. The games have been designed to allow you to play as soon as you have learned one topic. You can select the topic(s) you have learned at the start of each game and only the vocabulary related to those topics will appear in the games.
+        &#10;&#10;Depending on your Japanese knowledge, you can choose to play each game in ‘romaji’ (English letters for each word) or in ‘kana’ (hiragana and katakana scripts).
+        &#10;We hope by playing the games you will learn Japanese vocabulary easily and have fun while learning.
+        &#10;A special thank you to my friend, Atsuya for recording the authentic Japanese pronunciation audio files used throughout this app.
+        &#10;For more information, fun ideas and free resources, please visit www.japres.com.au"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline19"
+        app:layout_constraintStart_toStartOf="@+id/guideline18"
+        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
+</ScrollView>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="127dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="778dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="60dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="350dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
