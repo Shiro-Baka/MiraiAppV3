@@ -43,14 +43,12 @@
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="wrap_content"
+        android:layout_width="165dp"
         android:layout_height="wrap_content"
-        android:width="150dp"
-        android:height="75dp"
-        android:text="Question"
+        android:text="Blue"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/vocabhorizontalquestion"
         app:layout_constraintLeft_toLeftOf="@+id/vocabverticalquestion"
@@ -58,8 +56,8 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="170dp"
-        android:layout_height="130dp"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
         android:background="#00FFFFFF"
         android:backgroundTint="@null"
         android:text="answer1"
@@ -76,8 +74,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="175dp"
-        android:layout_height="130dp"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
         android:background="#00FFFFFF"
         android:text="answer2"
         android:textAlignment="center"
@@ -92,8 +90,8 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="175dp"
-        android:layout_height="130dp"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
         android:background="#00FFFFFF"
         android:backgroundTint="@null"
         android:text="answer3"
@@ -109,8 +107,8 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="175dp"
-        android:layout_height="130dp"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
         android:background="#00FFFFFF"
         android:text="answer4"
         android:textAlignment="center"
@@ -140,7 +138,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.05" />
+        app:layout_constraintGuide_percent="0.00" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vocabhorizontal"
         android:layout_width="wrap_content"
@@ -158,7 +156,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.37" />
+        app:layout_constraintGuide_percent="0.33" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vocabhorizontal3"
         android:layout_width="wrap_content"

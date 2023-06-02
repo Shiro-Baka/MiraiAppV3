@@ -6,12 +6,17 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
@@ -40,6 +45,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
 
     private ImageButton endgame;
     private ImageButton skip;
+
 
     private ImageButton info_popup;
     private ImageButton info_back;
@@ -90,8 +96,8 @@ public class KanaChallengeGamePage extends AppCompatActivity {
         endgame = findViewById(R.id.endgame);
         skip = findViewById(R.id.skip);
 
-        //dash counter
-        //int dashcount = questionItems.get(currentQuestion).getCorrect().length();
+
+
 
         //pop_up
         pop_up = new Dialog(this);
@@ -179,8 +185,6 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     System.out.println(selectedposition);
                 }else{
                     incorrect++;
-                    System.out.println(correctposition);
-                    System.out.println(selectedposition);
                     WrongAnswer();
                 }
             }
@@ -199,12 +203,8 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                 char kanaletter =  questionItems.get(currentQuestion).getCorrect().charAt(selectedposition);
                 if (selectedletter == kanaletter){
                     preview.setTextColor(Color.GREEN);
-                    System.out.println(kanaletter);
-                    System.out.println(selectedposition);
                 }else{
                     incorrect++;
-                    System.out.println(correctposition);
-                    System.out.println(selectedposition);
                     WrongAnswer();
                 }
             }
@@ -223,12 +223,8 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                 char kanaletter =  questionItems.get(currentQuestion).getCorrect().charAt(selectedposition);
                 if (selectedletter == kanaletter){
                     preview.setTextColor(Color.GREEN);
-                    System.out.println(kanaletter);
-                    System.out.println(selectedposition);
                 }else{
                     incorrect++;
-                    System.out.println(correctposition);
-                    System.out.println(selectedposition);
                     WrongAnswer();
                 }
             }
@@ -251,8 +247,6 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     System.out.println(selectedposition);
                 }else{
                     incorrect++;
-                    System.out.println(correctposition);
-                    System.out.println(selectedposition);
                     WrongAnswer();
                 }
             }
@@ -275,8 +269,6 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     System.out.println(selectedposition);
                 }else{
                     incorrect++;
-                    System.out.println(correctposition);
-                    System.out.println(selectedposition);
                     WrongAnswer();
                 }
             }
@@ -299,8 +291,6 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     System.out.println(selectedposition);
                 }else{
                     incorrect++;
-                    System.out.println(correctposition);
-                    System.out.println(selectedposition);
                     WrongAnswer();
                 }
             }
@@ -323,8 +313,6 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     System.out.println(selectedposition);
                 }else{
                     incorrect++;
-                    System.out.println(correctposition);
-                    System.out.println(selectedposition);
                     WrongAnswer();
                 }
             }
@@ -347,8 +335,6 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     System.out.println(selectedposition);
                 }else{
                     incorrect++;
-                    System.out.println(correctposition);
-                    System.out.println(selectedposition);
                     WrongAnswer();
                 }
             }
@@ -371,8 +357,6 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     System.out.println(selectedposition);
                 }else{
                     incorrect++;
-                    System.out.println(correctposition);
-                    System.out.println(selectedposition);
                     WrongAnswer();
                 }
             }
@@ -395,8 +379,6 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     System.out.println(selectedposition);
                 }else{
                     incorrect++;
-                    System.out.println(correctposition);
-                    System.out.println(selectedposition);
                     WrongAnswer();
                 }
             }
@@ -435,12 +417,14 @@ public class KanaChallengeGamePage extends AppCompatActivity {
 
     //append to the preview
     private void enterpreview(String letter){
-        //int dashcount = questionItems.get(currentQuestion).getCorrect().length();
+        int dashcount = questionItems.get(currentQuestion).getCorrect().length();
+        System.out.println(dashcount);
         String word = preview.getText().toString();
         preview.setText(word + letter);
 
         if(preview.getText().toString().equals(questionItems.get(currentQuestion).getCorrect())){
             preview.setTextColor(Color.GREEN);
+            Congratulate();
             System.out.println("You got it correct!");
             new Handler().postDelayed(new Runnable() {
                 @Override
@@ -463,7 +447,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     preview.setText("");
                     preview.setTextColor(Color.WHITE);
                 }
-            }, 1200);
+            }, 2000);
         }
 
     }
@@ -481,6 +465,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
         b_answer8.setEnabled(false);
         b_answer9.setEnabled(false);
         b_answer10.setEnabled(false);
+        showAnswer();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -506,10 +491,11 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     finish();
                 }
                 int dashcount = questionItems.get(currentQuestion).getCorrect().length();
+                System.out.println(dashcount);
                 preview.setText("");
                 preview.setTextColor(Color.WHITE);
             }
-        }, 1200);
+        }, 3500);
     }
     //make a list with all the questions
     private void loadAllQuestions(){
@@ -574,10 +560,28 @@ public class KanaChallengeGamePage extends AppCompatActivity {
         }
         return json;
     }
-    public void openScoreActivity(){
-        Intent intent = new Intent(this, KanaChallengeScorePage.class);
-        startActivity(intent);
+    public void showAnswer(){
+        View layout = getLayoutInflater().inflate(R.layout.kana_correct_popup, (ViewGroup) findViewById(R.id.kana_layout));
+        TextView toastTextView = (TextView) layout.findViewById(R.id.correctanswer);
+        toastTextView.setText("Answer: " + questionItems.get(currentQuestion).getCorrect());
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.TOP, 0, 0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
     }
 
+    public void Congratulate(){
+        View layout = getLayoutInflater().inflate(R.layout.kana_correct_popup, (ViewGroup) findViewById(R.id.kana_layout));
+        TextView toastTextView = (TextView) layout.findViewById(R.id.correctanswer);
+        toastTextView.setText("Correct!");
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.TOP, 0, 0);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(layout);
+        toast.show();
+    }
 
 }

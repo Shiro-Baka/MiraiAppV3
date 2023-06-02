@@ -876,8 +876,8 @@
       "answer1": "かた",
       "answer2": "くび",
       "answer3": "うで",
-      "answer4": "お腹",
-      "correct": "お腹",
+      "answer4": "おなか",
+      "correct": "おなか",
       "sound": "onaka"
     },
     {
@@ -903,21 +903,21 @@
     {
       "topic": "body",
       "question": "body",
-      "answer1": "体",
+      "answer1": "からだ",
       "answer2": "ひじ",
       "answer3": "うで",
       "answer4": "かた",
-      "correct": "体",
+      "correct": "からだ",
       "sound": "karada"
     },
     {
       "topic":"school",
       "question": "Physical Education (P.E)",
-      "answer1": "たいく",
+      "answer1": "たいいく",
       "answer2": "りか",
       "answer3": "すうがく",
       "answer4": "ほん",
-      "correct": "たいく",
+      "correct": "たいいく",
       "sound": "taiiku"
     },
     {
@@ -1387,28 +1387,28 @@
       "answer1": "玉ねぎ",
       "answer2": "牛肉",
       "answer3": "スイカ",
-      "answer4": "野菜",
-      "correct": "野菜",
+      "answer4": "やさい",
+      "correct": "やさい",
       "sound": "yasai"
     },
     {
       "topic": "food",
       "question": "pear",
-      "answer1": "ナシ",
+      "answer1": "なし",
       "answer2": "パイナップル",
       "answer3": "スイカ",
       "answer4": "卵",
-      "correct": "ナシ",
+      "correct": "なし",
       "sound": "nashi"
     },
     {
       "topic": "food",
       "question": "onion",
-      "answer1": "パイナップル",
+      "answer1": "たまねぎ",
       "answer2": "玉ねぎ",
       "answer3": "スイカ",
       "answer4": "野菜",
-      "correct": "玉ねぎ",
+      "correct": "たまねぎ",
       "sound": "tamanegi"
     },
     {
@@ -1426,39 +1426,39 @@
       "question": "watermelon",
       "answer1": "スイカ",
       "answer2": "ナシ",
-      "answer3": "野菜",
+      "answer3": "すいか",
       "answer4": "パン",
-      "correct": "スイカ",
+      "correct": "すいか",
       "sound": "suika"
     },
     {
       "topic": "food",
       "question": "egg",
-      "answer1": "スイカ",
+      "answer1": "たまご",
       "answer2": "ナシ",
       "answer3": "卵",
       "answer4": "玉ねぎ",
-      "correct": "卵",
+      "correct": "たまご",
       "sound": "tamago"
     },
     {
       "topic": "food",
       "question": "beef",
       "answer1": "牛肉",
-      "answer2": "玉ねぎ",
-      "answer3": "卵",
-      "answer4": "野菜",
-      "correct": "牛肉",
+      "answer2": "ぎゅうにく",
+      "answer3": "たまご",
+      "answer4": "玉ねぎ",
+      "correct": "ぎゅうにく",
       "sound": "gyuuniku"
     },
     {
       "topic": "food",
       "question": "candy;sweets",
-      "answer1": "卵",
-      "answer2": "野菜",
+      "answer1": "たまご",
+      "answer2": "ぎゅうにく",
       "answer3": "ナシ",
-      "answer4": "お菓子",
-      "correct": "お菓子",
+      "answer4": "おかし",
+      "correct": "おかし",
       "sound": "okashi"
     },
     {
@@ -1494,11 +1494,11 @@
     {
       "topic": "food",
       "question": "tea",
-      "answer1": "お茶",
+      "answer1": "おちゃ",
       "answer2": "そば",
       "answer3": "焼きそば",
       "answer4": "うどん",
-      "correct": "お茶",
+      "correct": "おちゃ",
       "sound": "ocha"
     },
     {
