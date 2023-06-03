@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/kcinfopopup"
-    android:maxWidth="400dp"
+
     >
 
-
-    <FrameLayout
-        android:id="@+id/frame"
+    <ImageView
+        android:id="@+id/imageView4"
         android:layout_width="match_parent"
-        android:layout_height="714dp"></FrameLayout>
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/kcinfopopup" />
 
     <ImageButton
         android:id="@+id/infoback"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/frame"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
         app:srcCompat="@drawable/topicback" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/previewguideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
 
-</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -101,7 +102,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
 
         //pop_up
         pop_up = new Dialog(this);
-        pop_up.getWindow().setBackgroundDrawable(getDrawable(R.drawable.kcinfopopup));
+        //pop_up.getWindow().setBackgroundDrawable(getDrawable(R.drawable.kcinfopopup));
         info_popup = findViewById(R.id.info);
 
         //font for kana characters
@@ -389,6 +390,13 @@ public class KanaChallengeGamePage extends AppCompatActivity {
     public void showpopup(View v){
         ImageButton infoback;
         pop_up.setContentView(R.layout.kcinfopop);
+
+        int width = getResources().getDisplayMetrics().widthPixels;
+        int height = getResources().getDisplayMetrics().heightPixels;
+        int popWidth = (int)(width*0.8);
+        int popHeight = (int)(height*0.8);
+        pop_up.getWindow().setLayout(popWidth,popHeight);
+        pop_up.getWindow().setBackgroundDrawable(getDrawable(R.drawable.kcinfopopup));
         infoback = (ImageButton) pop_up.findViewById(R.id.infoback);
         infoback.setOnClickListener(new View.OnClickListener() {
             @Override

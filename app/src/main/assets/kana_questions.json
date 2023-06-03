@@ -166,7 +166,7 @@
       "answer1": "おやすみなさい",
       "answer2": "こんにちは",
       "answer3": "さようなら",
-      "answer4": "また明日",
+      "answer4": "またあした",
       "correct": "こんにちは",
       "sound": "konnichiwa"
     },
@@ -176,7 +176,7 @@
       "answer1": "おはようございます",
       "answer2": "おやすみなさい",
       "answer3": "さようなら",
-      "answer4": "また明日",
+      "answer4": "またあした",
       "correct": "おはようございます",
       "sound": "ohayougozaimasu"
     },
@@ -186,7 +186,7 @@
       "answer1": "おやすみなさい",
       "answer2": "こんにちは",
       "answer3": "さようなら",
-      "answer4": "また明日",
+      "answer4": "またあした",
       "correct": "おやすみなさい",
       "sound": "oyasumimasai"
     },
@@ -196,7 +196,7 @@
       "answer1": "おやすみなさい",
       "answer2": "こんにちは",
       "answer3": "さようなら",
-      "answer4": "また明日",
+      "answer4": "またあした",
       "correct": "さようなら",
       "sound": "sayounara"
     },
@@ -216,7 +216,7 @@
       "answer1": "もしもし",
       "answer2": "こんにちは",
       "answer3": "さようなら",
-      "answer4": "また明日",
+      "answer4": "またあした",
       "correct": "もしもし",
       "sound": "moshimoshi"
     },
@@ -226,7 +226,7 @@
       "answer1": "おやすみなさい",
       "answer2": "こんにちは",
       "answer3": "さようなら",
-      "answer4": "また明日",
+      "answer4": "またあした",
       "correct": "さようなら",
       "sound": "sayounara"
     },
@@ -236,7 +236,7 @@
       "answer1": "おやすみなさい",
       "answer2": "こんにちは",
       "answer3": "どういたしまして",
-      "answer4": "また明日",
+      "answer4": "またあした",
       "correct": "どういたしまして",
       "sound": "none"
     },
@@ -246,7 +246,7 @@
       "answer1": "おやすみなさい",
       "answer2": "こんにちは",
       "answer3": "げんきですか",
-      "answer4": "また明日",
+      "answer4": "またあした",
       "correct": "げんきですか",
       "sound": "none"
     },
@@ -256,38 +256,38 @@
       "answer1": "おやすみなさい",
       "answer2": "こんにちは",
       "answer3": "じゃまたね",
-      "answer4": "また明日",
+      "answer4": "またあした",
       "correct": "じゃまたね",
       "sound": "none"
     },
     {
       "topic": "greetings",
-      "question": "Have a nice day",
+      "question": "Hey",
       "answer1": "おやすみなさい",
       "answer2": "こんにちは",
-      "answer3": "よい一日を",
-      "answer4": "また明日",
-      "correct": "よい一日を",
+      "answer3": "じゃまたね",
+      "answer4": "おす",
+      "correct": "おす",
       "sound": "none"
     },
     {
       "topic": "greetings",
-      "question": "It's good to see you",
+      "question": "What is your name?",
       "answer1": "おやすみなさい",
       "answer2": "こんにちは",
-      "answer3": "よろしくお願いします",
-      "answer4": "また明日",
-      "correct": "よろしくお願いします",
+      "answer3": "じゃまたね",
+      "answer4": "おやすみなさい",
+      "correct": "おなまえわ",
       "sound": "none"
     },
     {
       "topic": "greetings",
-      "question": "How is your day?",
-      "answer1": "おやすみなさい",
+      "question": "Thank you",
+      "answer1": "こんにちは",
       "answer2": "こんにちは",
-      "answer3": "今何時ですか",
-      "answer4": "また明日",
-      "correct": "今何時ですか",
+      "answer3": "ありがと",
+      "answer4": "おなまえわ",
+      "correct": "ありがと",
       "sound": "none"
     },
     {
@@ -296,7 +296,7 @@
       "answer1": "おやすみなさい",
       "answer2": "こんにちは",
       "answer3": "はじめまして",
-      "answer4": "また明日",
+      "answer4": "こんにちは",
       "correct": "はじめまして",
       "sound": "none"
     },
@@ -1084,7 +1084,7 @@
       "topic":"essential",
       "question": "I understand",
       "answer1": "ようこそ",
-      "answer2": "僕",
+      "answer2": "わたし",
       "answer3": "はい",
       "answer4": "わかります",
       "correct": "わかります",
@@ -1094,8 +1094,8 @@
       "topic":"essential",
       "question": "yes",
       "answer1": "はい",
-      "answer2": "人",
-      "answer3": "元気です",
+      "answer2": "わたし",
+      "answer3": "わかります",
       "answer4": "ようこそ",
       "correct": "はい",
       "sound": "hai"
@@ -1105,7 +1105,7 @@
       "question": "welcome",
       "answer1": "じゃあまた",
       "answer2": "どうぞ",
-      "answer3": "僕",
+      "answer3": "わかります",
       "answer4": "ようこそ",
       "correct": "ようこそ",
       "sound": "youkoso"
@@ -1115,7 +1115,7 @@
       "question": "see you later",
       "answer1": "どうぞ",
       "answer2": "じゃあまた",
-      "answer3": "僕",
+      "answer3": "わかります",
       "answer4": "ください",
       "correct": "じゃあまた",
       "sound": "nihon"
@@ -1123,9 +1123,9 @@
     {
       "topic":"essential",
       "question": "I (for males)",
-      "answer1": "元気です",
+      "answer1": "じゃあまた",
       "answer2": "どうぞ",
-      "answer3": "人",
+      "answer3": "どうぞ",
       "answer4": "ぼく",
       "correct": "ぼく",
       "sound": "boku"
@@ -1134,7 +1134,7 @@
       "topic":"essential",
       "question": "here you go",
       "answer1": "どうぞ",
-      "answer2": "僕",
+      "answer2": "どうぞ",
       "answer3": "じゃあまた",
       "answer4": "ようこそ",
       "correct": "どうぞ",
@@ -1224,28 +1224,28 @@
       "topic":"verbs",
       "question": "there is (inanimate object)",
       "answer1": "あります",
-      "answer2": "教えます",
-      "answer3": "開けます",
-      "answer4": "言います",
+      "answer2": "わかります",
+      "answer3": "かきます",
+      "answer4": "すみません",
       "correct": "あります",
       "sound": "arimasu"
     },
     {
       "topic":"verbs",
       "question": "to write",
-      "answer1": "教えます",
+      "answer1": "すみません",
       "answer2": "かきます",
       "answer3": "かきます",
-      "answer4": "話します",
+      "answer4": "ききます",
       "correct": "かきます",
       "sound": "kakimasu"
     },
     {
       "topic":"verbs",
       "question": "to listen",
-      "answer1": "言います",
+      "answer1": "すみません",
       "answer2": "分かります",
-      "answer3": "教えます",
+      "answer3": "あけます",
       "answer4": "ききます",
       "correct": "ききます",
       "sound": "kikimasu"
@@ -1254,19 +1254,19 @@
       "topic":"verbs",
       "question": "to open",
       "answer1": "あけます",
-      "answer2": "練習します",
-      "answer3": "話します",
-      "answer4": "聞きます",
+      "answer2": "すみません",
+      "answer3": "かきます",
+      "answer4": "いいます",
       "correct": "あけます",
       "sound": "akemasu"
     },
     {
       "topic":"verbs",
       "question": "to teach",
-      "answer1": "教えます",
+      "answer1": "あけます",
       "answer2": "おしえます",
-      "answer3": "話します",
-      "answer4": "練習します",
+      "answer3": "いいます",
+      "answer4": "かきます",
       "correct": "おしえます",
       "sound": "oshiemasu"
     },
@@ -1275,17 +1275,17 @@
       "question": "to practice",
       "answer1": "あります",
       "answer2": "れんしゅうします",
-      "answer3": "話します",
-      "answer4": "開けます",
+      "answer3": "いいます",
+      "answer4": "あけます",
       "correct": "れんしゅうします",
       "sound": "renshuushimasu"
     },
     {
       "topic":"verbs",
       "question": "to say",
-      "answer1": "聞きます",
-      "answer2": "買います",
-      "answer3": "書きます",
+      "answer1": "あけます",
+      "answer2": "あります",
+      "answer3": "わかります",
       "answer4": "いいます",
       "correct": "いいます",
       "sound": "iimasu"
@@ -1293,10 +1293,10 @@
     {
       "topic":"verbs",
       "question": "to understand",
-      "answer1": "聞きます",
+      "answer1": "いいます",
       "answer2": "わかります",
-      "answer3": "書きます",
-      "answer4": "分かります",
+      "answer3": "あけます",
+      "answer4": "かいます",
       "correct": "わかります",
       "sound": "wakarimasu"
     },
@@ -1384,8 +1384,8 @@
     {
       "topic": "food",
       "question": "vegetables",
-      "answer1": "玉ねぎ",
-      "answer2": "牛肉",
+      "answer1": "なし",
+      "answer2": "パイナップル",
       "answer3": "スイカ",
       "answer4": "やさい",
       "correct": "やさい",
@@ -1397,7 +1397,7 @@
       "answer1": "なし",
       "answer2": "パイナップル",
       "answer3": "スイカ",
-      "answer4": "卵",
+      "answer4": "やさい",
       "correct": "なし",
       "sound": "nashi"
     },
@@ -1407,7 +1407,7 @@
       "answer1": "たまねぎ",
       "answer2": "玉ねぎ",
       "answer3": "スイカ",
-      "answer4": "野菜",
+      "answer4": "パン",
       "correct": "たまねぎ",
       "sound": "tamanegi"
     },
@@ -1417,7 +1417,7 @@
       "answer1": "ナシ",
       "answer2": "パン",
       "answer3": "ステーキ",
-      "answer4": "卵",
+      "answer4": "玉ねぎ",
       "correct": "パン",
       "sound": "pan"
     },
@@ -1436,7 +1436,7 @@
       "question": "egg",
       "answer1": "たまご",
       "answer2": "ナシ",
-      "answer3": "卵",
+      "answer3": "なし",
       "answer4": "玉ねぎ",
       "correct": "たまご",
       "sound": "tamago"
@@ -1444,7 +1444,7 @@
     {
       "topic": "food",
       "question": "beef",
-      "answer1": "牛肉",
+      "answer1": "なし",
       "answer2": "ぎゅうにく",
       "answer3": "たまご",
       "answer4": "玉ねぎ",
@@ -1464,8 +1464,8 @@
     {
       "topic": "food",
       "question": "steak",
-      "answer1": "卵",
-      "answer2": "お菓子",
+      "answer1": "おかし",
+      "answer2": "たまご",
       "answer3": "ナシ",
       "answer4": "ステーキ",
       "correct": "ステーキ",
@@ -1496,7 +1496,7 @@
       "question": "tea",
       "answer1": "おちゃ",
       "answer2": "そば",
-      "answer3": "焼きそば",
+      "answer3": "たまご",
       "answer4": "うどん",
       "correct": "おちゃ",
       "sound": "ocha"
@@ -1514,8 +1514,8 @@
     {
       "topic": "food",
       "question": "cake",
-      "answer1": "果物",
-      "answer2": "牛乳",
+      "answer1": "りんご",
+      "answer2": "みかん",
       "answer3": "ケーキ",
       "answer4": "おかし",
       "correct": "ケーキ",
@@ -1635,10 +1635,10 @@
       "topic": "family",
       "question": "mother",
       "answer1": "いもうと",
-      "answer2": "お母さん",
+      "answer2": "おかあさん",
       "answer3": "むすこ",
       "answer4": "むすめ",
-      "correct": "お母さん",
+      "correct": "おかあさん",
       "sound": "okaasan"
     },
     {
@@ -1784,11 +1784,11 @@
     {
       "topic": "general",
       "question": "what",
-      "answer1": "何",
+      "answer1": "なに",
       "answer2": "いくつ",
       "answer3": "どく",
       "answer4": "どう",
-      "correct": "何",
+      "correct": "なに",
       "sound": "nani"
     },
     {
@@ -1797,7 +1797,7 @@
       "answer1": "いつ",
       "answer2": "いくつ",
       "answer3": "どく",
-      "answer4": "何",
+      "answer4": "なに",
       "correct": "いつ",
       "sound": "itsu"
     },
@@ -1806,7 +1806,7 @@
       "question": "why",
       "answer1": "いくつ",
       "answer2": "いつ",
-      "answer3": "何",
+      "answer3": "なに",
       "answer4": "どうして",
       "correct": "どうして",
       "sound": "doushite"

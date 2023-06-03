@@ -74,7 +74,6 @@ public class VocabularyConfusionGamePage extends AppCompatActivity {
 
         //pop_up
         pop_up = new Dialog(this);
-        pop_up.getWindow().setBackgroundDrawable(getDrawable(R.drawable.ipopup));
         info_popup = findViewById(R.id.info);
 
 
@@ -478,6 +477,12 @@ public class VocabularyConfusionGamePage extends AppCompatActivity {
     public void showpopup(View v){
         ImageButton infoback;
         pop_up.setContentView(R.layout.infopopup);
+        int width = getResources().getDisplayMetrics().widthPixels;
+        int height = getResources().getDisplayMetrics().heightPixels;
+        int popWidth = (int)(width*0.8);
+        int popHeight = (int)(height*0.8);
+        pop_up.getWindow().setLayout(popWidth,popHeight);
+        pop_up.getWindow().setBackgroundDrawable(getDrawable(R.drawable.ipopup));
         infoback = (ImageButton) pop_up.findViewById(R.id.infoback);
         infoback.setOnClickListener(new View.OnClickListener() {
             @Override
