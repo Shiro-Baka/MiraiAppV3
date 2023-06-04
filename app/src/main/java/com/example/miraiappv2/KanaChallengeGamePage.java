@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -28,6 +29,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -36,6 +38,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
 
     TextView preview;
     TextView question;
+    TextView dashPreview;
     Button b_answer1, b_answer2, b_answer3, b_answer4,b_answer5, b_answer6, b_answer7, b_answer8,b_answer9, b_answer10;
     List<KanaChallengeQuestionItem> questionItems;
     String letter = "";
@@ -59,6 +62,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
     Dialog pop_up;
 
     ArrayList<String> all_topics = new ArrayList<>();
+    ArrayList<String> DashArray = new ArrayList<>();
 
 
     @Override
@@ -73,6 +77,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
         setContentView(R.layout.activity_kana_challenge_game_page);
 
         preview = findViewById(R.id.preview);
+        dashPreview = findViewById(R.id.dashpreview);
         question = findViewById(R.id.question);
         b_answer1 = findViewById(R.id.answer1);
         b_answer2 = findViewById(R.id.answer2);
@@ -131,6 +136,9 @@ public class KanaChallengeGamePage extends AppCompatActivity {
         //load the first question
         setQuestionScreen(currentQuestion);
 
+        //display dashes
+
+        getDashes();
         //endgame
         endgame.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,6 +162,9 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     if (currentQuestion < 15-1){
                         currentQuestion++;
                         setQuestionScreen(currentQuestion);
+                        DashArray.clear();
+                        dashPreview.setTextColor(Color.WHITE);
+                        getDashes();
                         preview.setText("");
                         preview.setTextColor(Color.WHITE);
                     }else{
@@ -181,10 +192,17 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                 char selectedletter = position.charAt(selectedposition);
                 char kanaletter =  questionItems.get(currentQuestion).getCorrect().charAt(selectedposition);
                 if (selectedletter == kanaletter){
-                    preview.setTextColor(Color.GREEN);
-                    System.out.println(kanaletter);
-                    System.out.println(selectedposition);
+                    DashArray.remove(0);
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
+                    dashPreview.setTextColor(Color.GREEN);
+
                 }else{
+                    DashArray.clear();
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
                     incorrect++;
                     WrongAnswer();
                 }
@@ -203,8 +221,17 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                 char selectedletter = position.charAt(selectedposition);
                 char kanaletter =  questionItems.get(currentQuestion).getCorrect().charAt(selectedposition);
                 if (selectedletter == kanaletter){
-                    preview.setTextColor(Color.GREEN);
+                    DashArray.remove(0);
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
+                    dashPreview.setTextColor(Color.GREEN);
+
                 }else{
+                    DashArray.clear();
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
                     incorrect++;
                     WrongAnswer();
                 }
@@ -223,8 +250,17 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                 char selectedletter = position.charAt(selectedposition);
                 char kanaletter =  questionItems.get(currentQuestion).getCorrect().charAt(selectedposition);
                 if (selectedletter == kanaletter){
-                    preview.setTextColor(Color.GREEN);
+                    DashArray.remove(0);
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
+                    dashPreview.setTextColor(Color.GREEN);
+
                 }else{
+                    DashArray.clear();
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
                     incorrect++;
                     WrongAnswer();
                 }
@@ -243,10 +279,17 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                 char selectedletter = position.charAt(selectedposition);
                 char kanaletter =  questionItems.get(currentQuestion).getCorrect().charAt(selectedposition);
                 if (selectedletter == kanaletter){
-                    preview.setTextColor(Color.GREEN);
-                    System.out.println(kanaletter);
-                    System.out.println(selectedposition);
+                    DashArray.remove(0);
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
+                    dashPreview.setTextColor(Color.GREEN);
+
                 }else{
+                    DashArray.clear();
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
                     incorrect++;
                     WrongAnswer();
                 }
@@ -265,10 +308,17 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                 char selectedletter = position.charAt(selectedposition);
                 char kanaletter =  questionItems.get(currentQuestion).getCorrect().charAt(selectedposition);
                 if (selectedletter == kanaletter){
-                    preview.setTextColor(Color.GREEN);
-                    System.out.println(kanaletter);
-                    System.out.println(selectedposition);
+                    DashArray.remove(0);
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
+                    dashPreview.setTextColor(Color.GREEN);
+
                 }else{
+                    DashArray.clear();
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
                     incorrect++;
                     WrongAnswer();
                 }
@@ -287,10 +337,17 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                 char selectedletter = position.charAt(selectedposition);
                 char kanaletter =  questionItems.get(currentQuestion).getCorrect().charAt(selectedposition);
                 if (selectedletter == kanaletter){
-                    preview.setTextColor(Color.GREEN);
-                    System.out.println(kanaletter);
-                    System.out.println(selectedposition);
+                    DashArray.remove(0);
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
+                    dashPreview.setTextColor(Color.GREEN);
+
                 }else{
+                    DashArray.clear();
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
                     incorrect++;
                     WrongAnswer();
                 }
@@ -309,10 +366,17 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                 char selectedletter = position.charAt(selectedposition);
                 char kanaletter =  questionItems.get(currentQuestion).getCorrect().charAt(selectedposition);
                 if (selectedletter == kanaletter){
-                    preview.setTextColor(Color.GREEN);
-                    System.out.println(kanaletter);
-                    System.out.println(selectedposition);
+                    DashArray.remove(0);
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
+                    dashPreview.setTextColor(Color.GREEN);
+
                 }else{
+                    DashArray.clear();
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
                     incorrect++;
                     WrongAnswer();
                 }
@@ -331,10 +395,17 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                 char selectedletter = position.charAt(selectedposition);
                 char kanaletter =  questionItems.get(currentQuestion).getCorrect().charAt(selectedposition);
                 if (selectedletter == kanaletter){
-                    preview.setTextColor(Color.GREEN);
-                    System.out.println(kanaletter);
-                    System.out.println(selectedposition);
+                    DashArray.remove(0);
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
+                    dashPreview.setTextColor(Color.GREEN);
+
                 }else{
+                    DashArray.clear();
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
                     incorrect++;
                     WrongAnswer();
                 }
@@ -353,10 +424,17 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                 char selectedletter = position.charAt(selectedposition);
                 char kanaletter =  questionItems.get(currentQuestion).getCorrect().charAt(selectedposition);
                 if (selectedletter == kanaletter){
-                    preview.setTextColor(Color.GREEN);
-                    System.out.println(kanaletter);
-                    System.out.println(selectedposition);
+                    DashArray.remove(0);
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
+                    dashPreview.setTextColor(Color.GREEN);
+
                 }else{
+                    DashArray.clear();
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
                     incorrect++;
                     WrongAnswer();
                 }
@@ -375,10 +453,17 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                 char selectedletter = position.charAt(selectedposition);
                 char kanaletter =  questionItems.get(currentQuestion).getCorrect().charAt(selectedposition);
                 if (selectedletter == kanaletter){
-                    preview.setTextColor(Color.GREEN);
-                    System.out.println(kanaletter);
-                    System.out.println(selectedposition);
+                    DashArray.remove(0);
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
+                    dashPreview.setTextColor(Color.GREEN);
+
                 }else{
+                    DashArray.clear();
+                    String previewstring= preview.getText().toString();
+                    String DashText = TextUtils.join("",DashArray);
+                    dashPreview.setText(previewstring+DashText);
                     incorrect++;
                     WrongAnswer();
                 }
@@ -425,15 +510,11 @@ public class KanaChallengeGamePage extends AppCompatActivity {
 
     //append to the preview
     private void enterpreview(String letter){
-        int dashcount = questionItems.get(currentQuestion).getCorrect().length();
-        System.out.println(dashcount);
         String word = preview.getText().toString();
         preview.setText(word + letter);
-
+        preview.setVisibility(View.INVISIBLE);
         if(preview.getText().toString().equals(questionItems.get(currentQuestion).getCorrect())){
-            preview.setTextColor(Color.GREEN);
             Congratulate();
-            System.out.println("You got it correct!");
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -444,6 +525,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     if (currentQuestion < 15-1){
                         currentQuestion++;
                         setQuestionScreen(currentQuestion);
+                        getDashes();
                     }else{
                         Intent intent = new Intent(getApplicationContext(), KanaChallengeScorePage.class);
                         intent.putExtra("correct",correct);
@@ -454,6 +536,8 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     }
                     preview.setText("");
                     preview.setTextColor(Color.WHITE);
+                    setNextDash();
+                    dashPreview.setTextColor(Color.WHITE);
                 }
             }, 2000);
         }
@@ -462,7 +546,9 @@ public class KanaChallengeGamePage extends AppCompatActivity {
 
     //if wrong answer selected
     private void WrongAnswer(){
-        preview.setTextColor(Color.RED);
+        //preview.setTextColor(Color.RED);
+
+        dashPreview.setTextColor(Color.RED);
         b_answer1.setEnabled(false);
         b_answer2.setEnabled(false);
         b_answer3.setEnabled(false);
@@ -490,6 +576,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     b_answer8.setEnabled(true);
                     b_answer9.setEnabled(true);
                     b_answer10.setEnabled(true);
+                    getDashes();
                 }else{
                     Intent intent = new Intent(getApplicationContext(), KanaChallengeScorePage.class);
                     intent.putExtra("correct",correct);
@@ -498,10 +585,10 @@ public class KanaChallengeGamePage extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }
-                int dashcount = questionItems.get(currentQuestion).getCorrect().length();
-                System.out.println(dashcount);
                 preview.setText("");
                 preview.setTextColor(Color.WHITE);
+                setNextDash();
+                dashPreview.setTextColor(Color.WHITE);
             }
         }, 3500);
     }
@@ -590,6 +677,19 @@ public class KanaChallengeGamePage extends AppCompatActivity {
         toast.setDuration(Toast.LENGTH_SHORT);
         toast.setView(layout);
         toast.show();
+    }
+    public void getDashes(){
+        int alldashes = questionItems.get(currentQuestion).getCorrect().length();
+        for(int i = 0; i<alldashes; i++){
+            DashArray.add(" _ ");
+        }
+        String DashText = TextUtils.join("",DashArray);
+        dashPreview.setText(DashText);
+    }
+    public void setNextDash(){
+        String previewstring= preview.getText().toString();
+        String DashText = TextUtils.join("",DashArray);
+        dashPreview.setText(previewstring+DashText);
     }
 
 }

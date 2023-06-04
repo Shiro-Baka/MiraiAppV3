@@ -51,6 +51,21 @@
         app:layout_constraintLeft_toLeftOf="@id/vocabguidevertical4" />
 
     <TextView
+        android:id="@+id/dashpreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:width="750dp"
+        android:height="50dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintTop_toBottomOf="@id/previewguideline"
+        app:layout_constraintLeft_toLeftOf="@id/vocabguideverticalpreview" />
+
+    <TextView
         android:id="@+id/preview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
