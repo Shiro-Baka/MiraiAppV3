@@ -156,7 +156,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.33" />
+        app:layout_constraintGuide_percent="0.32" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vocabhorizontal3"
         android:layout_width="wrap_content"
@@ -168,7 +168,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.70" />
+        app:layout_constraintGuide_percent="0.69" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/scoreguideline"
         android:layout_width="wrap_content"
