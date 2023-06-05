@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="@color/white"
         app:flow_horizontalAlign="center"
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="@color/white"
         app:flow_horizontalAlign="center"
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="@color/white"
         app:flow_horizontalAlign="center"
@@ -47,8 +47,8 @@
 
     <ImageButton
         android:id="@+id/GameMenuButton"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
         android:scaleType="fitCenter"
         android:background="@drawable/button_game_menu_unselected"
         android:contentDescription="TODO"
@@ -58,8 +58,8 @@
          />
     <ImageButton
         android:id="@+id/MainMenuButton"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
         android:scaleType="fitCenter"
         android:background="@drawable/button_main_menu"
         android:contentDescription="TODO"
@@ -91,19 +91,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.44" />
+        app:layout_constraintGuide_percent="0.45" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vocabhorizontalcorrect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.52" />
+        app:layout_constraintGuide_percent="0.53" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vocabhorizontalincorrect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.59" />
+        app:layout_constraintGuide_percent="0.60" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vocabverticalscore"
         android:layout_width="wrap_content"

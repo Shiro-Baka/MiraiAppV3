@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
-        android:width="250dp"
+        android:width="320dp"
         android:height="100dp"
         android:textStyle="bold"
         android:textSize="30dp"
@@ -63,7 +63,23 @@
         android:textColor="@color/white"
         app:flow_horizontalAlign="center"
         app:layout_constraintTop_toBottomOf="@id/previewguideline"
-        app:layout_constraintLeft_toLeftOf="@id/vocabguidevertical2" />
+        app:layout_constraintLeft_toLeftOf="@id/vocabguideverticalpreview" />
+
+    <TextView
+        android:id="@+id/dashpreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:width="320dp"
+        android:height="100dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintTop_toBottomOf="@id/previewguideline"
+        app:layout_constraintLeft_toLeftOf="@id/vocabguideverticalpreview" />
+
     <TextView
         android:id="@+id/score"
         android:layout_width="wrap_content"
@@ -238,13 +254,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.065" />
+        app:layout_constraintGuide_percent="0.073" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/previewguideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.25" />
+        app:layout_constraintGuide_percent="0.32" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vocabguidevertical1"
         android:layout_width="wrap_content"
@@ -257,6 +273,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.22" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vocabguideverticalpreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/vocabguidevertical3"
         android:layout_width="wrap_content"

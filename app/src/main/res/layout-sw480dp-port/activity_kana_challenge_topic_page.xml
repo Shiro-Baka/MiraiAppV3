@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/kctopic"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".KanaChallengeTopicPage">
 
     <ImageButton
@@ -23,8 +25,8 @@
 
     <ImageButton
         android:id="@+id/EssentialButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
@@ -34,8 +36,8 @@
 
     <ImageButton
         android:id="@+id/GreetingsButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
@@ -45,8 +47,8 @@
 
     <ImageButton
         android:id="@+id/ColorsButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
@@ -56,8 +58,8 @@
 
     <ImageButton
         android:id="@+id/GeneralButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
@@ -67,8 +69,8 @@
 
     <ImageButton
         android:id="@+id/NumbersButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
@@ -78,8 +80,8 @@
 
     <ImageButton
         android:id="@+id/SchoolButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
@@ -89,8 +91,8 @@
 
     <ImageButton
         android:id="@+id/AdjectivesButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
@@ -99,8 +101,8 @@
         app:srcCompat="@drawable/button_topic_adjectives" />
     <ImageButton
         android:id="@+id/VerbsButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
@@ -109,8 +111,8 @@
         app:srcCompat="@drawable/button_topic_verbs" />
     <ImageButton
         android:id="@+id/animalsButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
@@ -119,8 +121,8 @@
         app:srcCompat="@drawable/button_topic_animals" />
     <ImageButton
         android:id="@+id/bodyButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
@@ -129,8 +131,8 @@
         app:srcCompat="@drawable/button_topic_body_parts" />
     <ImageButton
         android:id="@+id/daysButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
@@ -139,8 +141,8 @@
         app:srcCompat="@drawable/button_topic_dwmy" />
     <ImageButton
         android:id="@+id/familyButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
@@ -149,8 +151,8 @@
         app:srcCompat="@drawable/button_topic_family_counting" />
     <ImageButton
         android:id="@+id/foodButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="@+id/kcvertical"
@@ -160,8 +162,8 @@
 
     <ImageButton
         android:id="@+id/seasonsButton"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/kcTopicGuidelineRight"
@@ -188,7 +190,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.20"/>
+        app:layout_constraintGuide_percent="0.18"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/kcTopicGuidelineTop2"
