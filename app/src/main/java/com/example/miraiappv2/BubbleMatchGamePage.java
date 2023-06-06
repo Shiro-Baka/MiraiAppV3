@@ -4,13 +4,18 @@ import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Typeface;
 import android.os.CountDownTimer;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.ViewTreeObserver;
+import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.TranslateAnimation;
@@ -49,8 +54,7 @@ import java.util.Random;
 import java.util.Set;
 
 public class BubbleMatchGamePage extends AppCompatActivity {
-    //private FrameLayout container = findViewById(R.id.container);
-    //private boolean isAnimationStarted = false;
+    private ViewGroup bubbleAnimation;
 
 
     //Create media player for sounds
@@ -109,7 +113,7 @@ public class BubbleMatchGamePage extends AppCompatActivity {
 
         setContentView(R.layout.activity_bubble_match_game_page);
 
-        //container = findViewById(R.id.container);
+        bubbleAnimation = findViewById(R.id.bubble_match_animation_container);
 
         GridLayout gridLayout = findViewById(R.id.grid_layout_bubble_match);
         bubbleMatchButton = new ArrayList<BubbleMatchButton>();
@@ -231,12 +235,16 @@ public class BubbleMatchGamePage extends AppCompatActivity {
             // Iterate over the shuffled game elements and create buttons for eword and jword
             for (BubbleMatchButton buttonData : bubbleMatchButton) {
                 // Modify the button size
-                int buttonWidth = getResources().getDimensionPixelSize(R.dimen.button_width);
-                int buttonHeight = getResources().getDimensionPixelSize(R.dimen.button_height);
-                int marginInPixels = getResources().getDimensionPixelSize(R.dimen.button_margin);
+                int screenWidth = getResources().getDisplayMetrics().widthPixels;
+                int buttonWidth = (int) (screenWidth * 0.43); // Adjust the percentage as needed
+                int buttonHeight = (int) (buttonWidth * 0.30); // Adjust the aspect ratio as needed
+                int marginInPixels = (int) (buttonWidth * 0.05); // Adjust the margin as needed
+                float desiredTextSizeInDp = 16; // Adjust the desired text size in dp as needed
+                float density = getResources().getDisplayMetrics().density;
+                float scaledTextSize = desiredTextSizeInDp * density;
 
                 // Check if the generated word count has reached the desired limit
-                if (generatedWordCount >= 12 * numberOfSelectedTopics ) {
+                if (generatedWordCount >= 20 * numberOfSelectedTopics ) {
                     break; // Exit the loop if the limit is reached
                 }
 
@@ -252,7 +260,7 @@ public class BubbleMatchGamePage extends AppCompatActivity {
 
                 TextView ewordText = new TextView(this);
                 ewordText.setText(buttonData.getEword());
-                ewordText.setTextSize(25);
+                ewordText.setTextSize(TypedValue.COMPLEX_UNIT_SP, scaledTextSize); // Set the text size in scaled pixels
                 ewordText.setTextColor(Color.WHITE);
                 ewordText.setShadowLayer(10, 0, 0, Color.BLUE);
 
@@ -291,7 +299,7 @@ public class BubbleMatchGamePage extends AppCompatActivity {
 
                 TextView jwordText = new TextView(this);
                 jwordText.setText(buttonData.getJword());
-                jwordText.setTextSize(25); // Set the text size to 16 (change the value as needed)
+                jwordText.setTextSize(TypedValue.COMPLEX_UNIT_SP, scaledTextSize); // Set the text size in scaled pixels
                 jwordText.setTextColor(Color.WHITE);
                 jwordText.setShadowLayer(10, 0, 0, Color.BLUE);// Set the outline
 
@@ -642,110 +650,83 @@ public class BubbleMatchGamePage extends AppCompatActivity {
             gridLayout.addView(button);
         }
     }
-    /*@Override
+
+    @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        if (hasFocus && !isAnimationStarted) {
-            isAnimationStarted = true;
+        if (hasFocus) {
+            addBubble();
+        }
+    }
 
-            container.post(new Runnable() {
+    private void startBubbleAnimation(ImageView bubble) {
+        bubble.post(new Runnable() {
+            @Override
+            public void run() {
+                animateBubble(bubble);
+            }
+        });
+    }
+    private void addBubble() {
+        int minBubbles = 15;
+        int maxBubbles = 60;
+        int numBubbles = (int) (Math.random() * (maxBubbles - minBubbles + 1)) + minBubbles;
+
+        int minYPosition = bubbleAnimation.getHeight() / 2; // Minimum Y position within the bottom half of the screen
+        int maxYPosition = bubbleAnimation.getHeight() - getResources().getDimensionPixelSize(R.dimen.bubble_animation_size); // Maximum Y position near the bottom of the screen
+
+        for (int i = 0; i < numBubbles; i++) {
+            final ImageView bubble = new ImageView(this);
+            bubble.setImageDrawable(getResources().getDrawable(R.drawable.bubble_image));
+
+            int size = getResources().getDimensionPixelSize(R.dimen.bubble_animation_size);
+            FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(size, size);
+            params.leftMargin = getRandomXPosition();
+            params.topMargin = getRandomYPosition(minYPosition, maxYPosition);
+            bubble.setLayoutParams(params);
+
+            bubbleAnimation.addView(bubble);
+            bubble.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    score += 10; // Increment the score by 10
+                    // Update the score display or perform any other action
+                    bubbleAnimation.removeView(bubble); // Remove the clicked bubble from the container
+                }
+            });
+            bubble.post(new Runnable() {
                 @Override
                 public void run() {
-                    Random random = new Random();
-                    int numberOfBubbles = random.nextInt(60) + 1;
-
-                    for (int i = 0; i < numberOfBubbles; i++) {
-                        BubbleAnimation bubble = new BubbleAnimation(BubbleMatchGamePage.this);
-                        container.addView(bubble);
-                        bubbles.add(bubble); // Add bubble to the list
-
-                        animateBubble(bubble);
-                    }
+                    animateBubble(bubble);
                 }
             });
         }
     }
 
-    private void animateBubble(final BubbleAnimation bubble) {
-        Random random = new Random();
-        final int containerWidth = container.getWidth();
-        final int containerHeight = container.getHeight();
-        final int bubbleWidth = bubble.getWidth();
-        final int bubbleHeight = bubble.getHeight();
-        final int maxXDelta = containerWidth - bubbleWidth;
-        final int maxYDelta = containerHeight - bubbleHeight;
+    private int getRandomYPosition(int minY, int maxY) {
+        return (int) (Math.random() * (maxY - minY + 1)) + minY;
+    }
 
-        int toXDelta = random.nextInt(maxXDelta);
-        int toYDelta = random.nextInt(maxYDelta);
+    private int getRandomXPosition() {
+        int screenWidth = getResources().getDisplayMetrics().widthPixels;
+        return (int) (Math.random() * (screenWidth - getResources().getDimensionPixelSize(R.dimen.bubble_animation_size)));
+    }
 
-        Animation animation = AnimationUtils.loadAnimation(BubbleMatchGamePage.this, R.anim.bubble_rise);
-        animation.setDuration(1000);
-        animation.setFillAfter(true); // Set animation to persist after it ends
+    private void animateBubble(final ImageView bubble) {
+        int screenHeight = getResources().getDisplayMetrics().heightPixels;
 
-        animation.setAnimationListener(new Animation.AnimationListener() {
+        ObjectAnimator animator = ObjectAnimator.ofFloat(bubble, "translationY", -screenHeight);
+        animator.setDuration(5500); // Adjust the duration as needed
+        animator.setInterpolator(new AccelerateInterpolator());
+        animator.addListener(new AnimatorListenerAdapter() {
             @Override
-            public void onAnimationStart(Animation animation) {
-                bubble.setVisibility(View.VISIBLE);
-                bubble.setIsVisible(true); // Update visibility flag
-            }
-
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                // Remove the bubble from the container
-                container.removeView(bubble);
-                bubbles.remove(bubble); // Remove bubble from the list
-
-            }
-
-            @Override
-            public void onAnimationRepeat(Animation animation) {
+            public void onAnimationEnd(Animator animation) {
+                bubbleAnimation.removeView(bubble);
             }
         });
-
-        bubble.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Handle bubble click event
-                container.removeView(v);
-                bubbles.remove(bubble); // Remove bubble from the list
-            }
-        });
-
-        // Set the bubble's initial position
-        FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) bubble.getLayoutParams();
-        params.leftMargin = toXDelta;
-        params.topMargin = toYDelta;
-        bubble.setLayoutParams(params);
-
-        bubble.startAnimation(animation);
+        animator.start();
     }
 
-    private void removeBubbles() {
-        for (BubbleAnimation bubble : bubbles) {
-            if (!bubble.isVisible()) {
-                container.removeView(bubble);
-            }
-        }
-        bubbles.clear(); // Clear the list of bubbles
-    }
-
-    public class BubbleAnimation extends androidx.appcompat.widget.AppCompatImageView {
-        private boolean isVisible = false;
-
-        public BubbleAnimation(Context context) {
-            super(context);
-        }
-
-        public void setIsVisible(boolean visible) {
-            isVisible = visible;
-        }
-
-        public boolean isVisible() {
-            return isVisible;
-        }
-
-    }
-*/
     // Method to reset the backgrounds of all buttons
     private void resetButtonBackgrounds() {
         Log.d("ResetButtonBackgrounds", "Running!");
@@ -756,7 +737,7 @@ public class BubbleMatchGamePage extends AppCompatActivity {
     }
 
     private void startCountdown(String selectedType, int numberOfSelectedTopics) {
-        countDownTimer = new CountDownTimer(60000 * numberOfSelectedTopics, 1000) {
+        countDownTimer = new CountDownTimer(90000 * numberOfSelectedTopics, 1000) {
             public void onTick(long millisUntilFinished) {
                 long secondsRemaining = millisUntilFinished / 1000;
                 countdownTextView.setTextColor(Color.WHITE);

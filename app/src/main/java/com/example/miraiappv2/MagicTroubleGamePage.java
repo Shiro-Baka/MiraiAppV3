@@ -37,8 +37,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class MagicTroubleGamePage extends AppCompatActivity {
-    //private static final String TAG = "MagicTroubleGamePage";
-
     //Create media player for sounds
     MediaPlayer MagicTroubleMediaPlayer;
 
@@ -52,10 +50,10 @@ public class MagicTroubleGamePage extends AppCompatActivity {
     ImageButton magic_troubleendbtn, magic_troubleinfobtn;
 
     //Bring in array list of selected topics from previous page
-    private ArrayList<String> selectedTopics;
+    ArrayList<String> selectedTopics;
 
     //Bring in string of selected type from previous page and page before that
-    private String selectedType;
+    String selectedType;
 
     //Declare a list of MagicTroubleQuestionItem objects to store the questions and their answers
     List<MagicTroubleQuestionItem> magicTroubleQuestionItems;
@@ -73,7 +71,6 @@ public class MagicTroubleGamePage extends AppCompatActivity {
         //Removes the Title bar from the top of the application for all screens.
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //getSupportActionBar().hide();
 
         //Set content view to show the xml file
         setContentView(R.layout.activity_magic_trouble_game_page);
@@ -128,7 +125,6 @@ public class MagicTroubleGamePage extends AppCompatActivity {
         setQuestionScreen(currentQuestion);
         Context context = this;
         Context context1 = this;
-
 
         //Onclick listener
         magic_troubleendbtn.setOnClickListener(new View.OnClickListener() {
