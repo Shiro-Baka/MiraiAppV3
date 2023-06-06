@@ -57,8 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 View popupView = inflater.inflate(R.layout.main_menu_info_popup, null);
 
                 TextView myTextView = popupView.findViewById(R.id.menu_info);
-                String longText = "Your long text goes here...";
-                myTextView.setText(longText);
+
 
                 // Create the PopupWindow
                 int width = ViewGroup.LayoutParams.WRAP_CONTENT;
