@@ -390,6 +390,8 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                                     //correct
                                     correct +=1;
                                     score +=100;
+                                    TextView bubbleMatchScore = findViewById(R.id.bubble_match_score_textview);
+                                    bubbleMatchScore.setText("" + score);
 
                                     // Load media player and play sound based on JSON file, if it doesnt load it will display a error log with the file that it failed on
                                     MediaPlayer mediaPlayer = loadAudio(soundName);
@@ -541,6 +543,8 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                                     //correct
                                     correct +=1;
                                     score +=100;
+                                    TextView bubbleMatchScore = findViewById(R.id.bubble_match_score_textview);
+                                    bubbleMatchScore.setText("" + score);
                                     // Load media player and play sound based on the sound name
                                     MediaPlayer mediaPlayer = loadAudio(soundName);
                                     if (mediaPlayer != null) {
@@ -668,11 +672,11 @@ public class BubbleMatchGamePage extends AppCompatActivity {
         });
     }
     private void addBubble() {
-        int minBubbles = 15;
+        int minBubbles = 45;
         int maxBubbles = 60;
         int numBubbles = (int) (Math.random() * (maxBubbles - minBubbles + 1)) + minBubbles;
 
-        int minYPosition = bubbleAnimation.getHeight() / 2; // Minimum Y position within the bottom half of the screen
+        int minYPosition = bubbleAnimation.getHeight() / 1; // Minimum Y position within the bottom half of the screen
         int maxYPosition = bubbleAnimation.getHeight() - getResources().getDimensionPixelSize(R.dimen.bubble_animation_size); // Maximum Y position near the bottom of the screen
 
         for (int i = 0; i < numBubbles; i++) {
@@ -690,6 +694,8 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     score += 10; // Increment the score by 10
+                    TextView bubbleMatchScore = findViewById(R.id.bubble_match_score_textview);
+                    bubbleMatchScore.setText("" + score);
                     // Update the score display or perform any other action
                     bubbleAnimation.removeView(bubble); // Remove the clicked bubble from the container
                 }
@@ -715,8 +721,12 @@ public class BubbleMatchGamePage extends AppCompatActivity {
     private void animateBubble(final ImageView bubble) {
         int screenHeight = getResources().getDisplayMetrics().heightPixels;
 
+        int minDuration = 5000; // Minimum duration in milliseconds
+        int maxDuration = 15000; // Maximum duration in milliseconds
+        int duration = (int) (Math.random() * (maxDuration - minDuration + 1)) + minDuration;
+
         ObjectAnimator animator = ObjectAnimator.ofFloat(bubble, "translationY", -screenHeight);
-        animator.setDuration(5500); // Adjust the duration as needed
+        animator.setDuration(duration);
         animator.setInterpolator(new AccelerateInterpolator());
         animator.addListener(new AnimatorListenerAdapter() {
             @Override
@@ -737,7 +747,7 @@ public class BubbleMatchGamePage extends AppCompatActivity {
     }
 
     private void startCountdown(String selectedType, int numberOfSelectedTopics) {
-        countDownTimer = new CountDownTimer(90000 * numberOfSelectedTopics, 1000) {
+        countDownTimer = new CountDownTimer(60000 * numberOfSelectedTopics, 1000) {
             public void onTick(long millisUntilFinished) {
                 long secondsRemaining = millisUntilFinished / 1000;
                 countdownTextView.setTextColor(Color.WHITE);

@@ -10,6 +10,13 @@
     android:theme="@android:style/Theme.Black.NoTitleBar"
     tools:context=".MagicTroubleGamePage">
 
+    <FrameLayout
+        android:id="@+id/bubbleContainer"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom5" />
 
     <ImageButton
         android:id="@+id/magic_trouble_endbtn"
