@@ -45,7 +45,7 @@
         android:id="@+id/question"
         android:layout_width="165dp"
         android:layout_height="wrap_content"
-        android:text="There is (inanimate object)"
+        android:text="Question"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="19dp"

@@ -137,7 +137,6 @@ public class KanaChallengeGamePage extends AppCompatActivity {
         setQuestionScreen(currentQuestion);
 
         //display dashes
-
         getDashes();
         //endgame
         endgame.setOnClickListener(new View.OnClickListener() {
@@ -655,6 +654,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
         }
         return json;
     }
+    //display answer in the banner above
     public void showAnswer(){
         View layout = getLayoutInflater().inflate(R.layout.kana_correct_popup, (ViewGroup) findViewById(R.id.kana_layout));
         TextView toastTextView = (TextView) layout.findViewById(R.id.correctanswer);
@@ -666,7 +666,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
         toast.setView(layout);
         toast.show();
     }
-
+    //display "correct" in banner above
     public void Congratulate(){
         View layout = getLayoutInflater().inflate(R.layout.kana_correct_popup, (ViewGroup) findViewById(R.id.kana_layout));
         TextView toastTextView = (TextView) layout.findViewById(R.id.correctanswer);
@@ -678,6 +678,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
         toast.setView(layout);
         toast.show();
     }
+    //display the dashes for the questions
     public void getDashes(){
         int alldashes = questionItems.get(currentQuestion).getCorrect().length();
         for(int i = 0; i<alldashes; i++){
@@ -686,6 +687,7 @@ public class KanaChallengeGamePage extends AppCompatActivity {
         String DashText = TextUtils.join("",DashArray);
         dashPreview.setText(DashText);
     }
+    //display dash for next question
     public void setNextDash(){
         String previewstring= preview.getText().toString();
         String DashText = TextUtils.join("",DashArray);

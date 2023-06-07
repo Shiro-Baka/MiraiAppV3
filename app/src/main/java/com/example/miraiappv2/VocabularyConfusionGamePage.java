@@ -474,6 +474,7 @@ public class VocabularyConfusionGamePage extends AppCompatActivity {
         });
 
     }
+    //display the pop-up instructions
     public void showpopup(View v){
         ImageButton infoback;
         pop_up.setContentView(R.layout.infopopup);

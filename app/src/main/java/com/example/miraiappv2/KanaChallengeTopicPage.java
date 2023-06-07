@@ -65,7 +65,7 @@ public class KanaChallengeTopicPage extends AppCompatActivity {
         //topic selected array
         ArrayList<String> all_topics = new ArrayList<>();
 
-        //on click
+        //click on any topic
 
         greetingslesson.setOnClickListener(new View.OnClickListener() {
             @Override
