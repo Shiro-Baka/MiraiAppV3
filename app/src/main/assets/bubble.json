@@ -654,7 +654,7 @@
     "jword": "あか(い)",
     "topic": "Colours",
     "type": "kana",
-    "sound": "aka(i)"
+    "sound": "aka_akai"
   },
   {
     "id": 83,
@@ -662,7 +662,7 @@
     "jword": "あお(い)",
     "topic": "Colours",
     "type": "kana",
-    "sound": "ao(i)"
+    "sound": "ao_aoi"
   },
   {
     "id": 84,
@@ -678,7 +678,7 @@
     "jword": "きいろ(い)",
     "topic": "Colours",
     "type": "kana",
-    "sound": "kiiro(i)"
+    "sound": "kiiro_kiiroi"
   },
   {
     "id": 86,
@@ -686,7 +686,7 @@
     "jword": "ちゃいろ(い)",
     "topic": "Colours",
     "type": "kana",
-    "sound": "chairo(i)"
+    "sound": "chairo_chairoi"
   },
   {
     "id": 87,
@@ -5626,7 +5626,7 @@
   },
   {
     "id": 328,
-    "eword": "rubber, eraser",
+    "eword": "rubber eraser",
     "jword": "keshigomu",
     "topic": "School",
     "type": "romaji",
@@ -5830,7 +5830,7 @@
     "jword": "benkyou shimasu",
     "topic": "Verbs",
     "type": "romaji",
-    "sound": "benkyou shimasu"
+    "sound": "benkyou_shimasu"
   },
   {
     "id": 354,
@@ -5838,11 +5838,11 @@
     "jword": "renshuu shimasu",
     "topic": "Verbs",
     "type": "romaji",
-    "sound": "renshuu shimasu"
+    "sound": "renshuu_shimasu"
   },
   {
     "id": 355,
-    "eword": "to see\/look",
+    "eword": "to see look",
     "jword": "mimasu",
     "topic": "Verbs",
     "type": "romaji",

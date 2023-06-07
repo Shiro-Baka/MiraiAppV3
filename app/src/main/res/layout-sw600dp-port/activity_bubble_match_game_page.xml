@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bubble_match_game_phone"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context=".BubbleMatchGamePage">
+
+    <FrameLayout
+        android:id="@+id/bubble_match_animation_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageButton
+        android:id="@+id/bubble_match_endbtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_end_game"
+        app:layout_constraintBottom_toTopOf="@+id/bubbleGuidelineTop2"
+        app:layout_constraintDimensionRatio="0.6:0.6"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelineLeft2"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelineLeft"
+        app:layout_constraintTop_toTopOf="@+id/bubbleGuidelineTop1" />
+
+    <ImageButton
+        android:id="@+id/bubble_match_infobtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_info_button"
+        app:layout_constraintBottom_toTopOf="@+id/bubbleGuidelineTop2"
+        app:layout_constraintDimensionRatio="0.6:0.6"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelineright"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelineLeft3"
+        app:layout_constraintTop_toTopOf="@+id/bubbleGuidelineTop1" />
+
+
+    <TextView
+        android:id="@+id/bubble_match_score_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/bubbleGuidelineTop2"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelinemiddleleft"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelinemiddleright3"
+        app:layout_constraintTop_toTopOf="@+id/bubbleGuidelineTop1" />
+
+    <TextView
+        android:id="@+id/countdown_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/bubbleGuidelineTop2"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelineLeft3"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelinemiddleright2"
+        app:layout_constraintTop_toTopOf="@+id/bubbleGuidelineTop1" />
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bubbleGuidelineBottom"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelineright"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelineLeft"
+        app:layout_constraintTop_toTopOf="@+id/bubbleGuidelineTop2"
+        tools:context=".BubbleMatchGamePage"
+        android:id="@+id/grid_layout_bubble_match">
+    </GridLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelineTop1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelineTop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelineLeft2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelineLeft3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelinemiddleleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelinemiddleright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelinemiddleright2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelinemiddleright3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelineright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

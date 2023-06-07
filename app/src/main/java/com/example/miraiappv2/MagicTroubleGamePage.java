@@ -5,6 +5,9 @@ import static java.util.Collections.shuffle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +16,6 @@ import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -21,13 +23,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.AccelerateInterpolator;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.miraiappv2.MagicTroubleEndKPage;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -40,10 +43,10 @@ import java.util.Collections;
 import java.util.List;
 
 public class MagicTroubleGamePage extends AppCompatActivity {
-    //private static final String TAG = "MagicTroubleGamePage";
-
     //Create media player for sounds
     MediaPlayer MagicTroubleMediaPlayer;
+
+    ViewGroup bubbleContainer;
 
     //Set textview names
     TextView magictroubleQuestion, answer1_text, answer2_text, answer3_text, answer4_text;
@@ -55,10 +58,10 @@ public class MagicTroubleGamePage extends AppCompatActivity {
     ImageButton magic_troubleendbtn, magic_troubleinfobtn;
 
     //Bring in array list of selected topics from previous page
-    private ArrayList<String> selectedTopics;
+    ArrayList<String> selectedTopics;
 
     //Bring in string of selected type from previous page and page before that
-    private String selectedType;
+    String selectedType;
 
     //Declare a list of MagicTroubleQuestionItem objects to store the questions and their answers
     List<MagicTroubleQuestionItem> magicTroubleQuestionItems;
@@ -69,6 +72,11 @@ public class MagicTroubleGamePage extends AppCompatActivity {
     //Set correct, wrong and score counters to zero
     int correct = 0, wrong = 0, score = 0;
 
+    int bubbleCounter = 0; // Counter variable
+    int maxBubbles = 40; // Maximum number of bubbles
+    boolean isAnimating = false; // Flag to indicate animation state
+
+
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +84,6 @@ public class MagicTroubleGamePage extends AppCompatActivity {
         //Removes the Title bar from the top of the application for all screens.
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //getSupportActionBar().hide();
 
         //Set content view to show the xml file
         setContentView(R.layout.activity_magic_trouble_game_page);
@@ -97,7 +104,7 @@ public class MagicTroubleGamePage extends AppCompatActivity {
         answer4_text = findViewById(R.id.answer4_text);
         magic_troubleendbtn = findViewById(R.id.magic_trouble_endbtn);
         magic_troubleinfobtn = findViewById(R.id.magic_trouble_infobtn);
-
+        bubbleContainer = findViewById(R.id.bubbleContainer);
         //Check if the intent is not null before retrieving extras
         Intent intent = getIntent();
         if (intent != null) {
@@ -132,25 +139,26 @@ public class MagicTroubleGamePage extends AppCompatActivity {
         Context context = this;
         Context context1 = this;
 
-
         //Onclick listener
         magic_troubleendbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (selectedType.equals("romaji")) {
                     // game over for romaji, pass the score and results
-                    Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
+                    Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                     intent.putExtra("correct", correct);
                     intent.putExtra("wrong", wrong);
                     intent.putExtra("score", score);
+                    intent.putExtra("background", R.drawable.background_magic_trouble_end_romaji_phone);
                     startActivity(intent);
                     finish();
                 } else {
                     // game over for other type, pass the score and results
-                    Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
+                    Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                     intent.putExtra("correct", correct);
                     intent.putExtra("wrong", wrong);
                     intent.putExtra("score", score);
+                    intent.putExtra("background", R.drawable.background_magic_trouble_end_kana_phone);
                     startActivity(intent);
                     finish();
                 }
@@ -301,18 +309,20 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                 } else {
                     if (selectedType.equals("romaji")) {
                         // game over for romaji, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_romaji_phone);
                         startActivity(intent);
                         finish();
                     } else {
                         // game over for other types, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_kana_phone);
                         startActivity(intent);
                         finish();
                     }
@@ -424,18 +434,20 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                 } else {
                     if (selectedType.equals("romaji")) {
                         // game over for romaji, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_kana_phone);
                         startActivity(intent);
                         finish();
                     } else {
                         // game over for other types, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_kana_phone);
                         startActivity(intent);
                         finish();
                     }
@@ -547,18 +559,20 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                 } else {
                     if (selectedType.equals("romaji")) {
                         // game over for romaji, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_romaji_phone);
                         startActivity(intent);
                         finish();
                     } else {
                         // game over for other types, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_kana_phone);
                         startActivity(intent);
                         finish();
                     }
@@ -670,18 +684,20 @@ public class MagicTroubleGamePage extends AppCompatActivity {
                 } else {
                     if (selectedType.equals("romaji")) {
                         // game over for romaji, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndRPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_romaji_phone);
                         startActivity(intent);
                         finish();
                     } else {
                         // game over for other types, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndKPage.class);
+                        Intent intent = new Intent(getApplicationContext(), MagicTroubleEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_magic_trouble_end_kana_phone);
                         startActivity(intent);
                         finish();
                     }
@@ -778,7 +794,6 @@ public class MagicTroubleGamePage extends AppCompatActivity {
         }
     }
 
-
     //Load json file from folder
     private String loadJSONFromAsset(String file){
         String json = "";
@@ -794,6 +809,82 @@ public class MagicTroubleGamePage extends AppCompatActivity {
         }
         return json;
     }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus && bubbleCounter < maxBubbles) { // Check the bubble counter
+            addBubble();
+            bubbleCounter++;
+        }
+    }
+
+    private void addBubble() {
+        int minBubbles = 1;
+        int maxBubbles = 20;
+        int numBubbles = (int) (Math.random() * (maxBubbles - minBubbles + 1)) + minBubbles;
+
+        int minYPosition = bubbleContainer.getHeight() / 3; // Minimum Y position within the bottom half of the screen
+        int maxYPosition = bubbleContainer.getHeight() - getResources().getDimensionPixelSize(R.dimen.magic_animation_size); // Maximum Y position near the bottom of the screen
+
+        for (int i = 0; i < numBubbles; i++) {
+            final ImageView bubble = new ImageView(this);
+            bubble.setImageDrawable(getResources().getDrawable(R.drawable.bubble_image2));
+
+            int size = getResources().getDimensionPixelSize(R.dimen.magic_animation_size);
+            FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(size, size);
+            params.leftMargin = getRandomXPosition();
+            params.topMargin = bubbleContainer.getHeight() - getResources().getDimensionPixelSize(R.dimen.magic_animation_size);
+            bubble.setLayoutParams(params);
+
+            bubbleContainer.addView(bubble);
+            bubble.post(new Runnable() {
+                @Override
+                public void run() {
+                    animateBubble(bubble);
+                }
+            });
+        }
+    }
+
+    private int getRandomXPosition() {
+        int screenWidth = getResources().getDisplayMetrics().widthPixels;
+        return (int) (Math.random() * (screenWidth - getResources().getDimensionPixelSize(R.dimen.magic_animation_size)));
+    }
+
+    private void animateBubble(final ImageView bubble) {
+        int screenHeight = getResources().getDisplayMetrics().heightPixels;
+        int minDuration = 5000; // Minimum duration in milliseconds
+        int maxDuration = 15000; // Maximum duration in milliseconds
+        int duration = (int) (Math.random() * (maxDuration - minDuration + 1)) + minDuration;
+
+        ObjectAnimator animator = ObjectAnimator.ofFloat(bubble, "translationY", -screenHeight);
+        animator.setDuration(duration);
+        animator.setInterpolator(new AccelerateInterpolator());
+        animator.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+                isAnimating = true; // Set animation flag to true
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        bubbleContainer.removeView(bubble);
+                        isAnimating = false; // Set animation flag to false
+                        if (bubbleCounter < maxBubbles) {
+                            addBubble(); // Create a new bubble
+                            bubbleCounter++;
+                        }
+                    }
+                }, 2000); // Change the delay time (in milliseconds) as needed
+            }
+        });
+        animator.start();
+    }
+
 }
 
 

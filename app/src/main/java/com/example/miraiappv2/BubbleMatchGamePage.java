@@ -4,11 +4,20 @@ import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ObjectAnimator;
+import android.content.Context;
 import android.content.res.Configuration;
+import android.graphics.Typeface;
 import android.os.CountDownTimer;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.ViewTreeObserver;
+import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.animation.TranslateAnimation;
 import android.content.Intent;
 import android.graphics.Color;
@@ -45,6 +54,9 @@ import java.util.Random;
 import java.util.Set;
 
 public class BubbleMatchGamePage extends AppCompatActivity {
+    private ViewGroup bubbleAnimation;
+
+
     //Create media player for sounds
     MediaPlayer BubbleMatchMediaPlayer;
 
@@ -85,10 +97,11 @@ public class BubbleMatchGamePage extends AppCompatActivity {
     boolean isFirstSelection = false;
     boolean isSecondSelection = false;
     private int firstSelectedButtonId = -1;
+    private boolean isVisible = false;
     private List<ImageButton> generatedButtons = new ArrayList<>();
     //Set correct, wrong and score counters to zero
     int correct = 0, wrong = 0, score = 0;
-
+    private List<BubbleAnimation> bubbles = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,11 +111,11 @@ public class BubbleMatchGamePage extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //getSupportActionBar().hide();
 
-
         setContentView(R.layout.activity_bubble_match_game_page);
 
-        GridLayout gridLayout = findViewById(R.id.grid_layout_bubble_match);
+        bubbleAnimation = findViewById(R.id.bubble_match_animation_container);
 
+        GridLayout gridLayout = findViewById(R.id.grid_layout_bubble_match);
         bubbleMatchButton = new ArrayList<BubbleMatchButton>();
 
         // Retrieve the selectedTopics and selectedType values from the intent
@@ -160,18 +173,20 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                 public void onClick(View view) {
                     if (selectedType.equals("romaji")) {
                         // game over for romaji, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), BubbleMatchEndRPage.class);
+                        Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_bubble_match_end_romaji_phone);
                         startActivity(intent);
                         finish();
                     } else {
                         // game over for other type, pass the score and results
-                        Intent intent = new Intent(getApplicationContext(), BubbleMatchEndKPage.class);
+                        Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                         intent.putExtra("correct", correct);
                         intent.putExtra("wrong", wrong);
                         intent.putExtra("score", score);
+                        intent.putExtra("background", R.drawable.background_bubble_match_end_kana_phone);
                         startActivity(intent);
                         finish();
                     }
@@ -182,7 +197,7 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                 @Override
                 public void onClick(View v){
                     LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-                    View popupView = inflater.inflate(R.layout.magic_trouble_info_popup, null);
+                    View popupView = inflater.inflate(R.layout.bubble_match_info_popup, null);
 
                     // Create the magic_popup window
                     int width;
@@ -220,15 +235,16 @@ public class BubbleMatchGamePage extends AppCompatActivity {
             // Iterate over the shuffled game elements and create buttons for eword and jword
             for (BubbleMatchButton buttonData : bubbleMatchButton) {
                 // Modify the button size
-                int buttonWidth = 480;
-                int buttonHeight = 190;
-                int leftMarginInPixels = 15; // Replace with your desired left margin
-                int topMarginInPixels = 15; // Replace with your desired top margin
-                int rightMarginInPixels = 15; // Replace with your desired right margin
-                int bottomMarginInPixels = 15; // Replace with your desired bottom margin
+                int screenWidth = getResources().getDisplayMetrics().widthPixels;
+                int buttonWidth = (int) (screenWidth * 0.43); // Adjust the percentage as needed
+                int buttonHeight = (int) (buttonWidth * 0.30); // Adjust the aspect ratio as needed
+                int marginInPixels = (int) (buttonWidth * 0.05); // Adjust the margin as needed
+                float desiredTextSizeInDp = 16; // Adjust the desired text size in dp as needed
+                float density = getResources().getDisplayMetrics().density;
+                float scaledTextSize = desiredTextSizeInDp * density;
 
                 // Check if the generated word count has reached the desired limit
-                if (generatedWordCount >= 12 * numberOfSelectedTopics ) {
+                if (generatedWordCount >= 20 * numberOfSelectedTopics ) {
                     break; // Exit the loop if the limit is reached
                 }
 
@@ -239,14 +255,27 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                 generatedButtons.add(ewordButton);
                 RelativeLayout.LayoutParams ebuttonLayoutParams = new RelativeLayout.LayoutParams(buttonWidth, buttonHeight);
 
-                ebuttonLayoutParams.setMargins(leftMarginInPixels, topMarginInPixels, rightMarginInPixels, bottomMarginInPixels);
+                ebuttonLayoutParams.setMargins(marginInPixels, marginInPixels, marginInPixels, marginInPixels);
                 ewordButton.setLayoutParams(ebuttonLayoutParams);
 
                 TextView ewordText = new TextView(this);
                 ewordText.setText(buttonData.getEword());
-                ewordText.setTextSize(25); // Set the text size to 16 (change the value as needed)
+                ewordText.setTextSize(TypedValue.COMPLEX_UNIT_SP, scaledTextSize); // Set the text size in scaled pixels
                 ewordText.setTextColor(Color.WHITE);
-                ewordText.setShadowLayer(10, 0, 0, Color.BLUE);// Set the outline
+                ewordText.setShadowLayer(10, 0, 0, Color.BLUE);
+
+                if (selectedType.equals("romaji")) {
+                    // Load the desired font from assets
+                    Typeface typeface = Typeface.createFromAsset(getAssets(), "comicsans.ttf");
+                    // Apply the font to the TextView
+                    ewordText.setTypeface(typeface);
+                } else {
+                    // Load the desired font from assets
+                    Typeface typeface = Typeface.createFromAsset(getAssets(), "kyo.ttc");
+                    // Apply the font to the TextView
+                    ewordText.setTypeface(typeface);
+                }
+
                 RelativeLayout.LayoutParams etextLayoutParams = new RelativeLayout.LayoutParams(
                         RelativeLayout.LayoutParams.WRAP_CONTENT,
                         RelativeLayout.LayoutParams.WRAP_CONTENT
@@ -265,14 +294,26 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                 jwordButton.setBackgroundResource(R.drawable.button_bubble_match_default);
                 generatedButtons.add(jwordButton);
                 RelativeLayout.LayoutParams jbuttonLayoutParams = new RelativeLayout.LayoutParams(buttonWidth, buttonHeight);
-                jbuttonLayoutParams.setMargins(leftMarginInPixels, topMarginInPixels, rightMarginInPixels, bottomMarginInPixels);
+                jbuttonLayoutParams.setMargins(marginInPixels, marginInPixels, marginInPixels, marginInPixels);
                 jwordButton.setLayoutParams(jbuttonLayoutParams);
 
                 TextView jwordText = new TextView(this);
                 jwordText.setText(buttonData.getJword());
-                jwordText.setTextSize(25); // Set the text size to 16 (change the value as needed)
+                jwordText.setTextSize(TypedValue.COMPLEX_UNIT_SP, scaledTextSize); // Set the text size in scaled pixels
                 jwordText.setTextColor(Color.WHITE);
                 jwordText.setShadowLayer(10, 0, 0, Color.BLUE);// Set the outline
+
+                if (selectedType.equals("romaji")) {
+                    // Load the desired font from assets
+                    Typeface typeface = Typeface.createFromAsset(getAssets(), "comicsans.ttf");
+                    // Apply the font to the TextView
+                    jwordText.setTypeface(typeface);
+                } else {
+                    // Load the desired font from assets
+                    Typeface typeface = Typeface.createFromAsset(getAssets(), "kyo.ttc");
+                    // Apply the font to the TextView
+                    jwordText.setTypeface(typeface);
+                }
                 RelativeLayout.LayoutParams jtextLayoutParams = new RelativeLayout.LayoutParams(
                         RelativeLayout.LayoutParams.WRAP_CONTENT,
                         RelativeLayout.LayoutParams.WRAP_CONTENT
@@ -349,6 +390,8 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                                     //correct
                                     correct +=1;
                                     score +=100;
+                                    TextView bubbleMatchScore = findViewById(R.id.bubble_match_score_textview);
+                                    bubbleMatchScore.setText("" + score);
 
                                     // Load media player and play sound based on JSON file, if it doesnt load it will display a error log with the file that it failed on
                                     MediaPlayer mediaPlayer = loadAudio(soundName);
@@ -384,18 +427,20 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                                             if (matchesFound == 6 * numberOfSelectedTopics) {
                                                 if (selectedType.equals("romaji")) {
                                                     // game over for romaji, pass the score and results
-                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndRPage.class);
+                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                                                     intent.putExtra("correct", correct);
                                                     intent.putExtra("wrong", wrong);
                                                     intent.putExtra("score", score);
+                                                    intent.putExtra("background", R.drawable.background_bubble_match_end_romaji_phone);
                                                     startActivity(intent);
                                                     finish();
                                                 } else {
                                                     // game over for other type, pass the score and results
-                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndKPage.class);
+                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                                                     intent.putExtra("correct", correct);
                                                     intent.putExtra("wrong", wrong);
                                                     intent.putExtra("score", score);
+                                                    intent.putExtra("background", R.drawable.background_bubble_match_end_kana_phone);
                                                     startActivity(intent);
                                                     finish();
                                                 }
@@ -498,6 +543,8 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                                     //correct
                                     correct +=1;
                                     score +=100;
+                                    TextView bubbleMatchScore = findViewById(R.id.bubble_match_score_textview);
+                                    bubbleMatchScore.setText("" + score);
                                     // Load media player and play sound based on the sound name
                                     MediaPlayer mediaPlayer = loadAudio(soundName);
                                     if (mediaPlayer != null) {
@@ -533,18 +580,20 @@ public class BubbleMatchGamePage extends AppCompatActivity {
                                             if (matchesFound == 6 * numberOfSelectedTopics) {
                                                 if (selectedType.equals("romaji")) {
                                                     // game over for romaji, pass the score and results
-                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndRPage.class);
+                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                                                     intent.putExtra("correct", correct);
                                                     intent.putExtra("wrong", wrong);
                                                     intent.putExtra("score", score);
+                                                    intent.putExtra("background", R.drawable.background_bubble_match_end_romaji_phone);
                                                     startActivity(intent);
                                                     finish();
                                                 } else {
                                                     // game over for other type, pass the score and results
-                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndKPage.class);
+                                                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                                                     intent.putExtra("correct", correct);
                                                     intent.putExtra("wrong", wrong);
                                                     intent.putExtra("score", score);
+                                                    intent.putExtra("background", R.drawable.background_bubble_match_end_kana_phone);
                                                     startActivity(intent);
                                                     finish();
                                                 }
@@ -605,6 +654,89 @@ public class BubbleMatchGamePage extends AppCompatActivity {
             gridLayout.addView(button);
         }
     }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            addBubble();
+        }
+    }
+
+    private void startBubbleAnimation(ImageView bubble) {
+        bubble.post(new Runnable() {
+            @Override
+            public void run() {
+                animateBubble(bubble);
+            }
+        });
+    }
+    private void addBubble() {
+        int minBubbles = 45;
+        int maxBubbles = 60;
+        int numBubbles = (int) (Math.random() * (maxBubbles - minBubbles + 1)) + minBubbles;
+
+        int minYPosition = bubbleAnimation.getHeight() / 1; // Minimum Y position within the bottom half of the screen
+        int maxYPosition = bubbleAnimation.getHeight() - getResources().getDimensionPixelSize(R.dimen.bubble_animation_size); // Maximum Y position near the bottom of the screen
+
+        for (int i = 0; i < numBubbles; i++) {
+            final ImageView bubble = new ImageView(this);
+            bubble.setImageDrawable(getResources().getDrawable(R.drawable.bubble_image));
+
+            int size = getResources().getDimensionPixelSize(R.dimen.bubble_animation_size);
+            FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(size, size);
+            params.leftMargin = getRandomXPosition();
+            params.topMargin = getRandomYPosition(minYPosition, maxYPosition);
+            bubble.setLayoutParams(params);
+
+            bubbleAnimation.addView(bubble);
+            bubble.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    score += 10; // Increment the score by 10
+                    TextView bubbleMatchScore = findViewById(R.id.bubble_match_score_textview);
+                    bubbleMatchScore.setText("" + score);
+                    // Update the score display or perform any other action
+                    bubbleAnimation.removeView(bubble); // Remove the clicked bubble from the container
+                }
+            });
+            bubble.post(new Runnable() {
+                @Override
+                public void run() {
+                    animateBubble(bubble);
+                }
+            });
+        }
+    }
+
+    private int getRandomYPosition(int minY, int maxY) {
+        return (int) (Math.random() * (maxY - minY + 1)) + minY;
+    }
+
+    private int getRandomXPosition() {
+        int screenWidth = getResources().getDisplayMetrics().widthPixels;
+        return (int) (Math.random() * (screenWidth - getResources().getDimensionPixelSize(R.dimen.bubble_animation_size)));
+    }
+
+    private void animateBubble(final ImageView bubble) {
+        int screenHeight = getResources().getDisplayMetrics().heightPixels;
+
+        int minDuration = 5000; // Minimum duration in milliseconds
+        int maxDuration = 15000; // Maximum duration in milliseconds
+        int duration = (int) (Math.random() * (maxDuration - minDuration + 1)) + minDuration;
+
+        ObjectAnimator animator = ObjectAnimator.ofFloat(bubble, "translationY", -screenHeight);
+        animator.setDuration(duration);
+        animator.setInterpolator(new AccelerateInterpolator());
+        animator.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                bubbleAnimation.removeView(bubble);
+            }
+        });
+        animator.start();
+    }
+
     // Method to reset the backgrounds of all buttons
     private void resetButtonBackgrounds() {
         Log.d("ResetButtonBackgrounds", "Running!");
@@ -626,18 +758,20 @@ public class BubbleMatchGamePage extends AppCompatActivity {
 
                 if (selectedType.equals("romaji")) {
                     // game over for romaji, pass the score and results
-                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndRPage.class);
+                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                     intent.putExtra("correct", correct);
                     intent.putExtra("wrong", wrong);
                     intent.putExtra("score", score);
+                    intent.putExtra("background", R.drawable.background_bubble_match_end_romaji_phone);
                     startActivity(intent);
                     finish();
                 } else {
                     // game over for other type, pass the score and results
-                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndKPage.class);
+                    Intent intent = new Intent(getApplicationContext(), BubbleMatchEndPage.class);
                     intent.putExtra("correct", correct);
                     intent.putExtra("wrong", wrong);
                     intent.putExtra("score", score);
+                    intent.putExtra("background", R.drawable.background_bubble_match_end_kana_phone);
                     startActivity(intent);
                     finish();
                 }

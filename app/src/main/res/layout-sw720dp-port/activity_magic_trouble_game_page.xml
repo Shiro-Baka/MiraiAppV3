@@ -10,6 +10,13 @@
     android:theme="@android:style/Theme.Black.NoTitleBar"
     tools:context=".MagicTroubleGamePage">
 
+    <FrameLayout
+        android:id="@+id/bubbleContainer"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom5" />
 
     <ImageButton
         android:id="@+id/magic_trouble_endbtn"
@@ -39,7 +46,7 @@
         android:layout_height="wrap_content"
         android:text="0"
         android:textColor="@android:color/white"
-        android:textSize="20dp"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guidelinemagicguidelinebottom"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline15"
@@ -52,11 +59,12 @@
         android:layout_height="wrap_content"
         android:text="Question"
         android:textColor="@android:color/black"
-        android:textSize="35dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom5"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="0.674"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/magicguidelinebottom6"
         app:layout_constraintVertical_bias="0.479" />
 
@@ -96,7 +104,8 @@
         android:layout_centerInParent="true"
         android:text="Answer 1"
         android:textColor="@android:color/black"
-        android:textSize="27dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom3"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
@@ -139,7 +148,8 @@
         android:layout_centerInParent="true"
         android:text="Answer 2"
         android:textColor="@android:color/black"
-        android:textSize="27dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom2"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
@@ -181,7 +191,8 @@
         android:layout_centerInParent="true"
         android:text="Answer 3"
         android:textColor="@android:color/black"
-        android:textSize="27dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom"
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
@@ -223,7 +234,8 @@
         android:layout_centerInParent="true"
         android:text="Answer 4"
         android:textColor="@android:color/black"
-        android:textSize="27dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/magicguidelinebottom1"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
