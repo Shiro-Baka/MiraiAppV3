@@ -40,7 +40,7 @@ public class KanaChallengeScorePage extends AppCompatActivity {
 
         setContentView(R.layout.activity_kana_challenge_score_page);
 
-        //confetti
+        // display confetti animation
         KonfettiView viewKonfetti = findViewById(R.id.konfettiView);
         Shape.DrawableShape drawableShape = new Shape.DrawableShape(AppCompatResources.getDrawable(this,R.drawable.ic_android_confetti), true);
         EmitterConfig emitterConfig = new Emitter(300, TimeUnit.MILLISECONDS).max(300);
@@ -73,6 +73,7 @@ public class KanaChallengeScorePage extends AppCompatActivity {
         game_result.setText("" + correct);
         game_incorrect.setText("" + wrong);
 
+        //return to game menu
         GameMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,6 +82,7 @@ public class KanaChallengeScorePage extends AppCompatActivity {
                 }
             }
         });
+        //return to main menu
         MainMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

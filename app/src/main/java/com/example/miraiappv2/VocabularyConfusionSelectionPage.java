@@ -39,7 +39,7 @@ public class VocabularyConfusionSelectionPage extends AppCompatActivity {
         Menu = (ImageButton) findViewById(R.id.MenuBack);
 
 
-
+        //select either kana or romanji
         romanji.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

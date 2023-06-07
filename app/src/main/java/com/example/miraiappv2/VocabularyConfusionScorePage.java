@@ -37,7 +37,7 @@ public class VocabularyConfusionScorePage extends AppCompatActivity {
         //set the view
         setContentView(R.layout.activity_vocabulary_confusion_score_page);
 
-        //confetti
+        //display confett animation
         KonfettiView viewKonfetti = findViewById(R.id.konfettiView);
         Shape.DrawableShape drawableShape = new Shape.DrawableShape(AppCompatResources.getDrawable(this,R.drawable.ic_android_confetti), true);
         EmitterConfig emitterConfig = new  Emitter(300, TimeUnit.MILLISECONDS).max(300);
